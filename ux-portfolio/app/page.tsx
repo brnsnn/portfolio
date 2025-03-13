@@ -11,7 +11,7 @@ export default function Home() {
       <header className="px-4 lg:px-6 h-16 flex items-center">
         <Link className="flex items-center justify-center" href="#">
           <PenTool className="h-6 w-6 mr-2" />
-          <span className="font-bold">Jane Designer</span>
+          <span className="font-bold">Bronson Lee</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
           <Link className="text-sm font-medium hover:underline underline-offset-4" href="#work">
@@ -36,12 +36,11 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Hi, I'm Jane — <br />
+                    Hi, I'm Bronson — <br />
                     UX Designer & Problem Solver
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    I create intuitive digital experiences that connect people with products. Let's build something
-                    amazing together.
+                    I bridge design and impact by creating digital products that inspire change and empower users..
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
