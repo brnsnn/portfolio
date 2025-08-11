@@ -109,9 +109,8 @@ const Page = () => {
         <section className="container py-20 md:py-32">
           <div className="max-w-4xl" style={{ width: "110%" }}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              Senior Product Designer who builds accessible digital products
-              <br />
-              and scalable design systems that earn stakeholder buy-in and align with production realities.
+              Senior Product Designer who builds accessible digital products and scalable design systems that earn
+              stakeholder buy-in and align with production realities.
             </h1>
             <div>
               <Button asChild className="rounded-md" size="lg">
