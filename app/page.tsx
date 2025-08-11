@@ -108,7 +108,7 @@ const Page = () => {
       <main className="flex-1">
         <section className="container py-20 md:py-32">
           <div className="max-w-4xl" style={{ width: "110%" }}>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight mb-6">
               Senior Product Designer who builds accessible digital products and scalable design systems that earn
               stakeholder buy-in and align with production realities.
             </h1>
