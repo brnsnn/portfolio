@@ -1,0 +1,30 @@
+import type React from "react"
+import "@/app/globals.css"
+import { ThemeProvider } from "@/components/theme-provider"
+import { Inter } from "next/font/google"
+import type { Metadata } from "next"
+
+const inter = Inter({ subsets: ["latin"] })
+
+export const metadata: Metadata = {
+  title: "Bronson Lee / UX Design & Design Systems",
+  description:
+    "Portfolio website of Bronson Lee, a UX designer specializing in creating intuitive and delightful digital experiences.",
+    generator: 'v0.dev'
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  )
+}

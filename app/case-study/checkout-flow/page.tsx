@@ -1,0 +1,260 @@
+import Image from "next/image"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { ArrowRight, Leaf } from "lucide-react"
+import { ThemeToggle } from "@/components/theme-toggle"
+
+export default function CheckoutCaseStudy() {
+  return (
+    <div className="flex min-h-screen flex-col">
+      <header className="container py-6">
+        <div className="flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-2 font-medium">
+            <Leaf className="h-5 w-5" />
+            <span>Bronson Lee</span>
+          </Link>
+          <div className="flex items-center gap-6">
+            <nav className="hidden md:flex gap-6">
+              <Link href="/#work" className="text-sm font-medium hover:text-primary">
+                Work
+              </Link>
+              <Link href="/#about" className="text-sm font-medium hover:text-primary">
+                About
+              </Link>
+              <Link href="/#contact" className="text-sm font-medium hover:text-primary">
+                Contact
+              </Link>
+            </nav>
+            <ThemeToggle />
+          </div>
+        </div>
+      </header>
+
+      <main className="flex-1">
+        <section className="container py-12 md:py-20">
+          <div className="flex items-center gap-2 mb-8">
+            <div className="h-px w-8 bg-foreground/30"></div>
+            <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
+          </div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight max-w-4xl">
+            E-commerce Checkout Flow
+          </h1>
+        </section>
+
+        {/* Hero Image */}
+        <div className="container mb-16">
+          <div className="w-full aspect-[21/9] relative">
+            <Image
+              src="/placeholder.svg?height=900&width=1900"
+              alt="E-commerce Checkout Flow Hero"
+              fill
+              className="object-cover rounded-lg"
+              priority
+            />
+          </div>
+        </div>
+
+        {/* Project Details */}
+        <div className="container">
+          <div className="max-w-[800px] mx-auto grid md:grid-cols-2 gap-12 mb-20">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <div className="h-px w-8 bg-foreground/30"></div>
+                <span className="text-sm font-medium text-foreground/60">PROJECT OVERVIEW</span>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                This project focused on redesigning the checkout process for an e-commerce platform to reduce cart
+                abandonment and increase conversion rates. The existing checkout flow was lengthy, confusing, and
+                resulted in a 76% abandonment rate.
+              </p>
+              <p className="text-muted-foreground">
+                Our challenge was to simplify the process while maintaining necessary security and information
+                collection, creating a frictionless path to purchase.
+              </p>
+            </div>
+            <div className="space-y-8">
+              <div>
+                <h3 className="mb-2">Scope</h3>
+                <p className="text-muted-foreground">User Flows, Wireframing, Prototyping, A/B Testing</p>
+              </div>
+              <div>
+                <h3 className="mb-2">My Role</h3>
+                <p className="text-muted-foreground">UX Designer</p>
+              </div>
+              <div>
+                <h3 className="mb-2">Team</h3>
+                <p className="text-muted-foreground">1 Product Owner, 1 UI Designer, 2 Developers</p>
+              </div>
+              <div>
+                <h3 className="mb-2">Timeline</h3>
+                <p className="text-muted-foreground">8 weeks (Apr - Jun 2023)</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Problem */}
+          <div className="max-w-[800px] mx-auto mb-16">
+            <div className="flex items-center gap-2 mb-6">
+              <div className="h-px w-8 bg-foreground/30"></div>
+              <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
+            </div>
+            <p className="text-muted-foreground mb-8">
+              The existing checkout process required users to navigate through 5 separate pages, create an account
+              before purchasing, and manually enter shipping information even for returning customers. User testing
+              revealed that most abandonment occurred during account creation and when faced with unexpected shipping
+              costs revealed only at the final step.
+            </p>
+            <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
+              <Image
+                src="/placeholder.svg?height=450&width=800"
+                alt="Checkout flow problems visualization"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Solution */}
+          <div className="max-w-[800px] mx-auto mb-16">
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div>
+                <div className="flex items-center gap-2 mb-6">
+                  <div className="h-px w-8 bg-foreground/30"></div>
+                  <span className="text-sm font-medium text-foreground/60">OUR SOLUTION</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  We redesigned the checkout flow to be a single-page process with clearly defined sections. We
+                  implemented guest checkout with an option to create an account after purchase, address
+                  auto-completion, and upfront shipping cost calculation.
+                </p>
+                <p className="text-muted-foreground">
+                  The new design also includes a progress indicator, saved payment methods, and a streamlined mobile
+                  experience to accommodate the 60% of users who shop on mobile devices.
+                </p>
+              </div>
+            </div>
+
+            {/* Images */}
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="aspect-square relative rounded-lg overflow-hidden">
+                <Image
+                  src="/placeholder.svg?height=400&width=400"
+                  alt="Checkout flow user information"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="aspect-square relative rounded-lg overflow-hidden">
+                <Image
+                  src="/placeholder.svg?height=400&width=400"
+                  alt="Checkout flow payment options"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+
+            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6">
+              <Image
+                src="/placeholder.svg?height=450&width=800"
+                alt="Checkout flow complete process"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <div className="aspect-square relative rounded-lg overflow-hidden">
+                <Image
+                  src="/placeholder.svg?height=400&width=400"
+                  alt="Checkout flow mobile view"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="aspect-square relative rounded-lg overflow-hidden">
+                <Image
+                  src="/placeholder.svg?height=400&width=400"
+                  alt="Checkout flow confirmation"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+
+            <div className="text-center mb-20">
+              <Button asChild size="lg">
+                <Link href="#">View Full Case Study</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        {/* More Case Studies */}
+        <div className="bg-muted py-16">
+          <div className="container">
+            <div className="flex items-center gap-2 mb-8">
+              <div className="h-px w-8 bg-foreground/30"></div>
+              <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>
+            </div>
+            <div className="grid gap-6 md:grid-cols-3">
+              {otherCaseStudies.map((project, index) => (
+                <Link
+                  key={index}
+                  href={project.caseStudyUrl}
+                  className="group block overflow-hidden rounded-lg border border-border bg-background transition-all duration-500 ease-in-out hover:bg-muted relative"
+                >
+                  <div className="aspect-video relative overflow-hidden">
+                    <Image
+                      src={project.image || "/placeholder.svg"}
+                      alt={project.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-medium text-lg mb-1 transition-colors duration-500 ease-in-out">
+                      {project.title}
+                    </h3>
+                    <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center text-muted-foreground">
+                      View Case Study
+                      <ArrowRight className="ml-1 h-3 w-3" />
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer className="border-t py-6 md:py-8">
+        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
+          <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
+            © {new Date().getFullYear()} Bronson Lee. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  )
+}
+
+const otherCaseStudies = [
+  {
+    title: "Reducing Violence with a Mobile Web App",
+    image: "/placeholder.svg?height=400&width=600",
+    caseStudyUrl: "/case-study/philly-truce",
+  },
+  {
+    title: "Healthcare Patient Portal",
+    image: "/placeholder.svg?height=400&width=600",
+    caseStudyUrl: "/case-study/healthcare-portal",
+  },
+  {
+    title: "Travel App Redesign",
+    image: "/placeholder.svg?height=400&width=600",
+    caseStudyUrl: "/case-study/travel-app",
+  },
+]
