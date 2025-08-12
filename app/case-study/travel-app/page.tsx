@@ -1,36 +1,37 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Leaf } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function TravelAppCaseStudy() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="container py-6">
-        <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 font-medium">
-            <Leaf className="h-5 w-5" />
-            <span>Bronson Lee</span>
-          </Link>
-          <div className="flex items-center gap-6">
-            <nav className="hidden md:flex gap-6">
-              <Link href="/#work" className="text-sm font-medium hover:text-primary">
-                Work
-              </Link>
-              <Link href="/#about" className="text-sm font-medium hover:text-primary">
-                About
-              </Link>
-              <Link href="/#contact" className="text-sm font-medium hover:text-primary">
-                Contact
-              </Link>
-            </nav>
-            <ThemeToggle />
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container py-4">
+          <div className="flex items-center justify-between">
+            <Link href="/" className="font-medium">
+              <span>Bronson Lee</span>
+            </Link>
+            <div className="flex items-center gap-6">
+              <nav className="hidden md:flex gap-6">
+                <Link href="/#work" className="text-sm font-medium hover:text-primary">
+                  Work
+                </Link>
+                <Link href="/#about" className="text-sm font-medium hover:text-primary">
+                  About
+                </Link>
+                <Link href="/#contact" className="text-sm font-medium hover:text-primary">
+                  Contact
+                </Link>
+              </nav>
+              <ThemeToggle />
+            </div>
           </div>
         </div>
       </header>
 
-      <main className="flex-1">
+      <main className="flex-1 pt-16">
         <section className="container py-12 md:py-20">
           <div className="flex items-center gap-2 mb-8">
             <div className="h-px w-8 bg-foreground/30"></div>

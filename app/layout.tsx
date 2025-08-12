@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Bronson Lee / UX Design & Design Systems",
   description:
     "Portfolio website of Bronson Lee, a UX designer specializing in creating intuitive and delightful digital experiences.",
-    generator: 'v0.dev'
+    generator: 'v0.app'
 }
 
 export default function RootLayout({

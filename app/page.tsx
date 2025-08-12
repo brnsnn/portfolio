@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Leaf } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -83,29 +83,30 @@ const Page = () => {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="container py-6">
-        <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 font-medium">
-            <Leaf className="h-5 w-5" />
-            <span>Bronson Lee</span>
-          </Link>
-          <div className="flex items-center gap-6">
-            <nav className="hidden md:flex gap-6">
-              <Link href="#work" className="text-sm font-medium hover:text-primary">
-                Work
-              </Link>
-              <Link href="#about" className="text-sm font-medium hover:text-primary">
-                About
-              </Link>
-              <Link href="#contact" className="text-sm font-medium hover:text-primary">
-                Contact
-              </Link>
-            </nav>
-            <ThemeToggle />
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container py-4">
+          <div className="flex items-center justify-between">
+            <Link href="/" className="font-medium">
+              <span>Bronson Lee</span>
+            </Link>
+            <div className="flex items-center gap-6">
+              <nav className="hidden md:flex gap-6">
+                <Link href="#work" className="text-sm font-medium hover:text-primary">
+                  Work
+                </Link>
+                <Link href="#about" className="text-sm font-medium hover:text-primary">
+                  About
+                </Link>
+                <Link href="#contact" className="text-sm font-medium hover:text-primary">
+                  Contact
+                </Link>
+              </nav>
+              <ThemeToggle />
+            </div>
           </div>
         </div>
       </header>
-      <main className="flex-1">
+      <main className="flex-1 pt-16">
         <section className="container py-20 md:py-32">
           <div className="max-w-4xl" style={{ width: "110%" }}>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight mb-6">
@@ -244,7 +245,7 @@ const Page = () => {
           </div>
         </section>
       </main>
-      <footer className="border-t py-6 md:py-8">
+      <footer className="py-6 md:py-8">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.
