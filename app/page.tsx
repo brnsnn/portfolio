@@ -109,7 +109,7 @@ const Page = () => {
       <main className="flex-1 pt-16">
         <section className="container py-12 md:py-16 animate-on-load animate-fade-in-up animate-delay-200">
           <div className="max-w-4xl" style={{ width: "110%" }}>
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight mb-6">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight mb-6">
               Senior Product Designer who builds accessible digital products and scalable design systems that earn
               stakeholder buy-in and align with production realities.
             </h1>
@@ -139,7 +139,9 @@ const Page = () => {
                   </div>
                   <div className="p-4">
                     <div className="space-y-2">
-                      <h3 className="font-bold text-xl transition-colors duration-500 ease-in-out">{project.title}</h3>
+                      <h3 className="font-normal text-xl transition-colors duration-500 ease-in-out">
+                        {project.title}
+                      </h3>
                       <p className="text-muted-foreground transition-colors duration-500 ease-in-out">
                         {project.description}
                       </p>
@@ -166,7 +168,7 @@ const Page = () => {
                 <Image src="/placeholder.svg?height=600&width=600" alt="About me" fill className="object-cover" />
               </div>
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold tracking-tighter">Bronson Lee</h2>
+                <h2 className="text-3xl font-normal tracking-tighter">Bronson Lee</h2>
                 <p className="text-muted-foreground">
                   I'm a UX designer with 5+ years of experience creating user-centered digital products. I specialize in
                   user research, interaction design, and usability testing.
@@ -205,7 +207,7 @@ const Page = () => {
             </div>
             <div className="grid gap-12 md:grid-cols-2 items-start">
               <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter">Let's work together</h2>
+                <h2 className="text-3xl font-normal tracking-tighter">Let's work together</h2>
                 <p className="text-muted-foreground">
                   Have a project in mind or want to discuss a potential collaboration? Fill out the form and I'll get
                   back to you as soon as possible.

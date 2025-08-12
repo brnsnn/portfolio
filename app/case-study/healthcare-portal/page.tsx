@@ -37,7 +37,7 @@ export default function HealthcareCaseStudy() {
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight max-w-4xl">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight max-w-4xl">
             Healthcare Patient Portal
           </h1>
         </section>
