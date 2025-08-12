@@ -83,7 +83,7 @@ const Page = () => {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-on-load animate-fade-in">
         <div className="container py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="font-medium">
@@ -107,7 +107,7 @@ const Page = () => {
         </div>
       </header>
       <main className="flex-1 pt-16">
-        <section className="container py-20 md:py-32">
+        <section className="container py-20 md:py-32 animate-on-load animate-fade-in-up animate-delay-200">
           <div className="max-w-4xl" style={{ width: "110%" }}>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight mb-6">
               Senior Product Designer who builds accessible digital products and scalable design systems that earn
@@ -121,7 +121,7 @@ const Page = () => {
           </div>
         </section>
 
-        <section id="work" className="py-20">
+        <section id="work" className="py-20 animate-on-load animate-fade-in-up animate-delay-300">
           <div className="container">
             <div className="flex items-center gap-2 mb-12">
               <div className="h-px w-8 bg-foreground/30"></div>
@@ -160,7 +160,7 @@ const Page = () => {
           </div>
         </section>
 
-        <section id="about" className="py-20 bg-muted">
+        <section id="about" className="py-20 bg-muted animate-on-load animate-fade-in-up animate-delay-400">
           <div className="container">
             <div className="flex items-center gap-2 mb-12">
               <div className="h-px w-8 bg-foreground/30"></div>
@@ -192,7 +192,7 @@ const Page = () => {
           </div>
         </section>
 
-        <section id="recommendations" className="py-20">
+        <section id="recommendations" className="py-20 animate-on-load animate-fade-in-up animate-delay-500">
           <div className="container">
             <div className="flex items-center gap-2 mb-12">
               <div className="h-px w-8 bg-foreground/30"></div>
@@ -202,7 +202,7 @@ const Page = () => {
           </div>
         </section>
 
-        <section id="contact" className="py-20 bg-muted">
+        <section id="contact" className="py-20 bg-muted animate-on-load animate-fade-in-up animate-delay-600">
           <div className="container">
             <div className="flex items-center gap-2 mb-12">
               <div className="h-px w-8 bg-foreground/30"></div>
@@ -245,7 +245,7 @@ const Page = () => {
           </div>
         </section>
       </main>
-      <footer className="py-6 md:py-8">
+      <footer className="py-6 md:py-8 animate-on-load animate-fade-in animate-delay-700">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.
