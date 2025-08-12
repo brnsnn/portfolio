@@ -107,17 +107,12 @@ const Page = () => {
         </div>
       </header>
       <main className="flex-1 pt-16">
-        <section className="container py-20 md:py-32 animate-on-load animate-fade-in-up animate-delay-200">
+        <section className="container py-12 md:py-16 animate-on-load animate-fade-in-up animate-delay-200">
           <div className="max-w-4xl" style={{ width: "110%" }}>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight mb-6">
               Senior Product Designer who builds accessible digital products and scalable design systems that earn
               stakeholder buy-in and align with production realities.
             </h1>
-            <div>
-              <Button asChild className="rounded-md" size="lg">
-                <Link href="#work">View My Work</Link>
-              </Button>
-            </div>
           </div>
         </section>
 
