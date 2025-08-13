@@ -92,13 +92,13 @@ const Page = () => {
             </Link>
             <div className="flex items-center gap-6">
               <nav className="flex gap-4 md:gap-6">
-                <Link href="#work" className="text-xs md:text-sm font-medium hover:text-primary">
+                <Link href="#work" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce">
                   Work
                 </Link>
-                <Link href="#about" className="text-xs md:text-sm font-medium hover:text-primary">
+                <Link href="#about" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce">
                   About
                 </Link>
-                <Link href="#contact" className="text-xs md:text-sm font-medium hover:text-primary">
+                <Link href="#contact" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce">
                   Contact
                 </Link>
               </nav>
