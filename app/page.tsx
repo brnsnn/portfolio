@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { RecommendationsCarousel } from "@/components/recommendations-carousel"
+import { AnimatedName } from "@/components/animated-name"
 
 const Page = () => {
   const caseStudies = [
@@ -87,7 +88,7 @@ const Page = () => {
         <div className="container py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="font-medium">
-              <span>Bronson Lee</span>
+              <AnimatedName />
             </Link>
             <div className="flex items-center gap-6">
               <nav className="hidden md:flex gap-6">

@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { AnimatedName } from "@/components/animated-name"
 
 export default function HealthcareCaseStudy() {
   return (
@@ -11,7 +12,7 @@ export default function HealthcareCaseStudy() {
         <div className="container py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="font-medium">
-              <span>Bronson Lee</span>
+              <AnimatedName />
             </Link>
             <div className="flex items-center gap-6">
               <nav className="hidden md:flex gap-6">
