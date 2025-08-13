@@ -111,7 +111,7 @@ const Page = () => {
         </div>
       </header>
       <main className="flex-1 pt-16">
-        <section className="container py-12 md:py-8 animate-on-load animate-fade-in-up animate-delay-200">
+        <section className="container pt-20 md:pt-24 pb-4 md:pb-6 animate-on-load animate-fade-in-up animate-delay-200">
           <div className="max-w-4xl" style={{ width: "110%" }}>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight mb-6">
               Senior Product Designer who builds accessible digital products and scalable design systems that earn
@@ -120,7 +120,7 @@ const Page = () => {
           </div>
         </section>
 
-        <section id="work" className="py-8 animate-on-load animate-fade-in-up animate-delay-300">
+        <section id="work" className="pt-4 pb-8 animate-on-load animate-fade-in-up animate-delay-300">
           <div className="container">
             <div className="flex items-center gap-2 mb-12">
               <div className="h-px w-8 bg-foreground/30"></div>
