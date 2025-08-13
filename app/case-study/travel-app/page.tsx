@@ -16,13 +16,13 @@ export default function TravelAppCaseStudy() {
             </Link>
             <div className="flex items-center gap-6">
               <nav className="hidden md:flex gap-6">
-                <Link href="/#work" className="text-sm font-medium hover:text-primary">
+                <Link href="/#work" className="text-sm font-medium hover:text-primary nav-bounce">
                   Work
                 </Link>
-                <Link href="/#about" className="text-sm font-medium hover:text-primary">
+                <Link href="/#about" className="text-sm font-medium hover:text-primary nav-bounce">
                   About
                 </Link>
-                <Link href="/#contact" className="text-sm font-medium hover:text-primary">
+                <Link href="/#contact" className="text-sm font-medium hover:text-primary nav-bounce">
                   Contact
                 </Link>
               </nav>
