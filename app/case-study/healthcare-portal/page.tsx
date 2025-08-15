@@ -20,7 +20,7 @@ export default function HealthcareCaseStudy() {
               <Link href="/#about" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce px-2 py-1">
                 About
               </Link>
-              <Link href="/#contact" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce px-2 py-1">
+              <Link href="/#contact" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce pl-2 py-1">
                 Contact
               </Link>
             </nav>
