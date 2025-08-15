@@ -35,7 +35,7 @@ export default function CheckoutCaseStudy() {
             <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight max-w-4xl">
-            E-commerce Checkout Flow
+            0-1 design system for a web3 gaming community
           </h1>
         </section>
 
@@ -44,7 +44,7 @@ export default function CheckoutCaseStudy() {
           <div className="w-full aspect-[21/9] relative">
             <Image
               src="/placeholder.svg?height=900&width=1900"
-              alt="E-commerce Checkout Flow Hero"
+              alt="0-1 design system for a web3 gaming community Hero"
               fill
               className="object-cover rounded-lg"
               priority

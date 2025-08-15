@@ -35,7 +35,7 @@ export default function HealthcareCaseStudy() {
             <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight max-w-4xl">
-            Healthcare Patient Portal
+            100,000+ views supporting high-risk HIV protection efforts
           </h1>
         </section>
 
@@ -44,7 +44,7 @@ export default function HealthcareCaseStudy() {
           <div className="w-full aspect-[21/9] relative">
             <Image
               src="/placeholder.svg?height=900&width=1900"
-              alt="Healthcare Patient Portal Hero"
+              alt="Chill Pill HIV Protection Campaign Hero"
               fill
               className="object-cover rounded-lg"
               priority
