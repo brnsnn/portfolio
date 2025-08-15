@@ -37,11 +37,6 @@ export function RecommendationsCarousel({ recommendations }: RecommendationsCaro
     })
   }
 
-  const truncateText = (text: string, maxLength = 140) => {
-    if (text.length <= maxLength) return text
-    return text.substring(0, maxLength).trim() + "..."
-  }
-
   const goToPrevious = () => {
     setCurrentPage((prev) => Math.max(0, prev - 1))
   }
@@ -72,7 +67,9 @@ export function RecommendationsCarousel({ recommendations }: RecommendationsCaro
                   .map((recommendation, index) => {
                     const cardId = `${pageIndex}-${index}`
                     const isExpanded = expandedCards.has(cardId)
-                    const needsTruncation = recommendation.quote.length > 140
+                    const textLines = recommendation.quote.split("\n").length
+                    const estimatedLines = Math.ceil(recommendation.quote.length / 80) // Rough estimate based on average characters per line
+                    const needsTruncation = estimatedLines > 3
 
                     return (
                       <div
@@ -88,10 +85,13 @@ export function RecommendationsCarousel({ recommendations }: RecommendationsCaro
                             <p className="text-sm text-muted-foreground">{recommendation.position}</p>
                           </div>
                           <div className="flex-grow flex flex-col">
-                            <p className="text-muted-foreground flex-grow">
-                              {isExpanded || !needsTruncation
-                                ? recommendation.quote
-                                : truncateText(recommendation.quote)}
+                            <p
+                              className={cn(
+                                "text-muted-foreground flex-grow",
+                                !isExpanded && needsTruncation && "line-clamp-3",
+                              )}
+                            >
+                              {recommendation.quote}
                             </p>
                             {needsTruncation && (
                               <button
