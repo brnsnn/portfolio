@@ -89,14 +89,14 @@ const Page = () => {
             <Link href="/" className="font-medium">
               <AnimatedName />
             </Link>
-            <nav className="flex gap-4 md:gap-6">
+            <nav className="flex gap-4 md:gap-6 ml-auto">
               <Link href="#work" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce px-2 py-1">
                 Work
               </Link>
               <Link href="#about" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce px-2 py-1">
                 About
               </Link>
-              <Link href="#contact" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce px-2 py-1">
+              <Link href="#contact" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce pl-2 py-1">
                 Contact
               </Link>
             </nav>
