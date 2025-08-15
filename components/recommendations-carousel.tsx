@@ -77,7 +77,10 @@ export function RecommendationsCarousel({ recommendations }: RecommendationsCaro
                     return (
                       <div
                         key={`recommendation-${cardId}`}
-                        className="bg-background border border-border rounded-lg p-6 shadow-sm h-[200px] flex flex-col"
+                        className={cn(
+                          "bg-background border border-border rounded-lg p-6 shadow-sm flex flex-col",
+                          isExpanded ? "min-h-[200px]" : "h-[200px]",
+                        )}
                       >
                         <div className="space-y-4 h-full flex flex-col">
                           <div>

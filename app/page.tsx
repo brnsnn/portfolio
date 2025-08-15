@@ -41,14 +41,14 @@ const Page = () => {
       name: "Marissa Goodman",
       position: "UX Designer at Tech Fleet",
       quote:
-        "Bronson was a lead for the UX Design team I worked with on the Philly Truce project, and he was an encouraging and supportive leader who fostered collaboration both within our team and cross-functionally. He created an environment where we felt comfortable asking questions and learning from each other, strengthening our team and leading to thoughtful, user-centric solutions. Bronson is also deeply curious and continuously seeks to learn and grow. Throughout our project, he took the time to expand his own knowledge and generously shared insights with the team, helping us all improve as designers. His attention to detail, drive, and dedication to the craft make him an asset to any UX team. I highly recommend him as a UX Designer and would love the chance to work with him again!",
+        "Bronson was a lead for the UX Design team I worked with on the Philly Truce project, and he was an encouraging and supportive leader who fostered collaboration both within our team... and cross-functionally. He created an environment where we felt comfortable asking questions and learning from each other, strengthening our team and leading to thoughtful, user-centric solutions. Bronson is also deeply curious and continuously seeks to learn and grow. Throughout our project, he took the time to expand his own knowledge and generously shared insights with the team, helping us all improve as designers. His attention to detail, drive, and dedication to the craft make him an asset to any UX team. I highly recommend him as a UX Designer and would love the chance to work with him again!",
       avatar: "/placeholder.svg?height=100&width=100",
     },
     {
       name: "Eddie Farfan",
       position: "Project Strategist",
       quote:
-        "I worked with Bronson on the Philly Truce project as he was our Lead UX Designer, where they excelled at aligning UX strategy with business goals. They collaborated effectively across UX, strategy, and PM teams, translating complex challenges into intuitive solutions. Their ability to navigate ambiguity and deliver in a fast-paced environment was impressive. Bronson brought clarity and focus to every project, making them a valuable asset to any team!",
+        "I worked with Bronson on the Philly Truce project as he was our Lead UX Designer, where they excelled at aligning UX strategy with business goals. They collaborated effectively across UX,... strategy, and PM teams, translating complex challenges into intuitive solutions. Their ability to navigate ambiguity and deliver in a fast-paced environment was impressive. Bronson brought clarity and focus to every project, making them a valuable asset to any team!",
       avatar: "/placeholder.svg?height=100&width=100",
     },
     {
