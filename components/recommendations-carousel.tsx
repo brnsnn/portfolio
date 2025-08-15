@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useRef } from "react"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -19,11 +18,29 @@ interface RecommendationsCarouselProps {
 
 export function RecommendationsCarousel({ recommendations }: RecommendationsCarouselProps) {
   const [currentPage, setCurrentPage] = useState(0)
+  const [expandedCards, setExpandedCards] = useState<Set<string>>(new Set())
   const carouselRef = useRef<HTMLDivElement>(null)
 
   // Always show 2 cards at a time
   const cardsPerPage = 2
   const totalPages = Math.ceil(recommendations.length / cardsPerPage)
+
+  const toggleExpanded = (cardId: string) => {
+    setExpandedCards((prev) => {
+      const newSet = new Set(prev)
+      if (newSet.has(cardId)) {
+        newSet.delete(cardId)
+      } else {
+        newSet.add(cardId)
+      }
+      return newSet
+    })
+  }
+
+  const truncateText = (text: string, maxLength = 140) => {
+    if (text.length <= maxLength) return text
+    return text.substring(0, maxLength).trim() + "..."
+  }
 
   const goToPrevious = () => {
     setCurrentPage((prev) => Math.max(0, prev - 1))
@@ -52,32 +69,40 @@ export function RecommendationsCarousel({ recommendations }: RecommendationsCaro
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {recommendations
                   .slice(pageIndex * cardsPerPage, (pageIndex + 1) * cardsPerPage)
-                  .map((recommendation, index) => (
-                    <div
-                      key={`recommendation-${pageIndex}-${index}`}
-                      className="bg-background border border-border rounded-lg p-6 shadow-sm h-full"
-                    >
-                      <div className="space-y-4 h-full flex flex-col">
-                        <div className="flex items-center gap-4">
-                          <div className="relative h-12 w-12 overflow-hidden rounded-full bg-muted">
-                            {recommendation.avatar && (
-                              <Image
-                                src={recommendation.avatar || "/placeholder.svg"}
-                                alt={recommendation.name}
-                                fill
-                                className="object-cover"
-                              />
-                            )}
-                          </div>
+                  .map((recommendation, index) => {
+                    const cardId = `${pageIndex}-${index}`
+                    const isExpanded = expandedCards.has(cardId)
+                    const needsTruncation = recommendation.quote.length > 140
+
+                    return (
+                      <div
+                        key={`recommendation-${cardId}`}
+                        className="bg-background border border-border rounded-lg p-6 shadow-sm h-[200px] flex flex-col"
+                      >
+                        <div className="space-y-4 h-full flex flex-col">
                           <div>
                             <h3 className="font-medium">{recommendation.name}</h3>
                             <p className="text-sm text-muted-foreground">{recommendation.position}</p>
                           </div>
+                          <div className="flex-grow flex flex-col">
+                            <p className="text-muted-foreground flex-grow">
+                              {isExpanded || !needsTruncation
+                                ? recommendation.quote
+                                : truncateText(recommendation.quote)}
+                            </p>
+                            {needsTruncation && (
+                              <button
+                                onClick={() => toggleExpanded(cardId)}
+                                className="text-primary text-sm hover:underline mt-2 self-start"
+                              >
+                                {isExpanded ? "Read less" : "Read more"}
+                              </button>
+                            )}
+                          </div>
                         </div>
-                        <p className="italic text-muted-foreground flex-grow">"{recommendation.quote}"</p>
                       </div>
-                    </div>
-                  ))}
+                    )
+                  })}
               </div>
             </div>
           ))}
