@@ -75,7 +75,7 @@ export function RecommendationsCarousel({ recommendations }: RecommendationsCaro
                       <div
                         key={`recommendation-${cardId}`}
                         className={cn(
-                          "bg-background border border-border rounded-lg p-6 shadow-sm flex flex-col",
+                          "bg-background border border-border rounded-lg p-6 shadow-sm flex flex-col transition-all duration-300 ease-in-out",
                           isExpanded ? "min-h-[200px]" : "h-[200px]",
                         )}
                       >
@@ -87,7 +87,7 @@ export function RecommendationsCarousel({ recommendations }: RecommendationsCaro
                           <div className="flex-grow flex flex-col">
                             <p
                               className={cn(
-                                "text-muted-foreground flex-grow",
+                                "text-muted-foreground flex-grow transition-all duration-300 ease-in-out",
                                 !isExpanded && needsTruncation && "line-clamp-3",
                               )}
                             >
@@ -96,7 +96,7 @@ export function RecommendationsCarousel({ recommendations }: RecommendationsCaro
                             {needsTruncation && (
                               <button
                                 onClick={() => toggleExpanded(cardId)}
-                                className="text-primary text-sm hover:underline mt-2 self-start"
+                                className="text-primary text-sm hover:underline mt-2 self-start transition-colors duration-200"
                               >
                                 {isExpanded ? "Read less" : "Read more"}
                               </button>
