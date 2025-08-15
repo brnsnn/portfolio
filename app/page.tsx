@@ -11,7 +11,13 @@ import { AnimatedName } from "@/components/animated-name"
 const Page = () => {
   const caseStudies = [
     {
-      title: "Reducing Violence with a Mobile Web App by Improving Record-Keeping Accuracy by 15%",
+      title: "Design System for a Peace-Building Platform to Reduce Violence by 50%",
+      description: "Philly Truce",
+      image: "/placeholder.svg?height=400&width=600",
+      caseStudyUrl: "/case-study/travel-app",
+    },
+    {
+      title: "Reducing violence by improving record-keeping accuracy by 15%",
       description: "Philly Truce",
       image: "/placeholder.svg?height=400&width=600",
       caseStudyUrl: "/case-study/philly-truce",
@@ -27,12 +33,6 @@ const Page = () => {
       description: "Chill Pill",
       image: "/placeholder.svg?height=400&width=600",
       caseStudyUrl: "/case-study/healthcare-portal",
-    },
-    {
-      title: "Travel App Redesign",
-      description: "Reimagining a travel booking experience to make planning trips more intuitive and enjoyable.",
-      image: "/placeholder.svg?height=400&width=600",
-      caseStudyUrl: "/case-study/travel-app",
     },
   ]
 

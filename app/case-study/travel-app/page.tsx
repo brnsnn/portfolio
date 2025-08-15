@@ -34,7 +34,9 @@ export default function TravelAppCaseStudy() {
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight max-w-4xl">Travel App Redesign</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight max-w-4xl">
+            Design System for a Peace-Building Platform to Reduce Violence by 50%
+          </h1>
         </section>
 
         {/* Hero Image */}
@@ -42,7 +44,7 @@ export default function TravelAppCaseStudy() {
           <div className="w-full aspect-[21/9] relative">
             <Image
               src="/placeholder.svg?height=900&width=1900"
-              alt="Travel App Redesign Hero"
+              alt="Design System for Peace-Building Platform Hero"
               fill
               className="object-cover rounded-lg"
               priority
