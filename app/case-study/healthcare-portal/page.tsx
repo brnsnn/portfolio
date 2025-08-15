@@ -2,7 +2,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
-import { ThemeToggle } from "@/components/theme-toggle"
 import { AnimatedName } from "@/components/animated-name"
 
 export default function HealthcareCaseStudy() {
@@ -14,20 +13,17 @@ export default function HealthcareCaseStudy() {
             <Link href="/" className="font-medium">
               <AnimatedName />
             </Link>
-            <div className="flex items-center gap-6">
-              <nav className="hidden md:flex gap-6">
-                <Link href="/#work" className="text-sm font-medium hover:text-primary nav-bounce">
-                  Work
-                </Link>
-                <Link href="/#about" className="text-sm font-medium hover:text-primary nav-bounce">
-                  About
-                </Link>
-                <Link href="/#contact" className="text-sm font-medium hover:text-primary nav-bounce">
-                  Contact
-                </Link>
-              </nav>
-              <ThemeToggle />
-            </div>
+            <nav className="flex gap-4 md:gap-6">
+              <Link href="/#work" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce px-2 py-1">
+                Work
+              </Link>
+              <Link href="/#about" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce px-2 py-1">
+                About
+              </Link>
+              <Link href="/#contact" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce px-2 py-1">
+                Contact
+              </Link>
+            </nav>
           </div>
         </div>
       </header>
