@@ -46,37 +46,37 @@ const Page = () => {
     },
     {
       name: "Eddie Farfan",
-      position: "Project Strategist",
+      position: "Product Strategist at Tech Fleet",
       quote:
         "I worked with Bronson on the Philly Truce project as he was our Lead UX Designer, where they excelled at aligning UX strategy with business goals. They collaborated effectively across UX,... strategy, and PM teams, translating complex challenges into intuitive solutions. Their ability to navigate ambiguity and deliver in a fast-paced environment was impressive. Bronson brought clarity and focus to every project, making them a valuable asset to any team!",
       avatar: "/placeholder.svg?height=100&width=100",
     },
     {
-      name: "Michael Chen",
-      position: "Lead Developer at E-Shop",
+      name: "Alma Halilovic",
+      position: "UX Designer at Tech Fleet",
       quote:
-        "Bronson's checkout flow redesign was brilliant. He collaborated seamlessly with our development team and delivered a solution that reduced cart abandonment by 25%.",
+        "I had the pleasure of working with Bronson for the Philly Truce project under Tech Fleet and cannot sing his praises enough. On top of being an empathetic and understanding leader- Bronson is a talented creative. His adaptability and flexibility to pivot when necessary, along with his keen eye for design, truly helped move our project forward. He went above and beyond and always had time to answer any questions we had- making sure that we were aligned with the stakeholders needs. Throughout our time working together, he ensured that every team member felt heard and valued. His passion for impactful design was contagious and made him such a joy to work with. Any employer would be lucky to have him on their team!",
       avatar: "/placeholder.svg?height=100&width=100",
     },
     {
-      name: "Emily Rodriguez",
-      position: "Marketing Director at TravelEase",
+      name: "James Phuong",
+      position: "UX Designer at Tech Fleet",
       quote:
-        "The travel app redesign exceeded our expectations. Bronson has a unique talent for creating designs that are both beautiful and functional.",
+        "Bronson's work on our complex Tech Fleet project left a lasting impression. He consistently pushed the boundaries of his position, experimenting with diverse design variations that sparked innovative ideas. His curiosity and willingness to explore new ideas added tremendous value to the project. What truly stood out was his ability to quickly implement design updates and iterate based on detailed research findings. His speed and efficiency were remarkable, especially given the tight deadlines that we faced. Thanks to his dedication, we were able to achieve a great deal more in a short timeframe than I initially thought was possible. Bronson's creativity, strong work ethic, and commitment to user-centered design make him an exceptional asset to any team. I wholeheartedly recommend him to any employer seeking a driven and forward-thinking UX designer.",
       avatar: "/placeholder.svg?height=100&width=100",
     },
     {
-      name: "David Kim",
-      position: "UX Lead at FinanceApp",
+      name: "Jenise Absher",
+      position: "UX Consultant at ProPoint Software",
       quote:
-        "Bronson's design thinking and problem-solving skills are exceptional. He consistently delivers work that balances user needs with business goals.",
+        "I highly recommend Bronson as a UX designer. His critical thinking skills shine as he delves deep into understanding user needs. Bronson's communication is top-notch. His contributions to our design system, visual styles and mobile responsive form design, were invaluable. A true team player and excellent visual designer, Bronson is enjoyable to work with and a significant asset to any team.",
       avatar: "/placeholder.svg?height=100&width=100",
     },
     {
-      name: "Lisa Thompson",
-      position: "Startup Founder",
+      name: "Emilia Myrup",
+      position: "Project Manager at Elitappar",
       quote:
-        "As a startup founder, I needed a designer who could wear multiple hats. Bronson delivered a comprehensive design system that has scaled with our growth.",
+        "Bronson created the UX Design for our first app and did an amazing job. Working with Bronson was a delight as he is a great communicator and very flexible to work with. I would strongly recommend him!",
       avatar: "/placeholder.svg?height=100&width=100",
     },
   ]

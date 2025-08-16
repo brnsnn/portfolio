@@ -18,7 +18,7 @@ interface RecommendationsCarouselProps {
 
 export function RecommendationsCarousel({ recommendations }: RecommendationsCarouselProps) {
   const [currentPage, setCurrentPage] = useState(0)
-  const [expandedCards, setExpandedCards] = useState<Set<string>>(new Set())
+  const [expandedCard, setExpandedCard] = useState<string | null>(null)
   const carouselRef = useRef<HTMLDivElement>(null)
 
   // Always show 2 cards at a time
@@ -26,14 +26,11 @@ export function RecommendationsCarousel({ recommendations }: RecommendationsCaro
   const totalPages = Math.ceil(recommendations.length / cardsPerPage)
 
   const toggleExpanded = (cardId: string) => {
-    setExpandedCards((prev) => {
-      const newSet = new Set(prev)
-      if (newSet.has(cardId)) {
-        newSet.delete(cardId)
-      } else {
-        newSet.add(cardId)
+    setExpandedCard((prev) => {
+      if (prev === cardId) {
+        return null
       }
-      return newSet
+      return cardId
     })
   }
 
@@ -66,7 +63,7 @@ export function RecommendationsCarousel({ recommendations }: RecommendationsCaro
                   .slice(pageIndex * cardsPerPage, (pageIndex + 1) * cardsPerPage)
                   .map((recommendation, index) => {
                     const cardId = `${pageIndex}-${index}`
-                    const isExpanded = expandedCards.has(cardId)
+                    const isExpanded = expandedCard === cardId
                     const textLines = recommendation.quote.split("\n").length
                     const estimatedLines = Math.ceil(recommendation.quote.length / 80) // Rough estimate based on average characters per line
                     const needsTruncation = estimatedLines > 3
@@ -75,9 +72,13 @@ export function RecommendationsCarousel({ recommendations }: RecommendationsCaro
                       <div
                         key={`recommendation-${cardId}`}
                         className={cn(
-                          "bg-background border border-border rounded-lg p-6 shadow-sm flex flex-col transition-all duration-300 ease-in-out",
+                          "bg-background border border-border rounded-lg p-6 shadow-sm flex flex-col transition-all duration-500 ease-out transform-gpu",
                           isExpanded ? "min-h-[200px]" : "h-[200px]",
                         )}
+                        style={{
+                          maxHeight: isExpanded ? "1000px" : "200px",
+                          overflow: "hidden",
+                        }}
                       >
                         <div className="space-y-4 h-full flex flex-col">
                           <div>
@@ -87,7 +88,7 @@ export function RecommendationsCarousel({ recommendations }: RecommendationsCaro
                           <div className="flex-grow flex flex-col">
                             <p
                               className={cn(
-                                "text-muted-foreground flex-grow transition-all duration-300 ease-in-out",
+                                "text-muted-foreground flex-grow transition-all duration-500 ease-out",
                                 !isExpanded && needsTruncation && "line-clamp-3",
                               )}
                             >
@@ -96,7 +97,7 @@ export function RecommendationsCarousel({ recommendations }: RecommendationsCaro
                             {needsTruncation && (
                               <button
                                 onClick={() => toggleExpanded(cardId)}
-                                className="text-primary text-sm mt-2 self-start transition-colors duration-200 hover:text-primary/80"
+                                className="text-primary text-sm mt-2 self-start transition-all duration-300 ease-out hover:text-primary/80 hover:scale-105"
                               >
                                 {isExpanded ? "Read less" : "Read more"}
                               </button>
