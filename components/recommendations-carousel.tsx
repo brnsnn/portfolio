@@ -96,7 +96,7 @@ export function RecommendationsCarousel({ recommendations }: RecommendationsCaro
                             {needsTruncation && (
                               <button
                                 onClick={() => toggleExpanded(cardId)}
-                                className="text-primary text-sm hover:underline mt-2 self-start transition-colors duration-200"
+                                className="text-primary text-sm mt-2 self-start transition-colors duration-200 hover:text-primary/80"
                               >
                                 {isExpanded ? "Read less" : "Read more"}
                               </button>
