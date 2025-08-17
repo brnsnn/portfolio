@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { AnimatedName } from "@/components/animated-name"
 
-export default function BankingCaseStudy() {
+export default function SoulboundCaseStudy() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-on-load animate-fade-in">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="font-medium">
@@ -29,22 +29,21 @@ export default function BankingCaseStudy() {
       </header>
 
       <main className="flex-1 pt-16">
-        <section className="container py-12 md:py-20 animate-on-load animate-fade-in-up animate-delay-200">
+        <section className="container py-12 md:py-20">
           <div className="flex items-center gap-2 mb-8">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight max-w-4xl">
-            Reducing Violence with a Mobile Web App by Improving Record-Keeping Accuracy by 15%
+            0-1 design system for a web3 gaming community
           </h1>
         </section>
 
-        {/* Hero Image */}
-        <div className="container mb-16 animate-on-load animate-fade-in-up animate-delay-300">
+        <div className="container mb-16">
           <div className="w-full aspect-[21/9] relative">
             <Image
-              src="/placeholder.svg?height=900&width=1900"
-              alt="Mobile Banking App Hero"
+              src="/web3-gaming-community-design-system.png"
+              alt="Soulbound web3 gaming community design system"
               fill
               className="object-cover rounded-lg"
               priority
@@ -52,8 +51,7 @@ export default function BankingCaseStudy() {
           </div>
         </div>
 
-        {/* Project Details */}
-        <div className="container animate-on-load animate-fade-in-up animate-delay-400">
+        <div className="container">
           <div className="max-w-[800px] mx-auto grid md:grid-cols-2 gap-12 mb-20">
             <div>
               <div className="flex items-center gap-2 mb-4">
@@ -61,63 +59,56 @@ export default function BankingCaseStudy() {
                 <span className="text-sm font-medium text-foreground/60">PROJECT OVERVIEW</span>
               </div>
               <p className="text-muted-foreground mb-4">
-                I worked with a team of five designers to enhance usability, improving record accuracy by 15%,
-                streamlining operations, and strengthening community safety efforts.
+                Built a scalable design system for Soulbound, enabling consistent user experiences across the web3
+                gaming ecosystem while supporting rapid feature development.
               </p>
               <p className="text-muted-foreground">
-                Our goal was to create an intuitive, modern banking experience that would make financial management
-                easier and more accessible for all users.
+                The system established visual patterns, reusable components, and clear guidelines that transformed how
+                the team approached design and development.
               </p>
             </div>
             <div className="space-y-8">
               <div>
                 <h3 className="mb-2">Scope</h3>
-                <p className="text-muted-foreground">
-                  Redesigned the Incident Report Management Platform (IRMP) to enhance usability and improve accurate
-                  record-keeping.
-                </p>
+                <p className="text-muted-foreground">Design System, Component Library, Visual Design</p>
               </div>
               <div>
                 <h3 className="mb-2">My Role</h3>
-                <p className="text-muted-foreground">UX Designer</p>
+                <p className="text-muted-foreground">Lead UX Designer</p>
               </div>
               <div>
                 <h3 className="mb-2">Team</h3>
-                <p className="text-muted-foreground">
-                  2 Lead UX Designers, 3 UX Designers, UX Research, Developers, 1 Project Manager
-                </p>
+                <p className="text-muted-foreground">2 UX Designers, 3 Developers, 1 Product Manager</p>
               </div>
               <div>
                 <h3 className="mb-2">Timeline</h3>
-                <p className="text-muted-foreground">3 months</p>
+                <p className="text-muted-foreground">4 months</p>
               </div>
             </div>
           </div>
 
-          {/* Problem */}
-          <div className="max-w-[800px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-500">
+          <div className="max-w-[800px] mx-auto mb-16">
             <div className="flex items-center gap-2 mb-6">
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
             </div>
             <p className="text-muted-foreground mb-8">
-              Peace patrol officers in Philadelphia struggled with inaccurate and inconsistent record-keeping, making it
-              difficult to track interventions and measure impact effectively. The existing system lacked usability,
-              efficiency, and reliability, leading to operational inefficiencies and missed opportunities for violence
-              prevention.
+              The web3 gaming community lacked a cohesive design language, resulting in inconsistent user experiences
+              and slow development cycles. Without established design patterns, the team struggled to maintain visual
+              consistency while scaling the platform. This led to fragmented user experiences and increased development
+              time as designers and developers had to recreate components from scratch.
             </p>
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=450&width=800"
-                alt="Banking app problems visualization"
+                src="/web3-gaming-design-problems.png"
+                alt="Web3 gaming design system problems visualization"
                 fill
                 className="object-cover"
               />
             </div>
           </div>
 
-          {/* Solution */}
-          <div className="max-w-[800px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-600">
+          <div className="max-w-[800px] mx-auto mb-16">
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
                 <div className="flex items-center gap-2 mb-6">
@@ -127,33 +118,30 @@ export default function BankingCaseStudy() {
               </div>
               <div>
                 <p className="text-muted-foreground mb-4">
-                  The app focused on improving usability, streamlining workflows, and enhancing record-keeping accuracy.
-                  Through close collaboration with a team of designers, we optimized the app's interface, making it
-                  intuitive and efficient. The redesign resulted in a 15% improvement in record accuracy, enabling
-                  officers to better track interventions, strengthen community safety efforts, and enhance overall
-                  operational efficiency.
+                  We developed a comprehensive design system that established consistent visual patterns, reusable
+                  components, and clear guidelines for the web3 gaming experience. The system included a complete
+                  component library, design tokens, and documentation.
                 </p>
                 <p className="text-muted-foreground">
-                  We implemented a card-based UI that allows users to quickly access their most-used features, along
-                  with data visualization for spending patterns and budget tracking.
+                  The design system enabled faster development cycles, improved consistency across all touchpoints, and
+                  provided a foundation for scaling the platform while maintaining high-quality user experiences.
                 </p>
               </div>
             </div>
 
-            {/* Images */}
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div className="aspect-square relative rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Banking app dashboard"
+                  src="/web3-gaming-design-tokens.png"
+                  alt="Design tokens and color system"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="aspect-square relative rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Banking app transactions"
+                  src="/web3-gaming-components.png"
+                  alt="Component library showcase"
                   fill
                   className="object-cover"
                 />
@@ -162,8 +150,8 @@ export default function BankingCaseStudy() {
 
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6">
               <Image
-                src="/placeholder.svg?height=450&width=800"
-                alt="Banking app features overview"
+                src="/web3-gaming-design-system.png"
+                alt="Design system documentation"
                 fill
                 className="object-cover"
               />
@@ -171,20 +159,10 @@ export default function BankingCaseStudy() {
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               <div className="aspect-square relative rounded-lg overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Banking app budget feature"
-                  fill
-                  className="object-cover"
-                />
+                <Image src="/web3-gaming-ui.png" alt="UI patterns and layouts" fill className="object-cover" />
               </div>
               <div className="aspect-square relative rounded-lg overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Banking app settings"
-                  fill
-                  className="object-cover"
-                />
+                <Image src="/placeholder-6f4o5.png" alt="Responsive design system" fill className="object-cover" />
               </div>
             </div>
 
@@ -196,8 +174,7 @@ export default function BankingCaseStudy() {
           </div>
         </div>
 
-        {/* More Case Studies */}
-        <div className="bg-muted py-16 animate-on-load animate-fade-in-up animate-delay-700">
+        <div className="bg-muted py-16">
           <div className="container">
             <div className="flex items-center gap-2 mb-8">
               <div className="h-px w-8 bg-foreground/30"></div>
@@ -219,11 +196,11 @@ export default function BankingCaseStudy() {
                     />
                   </div>
                   <div className="p-4">
-                    <h3 className="font-medium text-lg mb-1 transition-colors duration-500 ease-in-out">
+                    <h3 className="font-normal text-lg mb-1 transition-colors duration-500 ease-in-out">
                       {project.title}
                     </h3>
                     <p className="text-muted-foreground text-sm mb-2">{project.subtitle}</p>
-                    <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center text-muted-foreground">
+                    <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center text-sm text-muted-foreground">
                       View Case Study
                       <ArrowRight className="ml-1 h-3 w-3" />
                     </div>
@@ -235,7 +212,7 @@ export default function BankingCaseStudy() {
         </div>
       </main>
 
-      <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-700">
+      <footer className="border-t py-6 md:py-8">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.
@@ -254,10 +231,10 @@ const otherCaseStudies = [
     caseStudyUrl: "/case-study/benchmark",
   },
   {
-    title: "0-1 design system for a web3 gaming community",
-    subtitle: "Soulbound",
+    title: "Reducing violence by improving record-keeping accuracy by 15%",
+    subtitle: "Philly Truce",
     image: "/placeholder.svg?height=400&width=600",
-    caseStudyUrl: "/case-study/soulbound",
+    caseStudyUrl: "/case-study/philly-truce",
   },
   {
     title: "100,000+ views supporting high-risk HIV protection efforts",

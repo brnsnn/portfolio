@@ -14,7 +14,13 @@ const Page = () => {
       title: "Design System for a Peace-Building Platform to Reduce Violence by 50%",
       description: "Philly Truce",
       image: "/placeholder.svg?height=400&width=600",
-      caseStudyUrl: "/case-study/travel-app",
+      caseStudyUrl: "/case-study/benchmark",
+    },
+    {
+      title: "Improving Community Safety with a Routes Feature",
+      description: "Philly Truce",
+      image: "/placeholder.svg?height=400&width=600",
+      caseStudyUrl: "/case-study/routes-feature",
     },
     {
       title: "Reducing violence by improving record-keeping accuracy by 15%",
@@ -32,7 +38,7 @@ const Page = () => {
       title: "100,000+ views supporting high-risk HIV protection efforts",
       description: "Chill Pill",
       image: "/placeholder.svg?height=400&width=600",
-      caseStudyUrl: "/case-study/healthcare-portal",
+      caseStudyUrl: "/case-study/chill-pill",
     },
   ]
 

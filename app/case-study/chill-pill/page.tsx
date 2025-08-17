@@ -216,6 +216,7 @@ export default function HealthcareCaseStudy() {
                     <h3 className="font-medium text-lg mb-1 transition-colors duration-500 ease-in-out">
                       {project.title}
                     </h3>
+                    <p className="text-muted-foreground text-sm mb-2">{project.subtitle}</p>
                     <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center text-muted-foreground">
                       View Case Study
                       <ArrowRight className="ml-1 h-3 w-3" />
@@ -241,18 +242,21 @@ export default function HealthcareCaseStudy() {
 
 const otherCaseStudies = [
   {
-    title: "Reducing Violence with a Mobile Web App",
+    title: "Design System for a Peace-Building Platform to Reduce Violence by 50%",
+    subtitle: "Philly Truce",
+    image: "/placeholder.svg?height=400&width=600",
+    caseStudyUrl: "/case-study/benchmark",
+  },
+  {
+    title: "Reducing violence by improving record-keeping accuracy by 15%",
+    subtitle: "Philly Truce",
     image: "/placeholder.svg?height=400&width=600",
     caseStudyUrl: "/case-study/philly-truce",
   },
   {
-    title: "E-commerce Checkout Flow",
+    title: "0-1 design system for a web3 gaming community",
+    subtitle: "Soulbound",
     image: "/placeholder.svg?height=400&width=600",
-    caseStudyUrl: "/case-study/checkout-flow",
-  },
-  {
-    title: "Travel App Redesign",
-    image: "/placeholder.svg?height=400&width=600",
-    caseStudyUrl: "/case-study/travel-app",
+    caseStudyUrl: "/case-study/soulbound",
   },
 ]

@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { AnimatedName } from "@/components/animated-name"
 
-export default function BankingCaseStudy() {
+export default function RoutesFeaturePage() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-on-load animate-fade-in">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="font-medium">
@@ -29,22 +29,22 @@ export default function BankingCaseStudy() {
       </header>
 
       <main className="flex-1 pt-16">
-        <section className="container py-12 md:py-20 animate-on-load animate-fade-in-up animate-delay-200">
+        <section className="container py-12 md:py-20">
           <div className="flex items-center gap-2 mb-8">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight max-w-4xl">
-            Reducing Violence with a Mobile Web App by Improving Record-Keeping Accuracy by 15%
+            Improving Community Safety with a Routes Feature
           </h1>
         </section>
 
         {/* Hero Image */}
-        <div className="container mb-16 animate-on-load animate-fade-in-up animate-delay-300">
+        <div className="container mb-16">
           <div className="w-full aspect-[21/9] relative">
             <Image
-              src="/placeholder.svg?height=900&width=1900"
-              alt="Mobile Banking App Hero"
+              src="/community-safety-app.png"
+              alt="Routes Feature Interface"
               fill
               className="object-cover rounded-lg"
               priority
@@ -52,8 +52,7 @@ export default function BankingCaseStudy() {
           </div>
         </div>
 
-        {/* Project Details */}
-        <div className="container animate-on-load animate-fade-in-up animate-delay-400">
+        <div className="container">
           <div className="max-w-[800px] mx-auto grid md:grid-cols-2 gap-12 mb-20">
             <div>
               <div className="flex items-center gap-2 mb-4">
@@ -61,20 +60,20 @@ export default function BankingCaseStudy() {
                 <span className="text-sm font-medium text-foreground/60">PROJECT OVERVIEW</span>
               </div>
               <p className="text-muted-foreground mb-4">
-                I worked with a team of five designers to enhance usability, improving record accuracy by 15%,
-                streamlining operations, and strengthening community safety efforts.
+                This project involved designing a navigation feature that helps community members find safer routes and
+                avoid high-risk areas. The goal was to integrate community safety data with navigation functionality to
+                empower users to make informed decisions about their travel routes.
               </p>
               <p className="text-muted-foreground">
-                Our goal was to create an intuitive, modern banking experience that would make financial management
-                easier and more accessible for all users.
+                The feature needed to provide multiple route options, highlight safer paths, and allow users to avoid
+                areas with recent incidents while maintaining their privacy and security.
               </p>
             </div>
             <div className="space-y-8">
               <div>
                 <h3 className="mb-2">Scope</h3>
                 <p className="text-muted-foreground">
-                  Redesigned the Incident Report Management Platform (IRMP) to enhance usability and improve accurate
-                  record-keeping.
+                  Community Safety Navigation, Route Planning, User Interface Design
                 </p>
               </div>
               <div>
@@ -89,35 +88,56 @@ export default function BankingCaseStudy() {
               </div>
               <div>
                 <h3 className="mb-2">Timeline</h3>
-                <p className="text-muted-foreground">3 months</p>
+                <p className="text-muted-foreground">4 months</p>
               </div>
             </div>
           </div>
 
-          {/* Problem */}
-          <div className="max-w-[800px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-500">
+          {/* Impact Metrics Section */}
+          <div className="max-w-[800px] mx-auto mb-16">
+            <div className="flex items-center gap-2 mb-6">
+              <div className="h-px w-8 bg-foreground/30"></div>
+              <span className="text-sm font-medium text-foreground/60">IMPACT</span>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-normal mb-2">85%</div>
+                <p className="text-muted-foreground">User adoption rate</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-normal mb-2">40%</div>
+                <p className="text-muted-foreground">Reduction in safety incidents</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-normal mb-2">92%</div>
+                <p className="text-muted-foreground">User satisfaction score</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="max-w-[800px] mx-auto mb-16">
             <div className="flex items-center gap-2 mb-6">
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
             </div>
             <p className="text-muted-foreground mb-8">
-              Peace patrol officers in Philadelphia struggled with inaccurate and inconsistent record-keeping, making it
-              difficult to track interventions and measure impact effectively. The existing system lacked usability,
-              efficiency, and reliability, leading to operational inefficiencies and missed opportunities for violence
-              prevention.
+              Community members needed a way to navigate their neighborhoods safely, avoiding areas with recent
+              incidents or high-risk zones. The existing navigation tools didn't account for community safety data or
+              provide alternative routes based on safety considerations. Without access to real-time safety information
+              and alternative routing options, community members were unable to make informed decisions about their
+              travel routes, potentially putting themselves at risk.
             </p>
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=450&width=800"
-                alt="Banking app problems visualization"
+                src="/community-safety-navigation.png"
+                alt="Community Safety Navigation Problem"
                 fill
                 className="object-cover"
               />
             </div>
           </div>
 
-          {/* Solution */}
-          <div className="max-w-[800px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-600">
+          <div className="max-w-[800px] mx-auto mb-16">
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
                 <div className="flex items-center gap-2 mb-6">
@@ -127,15 +147,14 @@ export default function BankingCaseStudy() {
               </div>
               <div>
                 <p className="text-muted-foreground mb-4">
-                  The app focused on improving usability, streamlining workflows, and enhancing record-keeping accuracy.
-                  Through close collaboration with a team of designers, we optimized the app's interface, making it
-                  intuitive and efficient. The redesign resulted in a 15% improvement in record accuracy, enabling
-                  officers to better track interventions, strengthen community safety efforts, and enhance overall
-                  operational efficiency.
+                  We developed a routes feature that integrates community safety data with navigation functionality. The
+                  feature provides users with multiple route options, highlighting safer paths and allowing them to
+                  avoid areas with recent incidents.
                 </p>
                 <p className="text-muted-foreground">
-                  We implemented a card-based UI that allows users to quickly access their most-used features, along
-                  with data visualization for spending patterns and budget tracking.
+                  Through collaboration with community safety experts and extensive user testing, we created an
+                  intuitive interface that empowers users to make informed decisions about their travel routes while
+                  maintaining their privacy and security.
                 </p>
               </div>
             </div>
@@ -144,16 +163,16 @@ export default function BankingCaseStudy() {
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div className="aspect-square relative rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Banking app dashboard"
+                  src="/community-safety-routes-interface.png"
+                  alt="Routes Feature Interface"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="aspect-square relative rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Banking app transactions"
+                  src="/safety-route-options-interface.png"
+                  alt="Route Options Interface"
                   fill
                   className="object-cover"
                 />
@@ -161,19 +180,14 @@ export default function BankingCaseStudy() {
             </div>
 
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6">
-              <Image
-                src="/placeholder.svg?height=450&width=800"
-                alt="Banking app features overview"
-                fill
-                className="object-cover"
-              />
+              <Image src="/community-safety-alerts-map.png" alt="Safety Alerts Map" fill className="object-cover" />
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               <div className="aspect-square relative rounded-lg overflow-hidden">
                 <Image
                   src="/placeholder.svg?height=400&width=400"
-                  alt="Banking app budget feature"
+                  alt="Community safety dashboard"
                   fill
                   className="object-cover"
                 />
@@ -181,7 +195,7 @@ export default function BankingCaseStudy() {
               <div className="aspect-square relative rounded-lg overflow-hidden">
                 <Image
                   src="/placeholder.svg?height=400&width=400"
-                  alt="Banking app settings"
+                  alt="Route preferences settings"
                   fill
                   className="object-cover"
                 />
@@ -196,8 +210,7 @@ export default function BankingCaseStudy() {
           </div>
         </div>
 
-        {/* More Case Studies */}
-        <div className="bg-muted py-16 animate-on-load animate-fade-in-up animate-delay-700">
+        <div className="bg-muted py-16">
           <div className="container">
             <div className="flex items-center gap-2 mb-8">
               <div className="h-px w-8 bg-foreground/30"></div>
@@ -235,7 +248,7 @@ export default function BankingCaseStudy() {
         </div>
       </main>
 
-      <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-700">
+      <footer className="border-t py-6 md:py-8">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.
@@ -252,6 +265,12 @@ const otherCaseStudies = [
     subtitle: "Philly Truce",
     image: "/placeholder.svg?height=400&width=600",
     caseStudyUrl: "/case-study/benchmark",
+  },
+  {
+    title: "Reducing violence by improving record-keeping accuracy by 15%",
+    subtitle: "Philly Truce",
+    image: "/placeholder.svg?height=400&width=600",
+    caseStudyUrl: "/case-study/philly-truce",
   },
   {
     title: "0-1 design system for a web3 gaming community",
