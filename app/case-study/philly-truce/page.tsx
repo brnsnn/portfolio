@@ -66,7 +66,7 @@ export default function BankingCaseStudy() {
               </p>
               <p className="text-muted-foreground">
                 I conducted UX audits and improved UI clarity for the incident reporting
-                feature, contributing to a 15% increase in record accuracy, streamlined operations, and stronger
+                feature, contributing to a 15% increase in record-keeping accuracy, streamlined operations, and stronger
                 community safety outcomes, in collaboration with a team of five designers.
               </p>
             </div>
