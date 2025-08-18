@@ -61,8 +61,13 @@ export default function BankingCaseStudy() {
                 <span className="text-sm font-medium text-foreground/60">PROJECT OVERVIEW</span>
               </div>
               <p className="text-muted-foreground">
-                To achieve its mission of reducing violence in Philadelphia by 50%, Philly Truce is transforming its
-                outdated incident reporting process into a modern, community-driven system for peacekeeping.
+                Philly Truce is a grassroots organization in Philadelphia focused on reducing violence and promoting
+                peaceful conflict resolution.
+              </p>
+              <p className="text-muted-foreground">
+                I conducted UX audits and improved UI clarity for the incident reporting
+                feature, contributing to a 15% increase in record accuracy, streamlined operations, and stronger
+                community safety outcomes, in collaboration with a team of five designers.
               </p>
             </div>
             <div className="space-y-8">
