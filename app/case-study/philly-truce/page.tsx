@@ -222,10 +222,12 @@ export default function BankingCaseStudy() {
                     <h3 className="font-medium text-lg mb-1 transition-colors duration-500 ease-in-out">
                       {project.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm mb-2">{project.subtitle}</p>
-                    <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center text-muted-foreground">
-                      View Case Study
-                      <ArrowRight className="ml-1 h-3 w-3" />
+                    <div className="flex items-center justify-between">
+                      <p className="text-muted-foreground text-sm">{project.subtitle}</p>
+                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center text-muted-foreground text-sm">
+                        View Case Study
+                        <ArrowRight className="ml-1 h-3 w-3" />
+                      </div>
                     </div>
                   </div>
                 </Link>
@@ -240,6 +242,14 @@ export default function BankingCaseStudy() {
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.
           </p>
+          <Link
+            href="https://linkedin.com/in/brnsnlee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            LinkedIn
+          </Link>
         </div>
       </footer>
     </div>

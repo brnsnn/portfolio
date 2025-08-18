@@ -234,6 +234,14 @@ export default function TravelAppCaseStudy() {
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.
           </p>
+          <Link
+            href="https://linkedin.com/in/brnsnlee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            LinkedIn
+          </Link>
         </div>
       </footer>
     </div>

@@ -236,7 +236,7 @@ export default function RoutesFeaturePage() {
                       {project.title}
                     </h3>
                     <p className="text-muted-foreground text-sm mb-2">{project.subtitle}</p>
-                    <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center text-muted-foreground">
+                    <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center text-muted-foreground text-sm">
                       View Case Study
                       <ArrowRight className="ml-1 h-3 w-3" />
                     </div>
@@ -253,6 +253,14 @@ export default function RoutesFeaturePage() {
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.
           </p>
+          <Link
+            href="https://linkedin.com/in/brnsnlee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            LinkedIn
+          </Link>
         </div>
       </footer>
     </div>
