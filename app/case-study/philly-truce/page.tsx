@@ -60,7 +60,7 @@ export default function BankingCaseStudy() {
                 <div className="h-px w-8 bg-foreground/30"></div>
                 <span className="text-sm font-medium text-foreground/60">PROJECT OVERVIEW</span>
               </div>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground mb-4">
                 Philly Truce is a grassroots organization in Philadelphia focused on reducing violence and promoting
                 peaceful conflict resolution.
               </p>
