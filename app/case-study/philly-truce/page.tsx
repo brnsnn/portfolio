@@ -60,13 +60,9 @@ export default function BankingCaseStudy() {
                 <div className="h-px w-8 bg-foreground/30"></div>
                 <span className="text-sm font-medium text-foreground/60">PROJECT OVERVIEW</span>
               </div>
-              <p className="text-muted-foreground mb-4">
-                I worked with a team of five designers to enhance usability, improving record accuracy by 15%,
-                streamlining operations, and strengthening community safety efforts.
-              </p>
               <p className="text-muted-foreground">
-                Our goal was to create an intuitive, modern banking experience that would make financial management
-                easier and more accessible for all users.
+                To achieve its mission of reducing violence in Philadelphia by 50%, Philly Truce is transforming its
+                outdated incident reporting process into a modern, community-driven system for peacekeeping.
               </p>
             </div>
             <div className="space-y-8">
