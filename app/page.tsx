@@ -11,7 +11,7 @@ import { AnimatedName } from "@/components/animated-name"
 const Page = () => {
   const caseStudies = [
     {
-      title: "Design System for a Peace-Building Platform to Reduce Violence by 50%",
+      title: "Benchmark Design System for a Peace-Building Platform to Reduce Violence by 50%",
       description: "Philly Truce",
       image: "/placeholder.svg?height=400&width=600",
       caseStudyUrl: "/case-study/benchmark",
