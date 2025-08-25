@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Bronson Lee / Product & Design Systems",
   description:
-    "Portfolio website of Bronson Lee, a UX designer specializing in creating intuitive and delightful digital experiences.",
+    "Portfolio website of Bronson Lee, a mid-level product designer specializing in creating intuitive and delightful digital experiences.",
     generator: 'v0.app'
 }
 
