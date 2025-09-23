@@ -73,15 +73,11 @@ export default function TravelAppCaseStudy() {
               </div>
               <div>
                 <h3 className="mb-2">My Role</h3>
-                <p className="text-muted-foreground">Lead UI Designer</p>
+                <p className="text-muted-foreground">Lead Designer</p>
               </div>
               <div>
                 <h3 className="mb-2">Team</h3>
                 <p className="text-muted-foreground">1 UX Researcher, 1 Product Manager, 2 Developers</p>
-              </div>
-              <div>
-                <h3 className="mb-2">Timeline</h3>
-                <p className="text-muted-foreground">10 weeks (Nov 2023 - Jan 2024)</p>
               </div>
             </div>
           </div>
@@ -93,10 +89,11 @@ export default function TravelAppCaseStudy() {
               <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
             </div>
             <p className="text-muted-foreground mb-8">
-              The existing travel app had a cluttered interface with too many options presented at once, creating
-              decision fatigue for users. The visual design was inconsistent and dated, failing to inspire travel or
-              showcase destinations effectively. User research revealed that 65% of users found the search process
-              cumbersome, and 70% rarely used the app's recommendation features despite wanting travel inspiration.
+            <ul>
+            <li>Mobile and desktop experiences looked and behaved differently</li>
+            <li>Inconsistencies confused users and created inefficiency for the design/dev team</li>
+            <li>I wanted a unified brand and product experience across touchpoints</li>
+            </ul>
             </p>
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
               <Image
