@@ -41,9 +41,9 @@ export default function TravelAppCaseStudy() {
 
         {/* Hero Image */}
         <div className="container mb-16">
-          <div className="w-full aspect-[21/9] relative">
+          <div className="w-full aspect-[16/9] relative">
             <Image
-              src="/Benchmark-Design-System-thumbnail.jpg?height=900&width=1900"
+              src="/Benchmark-Design-System-thumbnail.jpg"
               alt="Design System for Peace-Building Platform Hero"
               fill
               className="object-cover rounded-lg"
