@@ -61,13 +61,9 @@ export default function TravelAppCaseStudy() {
                 <span className="text-sm font-medium text-foreground/60">PROJECT OVERVIEW</span>
               </div>
               <p className="text-muted-foreground mb-4">
-                This project focused on reimagining a travel booking experience to make planning trips more intuitive
-                and enjoyable. The existing app had good functionality but suffered from an outdated interface,
-                inconsistent user experience, and low engagement with key features.
-              </p>
-              <p className="text-muted-foreground">
-                Our goal was to create a visually appealing, user-friendly experience that would inspire travel while
-                simplifying the booking process.
+                I built a cross-platform design system that unified our mobile web app and desktop admin site, which
+                previously felt fragmented. By creating shared tokens and reusable components, I made the product feel
+                cohesive across touchpoints while reducing design and development time by 40%.
               </p>
             </div>
             <div className="space-y-8">
