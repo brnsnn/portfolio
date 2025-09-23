@@ -88,13 +88,13 @@ export default function TravelAppCaseStudy() {
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
             </div>
-            <p className="text-muted-foreground mb-8">
-            <ul>
-            <li>Mobile and desktop experiences looked and behaved differently</li>
-            <li>Inconsistencies confused users and created inefficiency for the design/dev team</li>
-            <li>I wanted a unified brand and product experience across touchpoints</li>
-            </ul>
-            </p>
+            <div className="text-muted-foreground mb-8">
+              <ul className="space-y-2">
+                <li>Mobile and desktop experiences looked and behaved differently</li>
+                <li>Inconsistencies confused users and created inefficiency for the design/dev team</li>
+                <li>I wanted a unified brand and product experience across touchpoints</li>
+              </ul>
+            </div>
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
               <Image
                 src="/placeholder.svg?height=450&width=800"
