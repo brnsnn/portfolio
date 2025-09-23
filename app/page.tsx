@@ -13,7 +13,7 @@ const Page = () => {
     {
       title: "Unifying mobile and desktop with a scalable design system",
       description: "Philly Truce",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/Benchmark-Design-System-thumbnail.jpg?height=400&width=600",
       caseStudyUrl: "/case-study/benchmark",
     },
     {
