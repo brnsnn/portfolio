@@ -96,7 +96,7 @@ export default function TravelAppCaseStudy() {
                 className="object-cover"
               />
             </div>
-            <div className="text-muted-foreground mb-8">
+            <div className="text-muted-foreground mb-8 mt-8">
               <ul className="space-y-2">
                 <li>- Mobile and desktop experiences looked and behaved differently</li>
                 <li>- Inconsistencies confused users and created inefficiency for the design/dev team</li>
