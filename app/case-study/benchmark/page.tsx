@@ -90,9 +90,9 @@ export default function TravelAppCaseStudy() {
             </div>
             <div className="text-muted-foreground mb-8">
               <ul className="space-y-2">
-                <li>Mobile and desktop experiences looked and behaved differently</li>
-                <li>Inconsistencies confused users and created inefficiency for the design/dev team</li>
-                <li>I wanted a unified brand and product experience across touchpoints</li>
+                <li>- Mobile and desktop experiences looked and behaved differently</li>
+                <li>- Inconsistencies confused users and created inefficiency for the design/dev team</li>
+                <li>- I wanted a unified brand and product experience across touchpoints</li>
               </ul>
             </div>
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
