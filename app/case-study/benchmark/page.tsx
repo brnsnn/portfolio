@@ -54,7 +54,7 @@ export default function TravelAppCaseStudy() {
 
         {/* Project Details */}
         <div className="container">
-          <div className="max-w-[800px] mx-auto grid md:grid-cols-2 gap-12 mb-20">
+          <div className="max-w-[1024px] mx-auto grid md:grid-cols-2 gap-12 mb-20">
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="h-px w-8 bg-foreground/30"></div>
