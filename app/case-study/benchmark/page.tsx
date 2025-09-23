@@ -35,7 +35,7 @@ export default function TravelAppCaseStudy() {
             <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight max-w-4xl">
-            Design System for a Peace-Building Platform to Reduce Violence by 50%
+            Unifying mobile and desktop with a scalable design system
           </h1>
         </section>
 
