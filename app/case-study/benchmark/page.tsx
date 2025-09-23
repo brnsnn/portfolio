@@ -97,7 +97,7 @@ export default function TravelAppCaseStudy() {
             </div>
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=450&width=800"
+                src="/Mobile-old-new-1.jpg?height=450&width=800"
                 alt="Travel app problems visualization"
                 fill
                 className="object-cover"
