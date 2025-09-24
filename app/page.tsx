@@ -119,7 +119,7 @@ const Page = () => {
           </div>
         </section>
 
-        <section id="work" className="pt-4 pb-8 animate-on-load animate-fade-in-up animate-delay-300">
+        <section id="work" className="pt-4 pb-20 animate-on-load animate-fade-in-up animate-delay-300">
           <div className="container">
             <div className="flex items-center gap-2 mb-12">
               <div className="h-px w-8 bg-foreground/30"></div>
