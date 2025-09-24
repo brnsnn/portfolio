@@ -157,7 +157,8 @@ export default function TravelAppCaseStudy() {
                 <div>
                   <p className="text-muted-foreground mb-4">
                     I redesigned the desktop experience by simplifying navigation, clarifying hierarchy, and streamline
-                    bulk actions—making routes easier to scan, assign, and manage while aligning with the mobile experience.
+                    bulk actions—making routes easier to scan, assign, and manage while aligning with the mobile
+                    experience.
                   </p>
                 </div>
               </div>
@@ -168,7 +169,7 @@ export default function TravelAppCaseStudy() {
           <div className="max-w-[1140px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-600">
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
               <Image
-                src="/Desktop-Annotations-1.jpg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile-Annotations-1.jpg-7NyR3MH6Rwfqc3bx5YXuUBVFR1ZehE.jpeg"
                 alt="Mobile design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
                 fill
                 className="object-cover"
