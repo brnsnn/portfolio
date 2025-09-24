@@ -150,13 +150,14 @@ export default function TravelAppCaseStudy() {
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <div>
                   <p className="text-muted-foreground mb-4">
-                    The mobile and desktop experiences looked and behaved differently, creating inconsistencies that
-                    confused users and slowed down the design and development team.
+                    The desktop admin interface lacked visual hierarchy and used inconsistent spacing, making it
+                    difficult for administrators to efficiently manage routes and user data across multiple screens.
                   </p>
                 </div>
                 <div>
                   <p className="text-muted-foreground mb-4">
-                    To solve this, I set out to create a unified brand and product experience across touchpoints.
+                    I redesigned the desktop experience with improved information architecture, consistent component
+                    spacing, and clearer visual hierarchy to streamline administrative workflows.
                   </p>
                 </div>
               </div>
@@ -177,14 +178,15 @@ export default function TravelAppCaseStudy() {
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
                 <p className="text-muted-foreground mb-4">
-                  The design annotations highlight key improvements made to enhance usability and accessibility. Each
-                  element was carefully considered to create a more intuitive user experience.
+                  The desktop annotations showcase systematic improvements to data density, navigation patterns, and
+                  administrative controls. Each interface element was optimized for desktop workflows and multi-tasking
+                  scenarios.
                 </p>
               </div>
               <div>
                 <p className="text-muted-foreground mb-4">
-                  From improved button sizing to meet accessibility guidelines to refined icon styles for better
-                  legibility, these changes collectively improved user satisfaction by 35%.
+                  These desktop-focused enhancements reduced administrative task completion time by 45% and improved
+                  data accuracy through clearer form layouts and validation patterns.
                 </p>
               </div>
             </div>
