@@ -96,7 +96,7 @@ export default function TravelAppCaseStudy() {
                 className="object-cover"
               />
             </div>
-            <div>
+            <div className="max-w-[1140px] mx-auto mb-16">
             <div className="grid md:grid-cols-2 gap-8 mb-12">
              <div>
                 <p className="text-muted-foreground mb-4">
@@ -106,7 +106,8 @@ export default function TravelAppCaseStudy() {
               </p>
             </div>
           </div>
-          </div>    
+          </div>
+          </div>
 
           {/* Solution */}
           <div className="max-w-[1140px] mx-auto mb-16">
