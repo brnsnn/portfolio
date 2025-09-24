@@ -101,7 +101,10 @@ export default function TravelAppCaseStudy() {
                 <div>
                   <p className="text-muted-foreground mb-4">
                     The mobile and desktop experiences looked and behaved differently, creating inconsistencies
-                    that confused users and slowed down the design and development team. To solve this, I set out
+                    that confused users and slowed down the design and development team.
+                  </p>
+                  <p className="text-muted-foreground mb-4">
+                    To solve this, I set out
                     to create a unified brand and product experience across touchpoints.
                   </p>
                 </div>
