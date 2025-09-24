@@ -99,7 +99,6 @@ export default function TravelAppCaseStudy() {
             </div>
           </div>
               <div className="max-w-[1140px] mx-auto mb-16 mt-8">
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <div>
                   <p className="text-muted-foreground mb-4">
                     The mobile and desktop experiences looked and behaved differently, creating inconsistencies that
