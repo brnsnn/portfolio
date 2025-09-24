@@ -91,7 +91,7 @@ export default function TravelAppCaseStudy() {
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
               <Image
                 src="/Mobile-old-new-1.jpg?height=450&width=800"
-                alt="Travel app problems visualization"
+                alt="Old versus new route screen design"
                 fill
                 className="object-cover"
               />
@@ -123,7 +123,22 @@ export default function TravelAppCaseStudy() {
                 className="object-cover"
               />
             </div>
-
+            <div className="max-w-[1140px] mx-auto mb-16 mt-8">
+              <div className="grid md:grid-cols-2 gap-8 mb-12">
+                <div>
+                  <p className="text-muted-foreground mb-4">
+                    The mobile and desktop experiences looked and behaved differently, creating inconsistencies that
+                    confused users and slowed down the design and development team.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-muted-foreground mb-4">
+                    To solve this, I set out to create a unified brand and product experience across touchpoints.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
                 <div className="flex items-center gap-2 mb-6">
