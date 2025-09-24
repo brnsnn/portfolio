@@ -170,23 +170,17 @@ export default function TravelAppCaseStudy() {
                   className="object-cover"
                 />
               </div>
-            </div>
-          </div>
-
-
-          <div className="max-w-[1140px] mx-auto mb-16">
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
                 <p className="text-muted-foreground mb-4">
-                  The desktop annotations showcase systematic improvements to data density, navigation patterns, and
-                  administrative controls. Each interface element was optimized for desktop workflows and multi-tasking
-                  scenarios.
+                  The design annotations highlight key improvements made to enhance usability and accessibility. Each
+                  element was carefully considered to create a more intuitive user experience.
                 </p>
               </div>
               <div>
                 <p className="text-muted-foreground mb-4">
-                  These desktop-focused enhancements reduced administrative task completion time by 45% and improved
-                  data accuracy through clearer form layouts and validation patterns.
+                  From improved button sizing to meet accessibility guidelines to refined icon styles for better
+                  legibility, these changes collectively improved user satisfaction by 35%.
                 </p>
               </div>
             </div>
