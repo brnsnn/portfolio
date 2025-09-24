@@ -150,14 +150,14 @@ export default function TravelAppCaseStudy() {
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <div>
                   <p className="text-muted-foreground mb-4">
-                    The desktop admin interface lacked visual hierarchy and used inconsistent spacing, making it
-                    difficult for administrators to efficiently manage routes and user data across multiple screens.
+                    The desktop admin interface was cluttered with unclear navigation labels, and competing visual
+                    elements that made scanning and publishing schedules inefficient.
                   </p>
                 </div>
                 <div>
                   <p className="text-muted-foreground mb-4">
-                    I redesigned the desktop experience with improved information architecture, consistent component
-                    spacing, and clearer visual hierarchy to streamline administrative workflows.
+                    I redesigned the desktop experience by simplifying navigation, clarifying hierarchy, and streamline
+                    bulk actions—making routes easier to scan, assign, and manage while aligning with the mobile experience.
                   </p>
                 </div>
               </div>
