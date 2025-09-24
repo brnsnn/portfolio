@@ -123,22 +123,6 @@ export default function TravelAppCaseStudy() {
                 className="object-cover"
               />
             </div>
-            <div className="max-w-[1140px] mx-auto mb-16 mt-8">
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
-                <div>
-                  <p className="text-muted-foreground mb-4">
-                    The mobile and desktop experiences looked and behaved differently, creating inconsistencies that
-                    confused users and slowed down the design and development team.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-muted-foreground mb-4">
-                    To solve this, I set out to create a unified brand and product experience across touchpoints.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
                 <div className="flex items-center gap-2 mb-6">
@@ -158,60 +142,60 @@ export default function TravelAppCaseStudy() {
                 </p>
               </div>
             </div>
+          </div>
 
-            {/* Images */}
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div className="aspect-square relative rounded-lg overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Travel app home screen"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="aspect-square relative rounded-lg overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Travel app destination details"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6">
+          {/* Images */}
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <div className="aspect-square relative rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=450&width=800"
-                alt="Travel app booking flow"
+                src="/placeholder.svg?height=400&width=400"
+                alt="Travel app home screen"
                 fill
                 className="object-cover"
               />
             </div>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-              <div className="aspect-square relative rounded-lg overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Travel app trip planner"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="aspect-square relative rounded-lg overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Travel app user profile"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+            <div className="aspect-square relative rounded-lg overflow-hidden">
+              <Image
+                src="/placeholder.svg?height=400&width=400"
+                alt="Travel app destination details"
+                fill
+                className="object-cover"
+              />
             </div>
+          </div>
 
-            <div className="text-center mb-20">
-              <Button asChild size="lg">
-                <Link href="#">View Full Case Study</Link>
-              </Button>
+          <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6">
+            <Image
+              src="/placeholder.svg?height=450&width=800"
+              alt="Travel app booking flow"
+              fill
+              className="object-cover"
+            />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            <div className="aspect-square relative rounded-lg overflow-hidden">
+              <Image
+                src="/placeholder.svg?height=400&width=400"
+                alt="Travel app trip planner"
+                fill
+                className="object-cover"
+              />
             </div>
+            <div className="aspect-square relative rounded-lg overflow-hidden">
+              <Image
+                src="/placeholder.svg?height=400&width=400"
+                alt="Travel app user profile"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+          <div className="text-center mb-20">
+            <Button asChild size="lg">
+              <Link href="#">View Full Case Study</Link>
+            </Button>
           </div>
         </div>
 
