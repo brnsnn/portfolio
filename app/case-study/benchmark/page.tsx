@@ -96,7 +96,17 @@ export default function TravelAppCaseStudy() {
                 className="object-cover"
               />
             </div>
-            <div className="max-w-[1140px] mx-auto mb-16 mt-8">
+            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
+                <Image
+                  src="/Mobile-Annotations-1.jpg"
+                  alt="Mobile design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+              <div className="max-w-[1140px] mx-auto mb-16 mt-8">
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <div>
                   <p className="text-muted-foreground mb-4">
@@ -110,17 +120,6 @@ export default function TravelAppCaseStudy() {
                   </p>
                 </div>
               </div>
-              <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
-                <Image
-                  src="/Mobile-Annotations-1.jpg"
-                  alt="Mobile design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </div>
-
           {/* Solution */}
           <div className="max-w-[1140px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-500">
             <div className="grid md:grid-cols-2 gap-8 mb-8">
