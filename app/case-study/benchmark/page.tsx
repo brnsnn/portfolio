@@ -112,8 +112,8 @@ export default function TravelAppCaseStudy() {
               </div>
               <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
                 <Image
-                  src="/unified-brand-and-product-experience-design-system.jpg"
-                  alt="Unified brand and product experience design system overview"
+                  src="/Mobile-Annotations-1.jpg"
+                  alt="Mobile design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
                   fill
                   className="object-cover"
                 />
@@ -122,15 +122,7 @@ export default function TravelAppCaseStudy() {
           </div>
 
           {/* Solution */}
-          <div className="max-w-[1140px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-600">
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
-              <Image
-                src="/Mobile-annotations-1.jpg?height=450&width=800"
-                alt="Mobile design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
-                fill
-                className="object-cover"
-              />
-            </div>
+          
 
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
@@ -172,8 +164,8 @@ export default function TravelAppCaseStudy() {
               </div>
               <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
                 <Image
-                  src="/desktop-navigation-redesign-with-simplified-hierar.jpg"
-                  alt="Desktop navigation redesign with simplified hierarchy and bulk actions"
+                  src="/Desktop-Annotations-1.jpg"
+                  alt="Desktop design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
                   fill
                   className="object-cover"
                 />
@@ -182,15 +174,6 @@ export default function TravelAppCaseStudy() {
           </div>
 
           {/* Solution */}
-          <div className="max-w-[1140px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-600">
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
-              <Image
-                src="/Desktop-annotations-1.jpg?height=450&width=800"
-                alt="Desktop design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
-                fill
-                className="object-cover"
-              />
-            </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
