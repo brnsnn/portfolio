@@ -160,6 +160,8 @@ export default function TravelAppCaseStudy() {
                   </p>
                 </div>
               </div>
+
+              {/* Solution Section */}
               <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
                 <Image
                   src="/Desktop-Annotations-1.jpg"
@@ -171,7 +173,7 @@ export default function TravelAppCaseStudy() {
             </div>
           </div>
 
-          {/* Solution Section */}
+
           <div className="max-w-[1140px] mx-auto mb-16">
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
