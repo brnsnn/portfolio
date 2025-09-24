@@ -101,13 +101,13 @@ export default function TravelAppCaseStudy() {
                 <div>
                   <div>
                   <p className="text-muted-foreground mb-4">
-                    Mobile and desktop experiences looked and behaved differently
+                    Mobile and desktop experiences looked and behaved differently.
                     </p>
                   <p className="text-muted-foreground mb-4">
-                    Inconsistencies confused users and created inefficiency for the design/dev team
+                    Inconsistencies confused users and created inefficiency for the design/dev team.
                     </p>
                   <p className="text-muted-foreground mb-4">
-                    I wanted a unified brand and product experience across touchpoints
+                    I wanted a unified brand and product experience across touchpoints.
                     </p>
                 </div>
               </div>
