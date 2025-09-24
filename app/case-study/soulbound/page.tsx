@@ -7,7 +7,7 @@ import { AnimatedName } from "@/components/animated-name"
 export default function SoulboundCaseStudy() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-on-load animate-fade-in">
         <div className="container py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="font-medium">
@@ -29,7 +29,7 @@ export default function SoulboundCaseStudy() {
       </header>
 
       <main className="flex-1 pt-16">
-        <section className="container py-12 md:py-20">
+        <section className="container py-12 md:py-20 animate-on-load animate-fade-in-up animate-delay-200">
           <div className="flex items-center gap-2 mb-8">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
@@ -39,7 +39,7 @@ export default function SoulboundCaseStudy() {
           </h1>
         </section>
 
-        <div className="container mb-16">
+        <div className="container mb-16 animate-on-load animate-fade-in-up animate-delay-300">
           <div className="w-full aspect-[21/9] relative">
             <Image
               src="/web3-gaming-community-design-system.png"
@@ -51,7 +51,7 @@ export default function SoulboundCaseStudy() {
           </div>
         </div>
 
-        <div className="container">
+        <div className="container animate-on-load animate-fade-in-up animate-delay-400">
           <div className="max-w-[800px] mx-auto grid md:grid-cols-2 gap-12 mb-20">
             <div>
               <div className="flex items-center gap-2 mb-4">
@@ -87,7 +87,7 @@ export default function SoulboundCaseStudy() {
             </div>
           </div>
 
-          <div className="max-w-[800px] mx-auto mb-16">
+          <div className="max-w-[800px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-500">
             <div className="flex items-center gap-2 mb-6">
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
@@ -108,7 +108,7 @@ export default function SoulboundCaseStudy() {
             </div>
           </div>
 
-          <div className="max-w-[800px] mx-auto mb-16">
+          <div className="max-w-[800px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-600">
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
                 <div className="flex items-center gap-2 mb-6">
@@ -174,7 +174,7 @@ export default function SoulboundCaseStudy() {
           </div>
         </div>
 
-        <div className="bg-muted py-16">
+        <div className="bg-muted py-16 animate-on-load animate-fade-in-up animate-delay-700">
           <div className="container">
             <div className="flex items-center gap-2 mb-8">
               <div className="h-px w-8 bg-foreground/30"></div>
@@ -212,7 +212,7 @@ export default function SoulboundCaseStudy() {
         </div>
       </main>
 
-      <footer className="border-t py-6 md:py-8">
+      <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-700">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.
