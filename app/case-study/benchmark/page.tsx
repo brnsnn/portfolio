@@ -97,16 +97,16 @@ export default function TravelAppCaseStudy() {
               />
             </div>
             <div className="max-w-[1140px] mx-auto mb-16">
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-             <div>
-                <p className="text-muted-foreground mb-4">
-                <li>Mobile and desktop experiences looked and behaved differently</li>
-                <li>Inconsistencies confused users and created inefficiency for the design/dev team</li>
-                <li>I wanted a unified brand and product experience across touchpoints</li>
-              </p>
+              <div className="grid md:grid-cols-2 gap-8 mb-12">
+                <div>
+                  <ul className="text-muted-foreground mb-4 space-y-2 list-disc list-inside">
+                    <li>Mobile and desktop experiences looked and behaved differently</li>
+                    <li>Inconsistencies confused users and created inefficiency for the design/dev team</li>
+                    <li>I wanted a unified brand and product experience across touchpoints</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-          </div>
           </div>
 
           {/* Solution */}
