@@ -117,7 +117,7 @@ export default function TravelAppCaseStudy() {
           <div className="max-w-[1140px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-600">
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile-Annotations-1.jpg-vhUxGslhI9VHfUHbF7g9N1JY1GckFj.jpeg"
+                src="Mobile-Annotations-1.jpg"
                 alt="Mobile design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
                 fill
                 className="object-cover"
@@ -169,7 +169,7 @@ export default function TravelAppCaseStudy() {
           <div className="max-w-[1140px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-600">
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile-Annotations-1.jpg-7NyR3MH6Rwfqc3bx5YXuUBVFR1ZehE.jpeg"
+                src="Desktop-Annotations-1.jpg"
                 alt="Mobile design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
                 fill
                 className="object-cover"
