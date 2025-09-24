@@ -122,8 +122,7 @@ export default function TravelAppCaseStudy() {
           </div>
 
           {/* Solution */}
-          
-
+          <div className="max-w-[1140px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-500">
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
                 <p className="text-muted-foreground mb-4">
@@ -137,6 +136,14 @@ export default function TravelAppCaseStudy() {
                   legibility, these changes collectively improved user satisfaction by 35%.
                 </p>
               </div>
+            </div>
+            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile-Annotations-1.jpg-FrJhmpEJezhSNuoCVa4Q1KEa6paCcT.jpeg"
+                alt="Mobile design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
               <Image
@@ -164,6 +171,14 @@ export default function TravelAppCaseStudy() {
               </div>
               <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
                 <Image
+                  src="/desktop-navigation-redesign-with-simplified-hierar.jpg"
+                  alt="Desktop navigation redesign with simplified hierarchy"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
+                <Image
                   src="/Desktop-Annotations-1.jpg"
                   alt="Desktop design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
                   fill
@@ -173,8 +188,8 @@ export default function TravelAppCaseStudy() {
             </div>
           </div>
 
-          {/* Solution */}
-
+          {/* Solution Section */}
+          <div className="max-w-[1140px] mx-auto mb-16">
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
                 <p className="text-muted-foreground mb-4">
