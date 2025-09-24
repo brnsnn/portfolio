@@ -110,6 +110,14 @@ export default function TravelAppCaseStudy() {
                   </p>
                 </div>
               </div>
+              <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
+                <Image
+                  src="/unified-brand-and-product-experience-design-system.jpg"
+                  alt="Unified brand and product experience design system overview"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
 
@@ -161,6 +169,14 @@ export default function TravelAppCaseStudy() {
                     experience.
                   </p>
                 </div>
+              </div>
+              <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
+                <Image
+                  src="/desktop-navigation-redesign-with-simplified-hierar.jpg"
+                  alt="Desktop navigation redesign with simplified hierarchy and bulk actions"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>
