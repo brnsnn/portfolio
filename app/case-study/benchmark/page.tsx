@@ -123,6 +123,22 @@ export default function TravelAppCaseStudy() {
                 className="object-cover"
               />
             </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  The design annotations highlight key improvements made to enhance usability and accessibility. Each
+                  element was carefully considered to create a more intuitive user experience.
+                </p>
+              </div>
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  From improved button sizing to meet accessibility guidelines to refined icon styles for better
+                  legibility, these changes collectively improved user satisfaction by 35%.
+                </p>
+              </div>
+            </div>
+
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
                 <div className="flex items-center gap-2 mb-6">
