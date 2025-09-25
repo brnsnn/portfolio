@@ -193,13 +193,16 @@ export default function TravelAppCaseStudy() {
               </div>
               <div>
                 <p className="text-muted-foreground mb-4">
-                  We redesigned the app with a focus on visual inspiration and streamlined booking. The new design
-                  features immersive destination photography, personalized recommendations based on user preferences,
-                  and a simplified search process with smart filters.
+                  We began with an audit and discovery process to identify inconsistencies between the mobile and desktop
+                  experiences. This surfaced gaps in accessibility, visual alignment, and component usage.
                 </p>
                 <p className="text-muted-foreground">
-                  We also implemented a "Trip Planner" feature that allows users to save and organize ideas for future
-                  trips, and redesigned the booking flow to reduce steps by 40%.
+                  From there, we established shared foundations across platforms — unifying typography, color, spacing,
+                  interaction patterns, and accessibility standards.
+                </p>
+                <p className="text-muted-foreground">
+                  This alignment created a cohesive design system that improved the user experience across touchpoints
+                  and gave the design and development teams greater clarity and efficiency.
                 </p>
               </div>
             </div>
