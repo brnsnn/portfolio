@@ -180,15 +180,6 @@ export default function TravelAppCaseStudy() {
 
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/desktop-navigation-redesign-with-simplified-hierar-N3V5NphDDVqRvALpiKQ94G3djqhPxs.jpg"
-                alt="Desktop navigation redesign with simplified hierarchy"
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
-              <Image
                 src="/Desktop-Annotations-1.jpg"
                 alt="Desktop design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
                 fill
