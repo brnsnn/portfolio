@@ -4,6 +4,27 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { AnimatedName } from "@/components/animated-name"
 
+const otherCaseStudies = [
+  {
+    title: "Reducing violence by improving record-keeping accuracy by 15%",
+    subtitle: "Philly Truce",
+    image: "/placeholder.svg?height=400&width=600",
+    caseStudyUrl: "/case-study/philly-truce",
+  },
+  {
+    title: "0-1 design system for a web3 gaming community",
+    subtitle: "Soulbound",
+    image: "/placeholder.svg?height=400&width=600",
+    caseStudyUrl: "/case-study/soulbound",
+  },
+  {
+    title: "100,000+ views supporting high-risk HIV protection efforts",
+    subtitle: "Chill Pill",
+    image: "/placeholder.svg?height=400&width=600",
+    caseStudyUrl: "/case-study/chill-pill",
+  },
+]
+
 export default function TravelAppCaseStudy() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -88,7 +109,7 @@ export default function TravelAppCaseStudy() {
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
             </div>
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
+            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
               <Image
                 src="/Mobile-old-new-1.jpg?height=450&width=800"
                 alt="Old versus new route screen design"
@@ -96,7 +117,7 @@ export default function TravelAppCaseStudy() {
                 className="object-cover"
               />
             </div>
-            <div className="grid md:grid-cols-2 gap-8 mt-8">
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
                 <p className="text-muted-foreground mb-4">
                   The mobile and desktop experiences looked and behaved differently, creating inconsistencies that
@@ -109,13 +130,10 @@ export default function TravelAppCaseStudy() {
                 </p>
               </div>
             </div>
-          </div>
 
-          {/* Solution */}
-          <div className="max-w-[1140px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-500">
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile-Annotations-1.jpg-FrJhmpEJezhSNuoCVa4Q1KEa6paCcT.jpeg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile-Annotations-1.jpg-dfHEvJD6byRP9siAITbrReHKL6h0uS.jpeg"
                 alt="Mobile design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
                 fill
                 className="object-cover"
@@ -136,7 +154,7 @@ export default function TravelAppCaseStudy() {
               </div>
             </div>
 
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
+            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
               <Image
                 src="/Desktop-old-new-1.jpg?height=450&width=800"
                 alt="Old versus new desktop design"
@@ -144,46 +162,54 @@ export default function TravelAppCaseStudy() {
                 className="object-cover"
               />
             </div>
-            <div className="max-w-[1140px] mx-auto mb-16 mt-8">
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
-                <div>
-                  <p className="text-muted-foreground mb-4">
-                    The desktop admin interface was cluttered with unclear navigation labels, and competing visual
-                    elements that made scanning and publishing schedules inefficient.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-muted-foreground mb-4">
-                    I redesigned the desktop experience by simplifying navigation, clarifying hierarchy, and streamline
-                    bulk actions—making routes easier to scan, assign, and manage while aligning with the mobile
-                    experience.
-                  </p>
-                </div>
-              </div>
-
-              {/* Solution Section */}
-              <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
-                <Image
-                  src="/Desktop-Annotations-1.jpg"
-                  alt="Desktop design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
                 <p className="text-muted-foreground mb-4">
-                  The design annotations highlight key improvements made to enhance usability and accessibility. Each
-                  element was carefully considered to create a more intuitive user experience.
+                  The desktop admin interface was cluttered with unclear navigation labels, and competing visual
+                  elements that made scanning and publishing schedules inefficient.
                 </p>
               </div>
               <div>
                 <p className="text-muted-foreground mb-4">
-                  From improved button sizing to meet accessibility guidelines to refined icon styles for better
-                  legibility, these changes collectively improved user satisfaction by 35%.
+                  I redesigned the desktop experience by simplifying navigation, clarifying hierarchy, and streamline
+                  bulk actions—making routes easier to scan, assign, and manage while aligning with the mobile
+                  experience.
                 </p>
               </div>
             </div>
+
+            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/desktop-navigation-redesign-with-simplified-hierar-N3V5NphDDVqRvALpiKQ94G3djqhPxs.jpg"
+                alt="Desktop navigation redesign with simplified hierarchy"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
+              <Image
+                src="/Desktop-Annotations-1.jpg"
+                alt="Desktop design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  The desktop annotations showcase systematic improvements to the admin interface, focusing on clearer
+                  visual hierarchy and streamlined workflows for route management.
+                </p>
+              </div>
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  These desktop-specific enhancements reduced task completion time by 25% and significantly improved
+                  administrator efficiency in managing route assignments.
+                </p>
+              </div>
+            </div>
+
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
                 <div className="flex items-center gap-2 mb-6">
@@ -193,66 +219,19 @@ export default function TravelAppCaseStudy() {
               </div>
               <div>
                 <p className="text-muted-foreground mb-4">
-                  We began with an audit and discovery process to identify inconsistencies between the mobile and desktop
-                  experiences. This surfaced gaps in accessibility, visual alignment, and component usage.
+                  We began with an audit and discovery process to identify inconsistencies between the mobile and
+                  desktop experiences. This surfaced gaps in accessibility, visual alignment, and component usage.
                 </p>
                 <p className="text-muted-foreground">
                   From there, we established shared foundations across platforms — unifying typography, color, spacing,
                   interaction patterns, and accessibility standards.
                 </p>
+                <br />
                 <p className="text-muted-foreground">
                   This alignment created a cohesive design system that improved the user experience across touchpoints
                   and gave the design and development teams greater clarity and efficiency.
                 </p>
               </div>
-            </div>
-          </div>
-
-          {/* Images */}
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
-            <div className="aspect-square relative rounded-lg overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Travel app home screen"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="aspect-square relative rounded-lg overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Travel app destination details"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-
-          <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6">
-            <Image
-              src="/placeholder.svg?height=450&width=800"
-              alt="Travel app booking flow"
-              fill
-              className="object-cover"
-            />
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
-            <div className="aspect-square relative rounded-lg overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Travel app trip planner"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="aspect-square relative rounded-lg overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Travel app user profile"
-                fill
-                className="object-cover"
-              />
             </div>
           </div>
 
@@ -320,24 +299,3 @@ export default function TravelAppCaseStudy() {
     </div>
   )
 }
-
-const otherCaseStudies = [
-  {
-    title: "Reducing violence by improving record-keeping accuracy by 15%",
-    subtitle: "Philly Truce",
-    image: "/placeholder.svg?height=400&width=600",
-    caseStudyUrl: "/case-study/philly-truce",
-  },
-  {
-    title: "0-1 design system for a web3 gaming community",
-    subtitle: "Soulbound",
-    image: "/placeholder.svg?height=400&width=600",
-    caseStudyUrl: "/case-study/soulbound",
-  },
-  {
-    title: "100,000+ views supporting high-risk HIV protection efforts",
-    subtitle: "Chill Pill",
-    image: "/placeholder.svg?height=400&width=600",
-    caseStudyUrl: "/case-study/chill-pill",
-  },
-]
