@@ -94,7 +94,7 @@ export default function TravelAppCaseStudy() {
               </div>
               <div>
                 <h3 className="mb-2">Scope</h3>
-                <p className="text-muted-foreground">Audit, foundations, components, accessibility</p>
+                <p className="text-muted-foreground">Audit & discovery, foundations, core components, cross-platform unification, accessibility & usability, implementation & collaboration</p>
               </div>
               <div>
                 <h3 className="mb-2">My Role</h3>
