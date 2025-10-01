@@ -53,7 +53,7 @@ export default function RoutesFeaturePage() {
         </div>
 
         <div className="container animate-on-load animate-fade-in-up animate-delay-400">
-          <div className="max-w-[800px] mx-auto grid md:grid-cols-2 gap-12 mb-20">
+          <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-12 mb-20">
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="h-px w-8 bg-foreground/30"></div>
@@ -94,7 +94,7 @@ export default function RoutesFeaturePage() {
           </div>
 
           {/* Impact Metrics Section */}
-          <div className="max-w-[800px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-500">
+          <div className="max-w-[1140px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-500">
             <div className="flex items-center gap-2 mb-6">
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">IMPACT</span>
@@ -115,47 +115,30 @@ export default function RoutesFeaturePage() {
             </div>
           </div>
 
-          <div className="max-w-[800px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-600">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="h-px w-8 bg-foreground/30"></div>
-              <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
-            </div>
-            <p className="text-muted-foreground mb-8">
-              Community members needed a way to navigate their neighborhoods safely, avoiding areas with recent
-              incidents or high-risk zones. The existing navigation tools didn't account for community safety data or
-              provide alternative routes based on safety considerations. Without access to real-time safety information
-              and alternative routing options, community members were unable to make informed decisions about their
-              travel routes, potentially putting themselves at risk.
-            </p>
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
-              <Image
-                src="/community-safety-navigation.png"
-                alt="Community Safety Navigation Problem"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-
-          <div className="max-w-[800px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-700">
+          <div className="max-w-[1140px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-600">
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
                 <div className="flex items-center gap-2 mb-6">
                   <div className="h-px w-8 bg-foreground/30"></div>
-                  <span className="text-sm font-medium text-foreground/60">OUR SOLUTION</span>
+                  <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
                 </div>
               </div>
               <div>
-                <p className="text-muted-foreground mb-4">
-                  We developed a routes feature that integrates community safety data with navigation functionality. The
-                  feature provides users with multiple route options, highlighting safer paths and allowing them to
-                  avoid areas with recent incidents.
+                <p className="text-muted-foreground mb-8">
+                  Community members needed a way to navigate their neighborhoods safely, avoiding areas with recent
+                  incidents or high-risk zones. The existing navigation tools didn't account for community safety data
+                  or provide alternative routes based on safety considerations. Without access to real-time safety
+                  information and alternative routing options, community members were unable to make informed decisions
+                  about their travel routes, potentially putting themselves at risk.
                 </p>
-                <p className="text-muted-foreground">
-                  Through collaboration with community safety experts and extensive user testing, we created an
-                  intuitive interface that empowers users to make informed decisions about their travel routes while
-                  maintaining their privacy and security.
-                </p>
+                <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
+                  <Image
+                    src="/community-safety-navigation.png"
+                    alt="Community Safety Navigation Problem"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
             </div>
 
