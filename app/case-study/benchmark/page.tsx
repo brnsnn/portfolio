@@ -83,7 +83,10 @@ export default function TravelAppCaseStudy() {
               </div>
               <p className="text-muted-foreground mb-4">
                 I built Benchmark, a cross-platform design system that unified Philly Truce’s mobile Peace Patrol app and desktop admin platform. Before, each platform felt fragmented — different fonts,
-                buttons, colors, and interaction patterns created confusion for users and slowed down design and development. By creating shared foundations and reusable components, I reduced design and
+                buttons, colors, and interaction patterns created confusion for users and slowed down design and development.</p>
+              
+              <p className="text-muted-foreground mb-4">
+                By creating shared foundations and reusable components, I reduced design and
                 dev time by 40%, improved record-keeping accuracy by 15%, and made the product feel cohesive across touchpoints.
                 </p>
             </div>
