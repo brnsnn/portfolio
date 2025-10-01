@@ -82,10 +82,10 @@ export default function TravelAppCaseStudy() {
                 <span className="text-sm font-medium text-foreground/60">PROJECT OVERVIEW</span>
               </div>
               <p className="text-muted-foreground mb-4">
-                I built a cross-platform design system that unified our mobile web app and desktop admin site, which
-                previously felt fragmented. By creating shared tokens and reusable components, I made the product feel
-                cohesive across touchpoints while reducing design and development time by 40%.
-              </p>
+                I built Benchmark, a cross-platform design system that unified Philly Truce’s mobile Peace Patrol app and desktop admin platform. Before, each platform felt fragmented — different fonts,
+                buttons, colors, and interaction patterns created confusion for users and slowed down design and development. By creating shared foundations and reusable components, I reduced design and
+                dev time by 40%, improved record-keeping accuracy by 15%, and made the product feel cohesive across touchpoints.
+                </p>
             </div>
             <div className="space-y-8">
               <div>
