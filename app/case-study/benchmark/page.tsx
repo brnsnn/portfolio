@@ -89,6 +89,10 @@ export default function TravelAppCaseStudy() {
             </div>
             <div className="space-y-8">
               <div>
+                <h3 className="mb-2">Client</h3>
+                <p className="text-muted-foreground">Philly Truce</p>
+              </div>
+              <div>
                 <h3 className="mb-2">Scope</h3>
                 <p className="text-muted-foreground">Audit, foundations, components, accessibility</p>
               </div>
