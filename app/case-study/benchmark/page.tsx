@@ -105,7 +105,7 @@ export default function TravelAppCaseStudy() {
               </div>
               <div>
                 <h3 className="mb-2">Team</h3>
-                <p className="text-muted-foreground">Mobile and desktop design team, and dev team</p>
+                <p className="text-muted-foreground">Mobile / desktop design team, and dev team</p>
               </div>
             </div>
           </div>
