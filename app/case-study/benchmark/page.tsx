@@ -437,7 +437,7 @@ export default function TravelAppCaseStudy() {
               </p>
             </div>
             <div>
-              <h3 className="text-4xl font-medium mb-2">135%</h3>
+              <h3 className="text-4xl font-medium mb-2">35%</h3>
               <p className="text-muted-foreground">
                 Improvement in user satisfaction scores
               </p>
