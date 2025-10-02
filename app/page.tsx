@@ -11,7 +11,7 @@ import { AnimatedName } from "@/components/animated-name"
 const Page = () => {
   const caseStudies = [
     {
-      title: "Unifying mobile and desktop with a scalable design system",
+      title: "Unifying mobile and desktop with a scalable design system that boosted efficiency by 40%",
       description: "Philly Truce",
       image: "/Benchmark-Design-System-thumbnail.jpg?height=400&width=600",
       caseStudyUrl: "/case-study/benchmark",
