@@ -118,8 +118,8 @@ export default function TravelAppCaseStudy() {
             </div>
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
               <Image
-                src="/Mobile-old-new-1.jpg?height=450&width=800"
-                alt="Old versus new route screen design"
+                src="/Before-1.jpg?height=450&width=800"
+                alt="Before mobile and desktop revisions"
                 fill
                 className="object-cover"
               />
