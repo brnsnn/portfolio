@@ -170,6 +170,29 @@ export default function TravelAppCaseStudy() {
             </div>
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
               <Image
+                src="/Mobile-Annotations-1.jpg"
+                alt="Mobile design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  The design annotations highlight key improvements made to enhance usability and accessibility. Each element was carefully
+                  considered to create a more intuitive user experience.
+                </p>
+              </div>
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  From improved button sizing to meet accessibility guidelines to refined icon styles for better legibility, these
+                  changes collectively improved user satisfaction by 35%.
+                </p>
+              </div>
+            </div>
+          </div>
+            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
+              <Image
                 src="/Desktop-Annotations-1.jpg"
                 alt="Desktop design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
                 fill
