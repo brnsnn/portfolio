@@ -2,9 +2,10 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, X } from "lucide-react"
+import { X } from "lucide-react"
 import { AnimatedName } from "@/components/animated-name"
 import { useState, useEffect } from "react"
+import { CaseStudyCarousel } from "@/components/case-study-carousel"
 
 const otherCaseStudies = [
   {
@@ -145,7 +146,7 @@ export default function TravelAppCaseStudy() {
             <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
           </div>
           <div
-            className="aspect-[16/9] relative rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8 cursor-pointer hover:opacity-90 transition-opacity"
             onClick={() =>
               setLightboxImage({
                 src: "/Before-1.jpg?height=450&width=800",
@@ -486,34 +487,7 @@ export default function TravelAppCaseStudy() {
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>
             </div>
-            <div className="grid gap-6 md:grid-cols-3">
-              {otherCaseStudies.map((project, index) => (
-                <Link
-                  key={index}
-                  href={project.caseStudyUrl}
-                  className="group block overflow-hidden rounded-lg border border-border bg-background transition-all duration-500 ease-in-out hover:bg-muted relative"
-                >
-                  <div className="aspect-video relative overflow-hidden">
-                    <Image
-                      src={project.image || "/placeholder.svg"}
-                      alt={project.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="font-medium text-lg mb-1 transition-colors duration-500 ease-in-out">
-                      {project.title}
-                    </h3>
-                    <p className="text-muted-foreground text-sm mb-2">{project.subtitle}</p>
-                    <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center text-sm text-muted-foreground">
-                      View Case Study
-                      <ArrowRight className="ml-1 h-3 w-3" />
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
+            <CaseStudyCarousel currentCaseStudyId="benchmark" />
           </div>
         </div>
       </main>
