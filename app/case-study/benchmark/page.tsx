@@ -222,7 +222,7 @@ export default function TravelAppCaseStudy() {
           </div>
         </div>
 
-        <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-x-8 gap-y-16 mb-16 mt-6">
+        <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-x-8 gap-y-16 mb-8 mt-6">
           {/* Audit & Discovery */}
           <div>
             <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
