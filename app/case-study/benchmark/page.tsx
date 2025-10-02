@@ -275,12 +275,6 @@ export default function TravelAppCaseStudy() {
               </div>
             </div>
           </div>
-
-          <div className="text-center mb-20">
-            <Button asChild size="lg">
-              <Link href="#">View Full Case Study</Link>
-            </Button>
-          </div>
         </div>
 
         {/* More Case Studies */}
