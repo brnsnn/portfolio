@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { AnimatedName } from "@/components/animated-name"
 
@@ -170,7 +169,7 @@ export default function TravelAppCaseStudy() {
             </div>
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
               <Image
-                src="/Mobile-Annotations-1.jpg"
+                src="/mobile-design-annotations-showing-ui-improvements-.jpg"
                 alt="Mobile design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
                 fill
                 className="object-cover"
@@ -179,123 +178,122 @@ export default function TravelAppCaseStudy() {
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
                 <p className="text-muted-foreground mb-4">
-                  The design annotations highlight key improvements made to enhance usability and accessibility. Each element was carefully
-                  considered to create a more intuitive user experience.
+                  The design annotations highlight key improvements made to enhance usability and accessibility. Each
+                  element was carefully considered to create a more intuitive user experience.
                 </p>
               </div>
               <div>
                 <p className="text-muted-foreground mb-4">
-                  From improved button sizing to meet accessibility guidelines to refined icon styles for better legibility, these
-                  changes collectively improved user satisfaction by 35%.
+                  From improved button sizing to meet accessibility guidelines to refined icon styles for better
+                  legibility, these changes collectively improved user satisfaction by 35%.
                 </p>
               </div>
             </div>
           </div>
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
-              <Image
-                src="/Desktop-Annotations-1.jpg"
-                alt="Desktop design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div>
-                <p className="text-muted-foreground mb-4">
-                  The desktop annotations showcase systematic improvements to the admin interface, focusing on clearer
-                  visual hierarchy and streamlined workflows for route management.
-                </p>
-              </div>
-              <div>
-                <p className="text-muted-foreground mb-4">
-                  These desktop-specific enhancements reduced task completion time by 25% and significantly improved
-                  administrator efficiency in managing route assignments.
-                </p>
-              </div>
-            </div>
+          <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
+            <Image
+              src="/Desktop-Annotations-1.jpg"
+              alt="Desktop design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
+              fill
+              className="object-cover"
+            />
           </div>
-
-          {/* Our Approach */}
-          <div className="max-w-[1140px] mx-auto mb-16">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <div className="flex items-center gap-2 mb-6">
-                <div className="h-px w-8 bg-foreground/30"></div>
-                <span className="text-sm font-medium text-foreground/60">OUR APPROACH</span>
+              <p className="text-muted-foreground mb-4">
+                The desktop annotations showcase systematic improvements to the admin interface, focusing on clearer
+                visual hierarchy and streamlined workflows for route management.
+              </p>
+            </div>
+            <div>
+              <p className="text-muted-foreground mb-4">
+                These desktop-specific enhancements reduced task completion time by 25% and significantly improved
+                administrator efficiency in managing route assignments.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Our Approach */}
+        <div className="max-w-[1140px] mx-auto mb-16">
+          <div>
+            <div className="flex items-center gap-2 mb-6">
+              <div className="h-px w-8 bg-foreground/30"></div>
+              <span className="text-sm font-medium text-foreground/60">OUR APPROACH</span>
+            </div>
+          </div>
+
+          <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-x-8 gap-y-16 mb-16">
+            {/* Audit & Discovery */}
+            <div>
+              <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
+                <Image
+                  src="/audit-and-discovery-process-design-system.jpg"
+                  alt="Audit and Discovery process"
+                  fill
+                  className="object-cover"
+                />
               </div>
+              <h3 className="font-medium text-lg mb-2">Audit & Discovery</h3>
+              <p className="text-muted-foreground">
+                We conducted a comprehensive audit of both mobile and desktop platforms to identify inconsistencies in
+                typography, color, spacing, and component usage. This discovery phase revealed critical gaps in
+                accessibility and visual alignment.
+              </p>
             </div>
 
-            <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-x-8 gap-y-16 mb-16">
-              {/* Audit & Discovery */}
-              <div>
-                <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
-                  <Image
-                    src="/audit-and-discovery-process-design-system.jpg"
-                    alt="Audit and Discovery process"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="font-medium text-lg mb-2">Audit & Discovery</h3>
-                <p className="text-muted-foreground">
-                  We conducted a comprehensive audit of both mobile and desktop platforms to identify inconsistencies in
-                  typography, color, spacing, and component usage. This discovery phase revealed critical gaps in
-                  accessibility and visual alignment.
-                </p>
+            {/* Aligning Foundations */}
+            <div>
+              <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
+                <Image
+                  src="/design-foundations-typography-color-spacing-tokens.jpg"
+                  alt="Aligning Foundations"
+                  fill
+                  className="object-cover"
+                />
               </div>
+              <h3 className="font-medium text-lg mb-2">Aligning Foundations</h3>
+              <p className="text-muted-foreground">
+                We established shared design tokens for typography, color, spacing, and interaction patterns. These
+                foundations ensured consistency across platforms and created a single source of truth for the design and
+                development teams.
+              </p>
+            </div>
 
-              {/* Aligning Foundations */}
-              <div>
-                <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
-                  <Image
-                    src="/design-foundations-typography-color-spacing-tokens.jpg"
-                    alt="Aligning Foundations"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="font-medium text-lg mb-2">Aligning Foundations</h3>
-                <p className="text-muted-foreground">
-                  We established shared design tokens for typography, color, spacing, and interaction patterns. These
-                  foundations ensured consistency across platforms and created a single source of truth for the design
-                  and development teams.
-                </p>
+            {/* Building Components */}
+            <div>
+              <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
+                <Image
+                  src="/building-reusable-ui-components-design-system.jpg"
+                  alt="Building Components"
+                  fill
+                  className="object-cover"
+                />
               </div>
+              <h3 className="font-medium text-lg mb-2">Building Components</h3>
+              <p className="text-muted-foreground">
+                We created a library of reusable components — buttons, forms, cards, and navigation elements — that work
+                seamlessly across mobile and desktop. Each component was built with accessibility and scalability in
+                mind.
+              </p>
+            </div>
 
-              {/* Building Components */}
-              <div>
-                <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
-                  <Image
-                    src="/building-reusable-ui-components-design-system.jpg"
-                    alt="Building Components"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="font-medium text-lg mb-2">Building Components</h3>
-                <p className="text-muted-foreground">
-                  We created a library of reusable components — buttons, forms, cards, and navigation elements — that
-                  work seamlessly across mobile and desktop. Each component was built with accessibility and scalability
-                  in mind.
-                </p>
+            {/* Documentation & Handoff */}
+            <div>
+              <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
+                <Image
+                  src="/design-system-documentation-and-developer-handoff.jpg"
+                  alt="Documentation and Handoff"
+                  fill
+                  className="object-cover"
+                />
               </div>
-
-              {/* Documentation & Handoff */}
-              <div>
-                <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
-                  <Image
-                    src="/design-system-documentation-and-developer-handoff.jpg"
-                    alt="Documentation and Handoff"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="font-medium text-lg mb-2">Documentation & Handoff</h3>
-                <p className="text-muted-foreground">
-                  We documented usage guidelines, interaction patterns, and implementation details to ensure smooth
-                  handoff to developers. This documentation became a living resource that continues to guide the team as
-                  the system evolves.
-                </p>
-              </div>
+              <h3 className="font-medium text-lg mb-2">Documentation & Handoff</h3>
+              <p className="text-muted-foreground">
+                We documented usage guidelines, interaction patterns, and implementation details to ensure smooth
+                handoff to developers. This documentation became a living resource that continues to guide the team as
+                the system evolves.
+              </p>
             </div>
           </div>
         </div>
@@ -342,7 +340,7 @@ export default function TravelAppCaseStudy() {
       <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-700">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © {new Date().getFullYear()} Bronson Lee. All rights reserved.
+            {"© " + new Date().getFullYear() + " Bronson Lee. All rights reserved."}
           </p>
           <Link
             href="https://linkedin.com/in/brnsnlee"
