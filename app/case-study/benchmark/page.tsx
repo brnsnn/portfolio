@@ -190,17 +190,18 @@ export default function TravelAppCaseStudy() {
                 </p>
               </div>
             </div>
+          </div>
+
           {/* Our Approach */}
-            <div className="max-w-[1140px] mx-auto mb-16">
-              <div>
-                <div className="flex items-center gap-2 mb-6">
-                  <div className="h-px w-8 bg-foreground/30"></div>
-                  <span className="text-sm font-medium text-foreground/60">OUR APPROACH</span>
-                </div>
+          <div className="max-w-[1140px] mx-auto mb-16">
+            <div>
+              <div className="flex items-center gap-2 mb-6">
+                <div className="h-px w-8 bg-foreground/30"></div>
+                <span className="text-sm font-medium text-foreground/60">OUR APPROACH</span>
               </div>
+            </div>
 
-
-            <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-8 mb-16">
+            <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-x-8 gap-y-16 mb-16">
               {/* Audit & Discovery */}
               <div>
                 <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
@@ -222,7 +223,12 @@ export default function TravelAppCaseStudy() {
               {/* Aligning Foundations */}
               <div>
                 <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
-                  <Image src="/design-foundations-typography-color-spacing-tokens.jpg" alt="Aligning Foundations" fill className="object-cover" />
+                  <Image
+                    src="/design-foundations-typography-color-spacing-tokens.jpg"
+                    alt="Aligning Foundations"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <h3 className="font-medium text-lg mb-2">Aligning Foundations</h3>
                 <p className="text-muted-foreground">
@@ -235,7 +241,12 @@ export default function TravelAppCaseStudy() {
               {/* Building Components */}
               <div>
                 <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
-                  <Image src="/building-reusable-ui-components-design-system.jpg" alt="Building Components" fill className="object-cover" />
+                  <Image
+                    src="/building-reusable-ui-components-design-system.jpg"
+                    alt="Building Components"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <h3 className="font-medium text-lg mb-2">Building Components</h3>
                 <p className="text-muted-foreground">
