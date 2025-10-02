@@ -419,27 +419,27 @@ export default function TravelAppCaseStudy() {
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-4xl font-medium mb-2">40%</h3>
-              <p className="text-muted-foreground">
-                Reduction in design and development time through reusable components and shared foundations
-              </p>
-            </div>
-            <div>
               <h3 className="text-4xl font-medium mb-2">15%</h3>
               <p className="text-muted-foreground">
-                Improvement in record-keeping accuracy due to clearer UI patterns and better accessibility
+                Increase in record-keeping accuracy by patrol officers
               </p>
             </div>
             <div>
-              <h3 className="text-4xl font-medium mb-2">35%</h3>
+              <h3 className="text-4xl font-medium mb-2">20%</h3>
               <p className="text-muted-foreground">
-                Increase in user satisfaction from consistent, intuitive experiences across mobile and desktop
+                Faster task completion in the admin portal
               </p>
             </div>
             <div>
-              <h3 className="text-4xl font-medium mb-2">100%</h3>
+              <h3 className="text-4xl font-medium mb-2">40%</h3>
               <p className="text-muted-foreground">
-                Team adoption of the design system across all new features and product updates
+                Reduction in design + development time via shared system
+              </p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-medium mb-2">135%</h3>
+              <p className="text-muted-foreground">
+                Improvement in user satisfaction scores
               </p>
             </div>
           </div>
