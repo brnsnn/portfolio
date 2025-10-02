@@ -163,20 +163,20 @@ export default function TravelAppCaseStudy() {
           </div>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-muted-foreground mb-2">
                 The mobile and desktop experiences looked and behaved differently, creating inconsistencies that
                 confused users and slowed down the design and development team.
               </p>
             </div>
             <div>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-muted-foreground mb-2">
                 To solve this, I set out to create a unified brand and product experience across touchpoints.
               </p>
             </div>
           </div>
 
           <div
-            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8 cursor-pointer hover:opacity-90 transition-opacity"
+            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-16 cursor-pointer hover:opacity-90 transition-opacity"
             onClick={() =>
               setLightboxImage({ src: "/After-1.jpg?height=450&width=800", alt: "After mobile and desktop revisions" })
             }
@@ -190,7 +190,7 @@ export default function TravelAppCaseStudy() {
           </div>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-muted-foreground mb-2">
                 Unified typography, color, and spacing create a consistent experience across the mobile app. Buttons and
                 toggles now meet accessibility standards, improving readability and touch targets in the field. A
                 streamlined interface makes route cards easier to scan, while consistent iconography reduces confusion
@@ -198,7 +198,7 @@ export default function TravelAppCaseStudy() {
               </p>
             </div>
             <div>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-muted-foreground mb-2">
                 The admin portal now uses standardized tokens and components, ensuring consistent typography, color, and
                 spacing across modules. Tables, cards, and status badges are aligned to a cohesive system, improving
                 legibility and reducing design and development time.
@@ -206,7 +206,7 @@ export default function TravelAppCaseStudy() {
             </div>
           </div>
           <div
-            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8 cursor-pointer hover:opacity-90 transition-opacity"
+            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-16 cursor-pointer hover:opacity-90 transition-opacity"
             onClick={() =>
               setLightboxImage({
                 src: "/Mobile-Annotations-1.jpg",
@@ -223,20 +223,20 @@ export default function TravelAppCaseStudy() {
           </div>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-muted-foreground mb-2">
                 The design annotations highlight key improvements made to enhance usability and accessibility. Each
                 element was carefully considered to create a more intuitive user experience.
               </p>
             </div>
             <div>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-muted-foreground mb-2">
                 From improved button sizing to meet accessibility guidelines to refined icon styles for better
                 legibility, these changes collectively improved user satisfaction by 35%.
               </p>
             </div>
           </div>
           <div
-            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8 cursor-pointer hover:opacity-90 transition-opacity"
+            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-16 cursor-pointer hover:opacity-90 transition-opacity"
             onClick={() =>
               setLightboxImage({
                 src: "/Desktop-Annotations-1.jpg",
@@ -253,13 +253,13 @@ export default function TravelAppCaseStudy() {
           </div>
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-muted-foreground mb-2">
                 The desktop annotations showcase systematic improvements to the admin interface, focusing on clearer
                 visual hierarchy and streamlined workflows for route management.
               </p>
             </div>
             <div>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-muted-foreground mb-2">
                 These desktop-specific enhancements reduced task completion time by 25% and significantly improved
                 administrator efficiency in managing route assignments.
               </p>
