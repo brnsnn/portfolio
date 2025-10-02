@@ -1,7 +1,10 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, X } from "lucide-react"
 import { AnimatedName } from "@/components/animated-name"
+import { useState, useEffect } from "react"
 
 const otherCaseStudies = [
   {
@@ -25,6 +28,18 @@ const otherCaseStudies = [
 ]
 
 export default function TravelAppCaseStudy() {
+  const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
+
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setLightboxImage(null)
+      }
+    }
+    window.addEventListener("keydown", handleEscape)
+    return () => window.removeEventListener("keydown", handleEscape)
+  }, [])
+
   return (
     <div className="flex min-h-screen flex-col">
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-on-load animate-fade-in">
@@ -60,8 +75,16 @@ export default function TravelAppCaseStudy() {
         </section>
 
         {/* Hero Image */}
-        <div className="container mb-16 animate-on-load animate-fade-in-up animate-delay-300">
-          <div className="w-full aspect-[16/9] relative">
+        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300">
+          <div
+            className="w-full aspect-[16/9] relative cursor-pointer hover:opacity-90 transition-opacity"
+            onClick={() =>
+              setLightboxImage({
+                src: "/Benchmark-Design-System-thumbnail.jpg",
+                alt: "Design System for Peace-Building Platform Hero",
+              })
+            }
+          >
             <Image
               src="/Benchmark-Design-System-thumbnail.jpg"
               alt="Design System for Peace-Building Platform Hero"
@@ -74,7 +97,7 @@ export default function TravelAppCaseStudy() {
 
         {/* Project Details */}
         <div className="container animate-on-load animate-fade-in-up animate-delay-400">
-          <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-12 mb-20">
+          <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-12 mb-32">
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="h-px w-8 bg-foreground/30"></div>
@@ -116,12 +139,20 @@ export default function TravelAppCaseStudy() {
         </div>
 
         {/* Problem */}
-        <div className="max-w-[1140px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-500">
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500">
           <div className="flex items-center gap-2 mb-6">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
           </div>
-          <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
+          <div
+            className="aspect-[16/9] relative cursor-pointer hover:opacity-90 transition-opacity"
+            onClick={() =>
+              setLightboxImage({
+                src: "/Before-1.jpg?height=450&width=800",
+                alt: "Before mobile and desktop revisions",
+              })
+            }
+          >
             <Image
               src="/Before-1.jpg?height=450&width=800"
               alt="Before mobile and desktop revisions"
@@ -143,7 +174,12 @@ export default function TravelAppCaseStudy() {
             </div>
           </div>
 
-          <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
+          <div
+            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8 cursor-pointer hover:opacity-90 transition-opacity"
+            onClick={() =>
+              setLightboxImage({ src: "/After-1.jpg?height=450&width=800", alt: "After mobile and desktop revisions" })
+            }
+          >
             <Image
               src="/After-1.jpg?height=450&width=800"
               alt="After mobile and desktop revisions"
@@ -168,7 +204,15 @@ export default function TravelAppCaseStudy() {
               </p>
             </div>
           </div>
-          <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
+          <div
+            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8 cursor-pointer hover:opacity-90 transition-opacity"
+            onClick={() =>
+              setLightboxImage({
+                src: "/Mobile-Annotations-1.jpg",
+                alt: "Mobile design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling",
+              })
+            }
+          >
             <Image
               src="/Mobile-Annotations-1.jpg"
               alt="Mobile design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
@@ -176,7 +220,7 @@ export default function TravelAppCaseStudy() {
               className="object-cover"
             />
           </div>
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
               <p className="text-muted-foreground mb-4">
                 The design annotations highlight key improvements made to enhance usability and accessibility. Each
@@ -190,7 +234,15 @@ export default function TravelAppCaseStudy() {
               </p>
             </div>
           </div>
-          <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
+          <div
+            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8 cursor-pointer hover:opacity-90 transition-opacity"
+            onClick={() =>
+              setLightboxImage({
+                src: "/Desktop-Annotations-1.jpg",
+                alt: "Desktop design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling",
+              })
+            }
+          >
             <Image
               src="/Desktop-Annotations-1.jpg"
               alt="Desktop design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
@@ -215,17 +267,25 @@ export default function TravelAppCaseStudy() {
         </div>
 
         {/* Our Approach */}
-        <div className="max-w-[1140px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-600">
+        <div className="max-w-[1140px] mx-auto animate-on-load animate-fade-in-up animate-delay-600">
           <div className="flex items-center gap-2 mb-6">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">OUR APPROACH</span>
           </div>
         </div>
 
-        <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-x-8 gap-y-16 mb-8 mt-6">
+        <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-x-8 gap-y-16 mb-48">
           {/* Audit & Discovery */}
           <div>
-            <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
+            <div
+              className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/audit-and-discovery-process-design-system.jpg",
+                  alt: "Audit and Discovery process",
+                })
+              }
+            >
               <Image
                 src="/audit-and-discovery-process-design-system.jpg"
                 alt="Audit and Discovery process"
@@ -243,7 +303,15 @@ export default function TravelAppCaseStudy() {
 
           {/* Aligning Foundations */}
           <div>
-            <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
+            <div
+              className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/design-foundations-typography-color-spacing-tokens.jpg",
+                  alt: "Aligning Foundations",
+                })
+              }
+            >
               <Image
                 src="/design-foundations-typography-color-spacing-tokens.jpg"
                 alt="Aligning Foundations"
@@ -261,7 +329,15 @@ export default function TravelAppCaseStudy() {
 
           {/* Building Components */}
           <div>
-            <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
+            <div
+              className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/building-reusable-ui-components-design-system.jpg",
+                  alt: "Building Components",
+                })
+              }
+            >
               <Image
                 src="/building-reusable-ui-components-design-system.jpg"
                 alt="Building Components"
@@ -278,7 +354,15 @@ export default function TravelAppCaseStudy() {
 
           {/* Documentation & Handoff */}
           <div>
-            <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
+            <div
+              className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/design-system-documentation-and-developer-handoff.jpg",
+                  alt: "Documentation and Handoff",
+                })
+              }
+            >
               <Image
                 src="/design-system-documentation-and-developer-handoff.jpg"
                 alt="Documentation and Handoff"
@@ -295,8 +379,107 @@ export default function TravelAppCaseStudy() {
           </div>
         </div>
 
+        {/* THE SOLUTION */}
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-700">
+          <div className="flex items-center gap-2 mb-6">
+            <div className="h-px w-8 bg-foreground/30"></div>
+            <span className="text-sm font-medium text-foreground/60">THE SOLUTION</span>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <p className="text-muted-foreground mb-4">
+                The Benchmark design system unified Philly Truce's mobile and desktop experiences through shared design
+                tokens, reusable components, and comprehensive documentation. Every element—from typography and color to
+                buttons and forms—was standardized to create a cohesive product experience.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                The system included accessibility guidelines, responsive patterns, and clear implementation specs that
+                empowered both designers and developers to work faster and more confidently.
+              </p>
+            </div>
+            <div>
+              <p className="text-muted-foreground mb-4">
+                By establishing a single source of truth, we eliminated design debt, reduced inconsistencies, and
+                created a scalable foundation that could grow with the product. The system became the backbone for all
+                future feature development.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Cross-functional collaboration improved significantly as designers and developers spoke the same
+                language, referencing the same components and patterns throughout the development process.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* THE IMPACT */}
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-800">
+          <div className="flex items-center gap-2 mb-6">
+            <div className="h-px w-8 bg-foreground/30"></div>
+            <span className="text-sm font-medium text-foreground/60">THE IMPACT</span>
+          </div>
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="text-4xl font-medium mb-2">40%</h3>
+              <p className="text-muted-foreground">
+                Reduction in design and development time through reusable components and shared foundations
+              </p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-medium mb-2">15%</h3>
+              <p className="text-muted-foreground">
+                Improvement in record-keeping accuracy due to clearer UI patterns and better accessibility
+              </p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-medium mb-2">35%</h3>
+              <p className="text-muted-foreground">
+                Increase in user satisfaction from consistent, intuitive experiences across mobile and desktop
+              </p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-medium mb-2">100%</h3>
+              <p className="text-muted-foreground">
+                Team adoption of the design system across all new features and product updates
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* REFLECTION */}
+        <div className="max-w-[1140px] mx-auto mb-48 animate-on-load animate-fade-in-up animate-delay-900">
+          <div className="flex items-center gap-2 mb-6">
+            <div className="h-px w-8 bg-foreground/30"></div>
+            <span className="text-sm font-medium text-foreground/60">REFLECTION</span>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="font-medium text-lg mb-3">What Worked Well</h3>
+              <p className="text-muted-foreground mb-4">
+                Starting with a comprehensive audit gave us a clear picture of the problems we needed to solve. Building
+                the system collaboratively with developers ensured buy-in and smooth implementation. The documentation
+                became an invaluable resource that continues to guide the team.
+              </p>
+              <p className="text-muted-foreground">
+                Focusing on accessibility from the start meant we didn't have to retrofit components later, saving time
+                and ensuring a better experience for all users.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-medium text-lg mb-3">What I'd Do Differently</h3>
+              <p className="text-muted-foreground mb-4">
+                I would have involved more end users earlier in the process to validate component patterns before full
+                implementation. While we tested thoroughly, earlier user feedback could have caught edge cases sooner.
+              </p>
+              <p className="text-muted-foreground">
+                I'd also establish a more formal governance process from day one to manage component requests and
+                updates as the system scales. This would help maintain consistency as more teams adopt the system.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* More Case Studies */}
-        <div className="bg-muted py-16 animate-on-load animate-fade-in-up animate-delay-700">
+        <div className="bg-muted py-24 animate-on-load animate-fade-in-up animate-delay-1000">
           <div className="container">
             <div className="flex items-center gap-2 mb-8">
               <div className="h-px w-8 bg-foreground/30"></div>
@@ -349,6 +532,37 @@ export default function TravelAppCaseStudy() {
           </Link>
         </div>
       </footer>
+
+      {/* Lightbox component */}
+      {lightboxImage && (
+        <div
+          className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4"
+          onClick={() => setLightboxImage(null)}
+        >
+          <button
+            onClick={() => setLightboxImage(null)}
+            className="absolute top-4 right-4 text-white hover:text-white/70 transition-colors z-10"
+            aria-label="Close lightbox"
+          >
+            <X className="h-8 w-8" />
+          </button>
+          <div
+            className="relative max-w-[95vw] max-h-[95vh] w-full flex flex-col items-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="relative w-full h-full flex items-center justify-center mb-4">
+              <Image
+                src={lightboxImage.src || "/placeholder.svg"}
+                alt={lightboxImage.alt}
+                width={1920}
+                height={1080}
+                className="object-contain max-h-[88vh] w-auto h-auto rounded-lg"
+              />
+            </div>
+            <p className="text-white/80 text-sm text-center max-w-3xl px-4">{lightboxImage.alt}</p>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
