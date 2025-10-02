@@ -259,7 +259,7 @@ export default function BankingCaseStudy() {
 
 const otherCaseStudies = [
   {
-    title: "Design System for a Peace-Building Platform to Reduce Violence by 50%",
+    title: "Unifying mobile and desktop with a scalable design system that boosted efficiency by 40%",
     subtitle: "Philly Truce",
     image: "/placeholder.svg?height=400&width=600",
     caseStudyUrl: "/case-study/benchmark",
