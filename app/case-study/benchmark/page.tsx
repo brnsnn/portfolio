@@ -82,13 +82,15 @@ export default function TravelAppCaseStudy() {
                 <span className="text-sm font-medium text-foreground/60">PROJECT OVERVIEW</span>
               </div>
               <p className="text-muted-foreground mb-4">
-                I built Benchmark, a cross-platform design system that unified Philly Truce’s mobile Peace Patrol app and desktop admin platform. Before, each platform felt fragmented — different fonts,
-                buttons, colors, and interaction patterns created confusion for users and slowed down design and development.</p>
-              
+                I built Benchmark, a cross-platform design system that unified Philly Truce’s mobile Peace Patrol app
+                and desktop admin platform. Before, each platform felt fragmented — different fonts, buttons, colors,
+                and interaction patterns created confusion for users and slowed down design and development.
+              </p>
+
               <p className="text-muted-foreground mb-4">
-                By creating shared foundations and reusable components, I reduced design and
-                dev time by 40%, improved record-keeping accuracy by 15%, and made the product feel cohesive across touchpoints.
-                </p>
+                By creating shared foundations and reusable components, I reduced design and dev time by 40%, improved
+                record-keeping accuracy by 15%, and made the product feel cohesive across touchpoints.
+              </p>
             </div>
             <div className="space-y-8">
               <div>
@@ -97,7 +99,10 @@ export default function TravelAppCaseStudy() {
               </div>
               <div>
                 <h3 className="mb-2">Scope</h3>
-                <p className="text-muted-foreground">Audit & discovery, foundations, core components, cross-platform unification, accessibility & usability, implementation & collaboration</p>
+                <p className="text-muted-foreground">
+                  Audit & discovery, foundations, core components, cross-platform unification, accessibility &
+                  usability, implementation & collaboration
+                </p>
               </div>
               <div>
                 <h3 className="mb-2">My Role</h3>
@@ -149,14 +154,17 @@ export default function TravelAppCaseStudy() {
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
                 <p className="text-muted-foreground mb-4">
-                  Unified typography, color, and spacing create a consistent experience across the mobile app. Buttons and toggles now meet accessibility standards, improving readability and touch targets in the field.
-                  A streamlined interface makes route cards easier to scan, while consistent iconography reduces confusion for officers on the go.
+                  Unified typography, color, and spacing create a consistent experience across the mobile app. Buttons
+                  and toggles now meet accessibility standards, improving readability and touch targets in the field. A
+                  streamlined interface makes route cards easier to scan, while consistent iconography reduces confusion
+                  for officers on the go.
                 </p>
               </div>
               <div>
                 <p className="text-muted-foreground mb-4">
-                  The admin portal now uses standardized tokens and components, ensuring consistent typography, color, and spacing across modules.
-                  Tables, cards, and status badges are aligned to a cohesive system, improving legibility and reducing design and development time.
+                  The admin portal now uses standardized tokens and components, ensuring consistent typography, color,
+                  and spacing across modules. Tables, cards, and status badges are aligned to a cohesive system,
+                  improving legibility and reducing design and development time.
                 </p>
               </div>
             </div>
@@ -203,6 +211,70 @@ export default function TravelAppCaseStudy() {
                 <p className="text-muted-foreground">
                   This alignment created a cohesive design system that improved the user experience across touchpoints
                   and gave the design and development teams greater clarity and efficiency.
+                </p>
+              </div>
+            </div>
+
+            <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-8 mb-16">
+              {/* Audit & Discovery */}
+              <div>
+                <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
+                  <Image
+                    src="/audit-and-discovery-process-design-system.jpg"
+                    alt="Audit and Discovery process"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="font-medium text-lg mb-2">Audit & Discovery</h3>
+                <p className="text-muted-foreground">
+                  We conducted a comprehensive audit of both mobile and desktop platforms to identify inconsistencies in
+                  typography, color, spacing, and component usage. This discovery phase revealed critical gaps in
+                  accessibility and visual alignment.
+                </p>
+              </div>
+
+              {/* Aligning Foundations */}
+              <div>
+                <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
+                  <Image src="/design-foundations-typography-color-spacing-tokens.jpg" alt="Aligning Foundations" fill className="object-cover" />
+                </div>
+                <h3 className="font-medium text-lg mb-2">Aligning Foundations</h3>
+                <p className="text-muted-foreground">
+                  We established shared design tokens for typography, color, spacing, and interaction patterns. These
+                  foundations ensured consistency across platforms and created a single source of truth for the design
+                  and development teams.
+                </p>
+              </div>
+
+              {/* Building Components */}
+              <div>
+                <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
+                  <Image src="/building-reusable-ui-components-design-system.jpg" alt="Building Components" fill className="object-cover" />
+                </div>
+                <h3 className="font-medium text-lg mb-2">Building Components</h3>
+                <p className="text-muted-foreground">
+                  We created a library of reusable components — buttons, forms, cards, and navigation elements — that
+                  work seamlessly across mobile and desktop. Each component was built with accessibility and scalability
+                  in mind.
+                </p>
+              </div>
+
+              {/* Documentation & Handoff */}
+              <div>
+                <div className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4">
+                  <Image
+                    src="/design-system-documentation-and-developer-handoff.jpg"
+                    alt="Documentation and Handoff"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="font-medium text-lg mb-2">Documentation & Handoff</h3>
+                <p className="text-muted-foreground">
+                  We documented usage guidelines, interaction patterns, and implementation details to ensure smooth
+                  handoff to developers. This documentation became a living resource that continues to guide the team as
+                  the system evolves.
                 </p>
               </div>
             </div>
