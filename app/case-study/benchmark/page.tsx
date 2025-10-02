@@ -140,6 +140,30 @@ export default function TravelAppCaseStudy() {
 
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
               <Image
+                src="/After-1.jpg?height=450&width=800"
+                alt="After mobile and desktop revisions"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  The mobile and desktop experiences looked and behaved differently, creating inconsistencies that
+                  confused users and slowed down the design and development team.
+                </p>
+              </div>
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  To solve this, I set out to create a unified brand and product experience across touchpoints.
+                </p>
+              </div>
+            </div>
+
+            
+
+            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile-Annotations-1.jpg-dfHEvJD6byRP9siAITbrReHKL6h0uS.jpeg"
                 alt="Mobile design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
                 fill
