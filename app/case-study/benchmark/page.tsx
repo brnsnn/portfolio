@@ -169,7 +169,7 @@ export default function TravelAppCaseStudy() {
             </div>
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
               <Image
-                src="/mobile-design-annotations-showing-ui-improvements-.jpg"
+                src="/Mobile-Annotations-1.jpg"
                 alt="Mobile design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
                 fill
                 className="object-cover"
