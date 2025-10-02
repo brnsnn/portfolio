@@ -149,13 +149,14 @@ export default function TravelAppCaseStudy() {
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
                 <p className="text-muted-foreground mb-4">
-                  The mobile and desktop experiences looked and behaved differently, creating inconsistencies that
-                  confused users and slowed down the design and development team.
+                  Unified typography, color, and spacing create a consistent experience across the mobile app. Buttons and toggles now meet accessibility standards, improving readability and touch targets in the field.
+                  A streamlined interface makes route cards easier to scan, while consistent iconography reduces confusion for officers on the go.
                 </p>
               </div>
               <div>
                 <p className="text-muted-foreground mb-4">
-                  To solve this, I set out to create a unified brand and product experience across touchpoints.
+                  The admin portal now uses standardized tokens and components, ensuring consistent typography, color, and spacing across modules.
+                  Tables, cards, and status badges are aligned to a cohesive system, improving legibility and reducing design and development time.
                 </p>
               </div>
             </div>
