@@ -15,7 +15,7 @@ export function CaseStudyCarousel({ currentCaseStudyId }: CaseStudyCarouselProps
   const otherCaseStudies = allCaseStudies.filter((study) => study.id !== currentCaseStudyId)
 
   return (
-    <div className="relative px-12">
+    <div className="relative">
       <Carousel
         opts={{
           align: "start",
@@ -47,8 +47,10 @@ export function CaseStudyCarousel({ currentCaseStudyId }: CaseStudyCarouselProps
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <div className="flex justify-end gap-2 mt-6">
+          <CarouselPrevious className="static translate-y-0" aria-label="Previous case studies" />
+          <CarouselNext className="static translate-y-0" aria-label="Next case studies" />
+        </div>
       </Carousel>
     </div>
   )

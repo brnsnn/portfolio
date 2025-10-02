@@ -139,14 +139,49 @@ export default function TravelAppCaseStudy() {
           </div>
         </div>
 
-        {/* Problem */}
+        {/* THE IMPACT */}
         <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500">
+          <div className="flex items-center gap-2 mb-6">
+            <div className="h-px w-8 bg-foreground/30"></div>
+            <span className="text-sm font-medium text-foreground/60">THE IMPACT</span>
+          </div>
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="text-4xl font-medium mb-2">15%</h3>
+              <p className="text-muted-foreground">Increase in record-keeping accuracy by patrol officers</p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-medium mb-2">20%</h3>
+              <p className="text-muted-foreground">
+                Faster task completion in <br />
+                the admin portal
+              </p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-medium mb-2">40%</h3>
+              <p className="text-muted-foreground">
+                Reduction in design + development time via <br />
+                shared system
+              </p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-medium mb-2">35%</h3>
+              <p className="text-muted-foreground">
+                Improvement in user <br />
+                satisfaction scores
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Problem */}
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600">
           <div className="flex items-center gap-2 mb-6">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
           </div>
           <div
-            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8 cursor-pointer hover:opacity-90 transition-opacity"
+            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6 cursor-pointer hover:opacity-90 transition-opacity"
             onClick={() =>
               setLightboxImage({
                 src: "/Before-1.jpg?height=450&width=800",
@@ -161,7 +196,7 @@ export default function TravelAppCaseStudy() {
               className="object-cover"
             />
           </div>
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div>
               <p className="text-muted-foreground mb-2">
                 The mobile and desktop experiences looked and behaved differently, creating inconsistencies that
@@ -176,7 +211,7 @@ export default function TravelAppCaseStudy() {
           </div>
 
           <div
-            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-16 cursor-pointer hover:opacity-90 transition-opacity"
+            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6 cursor-pointer hover:opacity-90 transition-opacity"
             onClick={() =>
               setLightboxImage({ src: "/After-1.jpg?height=450&width=800", alt: "After mobile and desktop revisions" })
             }
@@ -188,7 +223,7 @@ export default function TravelAppCaseStudy() {
               className="object-cover"
             />
           </div>
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div>
               <p className="text-muted-foreground mb-2">
                 Unified typography, color, and spacing create a consistent experience across the mobile app. Buttons and
@@ -206,7 +241,7 @@ export default function TravelAppCaseStudy() {
             </div>
           </div>
           <div
-            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-16 cursor-pointer hover:opacity-90 transition-opacity"
+            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6 cursor-pointer hover:opacity-90 transition-opacity"
             onClick={() =>
               setLightboxImage({
                 src: "/Mobile-Annotations-1.jpg",
@@ -221,7 +256,7 @@ export default function TravelAppCaseStudy() {
               className="object-cover"
             />
           </div>
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div>
               <p className="text-muted-foreground mb-2">
                 The design annotations highlight key improvements made to enhance usability and accessibility. Each
@@ -236,7 +271,7 @@ export default function TravelAppCaseStudy() {
             </div>
           </div>
           <div
-            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-16 cursor-pointer hover:opacity-90 transition-opacity"
+            className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6 cursor-pointer hover:opacity-90 transition-opacity"
             onClick={() =>
               setLightboxImage({
                 src: "/Desktop-Annotations-1.jpg",
@@ -268,7 +303,7 @@ export default function TravelAppCaseStudy() {
         </div>
 
         {/* Our Approach */}
-        <div className="max-w-[1140px] mx-auto animate-on-load animate-fade-in-up animate-delay-600">
+        <div className="max-w-[1140px] mx-auto animate-on-load animate-fade-in-up animate-delay-700">
           <div className="flex items-center gap-2 mb-6">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">OUR APPROACH</span>
@@ -381,7 +416,7 @@ export default function TravelAppCaseStudy() {
         </div>
 
         {/* THE SOLUTION */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-700">
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-800">
           <div className="flex items-center gap-2 mb-6">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">THE SOLUTION</span>
@@ -407,41 +442,6 @@ export default function TravelAppCaseStudy() {
               <p className="text-muted-foreground mb-4">
                 Cross-functional collaboration improved significantly as designers and developers spoke the same
                 language, referencing the same components and patterns throughout the development process.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* THE IMPACT */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-800">
-          <div className="flex items-center gap-2 mb-6">
-            <div className="h-px w-8 bg-foreground/30"></div>
-            <span className="text-sm font-medium text-foreground/60">THE IMPACT</span>
-          </div>
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-4xl font-medium mb-2">15%</h3>
-              <p className="text-muted-foreground">Increase in record-keeping accuracy by patrol officers</p>
-            </div>
-            <div>
-              <h3 className="text-4xl font-medium mb-2">20%</h3>
-              <p className="text-muted-foreground">
-                Faster task completion in <br />
-                the admin portal
-              </p>
-            </div>
-            <div>
-              <h3 className="text-4xl font-medium mb-2">40%</h3>
-              <p className="text-muted-foreground">
-                Reduction in design + development time via <br />
-                shared system
-              </p>
-            </div>
-            <div>
-              <h3 className="text-4xl font-medium mb-2">35%</h3>
-              <p className="text-muted-foreground">
-                Improvement in user <br />
-                satisfaction scores
               </p>
             </div>
           </div>
@@ -482,7 +482,7 @@ export default function TravelAppCaseStudy() {
 
         {/* More Case Studies */}
         <div className="bg-muted py-24 animate-on-load animate-fade-in-up animate-delay-1000">
-          <div className="container">
+          <div className="max-w-[1140px] mx-auto">
             <div className="flex items-center gap-2 mb-8">
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>

@@ -1,8 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 import { AnimatedName } from "@/components/animated-name"
+import { CaseStudyCarousel } from "@/components/case-study-carousel"
 
 export default function BankingCaseStudy() {
   return (
@@ -198,42 +198,13 @@ export default function BankingCaseStudy() {
         </div>
 
         {/* More Case Studies */}
-        <div className="bg-muted py-16 animate-on-load animate-fade-in-up animate-delay-700">
-          <div className="container">
+        <div className="bg-muted py-24 animate-on-load animate-fade-in-up animate-delay-700">
+          <div className="max-w-[1140px] mx-auto">
             <div className="flex items-center gap-2 mb-8">
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>
             </div>
-            <div className="grid gap-6 md:grid-cols-3">
-              {otherCaseStudies.map((project, index) => (
-                <Link
-                  key={index}
-                  href={project.caseStudyUrl}
-                  className="group block overflow-hidden rounded-lg border border-border bg-background transition-all duration-500 ease-in-out hover:bg-muted relative"
-                >
-                  <div className="aspect-video relative overflow-hidden">
-                    <Image
-                      src={project.image || "/placeholder.svg"}
-                      alt={project.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="font-medium text-lg mb-1 transition-colors duration-500 ease-in-out">
-                      {project.title}
-                    </h3>
-                    <div className="flex items-center justify-between">
-                      <p className="text-muted-foreground text-sm">{project.subtitle}</p>
-                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center text-muted-foreground text-sm">
-                        View Case Study
-                        <ArrowRight className="ml-1 h-3 w-3" />
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
+            <CaseStudyCarousel currentCaseStudyId="philly-truce" />
           </div>
         </div>
       </main>
@@ -256,24 +227,3 @@ export default function BankingCaseStudy() {
     </div>
   )
 }
-
-const otherCaseStudies = [
-  {
-    title: "Unifying mobile and desktop with a scalable design system that boosted efficiency by 40%",
-    subtitle: "Philly Truce",
-    image: "/placeholder.svg?height=400&width=600",
-    caseStudyUrl: "/case-study/benchmark",
-  },
-  {
-    title: "0-1 design system for a web3 gaming community",
-    subtitle: "Soulbound",
-    image: "/placeholder.svg?height=400&width=600",
-    caseStudyUrl: "/case-study/soulbound",
-  },
-  {
-    title: "100,000+ views supporting high-risk HIV protection efforts",
-    subtitle: "Chill Pill",
-    image: "/placeholder.svg?height=400&width=600",
-    caseStudyUrl: "/case-study/chill-pill",
-  },
-]

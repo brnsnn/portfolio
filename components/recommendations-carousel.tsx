@@ -17,13 +17,14 @@ interface RecommendationsCarouselProps {
 }
 
 export function RecommendationsCarousel({ recommendations }: RecommendationsCarouselProps) {
-  const [currentPage, setCurrentPage] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0)
   const [expandedCard, setExpandedCard] = useState<string | null>(null)
   const carouselRef = useRef<HTMLDivElement>(null)
 
-  // Always show 2 cards at a time
-  const cardsPerPage = 2
-  const totalPages = Math.ceil(recommendations.length / cardsPerPage)
+  // Each card is 45% width, so we can show ~2.2 cards at a time
+  // maxIndex should be total cards minus the number of cards visible at once
+  const cardsVisible = 2.2
+  const maxIndex = Math.max(0, recommendations.length - cardsVisible)
 
   const toggleExpanded = (cardId: string) => {
     setExpandedCard((prev) => {
@@ -35,120 +36,110 @@ export function RecommendationsCarousel({ recommendations }: RecommendationsCaro
   }
 
   const goToPrevious = () => {
-    setCurrentPage((prev) => Math.max(0, prev - 1))
+    setCurrentIndex((prev) => Math.max(0, prev - 1))
   }
 
   const goToNext = () => {
-    setCurrentPage((prev) => Math.min(totalPages - 1, prev + 1))
+    setCurrentIndex((prev) => Math.min(maxIndex, prev + 1))
   }
 
-  const goToPage = (page: number) => {
-    setCurrentPage(page)
+  const getTransform = () => {
+    // Normal scroll: move by card width percentage
+    const normalScroll = currentIndex * (100 / cardsVisible)
+
+    // If we're at or near the end, ensure the last card aligns with the right edge
+    if (currentIndex >= recommendations.length - cardsVisible) {
+      // Calculate the exact position where last card's right edge aligns with container's right edge
+      const totalCardsWidth = recommendations.length * (100 / cardsVisible)
+      const maxScroll = totalCardsWidth - 100
+      return Math.min(normalScroll, maxScroll)
+    }
+
+    return normalScroll
   }
 
   return (
     <div className="relative w-full">
-      {/* Carousel container */}
-      <div className="overflow-hidden">
-        <div
-          ref={carouselRef}
-          className="flex transition-transform duration-700 ease-in-out"
-          style={{ transform: `translateX(-${currentPage * 100}%)` }}
-        >
-          {/* Create pages of 2 recommendations each */}
-          {Array.from({ length: totalPages }).map((_, pageIndex) => (
-            <div key={`page-${pageIndex}`} className="w-full flex-none">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {recommendations
-                  .slice(pageIndex * cardsPerPage, (pageIndex + 1) * cardsPerPage)
-                  .map((recommendation, index) => {
-                    const cardId = `${pageIndex}-${index}`
-                    const isExpanded = expandedCard === cardId
-                    const textLines = recommendation.quote.split("\n").length
-                    const estimatedLines = Math.ceil(recommendation.quote.length / 80) // Rough estimate based on average characters per line
-                    const needsTruncation = estimatedLines > 3
+      <div className="overflow-hidden -mx-3">
+        <div className="px-3">
+          <div
+            ref={carouselRef}
+            className="flex gap-6 transition-transform duration-700 ease-in-out"
+            style={{ transform: `translateX(-${getTransform()}%)` }}
+          >
+            {recommendations.map((recommendation, index) => {
+              const cardId = `${index}`
+              const isExpanded = expandedCard === cardId
+              const textLines = recommendation.quote.split("\n").length
+              const estimatedLines = Math.ceil(recommendation.quote.length / 80)
+              const needsTruncation = estimatedLines > 3
 
-                    return (
-                      <div
-                        key={`recommendation-${cardId}`}
-                        className={cn(
-                          "bg-background border border-border rounded-lg p-6 shadow-sm flex flex-col transition-all duration-500 ease-out transform-gpu",
-                          isExpanded ? "min-h-[200px]" : "h-[200px]",
-                        )}
-                        style={{
-                          maxHeight: isExpanded ? "1000px" : "200px",
-                          overflow: "hidden",
-                        }}
-                      >
-                        <div className="space-y-4 h-full flex flex-col">
-                          <div>
-                            <h3 className="font-medium">{recommendation.name}</h3>
-                            <p className="text-sm text-muted-foreground">{recommendation.position}</p>
-                          </div>
-                          <div className="flex-grow flex flex-col">
-                            <p
-                              className={cn(
-                                "text-muted-foreground flex-grow transition-all duration-500 ease-out",
-                                !isExpanded && needsTruncation && "line-clamp-3",
-                              )}
-                            >
-                              {recommendation.quote}
-                            </p>
-                            {needsTruncation && (
-                              <button
-                                onClick={() => toggleExpanded(cardId)}
-                                className="text-primary text-sm mt-2 self-start transition-all duration-300 ease-out hover:text-primary/80 hover:scale-105"
-                              >
-                                {isExpanded ? "Read less" : "Read more"}
-                              </button>
-                            )}
-                          </div>
-                        </div>
+              return (
+                <div key={`recommendation-${cardId}`} className="flex-none w-[calc(50%-12px)] md:w-[calc(45%-12px)]">
+                  <div
+                    className={cn(
+                      "bg-background border border-border rounded-lg p-6 shadow-sm flex flex-col transition-all duration-500 ease-out transform-gpu",
+                      isExpanded ? "min-h-[200px]" : "h-[200px]",
+                    )}
+                    style={{
+                      maxHeight: isExpanded ? "1000px" : "200px",
+                      overflow: "hidden",
+                    }}
+                  >
+                    <div className="space-y-4 h-full flex flex-col">
+                      <div>
+                        <h3 className="font-medium">{recommendation.name}</h3>
+                        <p className="text-sm text-muted-foreground">{recommendation.position}</p>
                       </div>
-                    )
-                  })}
-              </div>
-            </div>
-          ))}
+                      <div className="flex-grow flex flex-col">
+                        <p
+                          className={cn(
+                            "text-muted-foreground flex-grow transition-all duration-500 ease-out",
+                            !isExpanded && needsTruncation && "line-clamp-3",
+                          )}
+                        >
+                          {recommendation.quote}
+                        </p>
+                        {needsTruncation && (
+                          <button
+                            onClick={() => toggleExpanded(cardId)}
+                            className="text-primary text-sm mt-2 self-start transition-all duration-300 ease-out hover:text-primary/80 hover:scale-105"
+                          >
+                            {isExpanded ? "Read less" : "Read more"}
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
         </div>
       </div>
 
-      {/* Navigation buttons */}
-      <Button
-        variant="outline"
-        size="icon"
-        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full bg-background border border-border shadow-sm z-10"
-        onClick={goToPrevious}
-        disabled={currentPage === 0}
-      >
-        <ChevronLeft className="h-4 w-4" />
-        <span className="sr-only">Previous</span>
-      </Button>
+      <div className="flex justify-end items-center mt-6 gap-2">
+        <Button
+          variant="outline"
+          size="icon"
+          className="rounded-full bg-background border border-border shadow-sm"
+          onClick={goToPrevious}
+          disabled={currentIndex === 0}
+        >
+          <ChevronLeft className="h-4 w-4" />
+          <span className="sr-only">Previous</span>
+        </Button>
 
-      <Button
-        variant="outline"
-        size="icon"
-        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 rounded-full bg-background border border-border shadow-sm z-10"
-        onClick={goToNext}
-        disabled={currentPage >= totalPages - 1}
-      >
-        <ChevronRight className="h-4 w-4" />
-        <span className="sr-only">Next</span>
-      </Button>
-
-      {/* Indicators */}
-      <div className="flex justify-center mt-6 gap-2">
-        {Array.from({ length: totalPages }).map((_, index) => (
-          <button
-            key={index}
-            className={cn(
-              "w-2 h-2 rounded-full transition-all",
-              currentPage === index ? "bg-primary w-4" : "bg-muted-foreground/30",
-            )}
-            onClick={() => goToPage(index)}
-            aria-label={`Go to page ${index + 1}`}
-          />
-        ))}
+        <Button
+          variant="outline"
+          size="icon"
+          className="rounded-full bg-background border border-border shadow-sm"
+          onClick={goToNext}
+          disabled={currentIndex >= maxIndex}
+        >
+          <ChevronRight className="h-4 w-4" />
+          <span className="sr-only">Next</span>
+        </Button>
       </div>
     </div>
   )

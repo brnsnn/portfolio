@@ -1,8 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 import { AnimatedName } from "@/components/animated-name"
+import { CaseStudyCarousel } from "@/components/case-study-carousel"
 
 export default function CheckoutCaseStudy() {
   return (
@@ -191,39 +191,13 @@ export default function CheckoutCaseStudy() {
         </div>
 
         {/* More Case Studies */}
-        <div className="bg-muted py-16 animate-on-load animate-fade-in-up animate-delay-700">
-          <div className="container">
+        <div className="bg-muted py-24 animate-on-load animate-fade-in-up animate-delay-700">
+          <div className="max-w-[1140px] mx-auto">
             <div className="flex items-center gap-2 mb-8">
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>
             </div>
-            <div className="grid gap-6 md:grid-cols-3">
-              {otherCaseStudies.map((project, index) => (
-                <Link
-                  key={index}
-                  href={project.caseStudyUrl}
-                  className="group block overflow-hidden rounded-lg border border-border bg-background transition-all duration-500 ease-in-out hover:bg-muted relative"
-                >
-                  <div className="aspect-video relative overflow-hidden">
-                    <Image
-                      src={project.image || "/placeholder.svg"}
-                      alt={project.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="font-medium text-lg mb-1 transition-colors duration-500 ease-in-out">
-                      {project.title}
-                    </h3>
-                    <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center text-muted-foreground">
-                      View Case Study
-                      <ArrowRight className="ml-1 h-3 w-3" />
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
+            <CaseStudyCarousel currentCaseStudyId="checkout-flow" />
           </div>
         </div>
       </main>
@@ -238,21 +212,3 @@ export default function CheckoutCaseStudy() {
     </div>
   )
 }
-
-const otherCaseStudies = [
-  {
-    title: "Reducing Violence with a Mobile Web App",
-    image: "/placeholder.svg?height=400&width=600",
-    caseStudyUrl: "/case-study/philly-truce",
-  },
-  {
-    title: "Healthcare Patient Portal",
-    image: "/placeholder.svg?height=400&width=600",
-    caseStudyUrl: "/case-study/healthcare-portal",
-  },
-  {
-    title: "Travel App Redesign",
-    image: "/placeholder.svg?height=400&width=600",
-    caseStudyUrl: "/case-study/travel-app",
-  },
-]
