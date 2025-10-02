@@ -420,26 +420,27 @@ export default function TravelAppCaseStudy() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-4xl font-medium mb-2">15%</h3>
-              <p className="text-muted-foreground">
-                Increase in record-keeping accuracy by patrol officers
-              </p>
+              <p className="text-muted-foreground">Increase in record-keeping accuracy by patrol officers</p>
             </div>
             <div>
               <h3 className="text-4xl font-medium mb-2">20%</h3>
               <p className="text-muted-foreground">
-                Faster task completion in the admin portal
+                Faster task completion in <br />
+                the admin portal
               </p>
             </div>
             <div>
               <h3 className="text-4xl font-medium mb-2">40%</h3>
               <p className="text-muted-foreground">
-                Reduction in design + development time via shared system
+                Reduction in design + development time via <br />
+                shared system
               </p>
             </div>
             <div>
               <h3 className="text-4xl font-medium mb-2">35%</h3>
               <p className="text-muted-foreground">
-                Improvement in user satisfaction scores
+                Improvement in user <br />
+                satisfaction scores
               </p>
             </div>
           </div>
