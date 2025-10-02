@@ -190,8 +190,8 @@ export default function TravelAppCaseStudy() {
                 </p>
               </div>
             </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
+          {/* Our Approach */}
+            <div className="max-w-[1140px] mx-auto mb-16">
               <div>
                 <div className="flex items-center gap-2 mb-6">
                   <div className="h-px w-8 bg-foreground/30"></div>
