@@ -198,22 +198,7 @@ export default function TravelAppCaseStudy() {
                   <span className="text-sm font-medium text-foreground/60">OUR APPROACH</span>
                 </div>
               </div>
-              <div>
-                <p className="text-muted-foreground mb-4">
-                  We began with an audit and discovery process to identify inconsistencies between the mobile and
-                  desktop experiences. This surfaced gaps in accessibility, visual alignment, and component usage.
-                </p>
-                <p className="text-muted-foreground">
-                  From there, we established shared foundations across platforms — unifying typography, color, spacing,
-                  interaction patterns, and accessibility standards.
-                </p>
-                <br />
-                <p className="text-muted-foreground">
-                  This alignment created a cohesive design system that improved the user experience across touchpoints
-                  and gave the design and development teams greater clarity and efficiency.
-                </p>
-              </div>
-            </div>
+
 
             <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-8 mb-16">
               {/* Audit & Discovery */}
