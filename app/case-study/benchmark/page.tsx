@@ -160,56 +160,6 @@ export default function TravelAppCaseStudy() {
                 </p>
               </div>
             </div>
-
-            
-
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile-Annotations-1.jpg-dfHEvJD6byRP9siAITbrReHKL6h0uS.jpeg"
-                alt="Mobile design annotations showing UI improvements including inactive tab contrast, filter indicators, icon sizing, button accessibility, and rounded icon styling"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div>
-                <p className="text-muted-foreground mb-4">
-                  The design annotations highlight key improvements made to enhance usability and accessibility. Each
-                  element was carefully considered to create a more intuitive user experience.
-                </p>
-              </div>
-              <div>
-                <p className="text-muted-foreground mb-4">
-                  From improved button sizing to meet accessibility guidelines to refined icon styles for better
-                  legibility, these changes collectively improved user satisfaction by 35%.
-                </p>
-              </div>
-            </div>
-
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
-              <Image
-                src="/Desktop-old-new-1.jpg?height=450&width=800"
-                alt="Old versus new desktop design"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div>
-                <p className="text-muted-foreground mb-4">
-                  The desktop admin interface was cluttered with unclear navigation labels, and competing visual
-                  elements that made scanning and publishing schedules inefficient.
-                </p>
-              </div>
-              <div>
-                <p className="text-muted-foreground mb-4">
-                  I redesigned the desktop experience by simplifying navigation, clarifying hierarchy, and streamline
-                  bulk actions—making routes easier to scan, assign, and manage while aligning with the mobile
-                  experience.
-                </p>
-              </div>
-            </div>
-
             <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-8">
               <Image
                 src="/Desktop-Annotations-1.jpg"
