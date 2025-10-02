@@ -145,7 +145,7 @@ export default function TravelAppCaseStudy() {
             <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
           </div>
           <div
-            className="aspect-[16/9] relative cursor-pointer hover:opacity-90 transition-opacity"
+            className="aspect-[16/9] relative rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
             onClick={() =>
               setLightboxImage({
                 src: "/Before-1.jpg?height=450&width=800",
