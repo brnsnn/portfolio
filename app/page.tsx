@@ -5,7 +5,6 @@ import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { RecommendationsCarousel } from "@/components/recommendations-carousel"
 import { AnimatedName } from "@/components/animated-name"
 
 const Page = () => {
@@ -42,51 +41,6 @@ const Page = () => {
     },
   ]
 
-  const recommendations = [
-    {
-      name: "Marissa Goodman",
-      position: "UX Designer at Tech Fleet",
-      quote:
-        "Bronson was a lead for the UX Design team I worked with on the Philly Truce project, and he was an encouraging and supportive leader who fostered collaboration both within our team... and cross-functionally. He created an environment where we felt comfortable asking questions and learning from each other, strengthening our team and leading to thoughtful, user-centric solutions. Bronson is also deeply curious and continuously seeks to learn and grow. Throughout our project, he took the time to expand his own knowledge and generously shared insights with the team, helping us all improve as designers. His attention to detail, drive, and dedication to the craft make him an asset to any UX team. I highly recommend him as a UX Designer and would love the chance to work with him again!",
-      avatar: "/placeholder.svg?height=100&width=100",
-    },
-    {
-      name: "Eddie Farfan",
-      position: "Product Strategist at Tech Fleet",
-      quote:
-        "I worked with Bronson on the Philly Truce project as he was our Lead UX Designer, where they excelled at aligning UX strategy with business goals. They collaborated effectively across UX,... strategy, and PM teams, translating complex challenges into intuitive solutions. Their ability to navigate ambiguity and deliver in a fast-paced environment was impressive. Bronson brought clarity and focus to every project, making them a valuable asset to any team!",
-      avatar: "/placeholder.svg?height=100&width=100",
-    },
-    {
-      name: "Alma Halilovic",
-      position: "UX Designer at Tech Fleet",
-      quote:
-        "I had the pleasure of working with Bronson for the Philly Truce project under Tech Fleet and cannot sing his praises enough. On top of being an empathetic and understanding leader- Bronson is a talented creative. His adaptability and flexibility to pivot when necessary, along with his keen eye for design, truly helped move our project forward. He went above and beyond and always had time to answer any questions we had- making sure that we were aligned with the stakeholders needs. Throughout our time working together, he ensured that every team member felt heard and valued. His passion for impactful design was contagious and made him such a joy to work with. Any employer would be lucky to have him on their team!",
-      avatar: "/placeholder.svg?height=100&width=100",
-    },
-    {
-      name: "James Phuong",
-      position: "UX Designer at Tech Fleet",
-      quote:
-        "Bronson's work on our complex Tech Fleet project left a lasting impression. He consistently pushed the boundaries of his position, experimenting with diverse design variations that sparked innovative ideas. His curiosity and willingness to explore new ideas added tremendous value to the project. What truly stood out was his ability to quickly implement design updates and iterate based on detailed research findings. His speed and efficiency were remarkable, especially given the tight deadlines that we faced. Thanks to his dedication, we were able to achieve a great deal more in a short timeframe than I initially thought was possible. Bronson's creativity, strong work ethic, and commitment to user-centered design make him an exceptional asset to any team. I wholeheartedly recommend him to any employer seeking a driven and forward-thinking UX designer.",
-      avatar: "/placeholder.svg?height=100&width=100",
-    },
-    {
-      name: "Jenise Absher",
-      position: "UX Consultant at ProPoint Software",
-      quote:
-        "I highly recommend Bronson as a UX designer. His critical thinking skills shine as he delves deep into understanding user needs. Bronson's communication is top-notch. His contributions to our design system, visual styles and mobile responsive form design, were invaluable. A true team player and excellent visual designer, Bronson is enjoyable to work with and a significant asset to any team.",
-      avatar: "/placeholder.svg?height=100&width=100",
-    },
-    {
-      name: "Emilia Myrup",
-      position: "Project Manager at Elitappar",
-      quote:
-        "Bronson created the UX Design for our first app and did an amazing job. Working with Bronson was a delight as he is a great communicator and very flexible to work with. I would strongly recommend him!",
-      avatar: "/placeholder.svg?height=100&width=100",
-    },
-  ]
-
   return (
     <div className="flex min-h-screen flex-col">
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-on-load animate-fade-in">
@@ -111,10 +65,10 @@ const Page = () => {
       </header>
       <main className="flex-1 pt-16">
         <section className="container pt-20 md:pt-24 pb-4 md:pb-6 animate-on-load animate-fade-in-up animate-delay-200">
-          <div className="max-w-4xl" style={{ width: "110%" }}>
+          <div className="max-w-4xl px-4 md:px-0">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight mb-6">
-              Mid-level Product Designer who builds accessible digital products and scalable design systems that earn
-              stakeholder buy-in and align with production realities.
+              Mid-level Product Designer who builds accessible digital products and <br className="md:hidden" />
+              scalable design systems that earn stakeholder buy-in and align with production realities.
             </h1>
           </div>
         </section>
@@ -192,17 +146,7 @@ const Page = () => {
           </div>
         </section>
 
-        <section id="recommendations" className="py-20 animate-on-load animate-fade-in-up animate-delay-500">
-          <div className="container">
-            <div className="flex items-center gap-2 mb-12">
-              <div className="h-px w-8 bg-foreground/30"></div>
-              <span className="text-sm font-medium text-foreground/60">RECOMMENDATIONS</span>
-            </div>
-            <RecommendationsCarousel recommendations={recommendations} />
-          </div>
-        </section>
-
-        <section id="contact" className="py-20 bg-muted animate-on-load animate-fade-in-up animate-delay-600">
+        <section id="contact" className="py-20 animate-on-load animate-fade-in-up animate-delay-600">
           <div className="container">
             <div className="flex items-center gap-2 mb-12">
               <div className="h-px w-8 bg-foreground/30"></div>
@@ -245,7 +189,7 @@ const Page = () => {
           </div>
         </section>
       </main>
-      <footer className="py-6 md:py-8 animate-on-load animate-fade-in animate-delay-700">
+      <footer className="py-6 md:py-8 bg-muted animate-on-load animate-fade-in animate-delay-700">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.

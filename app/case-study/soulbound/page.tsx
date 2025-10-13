@@ -175,7 +175,7 @@ export default function SoulboundCaseStudy() {
         </div>
 
         <div className="bg-muted py-24 animate-on-load animate-fade-in-up animate-delay-700">
-          <div className="max-w-[1140px] mx-auto">
+          <div className="max-w-[1140px] mx-auto px-6">
             <div className="flex items-center gap-2 mb-8">
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>

@@ -30,16 +30,30 @@ const otherCaseStudies = [
 
 export default function TravelAppCaseStudy() {
   const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
+  const [isLightboxVisible, setIsLightboxVisible] = useState(false)
 
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
-        setLightboxImage(null)
+        closeLightbox()
       }
     }
     window.addEventListener("keydown", handleEscape)
     return () => window.removeEventListener("keydown", handleEscape)
   }, [])
+
+  useEffect(() => {
+    if (lightboxImage) {
+      setTimeout(() => setIsLightboxVisible(true), 10)
+    } else {
+      setIsLightboxVisible(false)
+    }
+  }, [lightboxImage])
+
+  const closeLightbox = () => {
+    setIsLightboxVisible(false)
+    setTimeout(() => setLightboxImage(null), 300)
+  }
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -482,7 +496,7 @@ export default function TravelAppCaseStudy() {
 
         {/* More Case Studies */}
         <div className="bg-muted py-24 animate-on-load animate-fade-in-up animate-delay-1000">
-          <div className="max-w-[1140px] mx-auto">
+          <div className="max-w-[1140px] mx-auto px-6">
             <div className="flex items-center gap-2 mb-8">
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>
@@ -511,18 +525,22 @@ export default function TravelAppCaseStudy() {
       {/* Lightbox component */}
       {lightboxImage && (
         <div
-          className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4"
-          onClick={() => setLightboxImage(null)}
+          className={`fixed inset-0 z-[100] bg-black/70 backdrop-blur-md flex items-center justify-center p-4 transition-opacity duration-300 ${
+            isLightboxVisible ? "opacity-100" : "opacity-0"
+          }`}
+          onClick={closeLightbox}
         >
           <button
-            onClick={() => setLightboxImage(null)}
+            onClick={closeLightbox}
             className="absolute top-4 right-4 text-white hover:text-white/70 transition-colors z-10"
             aria-label="Close lightbox"
           >
             <X className="h-8 w-8" />
           </button>
           <div
-            className="relative max-w-[95vw] max-h-[95vh] w-full flex flex-col items-center"
+            className={`relative max-w-[95vw] max-h-[95vh] w-full flex flex-col items-center transition-all duration-300 ${
+              isLightboxVisible ? "scale-100 opacity-100" : "scale-95 opacity-0"
+            }`}
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative w-full h-full flex items-center justify-center mb-4">

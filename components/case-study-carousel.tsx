@@ -23,9 +23,9 @@ export function CaseStudyCarousel({ currentCaseStudyId }: CaseStudyCarouselProps
         }}
         className="w-full"
       >
-        <CarouselContent>
+        <CarouselContent className="-ml-4">
           {otherCaseStudies.map((project) => (
-            <CarouselItem key={project.id} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={project.id} className="pl-4 md:basis-[45%] lg:basis-[30%]">
               <Link
                 href={project.caseStudyUrl}
                 className="group block overflow-hidden rounded-lg border border-border bg-background transition-all duration-500 ease-in-out hover:bg-muted relative h-full"
@@ -38,7 +38,7 @@ export function CaseStudyCarousel({ currentCaseStudyId }: CaseStudyCarouselProps
                     {project.title}
                   </h3>
                   <p className="text-muted-foreground text-sm mb-2">{project.subtitle}</p>
-                  <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center text-sm text-muted-foreground">
+                  <div className="absolute bottom-[-2rem] right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center text-sm text-muted-foreground">
                     View Case Study
                     <ArrowRight className="ml-1 h-3 w-3" />
                   </div>
