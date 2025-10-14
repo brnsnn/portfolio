@@ -30,7 +30,25 @@ const otherCaseStudies = [
 
 export default function TravelAppCaseStudy() {
   const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
-  const [isLightboxVisible, setIsLightboxVisible] = useState(false)
+  const [isClosing, setIsClosing] = useState(false)
+  const [isOpening, setIsOpening] = useState(false)
+
+  useEffect(() => {
+    if (lightboxImage && !isClosing) {
+      setIsOpening(true)
+      // Small delay to ensure initial state is rendered before transition
+      const timer = setTimeout(() => setIsOpening(false), 10)
+      return () => clearTimeout(timer)
+    }
+  }, [lightboxImage, isClosing])
+
+  const closeLightbox = () => {
+    setIsClosing(true)
+    setTimeout(() => {
+      setLightboxImage(null)
+      setIsClosing(false)
+    }, 10000)
+  }
 
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -41,19 +59,6 @@ export default function TravelAppCaseStudy() {
     window.addEventListener("keydown", handleEscape)
     return () => window.removeEventListener("keydown", handleEscape)
   }, [])
-
-  useEffect(() => {
-    if (lightboxImage) {
-      setTimeout(() => setIsLightboxVisible(true), 10)
-    } else {
-      setIsLightboxVisible(false)
-    }
-  }, [lightboxImage])
-
-  const closeLightbox = () => {
-    setIsLightboxVisible(false)
-    setTimeout(() => setLightboxImage(null), 300)
-  }
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -501,7 +506,7 @@ export default function TravelAppCaseStudy() {
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>
             </div>
-            <CaseStudyCarousel currentCaseStudyId="benchmark" />
+            <CaseStudyCarousel currentCaseStudyId="benchmark" otherCaseStudies={otherCaseStudies} />
           </div>
         </div>
       </main>
@@ -525,8 +530,8 @@ export default function TravelAppCaseStudy() {
       {/* Lightbox component */}
       {lightboxImage && (
         <div
-          className={`fixed inset-0 z-[100] bg-black/70 backdrop-blur-md flex items-center justify-center p-4 transition-opacity duration-300 ${
-            isLightboxVisible ? "opacity-100" : "opacity-0"
+          className={`fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 transition-all duration-[10000ms] ease-in-out ${
+            isClosing ? "opacity-0" : isOpening ? "opacity-0" : "opacity-100"
           }`}
           onClick={closeLightbox}
         >
@@ -538,8 +543,8 @@ export default function TravelAppCaseStudy() {
             <X className="h-8 w-8" />
           </button>
           <div
-            className={`relative max-w-[95vw] max-h-[95vh] w-full flex flex-col items-center transition-all duration-300 ${
-              isLightboxVisible ? "scale-100 opacity-100" : "scale-95 opacity-0"
+            className={`relative max-w-[95vw] max-h-[95vh] w-full flex flex-col items-center transition-all duration-[10000ms] ease-in-out ${
+              isClosing ? "scale-98 opacity-0" : isOpening ? "scale-98 opacity-0" : "scale-100 opacity-100"
             }`}
             onClick={(e) => e.stopPropagation()}
           >
