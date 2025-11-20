@@ -310,13 +310,13 @@ export default function TravelAppCaseStudy() {
                   className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
                   onClick={() =>
                     setLightboxImage({
-                      src: "/audit-and-discovery-process-design-system.jpg",
+                      src: "/Typography - Before.jpg",
                       alt: "Typography audit",
                     })
                   }
                 >
                   <Image
-                    src="/audit-and-discovery-process-design-system.jpg"
+                    src="/Typography - Before.jpg"
                     alt="Typography audit"
                     fill
                     className="object-cover"
@@ -333,13 +333,13 @@ export default function TravelAppCaseStudy() {
                   className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
                   onClick={() =>
                     setLightboxImage({
-                      src: "/audit-and-discovery-process-design-system.jpg",
+                      src: "/Color - Before.jpg",
                       alt: "Color audit",
                     })
                   }
                 >
                   <Image
-                    src="/audit-and-discovery-process-design-system.jpg"
+                    src="/Color - Before.jpg"
                     alt="Color audit"
                     fill
                     className="object-cover"
@@ -356,13 +356,13 @@ export default function TravelAppCaseStudy() {
                   className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
                   onClick={() =>
                     setLightboxImage({
-                      src: "/audit-and-discovery-process-design-system.jpg",
+                      src: "/Components - Before.jpg",
                       alt: "Components audit",
                     })
                   }
                 >
                   <Image
-                    src="/audit-and-discovery-process-design-system.jpg"
+                    src="/Components - Before.jpg"
                     alt="Components audit"
                     fill
                     className="object-cover"
@@ -391,13 +391,13 @@ export default function TravelAppCaseStudy() {
                   className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
                   onClick={() =>
                     setLightboxImage({
-                      src: "/design-system-typography-solution-before-and-after.jpg",
+                      src: "/Typography - After.jpg",
                       alt: "Typography solution",
                     })
                   }
                 >
                   <Image
-                    src="/design-system-typography-solution-before-and-after.jpg"
+                    src="/Typography - After.jpg"
                     alt="Typography solution"
                     fill
                     className="object-cover"
@@ -416,13 +416,13 @@ export default function TravelAppCaseStudy() {
                   className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
                   onClick={() =>
                     setLightboxImage({
-                      src: "/design-system-color-palette-solution-before-and-af.jpg",
+                      src: "/Color - After.jpg",
                       alt: "Color solution",
                     })
                   }
                 >
                   <Image
-                    src="/design-system-color-palette-solution-before-and-af.jpg"
+                    src="/Color - After.jpg"
                     alt="Color solution"
                     fill
                     className="object-cover"
@@ -441,13 +441,13 @@ export default function TravelAppCaseStudy() {
                   className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
                   onClick={() =>
                     setLightboxImage({
-                      src: "/design-system-component-library-solution-before-an.jpg",
+                      src: "/Components - After.jpg",
                       alt: "Components solution",
                     })
                   }
                 >
                   <Image
-                    src="/design-system-component-library-solution-before-an.jpg"
+                    src="/Components - After.jpg"
                     alt="Components solution"
                     fill
                     className="object-cover"
