@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { AnimatedName } from "@/components/animated-name"
+import { RecommendationsCarouselEmbla, type RecommendationItem } from "@/components/recommendations-carousel-embla"
 
 const Page = () => {
   const caseStudies = [
@@ -38,6 +39,39 @@ const Page = () => {
       description: "Chill Pill",
       image: "/placeholder.svg?height=400&width=600",
       caseStudyUrl: "/case-study/chill-pill",
+    },
+  ]
+
+  const recommendations: RecommendationItem[] = [
+    {
+      author: "Marissa Goodman",
+      role: "UX Designer at Tech Fleet",
+      body: "Bronson was a lead for the UX Design team I worked with on the Philly Truce project, and he was an encouraging and supportive leader who fostered collaboration both within our team and cross-functionally. He created an environment where we felt comfortable asking questions and learning from each other, strengthening our team and leading to thoughtful, user-centric solutions.......Bronson is also deeply curious and continuously seeks to learn and grow. Throughout our project, he took the time to expand his own knowledge and generously shared insights with the team, helping us all improve as designers. His attention to detail, drive, and dedication to the craft make him an asset to any UX team. I highly recommend him as a UX Designer and would love the chance to work with him again!",
+    },
+    {
+      author: "Eddie Farfan",
+      role: "Product Manager at Tech Fleet",
+      body: "I worked with Bronson on the Philly Truce project as he was our Lead UX Designer, where they excelled at aligning UX strategy with business goals. They collaborated effectively across UX, strategy, and PM teams, translating complex challenges into intuitive solutions.......Their ability to navigate ambiguity and deliver in a fast-paced environment was impressive. Bronson brought clarity and focus to every project, making them a valuable asset to any team!",
+    },
+    {
+      author: "Alma Halilovic",
+      role: "UX Designer at Tech Fleet",
+      body: "I had the pleasure of working with Bronson for the Philly Truce project under Tech Fleet and cannot sing his praises enough. On top of being an empathetic and understanding leader- Bronson is a talented creative. His adaptability and flexibility to pivot when necessary, along with his keen eye for design, truly helped move our project forward. He went above and beyond and always had time to answer any questions we had- making sure that we were aligned with the stakeholders needs. Throughout our time working together, he ensured that every team member felt heard and valued. His passion for impactful design was contagious and made him such a joy to work with. Any employer would be lucky to have him on their team!",
+    },
+    {
+      author: "James Phuong",
+      role: "UX Designer at Tech Fleet",
+      body: "Bronson's work on our complex Tech Fleet project left a lasting impression. He consistently pushed the boundaries of his position, experimenting with diverse design variations that sparked innovative ideas. His curiosity and willingness to explore new ideas added tremendous value to the project. What truly stood out was his ability to quickly implement design updates and iterate based on detailed research findings. His speed and efficiency were remarkable, especially given the tight deadlines that we faced. Thanks to his dedication, we were able to achieve a great deal more in a short timeframe than I initially thought was possible.......Bronson's creativity, strong work ethic, and commitment to user-centered design make him an exceptional asset to any team. I wholeheartedly recommend him to any employer seeking a driven and forward-thinking UX designer.",
+    },
+    {
+      author: "Hazuki Yamanaka",
+      role: "UX Designer at Tech Fleet",
+      body: "I had the pleasure of working with Bronson Lee on the Philly Truce project, where he served as a Desktop UX Designer. Bronson played a pivotal role in establishing and leading our design system from the ground up.......He spearheaded accessibility efforts and led cross-team collaboration to ensure a seamless and unified experience across desktop, mobile, and development environments. Thanks to his leadership, our team successfully adopted the design system, which improved both consistency and efficiency throughout the project.......Bronson's ability to communicate complex concepts clearly and bring everyone on board made him an invaluable partner. His dedication to inclusive design and his thoughtful approach to system-level thinking elevated the overall quality of our work.......I highly recommend Bronson to any team looking for a skilled, collaborative, and forward-thinking UX designer who can bridge the gap between design and development while keeping accessibility at the forefront.",
+    },
+    {
+      author: "Jenise Absher",
+      role: "UX Consultant at ProPoint Software",
+      body: "I highly recommend Bronson as a UX designer. His critical thinking skills shine as he delves deep into understanding user needs. Bronson's communication is top-notch. His contributions to our design system, visual styles and mobile responsive form design, were invaluable. A true team player and excellent visual designer, Bronson is enjoyable to work with and a significant asset to any team.",
     },
   ]
 
@@ -111,6 +145,16 @@ const Page = () => {
                 </Link>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="py-20 bg-muted animate-on-load animate-fade-in-up animate-delay-350">
+          <div className="container">
+            <div className="flex items-center gap-2 mb-12">
+              <div className="h-px w-8 bg-foreground/30"></div>
+              <span className="text-sm font-medium text-foreground/60">RECOMMENDATIONS</span>
+            </div>
+            <RecommendationsCarouselEmbla items={recommendations} />
           </div>
         </section>
 

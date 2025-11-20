@@ -2,10 +2,10 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { X } from "lucide-react"
 import { AnimatedName } from "@/components/animated-name"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { CaseStudyCarousel } from "@/components/case-study-carousel"
+import { ImageLightbox } from "@/components/image-lightbox"
 
 const otherCaseStudies = [
   {
@@ -30,35 +30,6 @@ const otherCaseStudies = [
 
 export default function TravelAppCaseStudy() {
   const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
-  const [isClosing, setIsClosing] = useState(false)
-  const [isOpening, setIsOpening] = useState(false)
-
-  useEffect(() => {
-    if (lightboxImage && !isClosing) {
-      setIsOpening(true)
-      // Small delay to ensure initial state is rendered before transition
-      const timer = setTimeout(() => setIsOpening(false), 10)
-      return () => clearTimeout(timer)
-    }
-  }, [lightboxImage, isClosing])
-
-  const closeLightbox = () => {
-    setIsClosing(true)
-    setTimeout(() => {
-      setLightboxImage(null)
-      setIsClosing(false)
-    }, 10000)
-  }
-
-  useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        closeLightbox()
-      }
-    }
-    window.addEventListener("keydown", handleEscape)
-    return () => window.removeEventListener("keydown", handleEscape)
-  }, [])
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -166,17 +137,6 @@ export default function TravelAppCaseStudy() {
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-4xl font-medium mb-2">15%</h3>
-              <p className="text-muted-foreground">Increase in record-keeping accuracy by patrol officers</p>
-            </div>
-            <div>
-              <h3 className="text-4xl font-medium mb-2">20%</h3>
-              <p className="text-muted-foreground">
-                Faster task completion in <br />
-                the admin portal
-              </p>
-            </div>
-            <div>
               <h3 className="text-4xl font-medium mb-2">40%</h3>
               <p className="text-muted-foreground">
                 Reduction in design + development time via <br />
@@ -188,6 +148,17 @@ export default function TravelAppCaseStudy() {
               <p className="text-muted-foreground">
                 Improvement in user <br />
                 satisfaction scores
+              </p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-medium mb-2">15%</h3>
+              <p className="text-muted-foreground">Increase in record-keeping accuracy by patrol officers</p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-medium mb-2">20%</h3>
+              <p className="text-muted-foreground">
+                Faster task completion in <br />
+                the admin portal
               </p>
             </div>
           </div>
@@ -329,184 +300,236 @@ export default function TravelAppCaseStudy() {
           </div>
         </div>
 
-        <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-x-8 gap-y-16 mb-48">
+        <div className="max-w-[1140px] mx-auto mb-48">
           {/* Audit & Discovery */}
-          <div>
-            <div
-              className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
-              onClick={() =>
-                setLightboxImage({
-                  src: "/audit-and-discovery-process-design-system.jpg",
-                  alt: "Audit and Discovery process",
-                })
-              }
-            >
-              <Image
-                src="/audit-and-discovery-process-design-system.jpg"
-                alt="Audit and Discovery process"
-                fill
-                className="object-cover"
-              />
+          <div className="mb-16">
+            <h3 className="font-medium text-lg mb-6">Audit & Discovery</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div>
+                <div
+                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/audit-and-discovery-process-design-system.jpg",
+                      alt: "Typography audit",
+                    })
+                  }
+                >
+                  <Image
+                    src="/audit-and-discovery-process-design-system.jpg"
+                    alt="Typography audit"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h4 className="font-medium mb-2">Typography</h4>
+                <p className="text-muted-foreground text-base">
+                  We audited typography across both platforms, identifying inconsistencies in font families, sizes,
+                  weights, and line heights that created visual discord and readability issues.
+                </p>
+              </div>
+              <div>
+                <div
+                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/audit-and-discovery-process-design-system.jpg",
+                      alt: "Color audit",
+                    })
+                  }
+                >
+                  <Image
+                    src="/audit-and-discovery-process-design-system.jpg"
+                    alt="Color audit"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h4 className="font-medium mb-2">Color</h4>
+                <p className="text-muted-foreground text-base">
+                  Our color audit revealed inconsistent palettes and insufficient contrast ratios that failed
+                  accessibility standards, requiring a unified approach to color tokens and usage guidelines.
+                </p>
+              </div>
+              <div>
+                <div
+                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/audit-and-discovery-process-design-system.jpg",
+                      alt: "Components audit",
+                    })
+                  }
+                >
+                  <Image
+                    src="/audit-and-discovery-process-design-system.jpg"
+                    alt="Components audit"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h4 className="font-medium mb-2">Components</h4>
+                <p className="text-muted-foreground text-base">
+                  We cataloged all existing UI components across platforms, identifying duplicates, variations, and gaps
+                  that needed consolidation into a unified component library.
+                </p>
+              </div>
             </div>
-            <h3 className="font-medium text-lg mb-2">Audit & Discovery</h3>
-            <p className="text-muted-foreground">
-              We conducted a comprehensive audit of both mobile and desktop platforms to identify inconsistencies in
-              typography, color, spacing, and component usage. This discovery phase revealed critical gaps in
-              accessibility and visual alignment.
-            </p>
           </div>
 
-          {/* Aligning Foundations */}
-          <div>
-            <div
-              className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
-              onClick={() =>
-                setLightboxImage({
-                  src: "/design-foundations-typography-color-spacing-tokens.jpg",
-                  alt: "Aligning Foundations",
-                })
-              }
-            >
-              <Image
-                src="/design-foundations-typography-color-spacing-tokens.jpg"
-                alt="Aligning Foundations"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <h3 className="font-medium text-lg mb-2">Aligning Foundations</h3>
-            <p className="text-muted-foreground">
-              We established shared design tokens for typography, color, spacing, and interaction patterns. These
-              foundations ensured consistency across platforms and created a single source of truth for the design and
-              development teams.
-            </p>
-          </div>
-
-          {/* Building Components */}
-          <div>
-            <div
-              className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
-              onClick={() =>
-                setLightboxImage({
-                  src: "/building-reusable-ui-components-design-system.jpg",
-                  alt: "Building Components",
-                })
-              }
-            >
-              <Image
-                src="/building-reusable-ui-components-design-system.jpg"
-                alt="Building Components"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <h3 className="font-medium text-lg mb-2">Building Components</h3>
-            <p className="text-muted-foreground">
-              We created a library of reusable components — buttons, forms, cards, and navigation elements — that work
-              seamlessly across mobile and desktop. Each component was built with accessibility and scalability in mind.
-            </p>
-          </div>
-
-          {/* Documentation & Handoff */}
-          <div>
-            <div
-              className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
-              onClick={() =>
-                setLightboxImage({
-                  src: "/design-system-documentation-and-developer-handoff.jpg",
-                  alt: "Documentation and Handoff",
-                })
-              }
-            >
-              <Image
-                src="/design-system-documentation-and-developer-handoff.jpg"
-                alt="Documentation and Handoff"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <h3 className="font-medium text-lg mb-2">Documentation & Handoff</h3>
-            <p className="text-muted-foreground">
-              We documented usage guidelines, interaction patterns, and implementation details to ensure smooth handoff
-              to developers. This documentation became a living resource that continues to guide the team as the system
-              evolves.
-            </p>
-          </div>
-        </div>
-
-        {/* THE SOLUTION */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-800">
-          <div className="flex items-center gap-2 mb-6">
-            <div className="h-px w-8 bg-foreground/30"></div>
-            <span className="text-sm font-medium text-foreground/60">THE SOLUTION</span>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <p className="text-muted-foreground mb-4">
-                The Benchmark design system unified Philly Truce's mobile and desktop experiences through shared design
-                tokens, reusable components, and comprehensive documentation. Every element—from typography and color to
-                buttons and forms—was standardized to create a cohesive product experience.
-              </p>
-              <p className="text-muted-foreground mb-4">
-                The system included accessibility guidelines, responsive patterns, and clear implementation specs that
-                empowered both designers and developers to work faster and more confidently.
-              </p>
-            </div>
-            <div>
-              <p className="text-muted-foreground mb-4">
-                By establishing a single source of truth, we eliminated design debt, reduced inconsistencies, and
-                created a scalable foundation that could grow with the product. The system became the backbone for all
-                future feature development.
-              </p>
-              <p className="text-muted-foreground mb-4">
-                Cross-functional collaboration improved significantly as designers and developers spoke the same
-                language, referencing the same components and patterns throughout the development process.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* REFLECTION */}
-        <div className="max-w-[1140px] mx-auto mb-48 animate-on-load animate-fade-in-up animate-delay-900">
-          <div className="flex items-center gap-2 mb-6">
-            <div className="h-px w-8 bg-foreground/30"></div>
-            <span className="text-sm font-medium text-foreground/60">REFLECTION</span>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="font-medium text-lg mb-3">What Worked Well</h3>
-              <p className="text-muted-foreground mb-4">
-                Starting with a comprehensive audit gave us a clear picture of the problems we needed to solve. Building
-                the system collaboratively with developers ensured buy-in and smooth implementation. The documentation
-                became an invaluable resource that continues to guide the team.
-              </p>
-              <p className="text-muted-foreground">
-                Focusing on accessibility from the start meant we didn't have to retrofit components later, saving time
-                and ensuring a better experience for all users.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-medium text-lg mb-3">What I'd Do Differently</h3>
-              <p className="text-muted-foreground mb-4">
-                I would have involved more end users earlier in the process to validate component patterns before full
-                implementation. While we tested thoroughly, earlier user feedback could have caught edge cases sooner.
-              </p>
-              <p className="text-muted-foreground">
-                I'd also establish a more formal governance process from day one to manage component requests and
-                updates as the system scales. This would help maintain consistency as more teams adopt the system.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* More Case Studies */}
-        <div className="bg-muted py-24 animate-on-load animate-fade-in-up animate-delay-1000">
-          <div className="max-w-[1140px] mx-auto px-6">
-            <div className="flex items-center gap-2 mb-8">
+          {/* THE SOLUTION */}
+          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-800">
+            <div className="flex items-center gap-2 mb-6">
               <div className="h-px w-8 bg-foreground/30"></div>
-              <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>
+              <span className="text-sm font-medium text-foreground/60">THE SOLUTION</span>
             </div>
-            <CaseStudyCarousel currentCaseStudyId="benchmark" otherCaseStudies={otherCaseStudies} />
+            <h3 className="font-medium text-lg mb-8">Aligning Foundations</h3>
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
+              {/* Typography */}
+              <div>
+                <div
+                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/design-system-typography-solution-before-and-after.jpg",
+                      alt: "Typography solution",
+                    })
+                  }
+                >
+                  <Image
+                    src="/design-system-typography-solution-before-and-after.jpg"
+                    alt="Typography solution"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="font-medium text-lg mb-2">Typography</h3>
+                <p className="text-muted-foreground text-base">
+                  Established a unified type scale and hierarchy that works seamlessly across mobile and desktop,
+                  improving readability and brand consistency.
+                </p>
+              </div>
+
+              {/* Color */}
+              <div>
+                <div
+                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/design-system-color-palette-solution-before-and-af.jpg",
+                      alt: "Color solution",
+                    })
+                  }
+                >
+                  <Image
+                    src="/design-system-color-palette-solution-before-and-af.jpg"
+                    alt="Color solution"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="font-medium text-lg mb-2">Color</h3>
+                <p className="text-muted-foreground text-base">
+                  Created an accessible color system with consistent tokens for primary, secondary, and semantic colors
+                  that meet WCAG AA standards.
+                </p>
+              </div>
+
+              {/* Components */}
+              <div>
+                <div
+                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/design-system-component-library-solution-before-an.jpg",
+                      alt: "Components solution",
+                    })
+                  }
+                >
+                  <Image
+                    src="/design-system-component-library-solution-before-an.jpg"
+                    alt="Components solution"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="font-medium text-lg mb-2">Components</h3>
+                <p className="text-muted-foreground text-base">
+                  Designed and documented a library of reusable components with variants, states, and usage guidelines
+                  for faster implementation.
+                </p>
+              </div>
+            </div>
+
+            {/* Descriptive paragraphs */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  The Benchmark design system unified Philly Truce's mobile and desktop experiences through shared
+                  design tokens, reusable components, and comprehensive documentation. Every element—from typography and
+                  color to buttons and forms—was standardized to create a cohesive product experience.
+                </p>
+                <p className="text-muted-foreground mb-4">
+                  The system included accessibility guidelines, responsive patterns, and clear implementation specs that
+                  empowered both designers and developers to work faster and more confidently.
+                </p>
+              </div>
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  By establishing a single source of truth, we eliminated design debt, reduced inconsistencies, and
+                  created a scalable foundation that could grow with the product. The system became the backbone for all
+                  future feature development.
+                </p>
+                <p className="text-muted-foreground mb-4">
+                  Cross-functional collaboration improved significantly as designers and developers spoke the same
+                  language, referencing the same components and patterns throughout the development process.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* REFLECTION */}
+          <div className="max-w-[1140px] mx-auto mb-48 animate-on-load animate-fade-in-up animate-delay-900">
+            <div className="flex items-center gap-2 mb-6">
+              <div className="h-px w-8 bg-foreground/30"></div>
+              <span className="text-sm font-medium text-foreground/60">REFLECTION</span>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="font-medium text-lg mb-3">What Worked Well</h3>
+                <p className="text-muted-foreground mb-4">
+                  Starting with a comprehensive audit gave us a clear picture of the problems we needed to solve.
+                  Building the system collaboratively with developers ensured buy-in and smooth implementation. The
+                  documentation became an invaluable resource that continues to guide the team.
+                </p>
+                <p className="text-muted-foreground">
+                  Focusing on accessibility from the start meant we didn't have to retrofit components later, saving
+                  time and ensuring a better experience for all users.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-medium text-lg mb-3">What I'd Do Differently</h3>
+                <p className="text-muted-foreground mb-4">
+                  I would have involved more end users earlier in the process to validate component patterns before full
+                  implementation. While we tested thoroughly, earlier user feedback could have caught edge cases sooner.
+                </p>
+                <p className="text-muted-foreground">
+                  I'd also establish a more formal governance process from day one to manage component requests and
+                  updates as the system scales. This would help maintain consistency as more teams adopt the system.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* More Case Studies */}
+          <div className="bg-muted py-24 animate-on-load animate-fade-in-up animate-delay-1000">
+            <div className="max-w-[1140px] mx-auto px-6">
+              <div className="flex items-center gap-2 mb-8">
+                <div className="h-px w-8 bg-foreground/30"></div>
+                <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>
+              </div>
+              <CaseStudyCarousel currentCaseStudyId="benchmark" otherCaseStudies={otherCaseStudies} />
+            </div>
           </div>
         </div>
       </main>
@@ -529,37 +552,12 @@ export default function TravelAppCaseStudy() {
 
       {/* Lightbox component */}
       {lightboxImage && (
-        <div
-          className={`fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 transition-all duration-[10000ms] ease-in-out ${
-            isClosing ? "opacity-0" : isOpening ? "opacity-0" : "opacity-100"
-          }`}
-          onClick={closeLightbox}
-        >
-          <button
-            onClick={closeLightbox}
-            className="absolute top-4 right-4 text-white hover:text-white/70 transition-colors z-10"
-            aria-label="Close lightbox"
-          >
-            <X className="h-8 w-8" />
-          </button>
-          <div
-            className={`relative max-w-[95vw] max-h-[95vh] w-full flex flex-col items-center transition-all duration-[10000ms] ease-in-out ${
-              isClosing ? "scale-98 opacity-0" : isOpening ? "scale-98 opacity-0" : "scale-100 opacity-100"
-            }`}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="relative w-full h-full flex items-center justify-center mb-4">
-              <Image
-                src={lightboxImage.src || "/placeholder.svg"}
-                alt={lightboxImage.alt}
-                width={1920}
-                height={1080}
-                className="object-contain max-h-[88vh] w-auto h-auto rounded-lg"
-              />
-            </div>
-            <p className="text-white/80 text-sm text-center max-w-3xl px-4">{lightboxImage.alt}</p>
-          </div>
-        </div>
+        <ImageLightbox
+          src={lightboxImage.src || "/placeholder.svg"}
+          alt={lightboxImage.alt}
+          open={!!lightboxImage}
+          onOpenChange={(open) => !open && setLightboxImage(null)}
+        />
       )}
     </div>
   )
