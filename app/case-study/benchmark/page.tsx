@@ -307,16 +307,16 @@ export default function TravelAppCaseStudy() {
             <div className="grid md:grid-cols-3 gap-6">
               <div>
                 <div
-                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity border border-gray-200"
                   onClick={() =>
                     setLightboxImage({
-                      src: "/Typography - Before.jpg",
+                      src: "/images/typography-20-20before.jpg",
                       alt: "Typography audit",
                     })
                   }
                 >
                   <Image
-                    src="/Typography - Before.jpg"
+                    src="/images/typography-20-20before.jpg"
                     alt="Typography audit"
                     fill
                     className="object-cover"
@@ -330,20 +330,15 @@ export default function TravelAppCaseStudy() {
               </div>
               <div>
                 <div
-                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity border border-gray-200"
                   onClick={() =>
                     setLightboxImage({
-                      src: "/Color - Before.jpg",
+                      src: "/images/color-20-20before.jpg",
                       alt: "Color audit",
                     })
                   }
                 >
-                  <Image
-                    src="/Color - Before.jpg"
-                    alt="Color audit"
-                    fill
-                    className="object-cover"
-                  />
+                  <Image src="/images/color-20-20before.jpg" alt="Color audit" fill className="object-cover" />
                 </div>
                 <h4 className="font-medium mb-2">Color</h4>
                 <p className="text-muted-foreground text-base">
@@ -353,16 +348,16 @@ export default function TravelAppCaseStudy() {
               </div>
               <div>
                 <div
-                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity border border-gray-200"
                   onClick={() =>
                     setLightboxImage({
-                      src: "/Components - Before.jpg",
+                      src: "/images/components-20-20before.jpg",
                       alt: "Components audit",
                     })
                   }
                 >
                   <Image
-                    src="/Components - Before.jpg"
+                    src="/images/components-20-20before.jpg"
                     alt="Components audit"
                     fill
                     className="object-cover"
@@ -388,16 +383,16 @@ export default function TravelAppCaseStudy() {
               {/* Typography */}
               <div>
                 <div
-                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity border border-gray-200"
                   onClick={() =>
                     setLightboxImage({
-                      src: "/Typography - After.jpg",
+                      src: "/images/typography-20-20after.jpg",
                       alt: "Typography solution",
                     })
                   }
                 >
                   <Image
-                    src="/Typography - After.jpg"
+                    src="/images/typography-20-20after.jpg"
                     alt="Typography solution"
                     fill
                     className="object-cover"
@@ -413,20 +408,15 @@ export default function TravelAppCaseStudy() {
               {/* Color */}
               <div>
                 <div
-                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity border border-gray-200"
                   onClick={() =>
                     setLightboxImage({
-                      src: "/Color - After.jpg",
+                      src: "/images/color-20-20after.jpg",
                       alt: "Color solution",
                     })
                   }
                 >
-                  <Image
-                    src="/Color - After.jpg"
-                    alt="Color solution"
-                    fill
-                    className="object-cover"
-                  />
+                  <Image src="/images/color-20-20after.jpg" alt="Color solution" fill className="object-cover" />
                 </div>
                 <h3 className="font-medium text-lg mb-2">Color</h3>
                 <p className="text-muted-foreground text-base">
@@ -438,16 +428,16 @@ export default function TravelAppCaseStudy() {
               {/* Components */}
               <div>
                 <div
-                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+                  className="aspect-[4/3] relative rounded-lg overflow-hidden mb-4 cursor-pointer hover:opacity-90 transition-opacity border border-gray-200"
                   onClick={() =>
                     setLightboxImage({
-                      src: "/Components - After.jpg",
+                      src: "/images/components-20-20after.jpg",
                       alt: "Components solution",
                     })
                   }
                 >
                   <Image
-                    src="/Components - After.jpg"
+                    src="/images/components-20-20after.jpg"
                     alt="Components solution"
                     fill
                     className="object-cover"
