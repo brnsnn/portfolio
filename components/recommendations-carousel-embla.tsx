@@ -47,14 +47,16 @@ export function RecommendationsCarouselEmbla({ items }: RecommendationsCarouselP
 
                     {/* Recommendation body */}
                     <div>
-                      <p
+                      <div
                         className={cn(
-                          "text-muted-foreground transition-all duration-300",
+                          "text-muted-foreground transition-all duration-300 space-y-4",
                           !isExpanded && "line-clamp-4",
                         )}
                       >
-                        {item.body}
-                      </p>
+                        {item.body.split("\n\n").map((paragraph, i) => (
+                          <p key={i}>{paragraph}</p>
+                        ))}
+                      </div>
 
                       {/* Read more/less toggle */}
                       {item.body.length > 200 && (
