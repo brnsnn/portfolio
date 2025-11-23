@@ -17,10 +17,10 @@ const Page = () => {
       caseStudyUrl: "/case-study/benchmark",
     },
     {
-      title: "Improving Community Safety with a Routes Feature",
-      description: "Philly Truce",
-      image: "/placeholder.svg?height=400&width=600",
-      caseStudyUrl: "/case-study/routes-feature",
+      title: "0-1 design system for a web3 gaming community",
+      description: "Soulbound",
+      image: "/soulbound-design-system-thumbnail-updated.jpg",
+      caseStudyUrl: "/case-study/soulbound",
     },
     {
       title: "Reducing violence by improving record-keeping accuracy by 15%",
@@ -29,16 +29,10 @@ const Page = () => {
       caseStudyUrl: "/case-study/philly-truce",
     },
     {
-      title: "0-1 design system for a web3 gaming community",
-      description: "Soulbound",
+      title: "Improving Community Safety with a Routes Feature",
+      description: "Philly Truce",
       image: "/placeholder.svg?height=400&width=600",
-      caseStudyUrl: "/case-study/soulbound",
-    },
-    {
-      title: "100,000+ views supporting high-risk HIV protection efforts",
-      description: "Chill Pill",
-      image: "/placeholder.svg?height=400&width=600",
-      caseStudyUrl: "/case-study/chill-pill",
+      caseStudyUrl: "/case-study/routes-feature",
     },
   ]
 
@@ -46,12 +40,12 @@ const Page = () => {
     {
       author: "Marissa Goodman",
       role: "UX Designer at Tech Fleet",
-      body: "Bronson was a lead for the UX Design team I worked with on the Philly Truce project, and he was an encouraging and supportive leader who fostered collaboration both within our team and cross-functionally. He created an environment where we felt comfortable asking questions and learning from each other, strengthening our team and leading to thoughtful, user-centric solutions.......Bronson is also deeply curious and continuously seeks to learn and grow. Throughout our project, he took the time to expand his own knowledge and generously shared insights with the team, helping us all improve as designers. His attention to detail, drive, and dedication to the craft make him an asset to any UX team. I highly recommend him as a UX Designer and would love the chance to work with him again!",
+      body: "Bronson was a lead for the UX Design team I worked with on the Philly Truce project, and he was an encouraging and supportive leader who fostered collaboration both within our team and cross-functionally. He created an environment where we felt comfortable asking questions and learning from each other, strengthening our team and leading to thoughtful, user-centric solutions.\n\nBronson is also deeply curious and continuously seeks to learn and grow. Throughout our project, he took the time to expand his own knowledge and generously shared insights with the team, helping us all improve as designers. His attention to detail, drive, and dedication to the craft make him an asset to any UX team. I highly recommend him as a UX Designer and would love the chance to work with him again!",
     },
     {
       author: "Eddie Farfan",
       role: "Product Manager at Tech Fleet",
-      body: "I worked with Bronson on the Philly Truce project as he was our Lead UX Designer, where they excelled at aligning UX strategy with business goals. They collaborated effectively across UX, strategy, and PM teams, translating complex challenges into intuitive solutions.......Their ability to navigate ambiguity and deliver in a fast-paced environment was impressive. Bronson brought clarity and focus to every project, making them a valuable asset to any team!",
+      body: "I worked with Bronson on the Philly Truce project as he was our Lead UX Designer, where they excelled at aligning UX strategy with business goals. They collaborated effectively across UX, strategy, and PM teams, translating complex challenges into intuitive solutions.\n\nTheir ability to navigate ambiguity and deliver in a fast-paced environment was impressive. Bronson brought clarity and focus to every project, making them a valuable asset to any team!",
     },
     {
       author: "Alma Halilovic",
@@ -61,12 +55,17 @@ const Page = () => {
     {
       author: "James Phuong",
       role: "UX Designer at Tech Fleet",
-      body: "Bronson's work on our complex Tech Fleet project left a lasting impression. He consistently pushed the boundaries of his position, experimenting with diverse design variations that sparked innovative ideas. His curiosity and willingness to explore new ideas added tremendous value to the project. What truly stood out was his ability to quickly implement design updates and iterate based on detailed research findings. His speed and efficiency were remarkable, especially given the tight deadlines that we faced. Thanks to his dedication, we were able to achieve a great deal more in a short timeframe than I initially thought was possible.......Bronson's creativity, strong work ethic, and commitment to user-centered design make him an exceptional asset to any team. I wholeheartedly recommend him to any employer seeking a driven and forward-thinking UX designer.",
+      body: "Bronson's work on our complex Tech Fleet project left a lasting impression. He consistently pushed the boundaries of his position, experimenting with diverse design variations that sparked innovative ideas. His curiosity and willingness to explore new ideas added tremendous value to the project. What truly stood out was his ability to quickly implement design updates and iterate based on detailed research findings. His speed and efficiency were remarkable, especially given the tight deadlines that we faced. Thanks to his dedication, we were able to achieve a great deal more in a short timeframe than I initially thought was possible.\n\nBronson's creativity, strong work ethic, and commitment to user-centered design make him an exceptional asset to any team. I wholeheartedly recommend him to any employer seeking a driven and forward-thinking UX designer.",
     },
     {
       author: "Hazuki Yamanaka",
       role: "UX Designer at Tech Fleet",
-      body: "I had the pleasure of working with Bronson Lee on the Philly Truce project, where he served as a Desktop UX Designer. Bronson played a pivotal role in establishing and leading our design system from the ground up.......He spearheaded accessibility efforts and led cross-team collaboration to ensure a seamless and unified experience across desktop, mobile, and development environments. Thanks to his leadership, our team successfully adopted the design system, which improved both consistency and efficiency throughout the project.......Bronson's ability to communicate complex concepts clearly and bring everyone on board made him an invaluable partner. His dedication to inclusive design and his thoughtful approach to system-level thinking elevated the overall quality of our work.......I highly recommend Bronson to any team looking for a skilled, collaborative, and forward-thinking UX designer who can bridge the gap between design and development while keeping accessibility at the forefront.",
+      body: "I had the pleasure of working with Bronson Lee on the Philly Truce project, where he served as a Desktop UX Designer. Bronson played a pivotal role in establishing and leading our design system from the ground up.\n\nHe spearheaded accessibility efforts and led cross-team collaboration to ensure a seamless and unified experience across desktop, mobile, and development environments. Thanks to his leadership, our team successfully adopted the design system, which improved both consistency and efficiency throughout the project.\n\nBronson's ability to communicate complex concepts clearly and bring everyone on board made him an invaluable partner. His dedication to inclusive design and his thoughtful approach to system-level thinking elevated the overall quality of our work.\n\nI highly recommend Bronson to any team looking for a skilled, collaborative, and forward-thinking UX designer who can bridge the gap between design and development while keeping accessibility at the forefront.",
+    },
+    {
+      author: "Jessica Teng",
+      role: "Lead UX Designer @ Tech Fleet",
+      body: "I had the pleasure of working with Bronson on the Philly Truce desktop dashboard project, taking it from 0 to 1. Having seen the meticulous work he led on the Philly Truce mobile app, I knew he'd play a key role in bridging the desktop experience with the strong design foundation established on mobile.......Building a dashboard from the ground up is never easy, especially with all the ambiguity and shifting user needs along the way. Bronson took on the added challenge of aligning and integrating the desktop experience with mobile—a complex task he handled with remarkable organization, focus, and collaboration. He was an outstanding liaison between both teams, helping us create a cohesive, cross-platform design system that truly elevated the product.......",
     },
     {
       author: "Jenise Absher",
@@ -148,7 +147,7 @@ const Page = () => {
           </div>
         </section>
 
-        <section className="py-20 bg-muted animate-on-load animate-fade-in-up animate-delay-350">
+        <section className="py-20 bg-background animate-on-load animate-fade-in-up animate-delay-350">
           <div className="container">
             <div className="flex items-center gap-2 mb-12">
               <div className="h-px w-8 bg-foreground/30"></div>
@@ -158,7 +157,7 @@ const Page = () => {
           </div>
         </section>
 
-        <section id="about" className="py-20 bg-muted animate-on-load animate-fade-in-up animate-delay-400">
+        <section id="about" className="py-20 bg-background animate-on-load animate-fade-in-up animate-delay-400">
           <div className="container">
             <div className="flex items-center gap-2 mb-12">
               <div className="h-px w-8 bg-foreground/30"></div>
@@ -183,7 +182,13 @@ const Page = () => {
                   shops in the city.
                 </p>
                 <Button asChild variant="outline">
-                  <Link href="/about">Learn more about me</Link>
+                  <Link
+                    href="https://drive.google.com/file/d/14TQw3m_5QvpKjledQjwdU87WXWCG-yI6/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Download resume
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -233,7 +238,7 @@ const Page = () => {
           </div>
         </section>
       </main>
-      <footer className="py-6 md:py-8 bg-muted animate-on-load animate-fade-in animate-delay-700">
+      <footer className="py-6 md:py-8 bg-background animate-on-load animate-fade-in animate-delay-700">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.

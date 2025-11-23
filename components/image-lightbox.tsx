@@ -20,13 +20,13 @@ export function ImageLightbox({ src, alt, open, onOpenChange }: ImageLightboxPro
           className="relative w-full h-full flex flex-col items-center justify-center px-8 py-16"
           onClick={() => onOpenChange(false)}
         >
-          <div className="relative max-w-full max-h-full" onClick={(e) => e.stopPropagation()}>
+          <div className="relative max-w-full max-h-[85vh]" onClick={(e) => e.stopPropagation()}>
             <Image
               src={src || "/placeholder.svg"}
               alt={alt}
               width={1920}
               height={1080}
-              className="object-contain max-w-full max-h-full w-auto h-auto rounded-xl"
+              className="object-contain max-w-full max-h-[85vh] w-auto h-auto rounded-xl"
             />
             <button
               onClick={(e) => {

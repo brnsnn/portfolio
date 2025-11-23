@@ -191,7 +191,7 @@ export default function HealthcareCaseStudy() {
         </div>
 
         {/* More Case Studies */}
-        <div className="bg-muted py-24 animate-on-load animate-fade-in-up animate-delay-700">
+        <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-700">
           <div className="max-w-[1140px] mx-auto px-6">
             <div className="flex items-center gap-2 mb-8">
               <div className="h-px w-8 bg-foreground/30"></div>

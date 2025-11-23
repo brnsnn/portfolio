@@ -14,6 +14,12 @@ export function CaseStudyCarousel({ currentCaseStudyId }: CaseStudyCarouselProps
   // Filter out the current case study
   const otherCaseStudies = allCaseStudies.filter((study) => study.id !== currentCaseStudyId)
 
+  const showNavigation = otherCaseStudies.length > 3
+
+  const handleLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: "instant" })
+  }
+
   return (
     <div className="relative">
       <Carousel
@@ -25,9 +31,13 @@ export function CaseStudyCarousel({ currentCaseStudyId }: CaseStudyCarouselProps
       >
         <CarouselContent className="-ml-4">
           {otherCaseStudies.map((project) => (
-            <CarouselItem key={project.id} className="pl-4 md:basis-[45%] lg:basis-[30%]">
+            <CarouselItem
+              key={project.id}
+              className={`pl-4 ${otherCaseStudies.length === 3 ? "md:basis-[48%] lg:basis-[33.333%]" : "md:basis-[45%] lg:basis-[30%]"}`}
+            >
               <Link
                 href={project.caseStudyUrl}
+                onClick={handleLinkClick}
                 className="group block overflow-hidden rounded-lg border border-border bg-background transition-all duration-500 ease-in-out hover:bg-muted relative h-full"
               >
                 <div className="aspect-video relative overflow-hidden">
@@ -47,10 +57,12 @@ export function CaseStudyCarousel({ currentCaseStudyId }: CaseStudyCarouselProps
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="flex justify-end gap-2 mt-6">
-          <CarouselPrevious className="static translate-y-0" aria-label="Previous case studies" />
-          <CarouselNext className="static translate-y-0" aria-label="Next case studies" />
-        </div>
+        {showNavigation && (
+          <div className="flex justify-end gap-2 mt-6">
+            <CarouselPrevious className="static translate-y-0" aria-label="Previous case studies" />
+            <CarouselNext className="static translate-y-0" aria-label="Next case studies" />
+          </div>
+        )}
       </Carousel>
     </div>
   )

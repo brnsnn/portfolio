@@ -1,10 +1,15 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { AnimatedName } from "@/components/animated-name"
+import { ImageLightbox } from "@/components/image-lightbox"
 import { CaseStudyCarousel } from "@/components/case-study-carousel"
+import React from "react"
 
 export default function SoulboundCaseStudy() {
+  const [lightboxImage, setLightboxImage] = React.useState<{ src: string; alt: string } | null>(null)
+
   return (
     <div className="flex min-h-screen flex-col">
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-on-load animate-fade-in">
@@ -39,10 +44,19 @@ export default function SoulboundCaseStudy() {
           </h1>
         </section>
 
-        <div className="container mb-16 animate-on-load animate-fade-in-up animate-delay-300">
-          <div className="w-full aspect-[21/9] relative">
+        {/* Hero Image */}
+        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300">
+          <div
+            className="w-full aspect-[16/9] relative cursor-pointer hover:opacity-90 transition-opacity"
+            onClick={() =>
+              setLightboxImage({
+                src: "/soulbound-design-system-thumbnail-updated.jpg",
+                alt: "Soulbound web3 gaming community design system",
+              })
+            }
+          >
             <Image
-              src="/web3-gaming-community-design-system.png"
+              src="/soulbound-design-system-thumbnail-updated.jpg"
               alt="Soulbound web3 gaming community design system"
               fill
               className="object-cover rounded-lg"
@@ -86,95 +100,160 @@ export default function SoulboundCaseStudy() {
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="max-w-[1140px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-500">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="h-px w-8 bg-foreground/30"></div>
-              <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
+        {/* THE IMPACT section */}
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500">
+          <div className="flex items-center gap-2 mb-6">
+            <div className="h-px w-8 bg-foreground/30"></div>
+            <span className="text-sm font-medium text-foreground/60">THE IMPACT</span>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <h3 className="text-4xl font-medium mb-2">30%</h3>
+              <p className="text-muted-foreground">Less time recreating components for new screens</p>
             </div>
-            <p className="text-muted-foreground mb-8">
-              The web3 gaming community lacked a cohesive design language, resulting in inconsistent user experiences
-              and slow development cycles. Without established design patterns, the team struggled to maintain visual
-              consistency while scaling the platform. This led to fragmented user experiences and increased development
-              time as designers and developers had to recreate components from scratch.
-            </p>
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
-              <Image
-                src="/web3-gaming-design-problems.png"
-                alt="Web3 gaming design system problems visualization"
-                fill
-                className="object-cover"
-              />
+            <div>
+              <h3 className="text-4xl font-medium mb-2">25%</h3>
+              <p className="text-muted-foreground">Reduction in design inconsistencies</p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-medium mb-2">100%</h3>
+              <p className="text-muted-foreground">Of text and UI elements now meet WCAG AA color contrast standards</p>
             </div>
           </div>
-
-          <div className="max-w-[1140px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-600">
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div>
-                <div className="flex items-center gap-2 mb-6">
-                  <div className="h-px w-8 bg-foreground/30"></div>
-                  <span className="text-sm font-medium text-foreground/60">OUR SOLUTION</span>
-                </div>
-              </div>
-              <div>
-                <p className="text-muted-foreground mb-4">
-                  We developed a comprehensive design system that established consistent visual patterns, reusable
-                  components, and clear guidelines for the web3 gaming experience. The system included a complete
-                  component library, design tokens, and documentation.
-                </p>
-                <p className="text-muted-foreground">
-                  The design system enabled faster development cycles, improved consistency across all touchpoints, and
-                  provided a foundation for scaling the platform while maintaining high-quality user experiences.
-                </p>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div className="aspect-square relative rounded-lg overflow-hidden">
-                <Image
-                  src="/web3-gaming-design-tokens.png"
-                  alt="Design tokens and color system"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="aspect-square relative rounded-lg overflow-hidden">
-                <Image
-                  src="/web3-gaming-components.png"
-                  alt="Component library showcase"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6">
-              <Image
-                src="/web3-gaming-design-system.png"
-                alt="Design system documentation"
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-              <div className="aspect-square relative rounded-lg overflow-hidden">
-                <Image src="/web3-gaming-ui.png" alt="UI patterns and layouts" fill className="object-cover" />
-              </div>
-              <div className="aspect-square relative rounded-lg overflow-hidden">
-                <Image src="/placeholder-6f4o5.png" alt="Responsive design system" fill className="object-cover" />
-              </div>
-            </div>
-
-            <div className="text-center mb-20">
-              <Button asChild size="lg">
-                <Link href="#">View Full Case Study</Link>
-              </Button>
-            </div>
+          <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
+            <video src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Soulbound-Video-XEloqIf3TnWFZBMb75HRIcZLnG6uWv.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
           </div>
         </div>
 
-        <div className="bg-muted py-24 animate-on-load animate-fade-in-up animate-delay-700">
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600">
+          <div className="flex items-center gap-2 mb-6">
+            <div className="h-px w-8 bg-foreground/30"></div>
+            <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
+          </div>
+          <p className="text-muted-foreground">
+            The platform's interfaces lacked a cohesive visual foundation—typography, color palettes, spacing, and core
+            components were inconsistent across games and dashboards. This fragmentation slowed design and development
+            while weakening the brand, creating the need for a unified, scalable visual system.
+          </p>
+        </div>
+
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-700">
+          <div className="flex items-center gap-2 mb-6">
+            <div className="h-px w-8 bg-foreground/30"></div>
+            <span className="text-sm font-medium text-foreground/60">OUR SOLUTION</span>
+          </div>
+          <p className="text-muted-foreground mb-8">
+            I established a unified design system from the ground up, defining typography, color palettes, spacing, and
+            reusable components. This system created consistency across interfaces, streamlined design and development,
+            and reinforced a cohesive, scalable brand identity.
+          </p>
+
+          <div className="relative rounded-lg overflow-hidden w-full border border-gray-200 mb-4">
+            <Image
+              src="/soulbound-font1.jpg"
+              alt="Chakra Petch typography scale with size, line-height, and letter-spacing specifications"
+              width={1140}
+              height={800}
+              className="w-full h-auto"
+            />
+          </div>
+          <p className="text-muted-foreground mb-16">
+            The Chakra Petch scale establishes a bold, tech-forward typographic hierarchy designed for high-impact
+            moments across the platform.
+          </p>
+
+          <div className="relative rounded-lg overflow-hidden w-full border border-gray-200 mb-4">
+            <Image
+              src="/soulbound-font2.jpg"
+              alt="Poppins typography scale with size, line-height, and letter-spacing specifications"
+              width={1140}
+              height={800}
+              className="w-full h-auto"
+            />
+          </div>
+          <p className="text-muted-foreground mb-16">
+            The Poppins scale provides a clean, modern, and highly legible counterpart to the more expressive display
+            typography.
+          </p>
+
+          <div className="relative rounded-lg overflow-hidden w-full border border-gray-200 mb-4">
+            <Image
+              src="/spacing.jpg"
+              alt="Design system spacing scale based on golden ratio"
+              width={1140}
+              height={400}
+              className="w-full h-auto"
+            />
+          </div>
+          <p className="text-muted-foreground mb-16">
+            This spacing system is built on the golden ratio and rounded to clean whole numbers, creating a consistent,
+            scalable rhythm across all components. Each step increases proportionally to maintain balanced whitespace
+            and a clear visual hierarchy.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-4">
+            <div className="aspect-[3/4] relative rounded-lg overflow-hidden border border-gray-200">
+              <Image
+                src="/soulbound-palette.jpg"
+                alt="Design system color palette"
+                fill
+                className="object-contain bg-white"
+              />
+            </div>
+            <div className="aspect-[3/4] relative rounded-lg overflow-hidden border border-gray-200">
+              <Image
+                src="/soulbound-accessibility.jpg"
+                alt="Design system accessibility and color contrast standards"
+                fill
+                className="object-contain bg-white"
+              />
+            </div>
+          </div>
+          <p className="text-muted-foreground mb-16">
+            The color palette and accessibility standards ensure vibrant brand expression while maintaining WCAG AA
+            compliance for all text and UI elements.
+          </p>
+
+          <div className="max-w-[1140px] mx-auto mb-4 animate-on-load animate-fade-in-up animate-delay-750">
+            <div className="relative rounded-lg overflow-hidden w-full border border-gray-200">
+              <Image
+                src="/soulbound-logo-updated.jpg"
+                alt="Soulbound logo variations across different color backgrounds"
+                width={1140}
+                height={1140}
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+          <p className="text-muted-foreground mb-16">
+            Six logo variations provide flexibility across diverse backgrounds while maintaining brand consistency and
+            recognition.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-4">
+            <div className="aspect-square relative rounded-lg overflow-hidden border border-gray-200">
+              <Image src="/soulbound-button.jpg" alt="Soulbound button states" fill className="object-cover" />
+            </div>
+            <div className="aspect-square relative rounded-lg overflow-hidden bg-white border border-gray-200">
+              <video
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Soulbound-Button-OscjsYwV91BQwHGvxC9N9vKslp1UXz.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover scale-[1.01]"
+              />
+            </div>
+          </div>
+          <p className="text-muted-foreground mb-40">
+            Button states demonstrate clear interaction feedback with default and hover for visual clarity.
+          </p>
+        </div>
+
+        {/* Explore More Work section with CaseStudyCarousel */}
+        <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-800">
           <div className="max-w-[1140px] mx-auto px-6">
             <div className="flex items-center gap-2 mb-8">
               <div className="h-px w-8 bg-foreground/30"></div>
@@ -185,7 +264,10 @@ export default function SoulboundCaseStudy() {
         </div>
       </main>
 
-      <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-700">
+      <ImageLightbox image={lightboxImage} onClose={() => setLightboxImage(null)} />
+
+      {/* Main footer */}
+      <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-900">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.

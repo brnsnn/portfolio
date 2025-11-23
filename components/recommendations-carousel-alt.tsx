@@ -120,14 +120,16 @@ export function RecommendationsCarouselAlt({ recommendations }: RecommendationsC
                       <p className="text-xs text-muted-foreground uppercase tracking-wide">{recommendation.position}</p>
                     </div>
                     <div className="flex-grow flex flex-col">
-                      <p
+                      <div
                         className={cn(
-                          "text-sm text-foreground/80 flex-grow transition-all duration-500 ease-out leading-relaxed",
+                          "text-sm text-foreground/80 flex-grow transition-all duration-500 ease-out leading-relaxed space-y-4",
                           !isExpanded && needsTruncation && "line-clamp-4 lg:line-clamp-3",
                         )}
                       >
-                        {recommendation.quote}
-                      </p>
+                        {recommendation.quote.split("\n\n").map((paragraph, i) => (
+                          <p key={i}>{paragraph}</p>
+                        ))}
+                      </div>
                       {needsTruncation && (
                         <button
                           onClick={() => toggleExpanded(cardId)}
