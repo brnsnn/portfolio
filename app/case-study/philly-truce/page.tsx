@@ -134,9 +134,7 @@ export default function BankingCaseStudy() {
               <div>
                 <div className="text-foreground/60 font-medium mb-3">2.</div>
                 <p className="text-muted-foreground">
-                  Make it easy for officers to document new incidents, review reports, and
-                  <br />
-                  claim unassigned cases.
+                  Make it easy for officers to document new incidents, review reports, and claim unassigned cases.
                 </p>
               </div>
               <div>
