@@ -225,11 +225,15 @@ export default function SoulboundCaseStudy() {
               className="w-full h-auto"
             />
           </div>
-          <p className="text-muted-foreground mb-16">
-            This spacing system is built on the golden ratio and rounded to clean whole numbers, creating a consistent,
-            scalable rhythm across all components. Each step increases proportionally to maintain balanced whitespace
-            and a clear visual hierarchy.
-          </p>
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div>
+              <p className="text-muted-foreground mb-2">
+                This spacing system is built on the golden ratio and rounded to clean whole numbers, creating a consistent,
+                scalable rhythm across all components. Each step increases proportionally to maintain balanced whitespace
+                and a clear visual hierarchy.
+              </p>
+            </div>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-4">
             <div className="aspect-[3/4] relative rounded-lg overflow-hidden border border-gray-200">
@@ -249,10 +253,14 @@ export default function SoulboundCaseStudy() {
               />
             </div>
           </div>
-          <p className="text-muted-foreground mb-16">
-            The color palette and accessibility standards ensure vibrant brand expression while maintaining WCAG AA
-            compliance for all text and UI elements.
-          </p>
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div>
+              <p className="text-muted-foreground mb-2">
+              The color palette and accessibility standards ensure vibrant brand expression while maintaining WCAG AA
+              compliance for all text and UI elements.
+              </p>
+            </div>
+          </div>
 
           <div className="max-w-[1140px] mx-auto mb-4 animate-on-load animate-fade-in-up animate-delay-750">
             <div className="relative rounded-lg overflow-hidden w-full border border-gray-200">
@@ -265,10 +273,14 @@ export default function SoulboundCaseStudy() {
               />
             </div>
           </div>
-          <p className="text-muted-foreground mb-16">
-            Six logo variations provide flexibility across diverse backgrounds while maintaining brand consistency and
-            recognition.
-          </p>
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div>
+              <p className="text-muted-foreground mb-2">
+              Six logo variations provide flexibility across diverse backgrounds while maintaining brand consistency and
+              recognition.
+              </p>
+            </div>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-4">
             <div className="aspect-square relative rounded-lg overflow-hidden border border-gray-200">
@@ -285,10 +297,13 @@ export default function SoulboundCaseStudy() {
               />
             </div>
           </div>
-          <p className="text-muted-foreground mb-40">
-            Button states demonstrate clear interaction feedback with default and hover for visual clarity.
-          </p>
-        </div>
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div>
+              <p className="text-muted-foreground mb-2">
+              Button states demonstrate clear interaction feedback with default and hover for visual clarity.
+              </p>
+            </div>
+          </div>
 
         {/* Explore More Work section with CaseStudyCarousel */}
         <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-800">
