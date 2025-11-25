@@ -302,7 +302,7 @@ export default function TravelAppCaseStudy() {
 
         <div className="max-w-[1140px] mx-auto mb-48">
           {/* Audit & Discovery */}
-          <div className="mb-16">
+          <div className="mb-40">
             <h3 className="font-medium text-lg mb-6">Audit & Discovery</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div>
