@@ -207,10 +207,14 @@ export default function SoulboundCaseStudy() {
               className="w-full h-auto"
             />
           </div>
-          <p className="text-muted-foreground mb-16">
-            The Poppins scale provides a clean, modern, and highly legible counterpart to the more expressive display
-            typography.
-          </p>
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div>
+              <p className="text-muted-foreground mb-2">
+                The Poppins scale provides a clean, modern, and highly legible counterpart to the more expressive display
+                typography.
+              </p>
+            </div>
+          </div>
 
           <div className="relative rounded-lg overflow-hidden w-full border border-gray-200 mb-4">
             <Image
