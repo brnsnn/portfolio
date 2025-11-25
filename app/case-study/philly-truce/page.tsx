@@ -94,33 +94,33 @@ export default function BankingCaseStudy() {
             </div>
           </div>
 
-          {/* Problem */}
-          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600">
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div>
-                <div className="flex items-center gap-2 mb-6">
-                  <div className="h-px w-8 bg-foreground/30"></div>
-                  <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
-                </div>
-                <p className="text-muted-foreground">
-                  Peace patrol officers in Philadelphia struggled with inaccurate and inconsistent record-keeping,
-                  making it difficult to track interventions and measure impact effectively. The existing system lacked
-                  usability, efficiency, and reliability, leading to operational inefficiencies and missed opportunities
-                  for violence prevention.
-                </p>
+        {/* Problem */}
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <div className="flex items-center gap-2 mb-6">
+                <div className="h-px w-8 bg-foreground/30"></div>
+                <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
               </div>
-              <div>
-                <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
-                  <Image
+            </div>
+            <div>
+              <p className="text-muted-foreground">
+                Peace patrol officers in Philadelphia struggled with inaccurate and inconsistent record-keeping,
+                making it difficult to track interventions and measure impact effectively. The existing system lacked
+                usability, efficiency, and reliability, leading to operational inefficiencies and missed opportunities
+                for violence prevention.
+              </p>
+            </div>
+          </div>
+          <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
+            <Image
                     src="/placeholder.svg?height=450&width=800"
                     alt="Banking app problems visualization"
                     fill
                     className="object-cover"
                   />
-                </div>
-              </div>
-            </div>
           </div>
+        </div>
 
           {/* Goals */}
           <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500">
