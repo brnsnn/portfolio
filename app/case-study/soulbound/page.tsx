@@ -123,33 +123,63 @@ export default function SoulboundCaseStudy() {
             </div>
           </div>
           <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
-            <video src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Soulbound-Video-XEloqIf3TnWFZBMb75HRIcZLnG6uWv.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
+            <video
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Soulbound-Video-XEloqIf3TnWFZBMb75HRIcZLnG6uWv.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
 
+        {/* THE PROBLEM section */}
         <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600">
-          <div className="flex items-center gap-2 mb-6">
-            <div className="h-px w-8 bg-foreground/30"></div>
-            <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <div className="flex items-center gap-2 mb-6">
+                <div className="h-px w-8 bg-foreground/30"></div>
+                <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
+              </div>
+            </div>
+            <div>
+              <p className="text-muted-foreground">
+                The platform's interfaces lacked a cohesive visual foundation—typography, color palettes, spacing, and
+                core components were inconsistent across games and dashboards. This fragmentation slowed design and
+                development while weakening the brand, creating the need for a unified, scalable visual system.
+              </p>
+            </div>
           </div>
-          <p className="text-muted-foreground">
-            The platform's interfaces lacked a cohesive visual foundation—typography, color palettes, spacing, and core
-            components were inconsistent across games and dashboards. This fragmentation slowed design and development
-            while weakening the brand, creating the need for a unified, scalable visual system.
-          </p>
+          <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
+            <video
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Soulbound-Video-XEloqIf3TnWFZBMb75HRIcZLnG6uWv.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
 
+        {/* OUR SOLUTION section */}
         <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-700">
-          <div className="flex items-center gap-2 mb-6">
-            <div className="h-px w-8 bg-foreground/30"></div>
-            <span className="text-sm font-medium text-foreground/60">OUR SOLUTION</span>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div>
+              <div className="flex items-center gap-2 mb-6">
+                <div className="h-px w-8 bg-foreground/30"></div>
+                <span className="text-sm font-medium text-foreground/60">OUR SOLUTION</span>
+              </div>
+            </div>
+            <div>
+              <p className="text-muted-foreground mb-4">
+                I established a unified design system from the ground up, defining typography, color palettes, spacing,
+                and reusable components. This system created consistency across interfaces, streamlined design and
+                development, and reinforced a cohesive, scalable brand identity.
+              </p>
+            </div>
           </div>
-          <p className="text-muted-foreground mb-8">
-            I established a unified design system from the ground up, defining typography, color palettes, spacing, and
-            reusable components. This system created consistency across interfaces, streamlined design and development,
-            and reinforced a cohesive, scalable brand identity.
-          </p>
-
           <div className="relative rounded-lg overflow-hidden w-full border border-gray-200 mb-4">
             <Image
               src="/soulbound-font1.jpg"
