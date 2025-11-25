@@ -126,14 +126,14 @@ export default function BankingCaseStudy() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
               <div>
                 <div className="text-foreground/60 font-medium mb-3">1.</div>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-muted-foreground">
                   Design a mobile app that helps Peace Patrol Officers quickly log, track, and resolve incidents in real
                   time.
                 </p>
               </div>
               <div>
                 <div className="text-foreground/60 font-medium mb-3">2.</div>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-muted-foreground">
                   Make it easy for officers to document new incidents, review reports, and
                   <br />
                   claim unassigned cases.
@@ -141,13 +141,13 @@ export default function BankingCaseStudy() {
               </div>
               <div>
                 <div className="text-foreground/60 font-medium mb-3">3.</div>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-muted-foreground">
                   Streamline the reporting workflow to reduce delays and improve response times.
                 </p>
               </div>
               <div>
                 <div className="text-foreground/60 font-medium mb-3">4.</div>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-muted-foreground">
                   Provide a clear, centralized interface that supports faster, more coordinated decision-making.
                 </p>
               </div>
