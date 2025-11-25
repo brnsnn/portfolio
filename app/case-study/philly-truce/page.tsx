@@ -54,7 +54,7 @@ export default function BankingCaseStudy() {
 
         {/* Project Details */}
         <div className="container animate-on-load animate-fade-in-up animate-delay-400">
-          <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-12 mb-20">
+          <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-12 mb-40">
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="h-px w-8 bg-foreground/30"></div>
@@ -64,7 +64,7 @@ export default function BankingCaseStudy() {
                 Philly Truce is a grassroots organization in Philadelphia focused on reducing violence and promoting
                 peaceful conflict resolution.
               </p>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground mb-12">
                 I conducted UX audits and improved UI clarity for the incident reporting feature, contributing to a 15%
                 increase in record-keeping accuracy, streamlined operations, and stronger community safety outcomes, in
                 collaboration with a team of five designers.
@@ -96,7 +96,7 @@ export default function BankingCaseStudy() {
           </div>
 
           {/* Problem */}
-          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500">
+          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600">
             <div className="flex items-center gap-2 mb-6">
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
@@ -117,8 +117,45 @@ export default function BankingCaseStudy() {
             </div>
           </div>
 
+          {/* Goals */}
+          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500">
+            <div className="flex items-center gap-2 mb-6">
+              <div className="h-px w-8 bg-foreground/30"></div>
+              <span className="text-sm font-medium text-foreground/60">GOALS</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
+              <div>
+                <div className="text-foreground/60 font-medium mb-3">1.</div>
+                <p className="text-muted-foreground text-sm">
+                  Design a mobile app that helps Peace Patrol Officers quickly log, track, and resolve incidents in real
+                  time.
+                </p>
+              </div>
+              <div>
+                <div className="text-foreground/60 font-medium mb-3">2.</div>
+                <p className="text-muted-foreground text-sm">
+                  Make it easy for officers to document new incidents, review reports, and
+                  <br />
+                  claim unassigned cases.
+                </p>
+              </div>
+              <div>
+                <div className="text-foreground/60 font-medium mb-3">3.</div>
+                <p className="text-muted-foreground text-sm">
+                  Streamline the reporting workflow to reduce delays and improve response times.
+                </p>
+              </div>
+              <div>
+                <div className="text-foreground/60 font-medium mb-3">4.</div>
+                <p className="text-muted-foreground text-sm">
+                  Provide a clear, centralized interface that supports faster, more coordinated decision-making.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Solution */}
-          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600">
+          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-700">
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
                 <div className="flex items-center gap-2 mb-6">
@@ -198,7 +235,7 @@ export default function BankingCaseStudy() {
         </div>
 
         {/* More Case Studies */}
-        <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-700">
+        <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-800">
           <div className="max-w-[1140px] mx-auto px-6">
             <div className="flex items-center gap-2 mb-8">
               <div className="h-px w-8 bg-foreground/30"></div>
@@ -209,7 +246,7 @@ export default function BankingCaseStudy() {
         </div>
       </main>
 
-      <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-700">
+      <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-800">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.
