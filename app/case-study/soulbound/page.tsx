@@ -189,10 +189,14 @@ export default function SoulboundCaseStudy() {
               className="w-full h-auto"
             />
           </div>
-          <p className="text-muted-foreground mb-16">
-            The Chakra Petch scale establishes a bold, tech-forward typographic hierarchy designed for high-impact
-            moments across the platform.
-          </p>
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div>
+              <p className="text-muted-foreground mb-2">
+                The Chakra Petch scale establishes a bold, tech-forward typographic hierarchy designed for high-impact
+                moments across the platform.
+              </p>
+            </div>
+          </div>
 
           <div className="relative rounded-lg overflow-hidden w-full border border-gray-200 mb-4">
             <Image
