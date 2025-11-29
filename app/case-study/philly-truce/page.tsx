@@ -40,12 +40,12 @@ export default function BankingCaseStudy() {
 
         {/* Hero Image */}
         <div className="container mb-16 animate-on-load animate-fade-in-up animate-delay-300">
-          <div className="w-full aspect-[21/9] relative">
+          <div className="w-full relative rounded-lg overflow-hidden border border-gray-200">
             <Image
-              src="/placeholder.svg?height=900&width=1900"
-              alt="Mobile Banking App Hero"
+              src="/images/pt-hero.avif"
+              alt="Philly Truce Mobile App Hero"
               fill
-              className="object-cover rounded-lg"
+              className="object-cover"
               priority
             />
           </div>
@@ -94,37 +94,37 @@ export default function BankingCaseStudy() {
             </div>
           </div>
 
-        {/* Problem */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600">
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-6">
-                <div className="h-px w-8 bg-foreground/30"></div>
-                <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
+          {/* Problem */}
+          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600">
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <div className="flex items-center gap-2 mb-6">
+                  <div className="h-px w-8 bg-foreground/30"></div>
+                  <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  Imagine being a Peace Patrol Officer trying to log an urgent incident, but a slow, disorganized paper
+                  system hinders tracking. That was the challenge before our intervention.
+                </p>
+                <p className="text-muted-foreground">
+                  Peace patrol officers in Philadelphia struggled with inaccurate and inconsistent record-keeping,
+                  making it difficult to track interventions and measure impact effectively. The existing system lacked
+                  usability, efficiency, and reliability, leading to operational inefficiencies and missed opportunities
+                  for violence prevention.
+                </p>
               </div>
             </div>
-            <div>
-              <p className="text-muted-foreground mb-4">
-                Imagine being a Peace Patrol Officer trying to log an urgent incident, but a slow, disorganized paper
-                system hinders tracking. That was the challenge before our intervention.
-              </p>
-              <p className="text-muted-foreground">
-                Peace patrol officers in Philadelphia struggled with inaccurate and inconsistent record-keeping,
-                making it difficult to track interventions and measure impact effectively. The existing system lacked
-                usability, efficiency, and reliability, leading to operational inefficiencies and missed opportunities
-                for violence prevention.
-              </p>
+            <div className="relative rounded-lg overflow-hidden border border-gray-200 w-full h-auto">
+              <Image
+                src="/images/paper-report-1.jpg"
+                alt="Philly Truce paper incident report form"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
-          <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
-            <Image
-                    src="/placeholder.svg?height=450&width=800"
-                    alt="Banking app problems visualization"
-                    fill
-                    className="object-cover"
-                  />
-          </div>
-        </div>
 
           {/* Goals */}
           <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500">
@@ -205,7 +205,7 @@ export default function BankingCaseStudy() {
               </div>
             </div>
 
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6">
+            <div className="relative rounded-lg overflow-hidden border border-gray-200 w-full h-auto">
               <Image
                 src="/placeholder.svg?height=450&width=800"
                 alt="Banking app features overview"

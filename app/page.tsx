@@ -25,7 +25,7 @@ const Page = () => {
     {
       title: "Reducing violence by improving record-keeping accuracy by 15%",
       description: "Philly Truce",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/pt-hero.avif",
       caseStudyUrl: "/case-study/philly-truce",
     },
     {
@@ -124,7 +124,7 @@ const Page = () => {
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
                       fill
-                      className="object-cover"
+                      className="object-cover border-gray-200"
                     />
                   </div>
                   <div className="p-4">
