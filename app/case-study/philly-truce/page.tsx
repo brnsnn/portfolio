@@ -40,7 +40,7 @@ export default function BankingCaseStudy() {
 
         {/* Hero Image */}
         <div className="container mb-16 animate-on-load animate-fade-in-up animate-delay-300">
-          <div className="w-full aspect-[21/9] relative rounded-lg overflow-hidden border border-gray-200">
+          <div className="w-full aspect-[16/9] relative rounded-lg overflow-hidden border border-gray-200">
             <Image
               src="/images/pt-hero.avif"
               alt="Philly Truce Mobile App Hero"
