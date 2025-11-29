@@ -104,7 +104,7 @@ export default function BankingCaseStudy() {
               </div>
             </div>
             <div>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground mb-4">
                 Imagine being a Peace Patrol Officer trying to log an urgent incident, but a slow, disorganized paper
                 system hinders tracking. That was the challenge before our intervention.
               </p>
