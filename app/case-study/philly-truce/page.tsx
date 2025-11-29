@@ -105,6 +105,10 @@ export default function BankingCaseStudy() {
             </div>
             <div>
               <p className="text-muted-foreground">
+                Imagine being a Peace Patrol Officer trying to log an urgent incident, but a slow, disorganized paper
+                system hinders tracking. That was the challenge before our intervention.
+              </p>
+              <p className="text-muted-foreground">
                 Peace patrol officers in Philadelphia struggled with inaccurate and inconsistent record-keeping,
                 making it difficult to track interventions and measure impact effectively. The existing system lacked
                 usability, efficiency, and reliability, leading to operational inefficiencies and missed opportunities
