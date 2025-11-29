@@ -39,13 +39,21 @@ export default function BankingCaseStudy() {
         </section>
 
         {/* Hero Image */}
-        <div className="container mb-16 animate-on-load animate-fade-in-up animate-delay-300">
-          <div className="w-full relative rounded-lg overflow-hidden border border-gray-200">
+        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300">
+          <div
+            className="w-full aspect-[16/9] relative cursor-pointer hover:opacity-90 transition-opacity"
+            onClick={() =>
+              setLightboxImage({
+                src: “/images/pt-hero.avif”,
+                alt: “Improving record-keeping accuracy by 15% and reducing violence”
+              })
+            }
+          >
             <Image
               src="/images/pt-hero.avif"
-              alt="Philly Truce Mobile App Hero"
+              alt=“Improving record-keeping accuracy by 15% and reducing violence"
               fill
-              className="object-cover"
+              className="object-cover rounded-lg"
               priority
             />
           </div>
