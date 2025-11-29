@@ -39,21 +39,13 @@ export default function BankingCaseStudy() {
         </section>
 
         {/* Hero Image */}
-        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300">
-          <div
-            className="w-full aspect-[16/9] relative cursor-pointer hover:opacity-90 transition-opacity"
-            onClick={() =>
-              setLightboxImage({
-                src: “/images/pt-hero.avif”,
-                alt: “Improving record-keeping accuracy by 15% and reducing violence”
-              })
-            }
-          >
+        <div className="container mb-16 animate-on-load animate-fade-in-up animate-delay-300">
+          <div className="w-full aspect-[21/9] relative rounded-lg overflow-hidden border border-gray-200">
             <Image
               src="/images/pt-hero.avif"
-              alt=“Improving record-keeping accuracy by 15% and reducing violence"
+              alt="Philly Truce Mobile App Hero"
               fill
-              className="object-cover rounded-lg"
+              className="object-cover"
               priority
             />
           </div>
@@ -124,7 +116,7 @@ export default function BankingCaseStudy() {
                 </p>
               </div>
             </div>
-            <div className="relative rounded-lg overflow-hidden border border-gray-200 w-full h-auto">
+            <div className="aspect-[16/9] relative rounded-lg overflow-hidden border border-gray-200">
               <Image
                 src="/images/paper-report-1.jpg"
                 alt="Philly Truce paper incident report form"
@@ -213,7 +205,7 @@ export default function BankingCaseStudy() {
               </div>
             </div>
 
-            <div className="relative rounded-lg overflow-hidden border border-gray-200 w-full h-auto">
+            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6">
               <Image
                 src="/placeholder.svg?height=450&width=800"
                 alt="Banking app features overview"
