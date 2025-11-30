@@ -191,7 +191,7 @@ const Page = () => {
                       Download resume
                     </Link>
                   </Button>
-                  <Button asChild size="icon" variant="outline">
+                  <Button asChild variant="outline">
                     <Link
                       href="https://linkedin.com/in/brnsnlee"
                       target="_blank"
