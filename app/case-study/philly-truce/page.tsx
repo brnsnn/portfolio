@@ -132,16 +132,16 @@ export default function BankingCaseStudy() {
             </div>
             {/* add cursor-pointer, hover effect, and onClick handler to paper report image */}
             <div
-              className="relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+              className="aspect-[16/9] relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
               onClick={() =>
                 setLightboxImage({
-                  src: "/Paper-Report-1.jpg?height=450&width=800",
+                  src: "/images/Paper-Report-1.jpg",
                   alt: "Philly Truce paper incident report form",
                 })
               }
             >
               <Image
-                src="/Paper-Report-1.jpg?height=450&width=800"
+                src="/images/Paper-Report-1.jpg"
                 alt="Philly Truce paper incident report form"
                 fill
                 className="object-cover"
