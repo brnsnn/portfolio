@@ -132,7 +132,7 @@ export default function BankingCaseStudy() {
             </div>
             {/* add cursor-pointer, hover effect, and onClick handler to paper report image */}
             <div
-              className="aspect-[16/9] relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+              className="relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
               onClick={() =>
                 setLightboxImage({
                   src: "/images/Paper-Report-1.jpg",
