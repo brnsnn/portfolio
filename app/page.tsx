@@ -182,7 +182,7 @@ const Page = () => {
                   shops in the city.
                 </p>
                 <div className="flex gap-4">
-                  <Button asChild className="w-full" variant="default">
+                  <Button asChild variant="default">
                     <Link
                       href="https://drive.google.com/file/d/14TQw3m_5QvpKjledQjwdU87WXWCG-yI6/view"
                       target="_blank"
