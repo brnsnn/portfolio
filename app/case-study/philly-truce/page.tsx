@@ -135,13 +135,13 @@ export default function BankingCaseStudy() {
               className="aspect-[16/9] relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
               onClick={() =>
                 setLightboxImage({
-                  src: "/images/paper-report-1.jpg",
+                  src: "/images/Paper-Report-1.jpg",
                   alt: "Philly Truce paper incident report form",
                 })
               }
             >
               <Image
-                src="/images/paper-report-1.jpg"
+                src="/images/Paper-Report-1.jpg"
                 alt="Philly Truce paper incident report form"
                 fill
                 className="object-cover"
