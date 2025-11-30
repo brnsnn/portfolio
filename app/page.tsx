@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Linkedin } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Input } from "@/components/ui/input"
@@ -181,15 +181,27 @@ const Page = () => {
                   When I'm not designing, you can find me sketching, attending design meetups, or exploring new coffee
                   shops in the city.
                 </p>
-                <Button asChild variant="outline">
-                  <Link
-                    href="https://drive.google.com/file/d/14TQw3m_5QvpKjledQjwdU87WXWCG-yI6/view"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Download resume
-                  </Link>
-                </Button>
+                <div className="flex gap-4">
+                  <Button asChild variant="outline">
+                    <Link
+                      href="https://drive.google.com/file/d/14TQw3m_5QvpKjledQjwdU87WXWCG-yI6/view"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Download resume
+                    </Link>
+                  </Button>
+                  <Button asChild size="icon" variant="outline">
+                    <Link
+                      href="https://linkedin.com/in/brnsnlee"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Visit LinkedIn profile"
+                    >
+                      <Linkedin className="h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

@@ -1,9 +1,15 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
+import { useState } from "react"
 import { AnimatedName } from "@/components/animated-name"
 import { CaseStudyCarousel } from "@/components/case-study-carousel"
+import { ImageLightbox } from "@/components/image-lightbox"
 
 export default function BankingCaseStudy() {
+  const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
+
   return (
     <div className="flex min-h-screen flex-col">
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-on-load animate-fade-in">
@@ -40,7 +46,15 @@ export default function BankingCaseStudy() {
 
         {/* Hero Image */}
         <div className="container mb-16 animate-on-load animate-fade-in-up animate-delay-300">
-          <div className="w-full aspect-[16/9] relative rounded-lg overflow-hidden border border-gray-200">
+          <div
+            className="w-full aspect-[16/9] relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+            onClick={() =>
+              setLightboxImage({
+                src: "/images/pt-hero.avif",
+                alt: "Philly Truce Mobile App Hero",
+              })
+            }
+          >
             <Image
               src="/images/pt-hero.avif"
               alt="Philly Truce Mobile App Hero"
@@ -116,7 +130,16 @@ export default function BankingCaseStudy() {
                 </p>
               </div>
             </div>
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden border border-gray-200">
+            {/* add cursor-pointer, hover effect, and onClick handler to paper report image */}
+            <div
+              className="aspect-[16/9] relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/images/paper-report-1.jpg",
+                  alt: "Philly Truce paper incident report form",
+                })
+              }
+            >
               <Image
                 src="/images/paper-report-1.jpg"
                 alt="Philly Truce paper incident report form"
@@ -124,6 +147,9 @@ export default function BankingCaseStudy() {
                 className="object-cover"
               />
             </div>
+            <p className="text-sm text-muted-foreground mt-4">
+              Example of how incident reports were made on paper before going digital.
+            </p>
           </div>
 
           {/* Goals */}
@@ -187,46 +213,86 @@ export default function BankingCaseStudy() {
 
             {/* Images */}
             <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div className="aspect-square relative rounded-lg overflow-hidden">
+              <div
+                className="aspect-square relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/images/philly-truce-dashboard.avif",
+                    alt: "Philly Truce app dashboard",
+                  })
+                }
+              >
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Banking app dashboard"
+                  src="/images/philly-truce-dashboard.avif"
+                  alt="Philly Truce app dashboard"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="aspect-square relative rounded-lg overflow-hidden">
+              <div
+                className="aspect-square relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/images/philly-truce-transactions.avif",
+                    alt: "Philly Truce app transactions",
+                  })
+                }
+              >
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Banking app transactions"
+                  src="/images/philly-truce-transactions.avif"
+                  alt="Philly Truce app transactions"
                   fill
                   className="object-cover"
                 />
               </div>
             </div>
 
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6">
+            <div
+              className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6 border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/images/philly-truce-features.avif",
+                  alt: "Philly Truce app features overview",
+                })
+              }
+            >
               <Image
-                src="/placeholder.svg?height=450&width=800"
-                alt="Banking app features overview"
+                src="/images/philly-truce-features.avif"
+                alt="Philly Truce app features overview"
                 fill
                 className="object-cover"
               />
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
-              <div className="aspect-square relative rounded-lg overflow-hidden">
+              <div
+                className="aspect-square relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/images/philly-truce-budget.avif",
+                    alt: "Philly Truce app budget feature",
+                  })
+                }
+              >
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Banking app budget feature"
+                  src="/images/philly-truce-budget.avif"
+                  alt="Philly Truce app budget feature"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="aspect-square relative rounded-lg overflow-hidden">
+              <div
+                className="aspect-square relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/images/philly-truce-settings.avif",
+                    alt: "Philly Truce app settings",
+                  })
+                }
+              >
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Banking app settings"
+                  src="/images/philly-truce-settings.avif"
+                  alt="Philly Truce app settings"
                   fill
                   className="object-cover"
                 />
@@ -262,6 +328,15 @@ export default function BankingCaseStudy() {
           </Link>
         </div>
       </footer>
+
+      {lightboxImage && (
+        <ImageLightbox
+          src={lightboxImage.src || "/placeholder.svg"}
+          alt={lightboxImage.alt}
+          open={!!lightboxImage}
+          onOpenChange={(open) => !open && setLightboxImage(null)}
+        />
+      )}
     </div>
   )
 }
