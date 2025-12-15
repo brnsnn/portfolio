@@ -123,7 +123,11 @@ export default function TravelAppCaseStudy() {
               </div>
               <div>
                 <h3 className="mb-2">Team</h3>
-                <p className="text-muted-foreground">Mobile / desktop design team, and dev team</p>
+                <p className="text-muted-foreground">Mobile / Desktop design team, Dev team, 2 Managers, 4 Content designers</p>
+              </div>
+              <div>
+                <h3 className="mb-2">Timeline</h3>
+                <p className="text-muted-foreground">4 months</p>
               </div>
             </div>
           </div>
