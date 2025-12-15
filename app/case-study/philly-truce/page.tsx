@@ -100,16 +100,16 @@ export default function PhillyTruceCaseStudy() {
                 </div>
               </div>
               <div>
+                <h3 className="mb-2">Team</h3>
+                <p className="text-muted-foreground">
+                  2 Lead UX Designers, 3 UX Designers, UX Research, Developers, 1 Project Manager, 4 Content Designers
+                </p>
+              </div>
+              <div>
                 <h3 className="mb-2">Scope</h3>
                 <p className="text-muted-foreground">
                   Designed a mobile digital reporting system to replace paper-based incident forms for Peace Patrol
                   Officers.
-                </p>
-              </div>
-              <div>
-                <h3 className="mb-2">Team</h3>
-                <p className="text-muted-foreground">
-                  2 Lead UX Designers, 3 UX Designers, UX Research, Developers, 1 Project Manager, 4 Content Designers
                 </p>
               </div>
             </div>
