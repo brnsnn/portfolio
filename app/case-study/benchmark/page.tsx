@@ -106,28 +106,23 @@ export default function TravelAppCaseStudy() {
               </p>
             </div>
             <div className="space-y-8">
-              <div>
-                <h3 className="mb-2">Client</h3>
-                <p className="text-muted-foreground">Philly Truce</p>
-              </div>
-              <div>
-                <h3 className="mb-2">Scope</h3>
-                <p className="text-muted-foreground">
-                  Audit & discovery, foundations, core components, cross-platform unification, accessibility &
-                  usability, implementation & collaboration
-                </p>
-              </div>
-              <div>
-                <h3 className="mb-2">My Role</h3>
-                <p className="text-muted-foreground">Lead Designer</p>
+              <div className="grid md:grid-cols-3 gap-8">
+                <div>
+                  <h3 className="mb-2">Client</h3>
+                  <p className="text-muted-foreground">Philly Truce</p>
+                </div>
+                <div>
+                  <h3 className="mb-2">Timeline</h3>
+                  <p className="text-muted-foreground">4 months</p>
+                </div>
               </div>
               <div>
                 <h3 className="mb-2">Team</h3>
                 <p className="text-muted-foreground">Mobile / Desktop design team, Dev team, 2 Managers, 4 Content designers</p>
               </div>
               <div>
-                <h3 className="mb-2">Timeline</h3>
-                <p className="text-muted-foreground">4 months</p>
+                <h3 className="mb-2">Scope</h3>
+                <p className="text-muted-foreground">Developed a Benchmark Design System for Philly Truce’s mobile web app, including reusable components, design tokens, and documentation.</p>
               </div>
             </div>
           </div>
