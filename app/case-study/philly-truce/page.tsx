@@ -74,13 +74,14 @@ export default function PhillyTruceCaseStudy() {
                 <span className="text-sm font-medium text-foreground/60">PROJECT OVERVIEW</span>
               </div>
               <p className="text-muted-foreground mb-4">
-                Philly Truce is a peace-building organization focused on reducing community violence through street
-                outreach and conflict intervention. Their patrol officers use mobile and desktop platforms to record
-                incident reports and manage community data.
+                Philly Truce is a Philadelphia-based grassroots organization dedicated to reducing violence through
+                community-led intervention. Peace Patrol Officers relied on paper-based incident reports, which were
+                time-consuming to complete, inconsistent, and difficult to access or analyze. 
               </p>
               <p className="text-muted-foreground">
-                I redesigned their incident report form to improve accuracy and efficiency, reducing errors by 15% and
-                enabling officers to complete reports 20% faster while collecting more complete data.
+                The goal of this project was to design a mobile-friendly digital incident reporting system that fit
+                officers’ real-world workflows, supported fast documentation in the field, and improved data quality
+                for operational insight and decision-making.
               </p>
             </div>
             <div className="space-y-8">
@@ -91,7 +92,7 @@ export default function PhillyTruceCaseStudy() {
               <div>
                 <h3 className="mb-2">Scope</h3>
                 <p className="text-muted-foreground">
-                  Form redesign, information architecture, mobile and desktop unification
+                  Designed a mobile digital reporting system to replace paper-based incident forms for Peace Patrol Officers.
                 </p>
               </div>
               <div>
@@ -100,7 +101,11 @@ export default function PhillyTruceCaseStudy() {
               </div>
               <div>
                 <h3 className="mb-2">Team</h3>
-                <p className="text-muted-foreground">UX Design, Product, Development</p>
+                <p className="text-muted-foreground">2 Lead UX Designers, 3 UX Designers, UX Research, Developers, 1 Project Manager</p>
+              </div>
+              <div>
+                <h3 className="mb-2">Timeline</h3>
+                <p className="text-muted-foreground">4 months</p>
               </div>
             </div>
           </div>
@@ -117,10 +122,10 @@ export default function PhillyTruceCaseStudy() {
             </div>
             <div>
               <p className="text-muted-foreground">
-                Officers were struggling with a paper-based incident reporting system that was time-consuming,
-                error-prone, and difficult to standardize. Information was often incomplete, inconsistently formatted,
-                and slow to aggregate for analysis. The manual process created delays in response times and made it hard
-                to identify patterns in community violence.
+                Peace patrol officers in Philadelphia struggled with inaccurate and inconsistent record-keeping,
+                making it difficult to track interventions and measure impact effectively. The existing system lacked
+                usability, efficiency, and reliability, leading to operational inefficiencies and missed opportunities
+                for violence prevention.
               </p>
             </div>
           </div>
