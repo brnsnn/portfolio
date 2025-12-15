@@ -115,6 +115,10 @@ export default function TravelAppCaseStudy() {
                   <h3 className="mb-2">Timeline</h3>
                   <p className="text-muted-foreground">4 months</p>
                 </div>
+                <div>
+                  <h3 className="mb-2">My Role</h3>
+                  <p className="text-muted-foreground">Lead UX Designer</p>
+                </div>
               </div>
               <div>
                 <h3 className="mb-2">Team</h3>
