@@ -159,7 +159,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
 
         {/* Goals Section */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-700">
+        <div className="max-w-[1140px] mx-auto mb-40 mt-32 animate-on-load animate-fade-in-up animate-delay-700">
           <div className="flex items-center gap-2 mb-6">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">GOALS</span>
