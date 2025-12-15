@@ -116,6 +116,53 @@ export default function PhillyTruceCaseStudy() {
           </div>
         </div>
 
+        {/* THE IMPACT */}
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500">
+          <div className="flex items-center gap-2 mb-6">
+            <div className="h-px w-8 bg-foreground/30"></div>
+            <span className="text-sm font-medium text-foreground/60">THE IMPACT</span>
+          </div>
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
+                40%
+                <ArrowDown className="w-8 h-8" />
+              </h3>
+              <p className="text-muted-foreground">
+                Reduction in design + development time via <br />
+                shared system
+              </p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
+                35%
+                <ArrowUp className="w-8 h-8" />
+              </h3>
+              <p className="text-muted-foreground">
+                Improvement in user <br />
+                satisfaction scores
+              </p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
+                15%
+                <ArrowUp className="w-8 h-8" />
+              </h3>
+              <p className="text-muted-foreground">Increase in record-keeping accuracy by patrol officers</p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
+                20%
+                <ArrowRight className="w-8 h-8" />
+              </h3>
+              <p className="text-muted-foreground">
+                Faster task completion in <br />
+                the admin portal
+              </p>
+            </div>
+          </div>
+        </div>
+        
         {/* THE PROBLEM */}
         <div className="max-w-[1140px] mx-auto mb-6 animate-on-load animate-fade-in-up animate-delay-500">
           <div className="grid md:grid-cols-2 gap-8 mb-8">
