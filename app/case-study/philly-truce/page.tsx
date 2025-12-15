@@ -135,7 +135,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
 
         {/* Paper Report Image */}
-        <div className="max-w-[1140px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-600">
+        <div className="max-w-[1140px] mx-auto mb-8 animate-on-load animate-fade-in-up animate-delay-600">
           <div
             className="w-full relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity mb-4 h-auto"
             onClick={() =>
