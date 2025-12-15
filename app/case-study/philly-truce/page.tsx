@@ -6,6 +6,7 @@ import { AnimatedName } from "@/components/animated-name"
 import { useState } from "react"
 import { CaseStudyCarousel } from "@/components/case-study-carousel"
 import { ImageLightbox } from "@/components/image-lightbox"
+import { ArrowDown, ArrowUp, ArrowRight } from "lucide-react"
 
 export default function PhillyTruceCaseStudy() {
   const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
@@ -125,30 +126,30 @@ export default function PhillyTruceCaseStudy() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
-                15%
+                40%
+                <ArrowDown className="w-8 h-8" />
+              </h3>
+              <p className="text-muted-foreground">
+                Reduction in design + development time via <br />
+                shared system
+              </p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
+                35%
                 <ArrowUp className="w-8 h-8" />
               </h3>
               <p className="text-muted-foreground">
-                Increase in report creation with new report button
+                Improvement in user <br />
+                satisfaction scores
               </p>
             </div>
             <div>
               <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
-                25%
-                <ArrowDown className="w-8 h-8" />
+                15%
+                <ArrowUp className="w-8 h-8" />
               </h3>
-              <p className="text-muted-foreground">
-                Reduction in distractions, <br />
-                minimizing interruptions <br />
-                and input errors
-              </p>
-            </div>
-            <div>
-              <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
-                10-25%
-                <ArrowDown className="w-8 h-8" />
-              </h3>
-              <p className="text-muted-foreground">Reduction in misfiled reports</p>
+              <p className="text-muted-foreground">Increase in record-keeping accuracy by patrol officers</p>
             </div>
             <div>
               <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
@@ -162,9 +163,9 @@ export default function PhillyTruceCaseStudy() {
             </div>
           </div>
         </div>
-        
+
         {/* THE PROBLEM */}
-        <div className="max-w-[1140px] mx-auto mb-6 animate-on-load animate-fade-in-up animate-delay-500">
+        <div className="max-w-[1140px] mx-auto mb-6 animate-on-load animate-fade-in-up animate-delay-600">
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-6">
@@ -184,7 +185,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
 
         {/* Paper Report Image */}
-        <div className="max-w-[1140px] mx-auto mb-8 animate-on-load animate-fade-in-up animate-delay-600">
+        <div className="max-w-[1140px] mx-auto mb-8 animate-on-load animate-fade-in-up animate-delay-700">
           <div
             className="w-full relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity mb-4 h-auto"
             onClick={() =>
@@ -208,7 +209,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
 
         {/* Goals Section */}
-        <div className="max-w-[1140px] mx-auto mb-40 mt-32 animate-on-load animate-fade-in-up animate-delay-700">
+        <div className="max-w-[1140px] mx-auto mb-40 mt-32 animate-on-load animate-fade-in-up animate-delay-800">
           <div className="flex items-center gap-2 mb-6">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">GOALS</span>
@@ -236,7 +237,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
 
         {/* OUR SOLUTION */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-800">
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-900">
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
               <div className="flex items-center gap-2 mb-6">
@@ -352,7 +353,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
 
         {/* Explore More Work */}
-        <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-900">
+        <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-1000">
           <div className="max-w-[1140px] mx-auto px-6">
             <div className="flex items-center gap-2 mb-8">
               <div className="h-px w-8 bg-foreground/30"></div>
@@ -366,7 +367,7 @@ export default function PhillyTruceCaseStudy() {
       <ImageLightbox image={lightboxImage} onClose={() => setLightboxImage(null)} />
 
       {/* Footer */}
-      <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-900">
+      <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-1000">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.
