@@ -103,7 +103,7 @@ export default function PhillyTruceCaseStudy() {
               <div>
                 <h3 className="mb-2">Team</h3>
                 <p className="text-muted-foreground">
-                  2 Lead UX Designers, 3 UX Designers, UX Research, Developers, 1 Project Manager
+                  2 Lead UX Designers, 3 UX Designers, UX Research, Developers, 1 Project Manager, 4 Content Designers
                 </p>
               </div>
               <div>
