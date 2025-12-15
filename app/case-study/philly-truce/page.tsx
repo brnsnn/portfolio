@@ -2,12 +2,12 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
 import { AnimatedName } from "@/components/animated-name"
+import { useState } from "react"
 import { CaseStudyCarousel } from "@/components/case-study-carousel"
 import { ImageLightbox } from "@/components/image-lightbox"
 
-export default function BankingCaseStudy() {
+export default function PhillyTruceCaseStudy() {
   const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
 
   return (
@@ -40,24 +40,24 @@ export default function BankingCaseStudy() {
             <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight max-w-4xl">
-            Reducing Violence with a Mobile Web App by Improving Record-Keeping Accuracy by 15%
+            Reducing violence by improving record-keeping accuracy by 15%
           </h1>
         </section>
 
         {/* Hero Image */}
-        <div className="container mb-16 animate-on-load animate-fade-in-up animate-delay-300">
+        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300">
           <div
-            className="w-full aspect-[16/9] relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+            className="w-full relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity aspect-video"
             onClick={() =>
               setLightboxImage({
                 src: "/images/pt-hero.avif",
-                alt: "Philly Truce Mobile App Hero",
+                alt: "Philly Truce incident report redesign",
               })
             }
           >
             <Image
               src="/images/pt-hero.avif"
-              alt="Philly Truce Mobile App Hero"
+              alt="Philly Truce incident report redesign"
               fill
               className="object-cover"
               priority
@@ -65,181 +65,176 @@ export default function BankingCaseStudy() {
           </div>
         </div>
 
-        {/* Project Details */}
+        {/* Project Overview */}
         <div className="container animate-on-load animate-fade-in-up animate-delay-400">
-          <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-12 mb-40">
+          <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-12 mb-32">
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="h-px w-8 bg-foreground/30"></div>
                 <span className="text-sm font-medium text-foreground/60">PROJECT OVERVIEW</span>
               </div>
               <p className="text-muted-foreground mb-4">
-                Philly Truce is a grassroots organization in Philadelphia focused on reducing violence and promoting
-                peaceful conflict resolution.
+                Philly Truce is a peace-building organization focused on reducing community violence through street
+                outreach and conflict intervention. Their patrol officers use mobile and desktop platforms to record
+                incident reports and manage community data.
               </p>
-              <p className="text-muted-foreground mb-12">
-                I conducted UX audits and improved UI clarity for the incident reporting feature, contributing to a 15%
-                increase in record-keeping accuracy, streamlined operations, and stronger community safety outcomes, in
-                collaboration with a team of five designers.
+              <p className="text-muted-foreground">
+                I redesigned their incident report form to improve accuracy and efficiency, reducing errors by 15% and
+                enabling officers to complete reports 20% faster while collecting more complete data.
               </p>
             </div>
             <div className="space-y-8">
               <div>
+                <h3 className="mb-2">Client</h3>
+                <p className="text-muted-foreground">Philly Truce</p>
+              </div>
+              <div>
                 <h3 className="mb-2">Scope</h3>
                 <p className="text-muted-foreground">
-                  Redesigned the Incident Report Management Platform (IRMP) to enhance usability and improve accurate
-                  record-keeping.
+                  Form redesign, information architecture, mobile and desktop unification
                 </p>
               </div>
               <div>
                 <h3 className="mb-2">My Role</h3>
-                <p className="text-muted-foreground">UX Designer</p>
+                <p className="text-muted-foreground">Lead UX Designer</p>
               </div>
               <div>
                 <h3 className="mb-2">Team</h3>
-                <p className="text-muted-foreground">
-                  2 Lead UX Designers, 3 UX Designers, UX Research, Developers, 1 Project Manager
-                </p>
-              </div>
-              <div>
-                <h3 className="mb-2">Timeline</h3>
-                <p className="text-muted-foreground">3 months</p>
+                <p className="text-muted-foreground">UX Design, Product, Development</p>
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Problem */}
-          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600">
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div>
-                <div className="flex items-center gap-2 mb-6">
-                  <div className="h-px w-8 bg-foreground/30"></div>
-                  <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
-                </div>
-              </div>
-              <div>
-                <p className="text-muted-foreground mb-4">
-                  Imagine being a Peace Patrol Officer trying to log an urgent incident, but a slow, disorganized paper
-                  system hinders tracking. That was the challenge before our intervention.
-                </p>
-                <p className="text-muted-foreground">
-                  Peace patrol officers in Philadelphia struggled with inaccurate and inconsistent record-keeping,
-                  making it difficult to track interventions and measure impact effectively. The existing system lacked
-                  usability, efficiency, and reliability, leading to operational inefficiencies and missed opportunities
-                  for violence prevention.
-                </p>
+        {/* THE PROBLEM */}
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <div className="flex items-center gap-2 mb-6">
+                <div className="h-px w-8 bg-foreground/30"></div>
+                <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
               </div>
             </div>
-            {/* add cursor-pointer, hover effect, and onClick handler to paper report image */}
-            <div
-              className="aspect-[16/9] relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
-              onClick={() =>
-                setLightboxImage({
-                  src: "/images/Paper-Report-1.jpg",
-                  alt: "Philly Truce paper incident report form",
-                })
-              }
-            >
-              <Image
-                src="/images/Paper-Report-1.jpg"
-                alt="Philly Truce paper incident report form"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <p className="text-sm text-muted-foreground mt-4">
-              Example of how incident reports were made on paper before going digital.
-            </p>
-          </div>
-
-          {/* Goals */}
-          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="h-px w-8 bg-foreground/30"></div>
-              <span className="text-sm font-medium text-foreground/60">GOALS</span>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
-              <div>
-                <div className="text-foreground/60 font-medium mb-3">1.</div>
-                <p className="text-muted-foreground">
-                  Design a mobile app that helps Peace Patrol Officers quickly log, track, and resolve incidents in real
-                  time.
-                </p>
-              </div>
-              <div>
-                <div className="text-foreground/60 font-medium mb-3">2.</div>
-                <p className="text-muted-foreground">
-                  Make it easy for officers to document new incidents, review reports, and claim unassigned cases.
-                </p>
-              </div>
-              <div>
-                <div className="text-foreground/60 font-medium mb-3">3.</div>
-                <p className="text-muted-foreground">
-                  Streamline the reporting workflow to reduce delays and improve response times.
-                </p>
-              </div>
-              <div>
-                <div className="text-foreground/60 font-medium mb-3">4.</div>
-                <p className="text-muted-foreground">
-                  Provide a clear, centralized interface that supports faster, more coordinated decision-making.
-                </p>
-              </div>
+            <div>
+              <p className="text-muted-foreground">
+                Officers were struggling with a paper-based incident reporting system that was time-consuming,
+                error-prone, and difficult to standardize. Information was often incomplete, inconsistently formatted,
+                and slow to aggregate for analysis. The manual process created delays in response times and made it hard
+                to identify patterns in community violence.
+              </p>
             </div>
           </div>
+        </div>
 
-          {/* Solution */}
-          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-700">
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div>
-                <div className="flex items-center gap-2 mb-6">
-                  <div className="h-px w-8 bg-foreground/30"></div>
-                  <span className="text-sm font-medium text-foreground/60">OUR SOLUTION</span>
-                </div>
-              </div>
-              <div>
-                <p className="text-muted-foreground mb-4">
-                  The app focused on improving usability, streamlining workflows, and enhancing record-keeping accuracy.
-                  Through close collaboration with a team of designers, we optimized the app's interface, making it
-                  intuitive and efficient. The redesign resulted in a 15% improvement in record accuracy, enabling
-                  officers to better track interventions, strengthen community safety efforts, and enhance overall
-                  operational efficiency.
-                </p>
-                <p className="text-muted-foreground">
-                  We implemented a card-based UI that allows users to quickly access their most-used features, along
-                  with data visualization for spending patterns and budget tracking.
-                </p>
+        {/* Paper Report Image */}
+        <div className="max-w-[1140px] mx-auto mb-16 animate-on-load animate-fade-in-up animate-delay-600">
+          <div
+            className="w-full relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity mb-4 h-auto"
+            onClick={() =>
+              setLightboxImage({
+                src: "/images/Paper-Report-1.jpg",
+                alt: "Example of how incident reports were made on paper before going digital",
+              })
+            }
+          >
+            <Image
+              src="/images/Paper-Report-1.jpg"
+              alt="Example of how incident reports were made on paper before going digital"
+              width={1140}
+              height={1440}
+              className="w-full h-auto"
+            />
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Example of how incident reports were made on paper before going digital.
+          </p>
+        </div>
+
+        {/* Goals Section */}
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-700">
+          <div className="flex items-center gap-2 mb-6">
+            <div className="h-px w-8 bg-foreground/30"></div>
+            <span className="text-sm font-medium text-foreground/60">GOALS</span>
+          </div>
+          <div className="grid md:grid-cols-4 gap-8 items-start">
+            <div>
+              <h4 className="font-medium mb-2">Reduce Errors</h4>
+              <p className="text-muted-foreground text-sm">
+                Minimize data entry mistakes and incomplete fields through better form structure and validation.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-medium mb-2">Improve Speed</h4>
+              <p className="text-muted-foreground text-sm">
+                Enable officers to complete reports faster using a streamlined workflow and smart defaults.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-medium mb-2">Enhance Data Quality</h4>
+              <p className="text-muted-foreground text-sm">
+                Capture more complete and consistent data to improve analysis and response coordination.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-medium mb-2">Cross-Platform</h4>
+              <p className="text-muted-foreground text-sm">
+                Create a unified experience across mobile field reports and desktop administrative workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* OUR SOLUTION */}
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-800">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div>
+              <div className="flex items-center gap-2 mb-6">
+                <div className="h-px w-8 bg-foreground/30"></div>
+                <span className="text-sm font-medium text-foreground/60">OUR SOLUTION</span>
               </div>
             </div>
+            <div>
+              <p className="text-muted-foreground mb-4">
+                I redesigned the incident report form with a clear information hierarchy, logical field grouping, and
+                progressive disclosure. The new design reduces cognitive load, prevents errors through validation, and
+                enables officers to complete reports in half the time while collecting better data.
+              </p>
+            </div>
+          </div>
 
-            {/* Images */}
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
+          <div className="space-y-8">
+            {/* Row 1: Dashboard and Transactions */}
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Dashboard */}
               <div
-                className="aspect-square relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
                 onClick={() =>
                   setLightboxImage({
-                    src: "/images/philly-truce-dashboard.avif",
+                    src: "/images/philly-truce-dashboard.jpg",
                     alt: "Philly Truce app dashboard",
                   })
                 }
               >
                 <Image
-                  src="/images/philly-truce-dashboard.avif"
+                  src="/images/philly-truce-dashboard.jpg"
                   alt="Philly Truce app dashboard"
                   fill
                   className="object-cover"
                 />
               </div>
+
+              {/* Transactions */}
               <div
-                className="aspect-square relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
                 onClick={() =>
                   setLightboxImage({
-                    src: "/images/philly-truce-transactions.avif",
+                    src: "/images/philly-truce-transactions.jpg",
                     alt: "Philly Truce app transactions",
                   })
                 }
               >
                 <Image
-                  src="/images/philly-truce-transactions.avif"
+                  src="/images/philly-truce-transactions.jpg"
                   alt="Philly Truce app transactions"
                   fill
                   className="object-cover"
@@ -247,51 +242,56 @@ export default function BankingCaseStudy() {
               </div>
             </div>
 
+            {/* Row 2: Features Overview */}
             <div
-              className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6 border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+              className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
               onClick={() =>
                 setLightboxImage({
-                  src: "/images/philly-truce-features.avif",
+                  src: "/images/philly-truce-features.jpg",
                   alt: "Philly Truce app features overview",
                 })
               }
             >
               <Image
-                src="/images/philly-truce-features.avif"
+                src="/images/philly-truce-features.jpg"
                 alt="Philly Truce app features overview"
                 fill
                 className="object-cover"
               />
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
+            {/* Row 3: Budget Feature and Settings */}
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Budget Feature */}
               <div
-                className="aspect-square relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
                 onClick={() =>
                   setLightboxImage({
-                    src: "/images/philly-truce-budget.avif",
+                    src: "/images/philly-truce-budget.jpg",
                     alt: "Philly Truce app budget feature",
                   })
                 }
               >
                 <Image
-                  src="/images/philly-truce-budget.avif"
+                  src="/images/philly-truce-budget.jpg"
                   alt="Philly Truce app budget feature"
                   fill
                   className="object-cover"
                 />
               </div>
+
+              {/* Settings */}
               <div
-                className="aspect-square relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity"
+                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
                 onClick={() =>
                   setLightboxImage({
-                    src: "/images/philly-truce-settings.avif",
+                    src: "/images/philly-truce-settings.jpg",
                     alt: "Philly Truce app settings",
                   })
                 }
               >
                 <Image
-                  src="/images/philly-truce-settings.avif"
+                  src="/images/philly-truce-settings.jpg"
                   alt="Philly Truce app settings"
                   fill
                   className="object-cover"
@@ -301,8 +301,8 @@ export default function BankingCaseStudy() {
           </div>
         </div>
 
-        {/* More Case Studies */}
-        <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-800">
+        {/* Explore More Work */}
+        <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-900">
           <div className="max-w-[1140px] mx-auto px-6">
             <div className="flex items-center gap-2 mb-8">
               <div className="h-px w-8 bg-foreground/30"></div>
@@ -313,7 +313,10 @@ export default function BankingCaseStudy() {
         </div>
       </main>
 
-      <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-800">
+      <ImageLightbox image={lightboxImage} onClose={() => setLightboxImage(null)} />
+
+      {/* Footer */}
+      <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-900">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.
@@ -328,15 +331,6 @@ export default function BankingCaseStudy() {
           </Link>
         </div>
       </footer>
-
-      {lightboxImage && (
-        <ImageLightbox
-          src={lightboxImage.src || "/placeholder.svg"}
-          alt={lightboxImage.alt}
-          open={!!lightboxImage}
-          onOpenChange={(open) => !open && setLightboxImage(null)}
-        />
-      )}
     </div>
   )
 }
