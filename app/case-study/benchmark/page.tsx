@@ -6,6 +6,7 @@ import { AnimatedName } from "@/components/animated-name"
 import { useState } from "react"
 import { CaseStudyCarousel } from "@/components/case-study-carousel"
 import { ImageLightbox } from "@/components/image-lightbox"
+import { ArrowDown, ArrowUp, ArrowRight } from "lucide-react"
 
 const otherCaseStudies = [
   {
@@ -122,11 +123,16 @@ export default function TravelAppCaseStudy() {
               </div>
               <div>
                 <h3 className="mb-2">Team</h3>
-                <p className="text-muted-foreground">Mobile / Desktop design team, Dev team, 2 Managers, 4 Content designers</p>
+                <p className="text-muted-foreground">
+                  Mobile / Desktop design team, Dev team, 2 Managers, 4 Content designers
+                </p>
               </div>
               <div>
                 <h3 className="mb-2">Scope</h3>
-                <p className="text-muted-foreground">Developed a Benchmark Design System for Philly Truce’s mobile web app, including reusable components, design tokens, and documentation.</p>
+                <p className="text-muted-foreground">
+                  Developed a Benchmark Design System for Philly Truce’s mobile web app, including reusable components,
+                  design tokens, and documentation.
+                </p>
               </div>
             </div>
           </div>
@@ -140,25 +146,37 @@ export default function TravelAppCaseStudy() {
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-4xl font-medium mb-2">40%↓</h3>
+              <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
+                40%
+                <ArrowDown className="w-8 h-8" />
+              </h3>
               <p className="text-muted-foreground">
                 Reduction in design + development time via <br />
                 shared system
               </p>
             </div>
             <div>
-              <h3 className="text-4xl font-medium mb-2">35%↑</h3>
+              <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
+                35%
+                <ArrowUp className="w-8 h-8" />
+              </h3>
               <p className="text-muted-foreground">
                 Improvement in user <br />
                 satisfaction scores
               </p>
             </div>
             <div>
-              <h3 className="text-4xl font-medium mb-2">15%↑</h3>
+              <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
+                15%
+                <ArrowUp className="w-8 h-8" />
+              </h3>
               <p className="text-muted-foreground">Increase in record-keeping accuracy by patrol officers</p>
             </div>
             <div>
-              <h3 className="text-4xl font-medium mb-2">20%→</h3>
+              <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
+                20%
+                <ArrowRight className="w-8 h-8" />
+              </h3>
               <p className="text-muted-foreground">
                 Faster task completion in <br />
                 the admin portal
