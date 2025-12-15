@@ -124,10 +124,10 @@ export default function PhillyTruceCaseStudy() {
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h4 className="text-4xl font-medium mb-2 flex items-center gap-2">
+              <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
                 40%
                 <ArrowDown className="w-8 h-8" />
-              </h4>
+              </h3>
               <p className="text-muted-foreground">
                 Reduction in design + development time via <br />
                 shared system
