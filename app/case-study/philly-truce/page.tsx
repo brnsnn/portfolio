@@ -117,7 +117,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
 
         {/* THE PROBLEM */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500">
+        <div className="max-w-[1140px] mx-auto mb-6 animate-on-load animate-fade-in-up animate-delay-500">
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-6">
