@@ -85,9 +85,19 @@ export default function PhillyTruceCaseStudy() {
               </p>
             </div>
             <div className="space-y-8">
-              <div>
-                <h3 className="mb-2">Client</h3>
-                <p className="text-muted-foreground">Philly Truce</p>
+              <div className="grid md:grid-cols-3 gap-8">
+                <div>
+                  <h3 className="mb-2">Client</h3>
+                  <p className="text-muted-foreground">Philly Truce</p>
+                </div>
+                <div>
+                  <h3 className="mb-2">Timeline</h3>
+                  <p className="text-muted-foreground">4 months</p>
+                </div>
+                <div>
+                  <h3 className="mb-2">My Role</h3>
+                  <p className="text-muted-foreground">Lead UX Designer</p>
+                </div>
               </div>
               <div>
                 <h3 className="mb-2">Scope</h3>
@@ -97,18 +107,10 @@ export default function PhillyTruceCaseStudy() {
                 </p>
               </div>
               <div>
-                <h3 className="mb-2">My Role</h3>
-                <p className="text-muted-foreground">Lead UX Designer</p>
-              </div>
-              <div>
                 <h3 className="mb-2">Team</h3>
                 <p className="text-muted-foreground">
                   2 Lead UX Designers, 3 UX Designers, UX Research, Developers, 1 Project Manager, 4 Content Designers
                 </p>
-              </div>
-              <div>
-                <h3 className="mb-2">Timeline</h3>
-                <p className="text-muted-foreground">4 months</p>
               </div>
             </div>
           </div>
