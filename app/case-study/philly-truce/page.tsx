@@ -76,12 +76,12 @@ export default function PhillyTruceCaseStudy() {
               <p className="text-muted-foreground mb-4">
                 Philly Truce is a Philadelphia-based grassroots organization dedicated to reducing violence through
                 community-led intervention. Peace Patrol Officers relied on paper-based incident reports, which were
-                time-consuming to complete, inconsistent, and difficult to access or analyze. 
+                time-consuming to complete, inconsistent, and difficult to access or analyze.
               </p>
               <p className="text-muted-foreground">
                 The goal of this project was to design a mobile-friendly digital incident reporting system that fit
-                officers’ real-world workflows, supported fast documentation in the field, and improved data quality
-                for operational insight and decision-making.
+                officers’ real-world workflows, supported fast documentation in the field, and improved data quality for
+                operational insight and decision-making.
               </p>
             </div>
             <div className="space-y-8">
@@ -92,7 +92,8 @@ export default function PhillyTruceCaseStudy() {
               <div>
                 <h3 className="mb-2">Scope</h3>
                 <p className="text-muted-foreground">
-                  Designed a mobile digital reporting system to replace paper-based incident forms for Peace Patrol Officers.
+                  Designed a mobile digital reporting system to replace paper-based incident forms for Peace Patrol
+                  Officers.
                 </p>
               </div>
               <div>
@@ -101,7 +102,9 @@ export default function PhillyTruceCaseStudy() {
               </div>
               <div>
                 <h3 className="mb-2">Team</h3>
-                <p className="text-muted-foreground">2 Lead UX Designers, 3 UX Designers, UX Research, Developers, 1 Project Manager</p>
+                <p className="text-muted-foreground">
+                  2 Lead UX Designers, 3 UX Designers, UX Research, Developers, 1 Project Manager
+                </p>
               </div>
               <div>
                 <h3 className="mb-2">Timeline</h3>
@@ -122,8 +125,8 @@ export default function PhillyTruceCaseStudy() {
             </div>
             <div>
               <p className="text-muted-foreground">
-                Peace patrol officers in Philadelphia struggled with inaccurate and inconsistent record-keeping,
-                making it difficult to track interventions and measure impact effectively. The existing system lacked
+                Peace patrol officers in Philadelphia struggled with inaccurate and inconsistent record-keeping, making
+                it difficult to track interventions and measure impact effectively. The existing system lacked
                 usability, efficiency, and reliability, leading to operational inefficiencies and missed opportunities
                 for violence prevention.
               </p>
@@ -161,7 +164,7 @@ export default function PhillyTruceCaseStudy() {
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">GOALS</span>
           </div>
-          <div className="grid md:grid-cols-4 gap-8 items-start">
+          <div className="grid md:grid-cols-3 gap-8 items-start">
             <div>
               <h4 className="font-medium mb-2">Reduce Errors</h4>
               <p className="text-muted-foreground text-sm">
@@ -180,12 +183,6 @@ export default function PhillyTruceCaseStudy() {
                 Capture more complete and consistent data to improve analysis and response coordination.
               </p>
             </div>
-            <div>
-              <h4 className="font-medium mb-2">Cross-Platform</h4>
-              <p className="text-muted-foreground text-sm">
-                Create a unified experience across mobile field reports and desktop administrative workflows.
-              </p>
-            </div>
           </div>
         </div>
 
@@ -200,7 +197,8 @@ export default function PhillyTruceCaseStudy() {
             </div>
             <div>
               <p className="text-muted-foreground mb-4">
-                Led the design of a mobile web app to digitize incident reporting and streamline Peace Patrol Officers’ workflows.
+                Led the design of a mobile web app to digitize incident reporting and streamline Peace Patrol Officers’
+                workflows.
               </p>
             </div>
           </div>
