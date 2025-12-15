@@ -147,18 +147,18 @@ export default function TravelAppCaseStudy() {
               </p>
             </div>
             <div>
-              <h3 className="text-4xl font-medium mb-2">35%</h3>
+              <h3 className="text-4xl font-medium mb-2">35%↑</h3>
               <p className="text-muted-foreground">
                 Improvement in user <br />
                 satisfaction scores
               </p>
             </div>
             <div>
-              <h3 className="text-4xl font-medium mb-2">15%</h3>
+              <h3 className="text-4xl font-medium mb-2">15%↑</h3>
               <p className="text-muted-foreground">Increase in record-keeping accuracy by patrol officers</p>
             </div>
             <div>
-              <h3 className="text-4xl font-medium mb-2">20%</h3>
+              <h3 className="text-4xl font-medium mb-2">20%→</h3>
               <p className="text-muted-foreground">
                 Faster task completion in <br />
                 the admin portal
