@@ -200,9 +200,7 @@ export default function PhillyTruceCaseStudy() {
             </div>
             <div>
               <p className="text-muted-foreground mb-4">
-                I redesigned the incident report form with a clear information hierarchy, logical field grouping, and
-                progressive disclosure. The new design reduces cognitive load, prevents errors through validation, and
-                enables officers to complete reports in half the time while collecting better data.
+                Led the design of a mobile web app to digitize incident reporting and streamline Peace Patrol Officers’ workflows.
               </p>
             </div>
           </div>
