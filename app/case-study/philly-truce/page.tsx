@@ -125,30 +125,30 @@ export default function PhillyTruceCaseStudy() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
-                40%
-                <ArrowDown className="w-8 h-8" />
-              </h3>
-              <p className="text-muted-foreground">
-                Reduction in design + development time via <br />
-                shared system
-              </p>
-            </div>
-            <div>
-              <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
-                35%
-                <ArrowUp className="w-8 h-8" />
-              </h3>
-              <p className="text-muted-foreground">
-                Improvement in user <br />
-                satisfaction scores
-              </p>
-            </div>
-            <div>
-              <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
                 15%
                 <ArrowUp className="w-8 h-8" />
               </h3>
-              <p className="text-muted-foreground">Increase in record-keeping accuracy by patrol officers</p>
+              <p className="text-muted-foreground">
+                Increase in report creation with new report button
+              </p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
+                25%
+                <ArrowDown className="w-8 h-8" />
+              </h3>
+              <p className="text-muted-foreground">
+                Reduction in distractions, <br />
+                minimizing interruptions <br />
+                and input errors
+              </p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
+                10-25%
+                <ArrowDown className="w-8 h-8" />
+              </h3>
+              <p className="text-muted-foreground">Reduction in misfiled reports</p>
             </div>
             <div>
               <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
