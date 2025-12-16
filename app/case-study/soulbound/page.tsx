@@ -150,7 +150,7 @@ export default function SoulboundCaseStudy() {
             <div>
               <h4 className="font-medium mb-2">Enhance UI Consistency and Scalability</h4>
               <p className="text-muted-foreground">
-                Integrate branding, accessibility, and stylistic touches to enhance aesthetics and user recognition.
+                Integrate branding, accessibility, and stylistic touches to enhance aesthetics.
               </p>
             </div>
             <div>
