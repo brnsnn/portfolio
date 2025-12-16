@@ -346,8 +346,7 @@ export default function PhillyTruceCaseStudy() {
                 <div>
                   <p className="text-muted-foreground">
                     We conducted extensive user research with Peace Patrol Officers to understand their workflows, pain
-                    points, and requirements. Through iterative design and testing, we created an intuitive mobile-first
-                    interface that streamlines incident reporting while maintaining data quality and accuracy.
+                    points, and requirements.
                   </p>
                 </div>
               </div>
