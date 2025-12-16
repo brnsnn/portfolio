@@ -161,8 +161,7 @@ export default function SoulboundCaseStudy() {
               <h4 className="font-medium mb-2">Elevate the Visual Identify of Platform</h4>
               <p className="text-muted-foreground">
                 Support sustainable growth and new product <br />
-                features while maintaining a cohesive, recognizable <br />
-                brand identity.
+                features while maintaining a cohesive, recognizable brand identity.
               </p>
             </div>
           </div>
