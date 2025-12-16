@@ -321,10 +321,8 @@ export default function PhillyTruceCaseStudy() {
               </div>
             </div>
 
-            <div className="h-0 mb-60"></div>
-
             {/* Row 2: Budget Feature and Settings */}
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 pt-40">
               {/* Budget Feature */}
               <div>
                 <div
