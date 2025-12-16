@@ -41,7 +41,7 @@ export default function SoulboundCaseStudy() {
               <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight">
-              0-1 design system for a web3 gaming community
+              0-1 design system for a\nweb3 gaming community
             </h1>
           </div>
         </section>
