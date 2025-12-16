@@ -353,27 +353,37 @@ export default function PhillyTruceCaseStudy() {
               </div>
 
               <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h4 className="font-medium mb-2">Research & Discovery</h4>
-                  <p className="text-muted-foreground">
-                    User interviews, contextual inquiry, and workflow analysis to understand officers' needs and
-                    constraints.
-                  </p>
+                <div
+                  className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/user-research-and-discovery.jpg",
+                      alt: "User Research and Discovery",
+                    })
+                  }
+                >
+                  <Image
+                    src="/user-research-and-discovery.jpg"
+                    alt="User Research and Discovery"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <div>
-                  <h4 className="font-medium mb-2">Design & Iteration</h4>
-                  <p className="text-muted-foreground">
-                    Rapid prototyping and usability testing to validate design solutions with real users.
-                  </p>
-                </div>
-              </div>
-              <div className="grid md:grid-cols-2 gap-8 mt-8">
-                <div>
-                  <h4 className="font-medium mb-2">Implementation & Impact</h4>
-                  <p className="text-muted-foreground">
-                    Collaborated with development teams to ensure design fidelity and measured outcomes against our
-                    initial goals.
-                  </p>
+                <div
+                  className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/design-iteration-and-testing.jpg",
+                      alt: "Design Iteration and Testing",
+                    })
+                  }
+                >
+                  <Image
+                    src="/design-iteration-and-testing.jpg"
+                    alt="Design Iteration and Testing"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </div>
             </div>
