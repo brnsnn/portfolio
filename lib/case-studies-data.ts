@@ -18,7 +18,7 @@ export const allCaseStudies: CaseStudy[] = [
     id: "philly-truce",
     title: "Reducing violence by improving record-keeping accuracy by 15%",
     subtitle: "Philly Truce",
-    image: "/images/pt-hero.avif", // replaced placeholder with pt-hero.avif image
+    image: "/images/pt-hero.avif",
     caseStudyUrl: "/case-study/philly-truce",
   },
   {
@@ -27,12 +27,5 @@ export const allCaseStudies: CaseStudy[] = [
     subtitle: "Soulbound",
     image: "/soulbound-design-system-thumbnail-updated.jpg",
     caseStudyUrl: "/case-study/soulbound",
-  },
-  {
-    id: "routes-feature",
-    title: "Improving Community Safety with a Routes Feature",
-    subtitle: "Philly Truce",
-    image: "/community-safety-app.png",
-    caseStudyUrl: "/case-study/routes-feature",
   },
 ]

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Linkedin } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Input } from "@/components/ui/input"
@@ -27,12 +27,6 @@ const Page = () => {
       description: "Philly Truce",
       image: "/images/Philly-Truce-thumbnail.jpg?height=400&width=600",
       caseStudyUrl: "/case-study/philly-truce",
-    },
-    {
-      title: "Improving Community Safety with a Routes Feature",
-      description: "Philly Truce",
-      image: "/placeholder.svg?height=400&width=600",
-      caseStudyUrl: "/case-study/routes-feature",
     },
   ]
 
@@ -65,7 +59,7 @@ const Page = () => {
     {
       author: "Jessica Teng",
       role: "Lead UX Designer at Tech Fleet",
-      body: "I had the pleasure of working with Bronson on the Philly Truce desktop dashboard project, taking it from 0 to 1. Having seen the meticulous work he led on the Philly Truce mobile app, I knew he'd play a key role in bridging the desktop experience with the strong design foundation established on mobile.\n\nBuilding a dashboard from the ground up is never easy, especially with all the ambiguity and shifting user needs along the way. Bronson took on the added challenge of aligning and integrating the desktop experience with mobile—a complex task he handled with remarkable organization, focus, and collaboration. He was an outstanding liaison between both teams, helping us create a cohesive, cross-platform design system that truly elevated the product.",
+      body: "I had the pleasure of working with Bronson on the Philly Truce desktop dashboard project, taking it from 0 to 1. Having seen the meticulous work he led on the Philly Truce mobile app, I knew he'd play a key role in bridging the desktop experience with the strong design foundation established on mobile.......Building a dashboard from the ground up is never easy, especially with all the ambiguity and shifting user needs along the way. Bronson took on the added challenge of aligning and integrating the desktop experience with mobile—a complex task he handled with remarkable organization, focus, and collaboration. He was an outstanding liaison between both teams, helping us create a cohesive, cross-platform design system that truly elevated the product.......",
     },
     {
       author: "Jenise Absher",
@@ -112,7 +106,7 @@ const Page = () => {
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">CASE STUDIES</span>
             </div>
-            <div className="grid gap-8 md:grid-cols-2">
+            <div className="grid gap-8 md:grid-cols-3">
               {caseStudies.map((project, index) => (
                 <Link
                   key={index}
@@ -190,7 +184,7 @@ const Page = () => {
                     >
                       Download resume
                     </Link>
-                    </Button>
+                  </Button>
                   <Button asChild variant="outline">
                     <Link
                       href="https://linkedin.com/in/brnsnlee"
