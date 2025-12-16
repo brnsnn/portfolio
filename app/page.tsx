@@ -65,7 +65,7 @@ const Page = () => {
     {
       author: "Jessica Teng",
       role: "Lead UX Designer at Tech Fleet",
-      body: "I had the pleasure of working with Bronson on the Philly Truce desktop dashboard project, taking it from 0 to 1. Having seen the meticulous work he led on the Philly Truce mobile app, I knew he'd play a key role in bridging the desktop experience with the strong design foundation established on mobile.......Building a dashboard from the ground up is never easy, especially with all the ambiguity and shifting user needs along the way. Bronson took on the added challenge of aligning and integrating the desktop experience with mobile—a complex task he handled with remarkable organization, focus, and collaboration. He was an outstanding liaison between both teams, helping us create a cohesive, cross-platform design system that truly elevated the product.......",
+      body: "I had the pleasure of working with Bronson on the Philly Truce desktop dashboard project, taking it from 0 to 1. Having seen the meticulous work he led on the Philly Truce mobile app, I knew he'd play a key role in bridging the desktop experience with the strong design foundation established on mobile.\n\nBuilding a dashboard from the ground up is never easy, especially with all the ambiguity and shifting user needs along the way. Bronson took on the added challenge of aligning and integrating the desktop experience with mobile—a complex task he handled with remarkable organization, focus, and collaboration. He was an outstanding liaison between both teams, helping us create a cohesive, cross-platform design system that truly elevated the product.",
     },
     {
       author: "Jenise Absher",
