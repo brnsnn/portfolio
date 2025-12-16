@@ -130,7 +130,8 @@ export default function PhillyTruceCaseStudy() {
                 <ArrowUp className="w-8 h-8" />
               </h3>
               <p className="text-muted-foreground">
-                Increase in report creation with updated new report button
+                Increase in report creation with <br />
+                updated new report button
               </p>
             </div>
             <div>
