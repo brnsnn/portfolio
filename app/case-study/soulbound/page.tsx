@@ -41,7 +41,8 @@ export default function SoulboundCaseStudy() {
               <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight">
-              0-1 design system for a<br />web3 gaming community
+              0-1 design system for a<br />
+              web3 gaming community
             </h1>
           </div>
         </section>
@@ -352,16 +353,16 @@ export default function SoulboundCaseStudy() {
               </p>
             </div>
           </div>
+        </div>
 
-          {/* Explore More Work section with CaseStudyCarousel */}
-          <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-800">
-            <div className="max-w-[1140px] mx-auto px-4 md:px-6">
-              <div className="flex items-center gap-2 mb-8">
-                <div className="h-px w-8 bg-foreground/30"></div>
-                <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>
-              </div>
-              <CaseStudyCarousel currentCaseStudyId="soulbound" />
+        {/* Explore More Work section with CaseStudyCarousel */}
+        <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-1000">
+          <div className="max-w-[1140px] mx-auto px-4 md:px-6">
+            <div className="flex items-center gap-2 mb-8">
+              <div className="h-px w-8 bg-foreground/30"></div>
+              <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>
             </div>
+            <CaseStudyCarousel currentCaseStudyId="soulbound" />
           </div>
         </div>
 
