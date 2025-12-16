@@ -263,10 +263,10 @@ export default function PhillyTruceCaseStudy() {
                     className="object-cover"
                   />
                 </div>
-                <h4 className="font-medium mb-2">Updated New Report Button</h4>
+                <h4 className="font-medium mb-2">Improved Primary Action Button</h4>
                 <p className="text-muted-foreground text-base">
-                  Designed a centralized dashboard that displays key metrics and recent reports, enabling officers to
-                  quickly access critical information and track intervention progress at a glance.
+                  Replaced a confusing rectangular floating button with a circular floating action button (FAB) to
+                  clearly distinguish the primary action from the report list, improving clarity and discoverability.
                 </p>
               </div>
 
@@ -288,10 +288,11 @@ export default function PhillyTruceCaseStudy() {
                     className="object-cover"
                   />
                 </div>
-                <h4 className="font-medium mb-2">Navigation</h4>
+                <h4 className="font-medium mb-2">Clear Active States</h4>
                 <p className="text-muted-foreground text-base">
-                  Streamlined the report entry form with smart field validation, autofill capabilities, and conditional
-                  logic to reduce data entry errors and ensure consistent, complete incident documentation.
+                  Updated navigation colors to clearly differentiate active and inactive tabs, helping officers immediately
+                  understand their current location in the app. This improved wayfinding and reduced navigation errors
+                  during report tracking and review.
                 </p>
               </div>
 
@@ -313,10 +314,11 @@ export default function PhillyTruceCaseStudy() {
                     className="object-cover"
                   />
                 </div>
-                <h4 className="font-medium mb-2">Search bar</h4>
+                <h4 className="font-medium mb-2">Reduced Visual Clutter</h4>
                 <p className="text-muted-foreground text-base">
-                  Integrated analytics features that allow supervisors to analyze report data, identify patterns, and
-                  generate insights to inform intervention strategies and measure effectiveness.
+                  Moved the search bar into the top navigation and surfaced it as an icon, freeing up mobile screen
+                  space while keeping search easily accessible when needed. This reduced visual clutter and helped
+                  users focus on primary tasks.
                 </p>
               </div>
             </div>
