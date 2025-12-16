@@ -357,22 +357,21 @@ export default function PhillyTruceCaseStudy() {
                     className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
                     onClick={() =>
                       setLightboxImage({
-                        src: "/user-research-and-discovery.jpg",
-                        alt: "User Research and Discovery",
+                        src: "/ORB.jpg",
+                        alt: "Rectangular floating action button took too much space",
                       })
                     }
                   >
                     <Image
-                      src="/user-research-and-discovery.jpg"
-                      alt="User Research and Discovery"
+                      src="/ORB.jpg"
+                      alt="Rectangular floating action button took too much space"
                       fill
                       className="object-cover"
                     />
                   </div>
-                  <h4 className="font-medium mb-2">User Research & Discovery</h4>
+                  <h4 className="font-medium mb-2">Action button confused users</h4>
                   <p className="text-muted-foreground text-base">
-                    Conducted interviews and observations with Peace Patrol Officers to identify pain points and design
-                    requirements for the new system.
+                    Button size and placement caused user confusion.
                   </p>
                 </div>
                 <div>
@@ -380,28 +379,52 @@ export default function PhillyTruceCaseStudy() {
                     className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
                     onClick={() =>
                       setLightboxImage({
-                        src: "/design-iteration-and-testing.jpg",
-                        alt: "Design Iteration and Testing",
+                        src: "/Before-Nav.jpg",
+                        alt: "Navigation tabs lacked color contrast",
                       })
                     }
                   >
                     <Image
-                      src="/design-iteration-and-testing.jpg"
-                      alt="Design Iteration and Testing"
+                      src="/Before-Nav.jpg"
+                      alt="Navigation tabs lacked color contrast"
                       fill
                       className="object-cover"
                     />
                   </div>
-                  <h4 className="font-medium mb-2">Design Iteration & Testing</h4>
+                  <h4 className="font-medium mb-2">Navigation lacked clarity</h4>
                   <p className="text-muted-foreground text-base">
-                    Rapidly prototyped and tested design solutions with users to validate usability and gather feedback
-                    for continuous refinement.
+                    Active and inactive tabs weren’t visually distinct for users.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Single Column Image Section */}
+            <div className="pt-16">
+              <div
+                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 mb-4 w-full h-auto"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/images/Before-search.jpg",
+                    alt: "Philly Truce mobile app showing the status tabs, and the search bar.",
+                  })
+                }
+              >
+                <Image
+                  src="/images/Before-search.jpg"
+                  alt="Philly Truce mobile app showing the status tabs, and the search bar."
+                  width={1140}
+                  height={600}
+                  className="w-full h-auto"
+                />
+              </div>
+              <h4 className="font-medium mb-2">Search bar created clutter</h4>
+                  <p className="text-muted-foreground text-base">
+                    The always-on search bar contributed to users feeling overwhelmed.
+                  </p>
+            </div>
 
         {/* Explore More Work */}
         <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-1000">
