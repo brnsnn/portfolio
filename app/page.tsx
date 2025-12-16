@@ -164,15 +164,15 @@ const Page = () => {
               <div className="space-y-6">
                 <h2 className="text-3xl font-normal tracking-tighter">Bronson Lee</h2>
                 <p className="text-muted-foreground">
-                  I'm a Mid-level UX designer with 5+ years of experience. I specialize in design systems, interaction
+                  I'm a Mid-level UX designer with 5+ years of experience. I specialize<br />in design systems, interaction
                   design, and accessibility.
                 </p>
                 <p className="text-muted-foreground">
-                  My background in advertising and public health helps me understand user behaviors and create
+                  My background in advertising and public health helps me understand<br />user behaviors and create
                   experiences that feel intuitive and delightful.
                 </p>
                 <p className="text-muted-foreground">
-                  When I'm not designing, you can find me taking walks or exploring new matcha shops in the city.
+                  When I'm not designing, you can find me taking walks or exploring new<br />matcha shops in the city.
                 </p>
                 <div className="flex gap-4">
                   <Button asChild variant="default">
