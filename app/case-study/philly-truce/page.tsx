@@ -334,45 +334,46 @@ export default function PhillyTruceCaseStudy() {
               </div>
             </div>
 
-            {/* Row 2: Budget Feature and Settings */}
-            <div className="grid md:grid-cols-2 gap-8 pt-16">
-              {/* Budget Feature */}
-              <div>
-                <div
-                  className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
-                  onClick={() =>
-                    setLightboxImage({
-                      src: "/images/philly-truce-budget.jpg",
-                      alt: "Philly Truce app budget feature",
-                    })
-                  }
-                >
-                  <Image
-                    src="/images/philly-truce-budget.jpg"
-                    alt="Philly Truce app budget feature"
-                    fill
-                    className="object-cover"
-                  />
+            {/* OUR APPROACH */}
+            <div className="pt-40">
+              <div className="grid md:grid-cols-2 gap-8 mb-12">
+                <div>
+                  <div className="flex items-center gap-2 mb-6">
+                    <div className="h-px w-8 bg-foreground/30"></div>
+                    <span className="text-sm font-medium text-foreground/60">OUR APPROACH</span>
+                  </div>
+                </div>
+                <div>
+                  <p className="text-muted-foreground">
+                    We conducted extensive user research with Peace Patrol Officers to understand their workflows, pain
+                    points, and requirements. Through iterative design and testing, we created an intuitive mobile-first
+                    interface that streamlines incident reporting while maintaining data quality and accuracy.
+                  </p>
                 </div>
               </div>
 
-              {/* Settings */}
-              <div>
-                <div
-                  className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
-                  onClick={() =>
-                    setLightboxImage({
-                      src: "/images/philly-truce-settings.jpg",
-                      alt: "Philly Truce app settings",
-                    })
-                  }
-                >
-                  <Image
-                    src="/images/philly-truce-settings.jpg"
-                    alt="Philly Truce app settings"
-                    fill
-                    className="object-cover"
-                  />
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="font-medium mb-2">Research & Discovery</h4>
+                  <p className="text-muted-foreground">
+                    User interviews, contextual inquiry, and workflow analysis to understand officers' needs and
+                    constraints.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-medium mb-2">Design & Iteration</h4>
+                  <p className="text-muted-foreground">
+                    Rapid prototyping and usability testing to validate design solutions with real users.
+                  </p>
+                </div>
+              </div>
+              <div className="grid md:grid-cols-2 gap-8 mt-8">
+                <div>
+                  <h4 className="font-medium mb-2">Implementation & Impact</h4>
+                  <p className="text-muted-foreground">
+                    Collaborated with development teams to ensure design fidelity and measured outcomes against our
+                    initial goals.
+                  </p>
                 </div>
               </div>
             </div>
