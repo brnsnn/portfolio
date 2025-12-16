@@ -243,8 +243,8 @@ export default function PhillyTruceCaseStudy() {
           </div>
 
           <div className="space-y-8">
-            {/* Row 1: Dashboard and Transactions */}
-            <div className="grid md:grid-cols-2 gap-8">
+            {/* Row 1: Dashboard, Transactions, and Features */}
+            <div className="grid md:grid-cols-3 gap-8">
               {/* Dashboard */}
               <div
                 className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
@@ -280,27 +280,27 @@ export default function PhillyTruceCaseStudy() {
                   className="object-cover"
                 />
               </div>
+
+              {/* Features */}
+              <div
+                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/images/philly-truce-features.jpg",
+                    alt: "Philly Truce app features overview",
+                  })
+                }
+              >
+                <Image
+                  src="/images/philly-truce-features.jpg"
+                  alt="Philly Truce app features overview"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
 
-            {/* Row 2: Features Overview */}
-            <div
-              className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
-              onClick={() =>
-                setLightboxImage({
-                  src: "/images/philly-truce-features.jpg",
-                  alt: "Philly Truce app features overview",
-                })
-              }
-            >
-              <Image
-                src="/images/philly-truce-features.jpg"
-                alt="Philly Truce app features overview"
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            {/* Row 3: Budget Feature and Settings */}
+            {/* Row 2: Budget Feature and Settings */}
             <div className="grid md:grid-cols-2 gap-8">
               {/* Budget Feature */}
               <div

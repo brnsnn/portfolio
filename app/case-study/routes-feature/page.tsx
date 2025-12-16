@@ -1,10 +1,16 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { AnimatedName } from "@/components/animated-name"
 import { CaseStudyCarousel } from "@/components/case-study-carousel"
+import { useState } from "react"
+import { ImageLightbox } from "@/components/image-lightbox"
 
 export default function RoutesFeaturePage() {
+  const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
+
   return (
     <div className="flex min-h-screen flex-col">
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-on-load animate-fade-in">
@@ -48,6 +54,7 @@ export default function RoutesFeaturePage() {
               fill
               className="object-cover rounded-lg"
               priority
+              onClick={() => setLightboxImage({ src: "/community-safety-app.png", alt: "Routes Feature Interface" })}
             />
           </div>
         </div>
@@ -131,7 +138,15 @@ export default function RoutesFeaturePage() {
                   information and alternative routing options, community members were unable to make informed decisions
                   about their travel routes, potentially putting themselves at risk.
                 </p>
-                <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
+                <div
+                  className="aspect-[16/9] relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/community-safety-navigation.png",
+                      alt: "Community Safety Navigation Problem",
+                    })
+                  }
+                >
                   <Image
                     src="/community-safety-navigation.png"
                     alt="Community Safety Navigation Problem"
@@ -144,7 +159,15 @@ export default function RoutesFeaturePage() {
 
             {/* Images */}
             <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div className="aspect-square relative rounded-lg overflow-hidden">
+              <div
+                className="aspect-square relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/community-safety-routes-interface.png",
+                    alt: "Routes Feature Interface",
+                  })
+                }
+              >
                 <Image
                   src="/community-safety-routes-interface.png"
                   alt="Routes Feature Interface"
@@ -152,7 +175,15 @@ export default function RoutesFeaturePage() {
                   className="object-cover"
                 />
               </div>
-              <div className="aspect-square relative rounded-lg overflow-hidden">
+              <div
+                className="aspect-square relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/safety-route-options-interface.png",
+                    alt: "Route Options Interface",
+                  })
+                }
+              >
                 <Image
                   src="/safety-route-options-interface.png"
                   alt="Route Options Interface"
@@ -162,12 +193,28 @@ export default function RoutesFeaturePage() {
               </div>
             </div>
 
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6">
+            <div
+              className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6 cursor-pointer hover:opacity-90 transition-opacity"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/community-safety-alerts-map.png",
+                  alt: "Safety Alerts Map",
+                })
+              }
+            >
               <Image src="/community-safety-alerts-map.png" alt="Safety Alerts Map" fill className="object-cover" />
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
-              <div className="aspect-square relative rounded-lg overflow-hidden">
+              <div
+                className="aspect-square relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/placeholder.svg?height=400&width=400",
+                    alt: "Community safety dashboard",
+                  })
+                }
+              >
                 <Image
                   src="/placeholder.svg?height=400&width=400"
                   alt="Community safety dashboard"
@@ -175,7 +222,15 @@ export default function RoutesFeaturePage() {
                   className="object-cover"
                 />
               </div>
-              <div className="aspect-square relative rounded-lg overflow-hidden">
+              <div
+                className="aspect-square relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/placeholder.svg?height=400&width=400",
+                    alt: "Route preferences settings",
+                  })
+                }
+              >
                 <Image
                   src="/placeholder.svg?height=400&width=400"
                   alt="Route preferences settings"
@@ -202,6 +257,14 @@ export default function RoutesFeaturePage() {
             <CaseStudyCarousel currentCaseStudyId="routes-feature" />
           </div>
         </div>
+
+        {/* Lightbox Component */}
+        <ImageLightbox
+          src={lightboxImage?.src || "/placeholder.svg"}
+          alt={lightboxImage?.alt || ""}
+          open={!!lightboxImage}
+          onOpenChange={(open) => !open && setLightboxImage(null)}
+        />
       </main>
 
       <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-700">

@@ -18,7 +18,7 @@ export const allCaseStudies: CaseStudy[] = [
     id: "philly-truce",
     title: "Reducing violence by improving record-keeping accuracy by 15%",
     subtitle: "Philly Truce",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/pt-hero.avif", // replaced placeholder with pt-hero.avif image
     caseStudyUrl: "/case-study/philly-truce",
   },
   {

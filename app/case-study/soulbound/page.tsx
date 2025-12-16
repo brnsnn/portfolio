@@ -185,7 +185,13 @@ export default function SoulboundCaseStudy() {
               alt="Chakra Petch typography scale with size, line-height, and letter-spacing specifications"
               width={1140}
               height={800}
-              className="w-full h-auto"
+              className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/soulbound-font1.jpg",
+                  alt: "Chakra Petch typography scale with size, line-height, and letter-spacing specifications",
+                })
+              }
             />
           </div>
           <div className="grid md:grid-cols-2 gap-8 mb-16">
@@ -203,7 +209,13 @@ export default function SoulboundCaseStudy() {
               alt="Poppins typography scale with size, line-height, and letter-spacing specifications"
               width={1140}
               height={800}
-              className="w-full h-auto"
+              className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/soulbound-font2.jpg",
+                  alt: "Poppins typography scale with size, line-height, and letter-spacing specifications",
+                })
+              }
             />
           </div>
           <div className="grid md:grid-cols-2 gap-8 mb-16">
@@ -221,7 +233,13 @@ export default function SoulboundCaseStudy() {
               alt="Design system spacing scale based on golden ratio"
               width={1140}
               height={400}
-              className="w-full h-auto"
+              className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/spacing.jpg",
+                  alt: "Design system spacing scale based on golden ratio",
+                })
+              }
             />
           </div>
           <div className="grid md:grid-cols-2 gap-8 mb-16">
@@ -240,7 +258,13 @@ export default function SoulboundCaseStudy() {
                 src="/soulbound-palette.jpg"
                 alt="Design system color palette"
                 fill
-                className="object-contain bg-white"
+                className="object-contain bg-white cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/soulbound-palette.jpg",
+                    alt: "Design system color palette",
+                  })
+                }
               />
             </div>
             <div className="aspect-[3/4] relative rounded-lg overflow-hidden border border-gray-200">
@@ -248,7 +272,13 @@ export default function SoulboundCaseStudy() {
                 src="/soulbound-accessibility.jpg"
                 alt="Design system accessibility and color contrast standards"
                 fill
-                className="object-contain bg-white"
+                className="object-contain bg-white cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/soulbound-accessibility.jpg",
+                    alt: "Design system accessibility and color contrast standards",
+                  })
+                }
               />
             </div>
           </div>
@@ -256,8 +286,7 @@ export default function SoulboundCaseStudy() {
             <div>
               <p className="text-muted-foreground mb-2">
                 The color palette and accessibility standards ensure vibrant brand expression while maintaining WCAG AA
-                compliance for all text and <br />
-                UI elements.
+                compliance for all text and UI elements.
               </p>
             </div>
           </div>
@@ -269,7 +298,13 @@ export default function SoulboundCaseStudy() {
                 alt="Soulbound logo variations across different color backgrounds"
                 width={1140}
                 height={1140}
-                className="w-full h-auto"
+                className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/soulbound-logo-updated.jpg",
+                    alt: "Soulbound logo variations across different color backgrounds",
+                  })
+                }
               />
             </div>
           </div>
@@ -284,7 +319,18 @@ export default function SoulboundCaseStudy() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-4">
             <div className="aspect-square relative rounded-lg overflow-hidden border border-gray-200">
-              <Image src="/soulbound-button.jpg" alt="Soulbound button states" fill className="object-cover" />
+              <Image
+                src="/soulbound-button.jpg"
+                alt="Soulbound button states"
+                fill
+                className="object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/soulbound-button.jpg",
+                    alt: "Soulbound button states",
+                  })
+                }
+              />
             </div>
             <div className="aspect-square relative rounded-lg overflow-hidden bg-white border border-gray-200">
               <video

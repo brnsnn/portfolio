@@ -1,10 +1,16 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { AnimatedName } from "@/components/animated-name"
 import { CaseStudyCarousel } from "@/components/case-study-carousel"
+import { useState } from "react"
+import { ImageLightbox } from "@/components/image-lightbox"
 
 export default function HealthcareCaseStudy() {
+  const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
+
   return (
     <div className="flex min-h-screen flex-col">
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-on-load animate-fade-in">
@@ -102,7 +108,15 @@ export default function HealthcareCaseStudy() {
               Research showed that 58% of patients over 65 needed assistance using the previous system, and 72% of all
               patients reported difficulty finding their medical information when needed.
             </p>
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
+            <div
+              className="aspect-[16/9] relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/placeholder.svg?height=450&width=800",
+                  alt: "Healthcare portal problems visualization",
+                })
+              }
+            >
               <Image
                 src="/placeholder.svg?height=450&width=800"
                 alt="Healthcare portal problems visualization"
@@ -136,7 +150,15 @@ export default function HealthcareCaseStudy() {
 
             {/* Images */}
             <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div className="aspect-square relative rounded-lg overflow-hidden">
+              <div
+                className="aspect-square relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/placeholder.svg?height=400&width=400",
+                    alt: "Healthcare portal dashboard",
+                  })
+                }
+              >
                 <Image
                   src="/placeholder.svg?height=400&width=400"
                   alt="Healthcare portal dashboard"
@@ -144,7 +166,15 @@ export default function HealthcareCaseStudy() {
                   className="object-cover"
                 />
               </div>
-              <div className="aspect-square relative rounded-lg overflow-hidden">
+              <div
+                className="aspect-square relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/placeholder.svg?height=400&width=400",
+                    alt: "Healthcare portal appointments",
+                  })
+                }
+              >
                 <Image
                   src="/placeholder.svg?height=400&width=400"
                   alt="Healthcare portal appointments"
@@ -154,7 +184,15 @@ export default function HealthcareCaseStudy() {
               </div>
             </div>
 
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6">
+            <div
+              className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6 cursor-pointer hover:opacity-90 transition-opacity"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/placeholder.svg?height=450&width=800",
+                  alt: "Healthcare portal accessibility features",
+                })
+              }
+            >
               <Image
                 src="/placeholder.svg?height=450&width=800"
                 alt="Healthcare portal accessibility features"
@@ -164,7 +202,15 @@ export default function HealthcareCaseStudy() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
-              <div className="aspect-square relative rounded-lg overflow-hidden">
+              <div
+                className="aspect-square relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/placeholder.svg?height=400&width=400",
+                    alt: "Healthcare portal medical records",
+                  })
+                }
+              >
                 <Image
                   src="/placeholder.svg?height=400&width=400"
                   alt="Healthcare portal medical records"
@@ -172,7 +218,15 @@ export default function HealthcareCaseStudy() {
                   className="object-cover"
                 />
               </div>
-              <div className="aspect-square relative rounded-lg overflow-hidden">
+              <div
+                className="aspect-square relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/placeholder.svg?height=400&width=400",
+                    alt: "Healthcare portal messaging",
+                  })
+                }
+              >
                 <Image
                   src="/placeholder.svg?height=400&width=400"
                   alt="Healthcare portal messaging"
@@ -200,6 +254,14 @@ export default function HealthcareCaseStudy() {
             <CaseStudyCarousel currentCaseStudyId="chill-pill" />
           </div>
         </div>
+
+        {/* Lightbox */}
+        <ImageLightbox
+          src={lightboxImage?.src || "/placeholder.svg"}
+          alt={lightboxImage?.alt || ""}
+          open={!!lightboxImage}
+          onOpenChange={(open) => !open && setLightboxImage(null)}
+        />
       </main>
 
       <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-700">

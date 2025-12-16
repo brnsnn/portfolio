@@ -1,10 +1,16 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { AnimatedName } from "@/components/animated-name"
 import { CaseStudyCarousel } from "@/components/case-study-carousel"
+import { useState } from "react"
+import { ImageLightbox } from "@/components/image-lightbox"
 
 export default function CheckoutCaseStudy() {
+  const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
+
   return (
     <div className="flex min-h-screen flex-col">
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-on-load animate-fade-in">
@@ -41,7 +47,15 @@ export default function CheckoutCaseStudy() {
 
         {/* Hero Image */}
         <div className="container mb-16 animate-on-load animate-fade-in-up animate-delay-300 px-4 md:px-0">
-          <div className="w-full aspect-[21/9] relative">
+          <div
+            className="w-full aspect-[21/9] relative cursor-pointer hover:opacity-90 transition-opacity"
+            onClick={() =>
+              setLightboxImage({
+                src: "/placeholder.svg?height=900&width=1900",
+                alt: "0-1 design system for a web3 gaming community Hero",
+              })
+            }
+          >
             <Image
               src="/placeholder.svg?height=900&width=1900"
               alt="0-1 design system for a web3 gaming community Hero"
@@ -102,7 +116,15 @@ export default function CheckoutCaseStudy() {
               revealed that most abandonment occurred during account creation and when faced with unexpected shipping
               costs revealed only at the final step.
             </p>
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
+            <div
+              className="aspect-[16/9] relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/placeholder.svg?height=450&width=800",
+                  alt: "Checkout flow problems visualization",
+                })
+              }
+            >
               <Image
                 src="/placeholder.svg?height=450&width=800"
                 alt="Checkout flow problems visualization"
@@ -136,7 +158,15 @@ export default function CheckoutCaseStudy() {
 
             {/* Images */}
             <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div className="aspect-square relative rounded-lg overflow-hidden">
+              <div
+                className="aspect-square relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/placeholder.svg?height=400&width=400",
+                    alt: "Checkout flow user information",
+                  })
+                }
+              >
                 <Image
                   src="/placeholder.svg?height=400&width=400"
                   alt="Checkout flow user information"
@@ -144,7 +174,15 @@ export default function CheckoutCaseStudy() {
                   className="object-cover"
                 />
               </div>
-              <div className="aspect-square relative rounded-lg overflow-hidden">
+              <div
+                className="aspect-square relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/placeholder.svg?height=400&width=400",
+                    alt: "Checkout flow payment options",
+                  })
+                }
+              >
                 <Image
                   src="/placeholder.svg?height=400&width=400"
                   alt="Checkout flow payment options"
@@ -154,7 +192,15 @@ export default function CheckoutCaseStudy() {
               </div>
             </div>
 
-            <div className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6">
+            <div
+              className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6 cursor-pointer hover:opacity-90 transition-opacity"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/placeholder.svg?height=450&width=800",
+                  alt: "Checkout flow complete process",
+                })
+              }
+            >
               <Image
                 src="/placeholder.svg?height=450&width=800"
                 alt="Checkout flow complete process"
@@ -164,7 +210,15 @@ export default function CheckoutCaseStudy() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
-              <div className="aspect-square relative rounded-lg overflow-hidden">
+              <div
+                className="aspect-square relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/placeholder.svg?height=400&width=400",
+                    alt: "Checkout flow mobile view",
+                  })
+                }
+              >
                 <Image
                   src="/placeholder.svg?height=400&width=400"
                   alt="Checkout flow mobile view"
@@ -172,7 +226,15 @@ export default function CheckoutCaseStudy() {
                   className="object-cover"
                 />
               </div>
-              <div className="aspect-square relative rounded-lg overflow-hidden">
+              <div
+                className="aspect-square relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/placeholder.svg?height=400&width=400",
+                    alt: "Checkout flow confirmation",
+                  })
+                }
+              >
                 <Image
                   src="/placeholder.svg?height=400&width=400"
                   alt="Checkout flow confirmation"
@@ -201,6 +263,15 @@ export default function CheckoutCaseStudy() {
           </div>
         </div>
       </main>
+
+      {lightboxImage && (
+        <ImageLightbox
+          src={lightboxImage.src || "/placeholder.svg"}
+          alt={lightboxImage.alt}
+          open={!!lightboxImage}
+          onOpenChange={(open) => !open && setLightboxImage(null)}
+        />
+      )}
 
       <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-700">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">

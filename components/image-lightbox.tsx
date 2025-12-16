@@ -3,27 +3,22 @@ import Image from "next/image"
 import { Dialog, DialogContent } from "@/components/smooth-dialog"
 
 interface ImageLightboxProps {
-  src: string
-  alt: string
-  open: boolean
-  onOpenChange: (open: boolean) => void
+  image: { src: string; alt: string } | null
+  onClose: () => void
 }
 
-export function ImageLightbox({ src, alt, open, onOpenChange }: ImageLightboxProps) {
+export function ImageLightbox({ image, onClose }: ImageLightboxProps) {
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
+    <Dialog open={!!image} onOpenChange={onClose}>
       <DialogContent
         className="max-w-none max-h-none w-screen h-screen bg-transparent border-none shadow-none p-0"
         hideCloseButton
       >
-        <div
-          className="relative w-full h-full flex flex-col items-center justify-center px-8 py-16"
-          onClick={() => onOpenChange(false)}
-        >
+        <div className="relative w-full h-full flex flex-col items-center justify-center px-8 py-16" onClick={onClose}>
           <div className="relative max-w-full max-h-[85vh]" onClick={(e) => e.stopPropagation()}>
             <Image
-              src={src || "/placeholder.svg"}
-              alt={alt}
+              src={image?.src || "/placeholder.svg"}
+              alt={image?.alt || ""}
               width={1920}
               height={1080}
               className="object-contain max-w-full max-h-[85vh] w-auto h-auto rounded-xl"
@@ -31,7 +26,7 @@ export function ImageLightbox({ src, alt, open, onOpenChange }: ImageLightboxPro
             <button
               onClick={(e) => {
                 e.stopPropagation()
-                onOpenChange(false)
+                onClose()
               }}
               className="absolute top-4 right-4 text-white hover:text-white/70 transition-colors z-10 bg-black/70 rounded-full p-2"
               aria-label="Close lightbox"
