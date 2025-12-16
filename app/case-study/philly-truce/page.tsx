@@ -243,9 +243,9 @@ export default function PhillyTruceCaseStudy() {
           </div>
 
           <div className="space-y-8">
-            {/* Row 1: Dashboard, Transactions, and Features */}
+            {/* Row 1: Button, Navigation, and Search */}
             <div className="grid md:grid-cols-3 gap-8">
-              {/* Dashboard */}
+              {/* Button */}
               <div>
                 <div
                   className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
@@ -263,14 +263,14 @@ export default function PhillyTruceCaseStudy() {
                     className="object-cover"
                   />
                 </div>
-                <h4 className="font-medium mb-2">Dashboard</h4>
+                <h4 className="font-medium mb-2">Updated New Report Button</h4>
                 <p className="text-muted-foreground text-base">
                   Designed a centralized dashboard that displays key metrics and recent reports, enabling officers to
                   quickly access critical information and track intervention progress at a glance.
                 </p>
               </div>
 
-              {/* Transactions */}
+              {/* Navigation */}
               <div>
                 <div
                   className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
@@ -288,14 +288,14 @@ export default function PhillyTruceCaseStudy() {
                     className="object-cover"
                   />
                 </div>
-                <h4 className="font-medium mb-2">Report Form</h4>
+                <h4 className="font-medium mb-2">Navigation</h4>
                 <p className="text-muted-foreground text-base">
                   Streamlined the report entry form with smart field validation, autofill capabilities, and conditional
                   logic to reduce data entry errors and ensure consistent, complete incident documentation.
                 </p>
               </div>
 
-              {/* Features */}
+              {/* Search */}
               <div>
                 <div
                   className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
@@ -313,7 +313,7 @@ export default function PhillyTruceCaseStudy() {
                     className="object-cover"
                   />
                 </div>
-                <h4 className="font-medium mb-2">Analysis Tools</h4>
+                <h4 className="font-medium mb-2">Search bar</h4>
                 <p className="text-muted-foreground text-base">
                   Integrated analytics features that allow supervisors to analyze report data, identify patterns, and
                   generate insights to inform intervention strategies and measure effectiveness.
