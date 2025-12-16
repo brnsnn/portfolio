@@ -352,63 +352,56 @@ export default function PhillyTruceCaseStudy() {
               </div>
 
               <div className="grid md:grid-cols-2 gap-8">
-                <div
-                  className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
-                  onClick={() =>
-                    setLightboxImage({
-                      src: "/user-research-and-discovery.jpg",
-                      alt: "User Research and Discovery",
-                    })
-                  }
-                >
-                  <Image
-                    src="/user-research-and-discovery.jpg"
-                    alt="User Research and Discovery"
-                    fill
-                    className="object-cover"
-                  />
+                <div>
+                  <div
+                    className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
+                    onClick={() =>
+                      setLightboxImage({
+                        src: "/user-research-and-discovery.jpg",
+                        alt: "User Research and Discovery",
+                      })
+                    }
+                  >
+                    <Image
+                      src="/user-research-and-discovery.jpg"
+                      alt="User Research and Discovery"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <h4 className="font-medium mb-2">User Research & Discovery</h4>
+                  <p className="text-muted-foreground text-base">
+                    Conducted interviews and observations with Peace Patrol Officers to identify pain points and design
+                    requirements for the new system.
+                  </p>
                 </div>
-                <div
-                  className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
-                  onClick={() =>
-                    setLightboxImage({
-                      src: "/design-iteration-and-testing.jpg",
-                      alt: "Design Iteration and Testing",
-                    })
-                  }
-                >
-                  <Image
-                    src="/design-iteration-and-testing.jpg"
-                    alt="Design Iteration and Testing"
-                    fill
-                    className="object-cover"
-                  />
+                <div>
+                  <div
+                    className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
+                    onClick={() =>
+                      setLightboxImage({
+                        src: "/design-iteration-and-testing.jpg",
+                        alt: "Design Iteration and Testing",
+                      })
+                    }
+                  >
+                    <Image
+                      src="/design-iteration-and-testing.jpg"
+                      alt="Design Iteration and Testing"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <h4 className="font-medium mb-2">Design Iteration & Testing</h4>
+                  <p className="text-muted-foreground text-base">
+                    Rapidly prototyped and tested design solutions with users to validate usability and gather feedback
+                    for continuous refinement.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Single Column Image Section */}
-            <div className="pt-16">
-              <div
-                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 mb-4 w-full h-auto"
-                onClick={() =>
-                  setLightboxImage({
-                    src: "/images/PT-Three-Screen.jpg",
-                    alt: "Three screens of the Philly Truce mobile app showing the Reports list, status tabs, and a circular floating action button.",
-                  })
-                }
-              >
-                <Image
-                  src="/images/PT-Three-Screen.jpg"
-                  alt="Three screens of the Philly Truce mobile app showing the Reports list, status tabs, and a circular floating action button."
-                  width={1140}
-                  height={600}
-                  className="w-full h-auto"
-                />
-              </div>
-            </div>
 
         {/* Explore More Work */}
         <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-1000">
