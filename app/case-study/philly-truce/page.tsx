@@ -251,14 +251,14 @@ export default function PhillyTruceCaseStudy() {
                   className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
                   onClick={() =>
                     setLightboxImage({
-                      src: "/images/philly-truce-dashboard.jpg",
-                      alt: "Philly Truce app dashboard",
+                      src: "/images/NRB.jpg",
+                      alt: "Updated New Report Button",
                     })
                   }
                 >
                   <Image
-                    src="/images/philly-truce-dashboard.jpg"
-                    alt="Philly Truce app dashboard"
+                    src="/images/NRB.jpg"
+                    alt="Updated New Report Button"
                     fill
                     className="object-cover"
                   />
@@ -276,14 +276,14 @@ export default function PhillyTruceCaseStudy() {
                   className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
                   onClick={() =>
                     setLightboxImage({
-                      src: "/images/philly-truce-transactions.jpg",
-                      alt: "Philly Truce app transactions",
+                      src: "/images/Nav.jpg",
+                      alt: "Improved clear active and inactive states",
                     })
                   }
                 >
                   <Image
-                    src="/images/philly-truce-transactions.jpg"
-                    alt="Philly Truce app transactions"
+                    src="/images/Nav.jpg"
+                    alt="Improved clear active and inactive states"
                     fill
                     className="object-cover"
                   />
@@ -300,14 +300,14 @@ export default function PhillyTruceCaseStudy() {
                   className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
                   onClick={() =>
                     setLightboxImage({
-                      src: "/images/philly-truce-features.jpg",
-                      alt: "Philly Truce app features overview",
+                      src: "/images/Search.jpg",
+                      alt: "Relocated search to a top-nav icon",
                     })
                   }
                 >
                   <Image
-                    src="/images/philly-truce-features.jpg"
-                    alt="Philly Truce app features overview"
+                    src="/images/Search.jpg"
+                    alt="Relocated search to a top-nav icon"
                     fill
                     className="object-cover"
                   />
