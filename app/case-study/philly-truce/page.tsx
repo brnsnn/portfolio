@@ -265,8 +265,8 @@ export default function PhillyTruceCaseStudy() {
                 </div>
                 <h4 className="font-medium mb-2">Improved Primary Action Button</h4>
                 <p className="text-muted-foreground text-base">
-                  Replaced a confusing rectangular floating button with a circular floating action button (FAB) to
-                  clearly distinguish the primary action from the report list, improving clarity and discoverability.
+                  Replaced a rectangular floating button with a circular floating action button to clearly separate
+                  the primary action from the report list.
                 </p>
               </div>
 
@@ -290,9 +290,7 @@ export default function PhillyTruceCaseStudy() {
                 </div>
                 <h4 className="font-medium mb-2">Clear Active States</h4>
                 <p className="text-muted-foreground text-base">
-                  Updated navigation colors to clearly differentiate active and inactive tabs, helping officers immediately
-                  understand their current location in the app. This improved wayfinding and reduced navigation errors
-                  during report tracking and review.
+                  Clear active states improved navigation and reduced errors.
                 </p>
               </div>
 
@@ -316,9 +314,7 @@ export default function PhillyTruceCaseStudy() {
                 </div>
                 <h4 className="font-medium mb-2">Reduced Visual Clutter</h4>
                 <p className="text-muted-foreground text-base">
-                  Moved the search bar into the top navigation and surfaced it as an icon, freeing up mobile screen
-                  space while keeping search easily accessible when needed. This reduced visual clutter and helped
-                  users focus on primary tasks.
+                  Relocated search to a top-nav icon, reducing clutter and freeing mobile screen space.
                 </p>
               </div>
             </div>
