@@ -335,8 +335,8 @@ export default function PhillyTruceCaseStudy() {
             </div>
 
             {/* OUR APPROACH */}
-            <div className="pt-40">
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-900 px-4 md:px-6">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <div>
                   <div className="flex items-center gap-2 mb-6">
                     <div className="h-px w-8 bg-foreground/30"></div>
