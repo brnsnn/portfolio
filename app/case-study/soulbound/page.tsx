@@ -263,7 +263,8 @@ export default function SoulboundCaseStudy() {
             <div>
               <p className="text-muted-foreground mb-2">
                 The color palette and accessibility standards ensure vibrant brand expression while maintaining WCAG AA
-                compliance for all text and UI elements.
+                compliance for all text and <br />
+                UI elements.
               </p>
             </div>
           </div>
