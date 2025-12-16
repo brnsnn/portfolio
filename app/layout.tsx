@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Inter } from "next/font/google"
 import type { Metadata } from "next"
 import { ScrollToTop } from "@/components/scroll-to-top"
+import { HashScrollHandler } from "@/components/hash-scroll-handler"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -20,9 +21,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning style={{ scrollBehavior: "smooth" }}>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
+          <HashScrollHandler />
           <ScrollToTop />
           {children}
         </ThemeProvider>
