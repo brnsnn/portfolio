@@ -219,7 +219,8 @@ export default function PhillyTruceCaseStudy() {
             <div>
               <h4 className="font-medium mb-2">Enhance Data Quality</h4>
               <p className="text-muted-foreground">
-                Capture more complete and consistent data to improve analysis and response coordination.
+                Capture more complete and consistent <br />
+                data to improve analysis and response coordination.
               </p>
             </div>
           </div>
