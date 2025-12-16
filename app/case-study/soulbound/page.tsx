@@ -134,20 +134,32 @@ export default function SoulboundCaseStudy() {
           </div>
         </div>
 
-        {/* THE PROBLEM section */}
+        {/* GOALS section */}
         <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600">
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="flex items-center gap-2 mb-6">
+            <div className="h-px w-8 bg-foreground/30"></div>
+            <span className="text-sm font-medium text-foreground/60">GOALS</span>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 items-start">
             <div>
-              <div className="flex items-center gap-2 mb-6">
-                <div className="h-px w-8 bg-foreground/30"></div>
-                <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
-              </div>
+              <h4 className="font-medium mb-2">Establish Visual Consistency</h4>
+              <p className="text-muted-foreground text-sm">
+                Create a unified design language with standardized typography, colors, spacing, and components across
+                all interfaces.
+              </p>
             </div>
             <div>
-              <p className="text-muted-foreground">
-                The platform's interfaces lacked a cohesive visual foundation—typography, color palettes, spacing, and
-                core components were inconsistent across games and dashboards. This fragmentation slowed design and
-                development while weakening the brand, creating the need for a unified, scalable visual system.
+              <h4 className="font-medium mb-2">Accelerate Development</h4>
+              <p className="text-muted-foreground text-sm">
+                Enable faster design and development through reusable components and clear guidelines that reduce
+                redundant work.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-medium mb-2">Scale Brand Experience</h4>
+              <p className="text-muted-foreground text-sm">
+                Support sustainable growth and new product features while maintaining a cohesive, recognizable brand
+                identity.
               </p>
             </div>
           </div>
@@ -179,7 +191,7 @@ export default function SoulboundCaseStudy() {
               className="w-full h-auto"
             />
           </div>
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div>
               <p className="text-muted-foreground mb-2">
                 The Chakra Petch scale establishes a bold, tech-forward typographic hierarchy designed for high-impact
@@ -200,8 +212,8 @@ export default function SoulboundCaseStudy() {
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div>
               <p className="text-muted-foreground mb-2">
-                The Poppins scale provides a clean, modern, and highly legible counterpart to the more expressive display
-                typography.
+                The Poppins scale provides a clean, modern, and highly legible counterpart to the more expressive
+                display typography.
               </p>
             </div>
           </div>
@@ -218,9 +230,9 @@ export default function SoulboundCaseStudy() {
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div>
               <p className="text-muted-foreground mb-2">
-                This spacing system is built on the golden ratio and rounded to clean whole numbers, creating a consistent,
-                scalable rhythm across all components. Each step increases proportionally to maintain balanced whitespace
-                and a clear visual hierarchy.
+                This spacing system is built on the golden ratio and rounded to clean whole numbers, creating a
+                consistent, scalable rhythm across all components. Each step increases proportionally to maintain
+                balanced whitespace and a clear visual hierarchy.
               </p>
             </div>
           </div>
@@ -246,8 +258,8 @@ export default function SoulboundCaseStudy() {
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div>
               <p className="text-muted-foreground mb-2">
-              The color palette and accessibility standards ensure vibrant brand expression while maintaining WCAG AA
-              compliance for all text and UI elements.
+                The color palette and accessibility standards ensure vibrant brand expression while maintaining WCAG AA
+                compliance for all text and UI elements.
               </p>
             </div>
           </div>
@@ -266,8 +278,8 @@ export default function SoulboundCaseStudy() {
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div>
               <p className="text-muted-foreground mb-2">
-              Six logo variations provide flexibility across diverse backgrounds while maintaining brand consistency and
-              recognition.
+                Six logo variations provide flexibility across diverse backgrounds while maintaining brand consistency
+                and recognition.
               </p>
             </div>
           </div>
@@ -290,41 +302,42 @@ export default function SoulboundCaseStudy() {
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div>
               <p className="text-muted-foreground mb-2">
-              Button states demonstrate clear interaction feedback with default and hover for visual clarity.
+                Button states demonstrate clear interaction feedback with default and hover for visual clarity.
               </p>
             </div>
           </div>
 
-        {/* Explore More Work section with CaseStudyCarousel */}
-        <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-800">
-          <div className="max-w-[1140px] mx-auto px-6">
-            <div className="flex items-center gap-2 mb-8">
-              <div className="h-px w-8 bg-foreground/30"></div>
-              <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>
+          {/* Explore More Work section with CaseStudyCarousel */}
+          <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-800">
+            <div className="max-w-[1140px] mx-auto px-6">
+              <div className="flex items-center gap-2 mb-8">
+                <div className="h-px w-8 bg-foreground/30"></div>
+                <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>
+              </div>
+              <CaseStudyCarousel currentCaseStudyId="soulbound" />
             </div>
-            <CaseStudyCarousel currentCaseStudyId="soulbound" />
           </div>
         </div>
+
+        <ImageLightbox image={lightboxImage} onClose={() => setLightboxImage(null)} />
+
+        {/* Main footer */}
+        <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-900">
+          <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
+            <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
+              © {new Date().getFullYear()} Bronson Lee. All rights reserved.
+            </p>
+            <Link
+              href="https://linkedin.com/in/brnsnlee"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              LinkedIn
+            </Link>
+          </div>
+        </footer>
       </main>
-
-      <ImageLightbox image={lightboxImage} onClose={() => setLightboxImage(null)} />
-
-      {/* Main footer */}
-      <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-900">
-        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
-          <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © {new Date().getFullYear()} Bronson Lee. All rights reserved.
-          </p>
-          <Link
-            href="https://linkedin.com/in/brnsnlee"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
-            LinkedIn
-          </Link>
-        </div>
-      </footer>
     </div>
   )
 }
