@@ -150,16 +150,13 @@ export default function SoulboundCaseStudy() {
             <div>
               <h4 className="font-medium mb-2">Enhance UI Consistency and Scalability</h4>
               <p className="text-muted-foreground">
-                Incorporate branding elements, accessibility considerations, and stylistic touches to <br />
-                strengthen the platform’s aesthetic and <br />
-                user recognition.
+                Integrate branding, accessibility, and stylistic touches to enhance aesthetics and user recognition.
               </p>
             </div>
             <div>
               <h4 className="font-medium mb-2">Elevate the Visual Identify of Platform</h4>
               <p className="text-muted-foreground">
-                Support sustainable growth and new product <br />
-                features while maintaining a cohesive, recognizable brand identity.
+                Support growth and features with a consistent, recognizable brand.
               </p>
             </div>
           </div>
