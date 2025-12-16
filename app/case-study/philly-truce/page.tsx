@@ -261,12 +261,14 @@ export default function PhillyTruceCaseStudy() {
                   fill
                   className="object-cover"
                 />
+              </div>
                 <h4 className="font-medium mb-2">Typography</h4>
                 <p className="text-muted-foreground text-base">
                   We audited typography across both platforms, identifying inconsistencies in font families, sizes,
                   weights, and line heights that created visual discord and readability issues.
                 </p>
-              </div>
+            </div>
+              
 
               {/* Transactions */}
               <div
@@ -284,12 +286,13 @@ export default function PhillyTruceCaseStudy() {
                   fill
                   className="object-cover"
                 />
-                <h4 className="font-medium mb-2">Typography</h4>
+              </div>
+              <h4 className="font-medium mb-2">Typography</h4>
                 <p className="text-muted-foreground text-base">
                   We audited typography across both platforms, identifying inconsistencies in font families, sizes,
                   weights, and line heights that created visual discord and readability issues.
                 </p>
-              </div>
+            </div>
 
               {/* Features */}
               <div
