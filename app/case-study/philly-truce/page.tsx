@@ -206,19 +206,19 @@ export default function PhillyTruceCaseStudy() {
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div>
               <h4 className="font-medium mb-2">Reduce Errors</h4>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground">
                 Minimize data entry mistakes and incomplete fields through better form structure and validation.
               </p>
             </div>
             <div>
               <h4 className="font-medium mb-2">Improve Speed</h4>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground">
                 Enable officers to complete reports faster using a streamlined workflow and smart defaults.
               </p>
             </div>
             <div>
               <h4 className="font-medium mb-2">Enhance Data Quality</h4>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground">
                 Capture more complete and consistent data to improve analysis and response coordination.
               </p>
             </div>
