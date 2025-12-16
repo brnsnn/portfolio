@@ -25,7 +25,7 @@ const Page = () => {
     {
       title: "Reducing violence by improving record-keeping accuracy by 15%",
       description: "Philly Truce",
-      image: "/images/pt-hero.avif",
+      image: "/images/Philly-Truce-thumbnail.jpg?height=400&width=600",
       caseStudyUrl: "/case-study/philly-truce",
     },
     {
