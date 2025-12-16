@@ -145,8 +145,8 @@ export default function SoulboundCaseStudy() {
               <h4 className="font-medium mb-2">Establish a Cohesive Design System</h4>
               <p className="text-muted-foreground text-sm">
                 Create cohesive typography, color palette, <br/>
-                spacing, and UI components to ensure consistency
-                across the web3 gaming platform.
+                spacing, and UI components to ensure <br />
+                consistency across the web3 gaming platform.
               </p>
             </div>
             <div>
