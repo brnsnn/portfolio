@@ -139,7 +139,7 @@ export default function PhillyTruceCaseStudy() {
                 <ArrowDown className="w-8 h-8" />
               </h3>
               <p className="text-muted-foreground">
-                Reduction in distractions,minimizing interruptions and input errors
+                Reduction in distractions, minimizing interruptions and input errors
               </p>
             </div>
             <div>
