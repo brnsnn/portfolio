@@ -246,114 +246,123 @@ export default function PhillyTruceCaseStudy() {
             {/* Row 1: Dashboard, Transactions, and Features */}
             <div className="grid md:grid-cols-3 gap-8">
               {/* Dashboard */}
-              <div
-                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
-                onClick={() =>
-                  setLightboxImage({
-                    src: "/images/philly-truce-dashboard.jpg",
-                    alt: "Philly Truce app dashboard",
-                  })
-                }
-              >
-                <Image
-                  src="/images/philly-truce-dashboard.jpg"
-                  alt="Philly Truce app dashboard"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-                <h4 className="font-medium mb-2">Typography</h4>
+              <div>
+                <div
+                  className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/images/philly-truce-dashboard.jpg",
+                      alt: "Philly Truce app dashboard",
+                    })
+                  }
+                >
+                  <Image
+                    src="/images/philly-truce-dashboard.jpg"
+                    alt="Philly Truce app dashboard"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h4 className="font-medium mb-2">Dashboard</h4>
                 <p className="text-muted-foreground text-base">
-                  We audited typography across both platforms, identifying inconsistencies in font families, sizes,
-                  weights, and line heights that created visual discord and readability issues.
+                  Designed a centralized dashboard that displays key metrics and recent reports, enabling officers to
+                  quickly access critical information and track intervention progress at a glance.
                 </p>
-            </div>
-              
+              </div>
 
               {/* Transactions */}
-              <div
-                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
-                onClick={() =>
-                  setLightboxImage({
-                    src: "/images/philly-truce-transactions.jpg",
-                    alt: "Philly Truce app transactions",
-                  })
-                }
-              >
-                <Image
-                  src="/images/philly-truce-transactions.jpg"
-                  alt="Philly Truce app transactions"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h4 className="font-medium mb-2">Typography</h4>
+              <div>
+                <div
+                  className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/images/philly-truce-transactions.jpg",
+                      alt: "Philly Truce app transactions",
+                    })
+                  }
+                >
+                  <Image
+                    src="/images/philly-truce-transactions.jpg"
+                    alt="Philly Truce app transactions"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h4 className="font-medium mb-2">Report Form</h4>
                 <p className="text-muted-foreground text-base">
-                  We audited typography across both platforms, identifying inconsistencies in font families, sizes,
-                  weights, and line heights that created visual discord and readability issues.
+                  Streamlined the report entry form with smart field validation, autofill capabilities, and conditional
+                  logic to reduce data entry errors and ensure consistent, complete incident documentation.
                 </p>
-            </div>
+              </div>
 
               {/* Features */}
-              <div
-                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
-                onClick={() =>
-                  setLightboxImage({
-                    src: "/images/philly-truce-features.jpg",
-                    alt: "Philly Truce app features overview",
-                  })
-                }
-              >
-                <Image
-                  src="/images/philly-truce-features.jpg"
-                  alt="Philly Truce app features overview"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h4 className="font-medium mb-2">Typography</h4>
+              <div>
+                <div
+                  className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/images/philly-truce-features.jpg",
+                      alt: "Philly Truce app features overview",
+                    })
+                  }
+                >
+                  <Image
+                    src="/images/philly-truce-features.jpg"
+                    alt="Philly Truce app features overview"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h4 className="font-medium mb-2">Analysis Tools</h4>
                 <p className="text-muted-foreground text-base">
-                  We audited typography across both platforms, identifying inconsistencies in font families, sizes,
-                  weights, and line heights that created visual discord and readability issues.
+                  Integrated analytics features that allow supervisors to analyze report data, identify patterns, and
+                  generate insights to inform intervention strategies and measure effectiveness.
                 </p>
+              </div>
             </div>
+
+            <div className="h-0 mb-40"></div>
 
             {/* Row 2: Budget Feature and Settings */}
             <div className="grid md:grid-cols-2 gap-8">
               {/* Budget Feature */}
-              <div
-                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
-                onClick={() =>
-                  setLightboxImage({
-                    src: "/images/philly-truce-budget.jpg",
-                    alt: "Philly Truce app budget feature",
-                  })
-                }
-              >
-                <Image
-                  src="/images/philly-truce-budget.jpg"
-                  alt="Philly Truce app budget feature"
-                  fill
-                  className="object-cover"
-                />
+              <div>
+                <div
+                  className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/images/philly-truce-budget.jpg",
+                      alt: "Philly Truce app budget feature",
+                    })
+                  }
+                >
+                  <Image
+                    src="/images/philly-truce-budget.jpg"
+                    alt="Philly Truce app budget feature"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
               {/* Settings */}
-              <div
-                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square"
-                onClick={() =>
-                  setLightboxImage({
-                    src: "/images/philly-truce-settings.jpg",
-                    alt: "Philly Truce app settings",
-                  })
-                }
-              >
-                <Image
-                  src="/images/philly-truce-settings.jpg"
-                  alt="Philly Truce app settings"
-                  fill
-                  className="object-cover"
-                />
+              <div>
+                <div
+                  className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/images/philly-truce-settings.jpg",
+                      alt: "Philly Truce app settings",
+                    })
+                  }
+                >
+                  <Image
+                    src="/images/philly-truce-settings.jpg"
+                    alt="Philly Truce app settings"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
