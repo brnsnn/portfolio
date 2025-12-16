@@ -135,20 +135,19 @@ export default function PhillyTruceCaseStudy() {
             </div>
             <div>
               <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
-                35%
-                <ArrowUp className="w-8 h-8" />
+                25%
+                <ArrowDown className="w-8 h-8" />
               </h3>
               <p className="text-muted-foreground">
-                Improvement in user <br />
-                satisfaction scores
+                Reduction in distractions,minimizing interruptions and input errors
               </p>
             </div>
             <div>
               <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
-                15%
-                <ArrowUp className="w-8 h-8" />
+                10-25%
+                <ArrowDown className="w-8 h-8" />
               </h3>
-              <p className="text-muted-foreground">Increase in record-keeping accuracy by patrol officers</p>
+              <p className="text-muted-foreground">Reduction in misfiled reports</p>
             </div>
             <div>
               <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
