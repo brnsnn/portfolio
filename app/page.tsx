@@ -162,7 +162,7 @@ const Page = () => {
                 <Image src="/images/me.png" alt="About me" fill className="object-cover" />
               </div>
               <div className="space-y-6">
-                <h2 className="text-3xl font-normal tracking-tighter">Bronson Lee</h2>
+                <h2 className="text-3xl font-normal tracking-tighter">Hi, I'm Bronson Lee</h2>
                 <p className="text-muted-foreground">
                   I'm a Mid-level UX designer with 5+ years of experience. I specialize<br />in design systems, interaction
                   design, and accessibility.
