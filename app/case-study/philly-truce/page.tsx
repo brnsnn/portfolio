@@ -6,7 +6,7 @@ import { AnimatedName } from "@/components/animated-name"
 import { useState } from "react"
 import { CaseStudyCarousel } from "@/components/case-study-carousel"
 import { ImageLightbox } from "@/components/image-lightbox"
-import { ArrowDown, ArrowUp, ArrowRight } from "lucide-react"
+import { ArrowDown, ArrowUp } from "lucide-react"
 
 export default function PhillyTruceCaseStudy() {
   const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
@@ -123,16 +123,13 @@ export default function PhillyTruceCaseStudy() {
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">THE IMPACT</span>
           </div>
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div>
               <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
                 15%
                 <ArrowUp className="w-8 h-8" />
               </h3>
-              <p className="text-muted-foreground">
-                Increase in report creation with <br />
-                updated new report button
-              </p>
+              <p className="text-muted-foreground">Increase in report creation with updated new report button</p>
             </div>
             <div>
               <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
@@ -149,16 +146,6 @@ export default function PhillyTruceCaseStudy() {
                 <ArrowDown className="w-8 h-8" />
               </h3>
               <p className="text-muted-foreground">Reduction in misfiled reports</p>
-            </div>
-            <div>
-              <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
-                20%
-                <ArrowRight className="w-8 h-8" />
-              </h3>
-              <p className="text-muted-foreground">
-                Faster task completion in <br />
-                the admin portal
-              </p>
             </div>
           </div>
         </div>
