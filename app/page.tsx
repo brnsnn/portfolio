@@ -159,7 +159,7 @@ const Page = () => {
             </div>
             <div className="grid gap-12 md:grid-cols-2 items-center">
               <div className="relative aspect-square overflow-hidden rounded-lg">
-                <Image src="/images/me.jpg?height=600&width=600" alt="About me" fill className="object-cover" />
+                <Image src="/images/me.png?height=271&width=300" alt="About me" fill className="object-cover" />
               </div>
               <div className="space-y-6">
                 <h2 className="text-3xl font-normal tracking-tighter">Bronson Lee</h2>
