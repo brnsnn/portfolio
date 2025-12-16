@@ -357,13 +357,13 @@ export default function PhillyTruceCaseStudy() {
                     className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
                     onClick={() =>
                       setLightboxImage({
-                        src: "/ORB.jpg",
+                        src: "/images/ORB.jpg",
                         alt: "Rectangular floating action button took too much space",
                       })
                     }
                   >
                     <Image
-                      src="/ORB.jpg"
+                      src="/images/ORB.jpg"
                       alt="Rectangular floating action button took too much space"
                       fill
                       className="object-cover"
@@ -379,13 +379,13 @@ export default function PhillyTruceCaseStudy() {
                     className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
                     onClick={() =>
                       setLightboxImage({
-                        src: "/Before-Nav.jpg",
+                        src: "/images/Before-Nav.jpg",
                         alt: "Navigation tabs lacked color contrast",
                       })
                     }
                   >
                     <Image
-                      src="/Before-Nav.jpg"
+                      src="/images/Before-Nav.jpg"
                       alt="Navigation tabs lacked color contrast"
                       fill
                       className="object-cover"
@@ -401,30 +401,6 @@ export default function PhillyTruceCaseStudy() {
           </div>
         </div>
 
-        {/* Single Column Image Section */}
-            <div className="pt-16">
-              <div
-                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 mb-4 w-full h-auto"
-                onClick={() =>
-                  setLightboxImage({
-                    src: "/images/Before-search.jpg",
-                    alt: "Philly Truce mobile app showing the status tabs, and the search bar.",
-                  })
-                }
-              >
-                <Image
-                  src="/images/Before-search.jpg"
-                  alt="Philly Truce mobile app showing the status tabs, and the search bar."
-                  width={1140}
-                  height={600}
-                  className="w-full h-auto"
-                />
-              </div>
-              <h4 className="font-medium mb-2">Search bar created clutter</h4>
-                  <p className="text-muted-foreground text-base">
-                    The always-on search bar contributed to users feeling overwhelmed.
-                  </p>
-            </div>
 
         {/* Explore More Work */}
         <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-1000">
