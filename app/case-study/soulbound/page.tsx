@@ -151,16 +151,6 @@ export default function SoulboundCaseStudy() {
               </p>
             </div>
           </div>
-          <div className="aspect-[16/9] relative rounded-lg overflow-hidden">
-            <video
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Soulbound-Video-XEloqIf3TnWFZBMb75HRIcZLnG6uWv.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover"
-            />
-          </div>
         </div>
 
         {/* OUR SOLUTION section */}
