@@ -389,6 +389,27 @@ export default function PhillyTruceCaseStudy() {
           </div>
         </div>
 
+        {/* Single Column Image Section */}
+            <div className="pt-16">
+              <div
+                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 mb-4 w-full h-auto"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/images/PT-Three-Screen.jpg",
+                    alt: "Three screens of the Philly Truce mobile app showing the Reports list, status tabs, and a circular floating action button.",
+                  })
+                }
+              >
+                <Image
+                  src="/images/PT-Three-Screen.jpg"
+                  alt="Three screens of the Philly Truce mobile app showing the Reports list, status tabs, and a circular floating action button."
+                  width={1140}
+                  height={600}
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+
         {/* Explore More Work */}
         <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-1000">
           <div className="max-w-[1140px] mx-auto px-4 md:px-6">
