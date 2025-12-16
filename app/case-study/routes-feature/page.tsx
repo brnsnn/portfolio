@@ -36,17 +36,19 @@ export default function RoutesFeaturePage() {
 
       <main className="flex-1 pt-16">
         <section className="container py-12 md:py-20 animate-on-load animate-fade-in-up animate-delay-200 px-4 md:px-0">
-          <div className="flex items-center gap-2 mb-8">
-            <div className="h-px w-8 bg-foreground/30"></div>
-            <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
+          <div className="max-w-[1140px]">
+            <div className="flex items-center gap-2 mb-8">
+              <div className="h-px w-8 bg-foreground/30"></div>
+              <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight">
+              Improving Community Safety with a Routes Feature
+            </h1>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight max-w-4xl">
-            Improving Community Safety with a Routes Feature
-          </h1>
         </section>
 
         {/* Hero Image */}
-        <div className="container mb-16 animate-on-load animate-fade-in-up animate-delay-300 px-4 md:px-0">
+        <div className="container mb-16 animate-on-load animate-fade-in-up animate-delay-300">
           <div className="w-full aspect-[21/9] relative">
             <Image
               src="/community-safety-app.png"

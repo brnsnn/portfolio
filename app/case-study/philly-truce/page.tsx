@@ -36,17 +36,19 @@ export default function PhillyTruceCaseStudy() {
 
       <main className="flex-1 pt-16">
         <section className="container py-12 md:py-20 animate-on-load animate-fade-in-up animate-delay-200 px-4 md:px-0">
-          <div className="flex items-center gap-2 mb-8">
-            <div className="h-px w-8 bg-foreground/30"></div>
-            <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
+          <div className="max-w-[1140px] mx-auto">
+            <div className="flex items-center gap-2 mb-8">
+              <div className="h-px w-8 bg-foreground/30"></div>
+              <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight">
+              Reducing violence by improving record-keeping accuracy by 15%
+            </h1>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight max-w-4xl">
-            Reducing violence by improving record-keeping accuracy by 15%
-          </h1>
         </section>
 
         {/* Hero Image */}
-        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300 px-4 md:px-0">
+        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300">
           <div
             className="w-full relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity aspect-video"
             onClick={() =>
