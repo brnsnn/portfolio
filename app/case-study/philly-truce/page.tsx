@@ -51,13 +51,13 @@ export default function PhillyTruceCaseStudy() {
             className="w-full relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity aspect-video"
             onClick={() =>
               setLightboxImage({
-                src: "/images/pt-hero.avif",
+                src: "/images/Philly-Truce-thumbnail.jpg",
                 alt: "Philly Truce incident report redesign",
               })
             }
           >
             <Image
-              src="/images/pt-hero.avif"
+              src="/images/Philly-Truce-thumbnail.jpg"
               alt="Philly Truce incident report redesign"
               fill
               className="object-cover"
