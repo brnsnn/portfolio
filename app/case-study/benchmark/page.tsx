@@ -56,7 +56,7 @@ export default function TravelAppCaseStudy() {
       </header>
 
       <main className="flex-1 pt-16">
-        <section className="container py-12 md:py-20 animate-on-load animate-fade-in-up animate-delay-200">
+        <section className="container py-12 md:py-20 animate-on-load animate-fade-in-up animate-delay-200 px-4 md:px-0">
           <div className="flex items-center gap-2 mb-8">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
@@ -67,7 +67,7 @@ export default function TravelAppCaseStudy() {
         </section>
 
         {/* Hero Image */}
-        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300">
+        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300 px-4 md:px-0">
           <div
             className="w-full aspect-[16/9] relative cursor-pointer hover:opacity-90 transition-opacity"
             onClick={() =>
@@ -88,7 +88,7 @@ export default function TravelAppCaseStudy() {
         </div>
 
         {/* Project Details */}
-        <div className="container animate-on-load animate-fade-in-up animate-delay-400">
+        <div className="container animate-on-load animate-fade-in-up animate-delay-400 px-4 md:px-0">
           <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-12 mb-32">
             <div>
               <div className="flex items-center gap-2 mb-4">
@@ -139,7 +139,7 @@ export default function TravelAppCaseStudy() {
         </div>
 
         {/* THE IMPACT */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500">
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500 px-4 md:px-6">
           <div className="flex items-center gap-2 mb-6">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">THE IMPACT</span>
@@ -186,7 +186,7 @@ export default function TravelAppCaseStudy() {
         </div>
 
         {/* Problem */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600">
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600 px-4 md:px-6">
           <div className="flex items-center gap-2 mb-6">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">THE PROBLEM</span>
@@ -314,14 +314,14 @@ export default function TravelAppCaseStudy() {
         </div>
 
         {/* Our Approach */}
-        <div className="max-w-[1140px] mx-auto animate-on-load animate-fade-in-up animate-delay-700">
+        <div className="max-w-[1140px] mx-auto animate-on-load animate-fade-in-up animate-delay-700 px-4 md:px-6">
           <div className="flex items-center gap-2 mb-6">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">OUR APPROACH</span>
           </div>
         </div>
 
-        <div className="max-w-[1140px] mx-auto mb-48">
+        <div className="max-w-[1140px] mx-auto mb-48 px-4 md:px-6">
           {/* Audit & Discovery */}
           <div className="mb-40">
             <h3 className="font-medium text-lg mb-6">Audit & Discovery</h3>
@@ -394,7 +394,7 @@ export default function TravelAppCaseStudy() {
           </div>
 
           {/* THE SOLUTION */}
-          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-800">
+          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-800 px-4 md:px-6">
             <div className="flex items-center gap-2 mb-6">
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">THE SOLUTION</span>
@@ -500,7 +500,7 @@ export default function TravelAppCaseStudy() {
           </div>
 
           {/* REFLECTION */}
-          <div className="max-w-[1140px] mx-auto mb-48 animate-on-load animate-fade-in-up animate-delay-900">
+          <div className="max-w-[1140px] mx-auto mb-48 animate-on-load animate-fade-in-up animate-delay-900 px-4 md:px-6">
             <div className="flex items-center gap-2 mb-6">
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">REFLECTION</span>
@@ -535,8 +535,8 @@ export default function TravelAppCaseStudy() {
       </main>
 
       {/* Explore More Work Section */}
-      <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-700">
-        <div className="max-w-[1140px] mx-auto px-6">
+      <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-1000">
+        <div className="max-w-[1140px] mx-auto px-4 md:px-6">
           <div className="flex items-center gap-2 mb-8">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>

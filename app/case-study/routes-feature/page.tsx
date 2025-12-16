@@ -29,7 +29,7 @@ export default function RoutesFeaturePage() {
       </header>
 
       <main className="flex-1 pt-16">
-        <section className="container py-12 md:py-20 animate-on-load animate-fade-in-up animate-delay-200">
+        <section className="container py-12 md:py-20 animate-on-load animate-fade-in-up animate-delay-200 px-4 md:px-0">
           <div className="flex items-center gap-2 mb-8">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
@@ -40,7 +40,7 @@ export default function RoutesFeaturePage() {
         </section>
 
         {/* Hero Image */}
-        <div className="container mb-16 animate-on-load animate-fade-in-up animate-delay-300">
+        <div className="container mb-16 animate-on-load animate-fade-in-up animate-delay-300 px-4 md:px-0">
           <div className="w-full aspect-[21/9] relative">
             <Image
               src="/community-safety-app.png"
@@ -52,7 +52,7 @@ export default function RoutesFeaturePage() {
           </div>
         </div>
 
-        <div className="container animate-on-load animate-fade-in-up animate-delay-400">
+        <div className="container animate-on-load animate-fade-in-up animate-delay-400 px-4 md:px-0">
           <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-12 mb-20">
             <div>
               <div className="flex items-center gap-2 mb-4">
@@ -94,7 +94,7 @@ export default function RoutesFeaturePage() {
           </div>
 
           {/* Impact Metrics Section */}
-          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500">
+          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500 px-4 md:px-6">
             <div className="flex items-center gap-2 mb-6">
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">IMPACT</span>
@@ -115,7 +115,7 @@ export default function RoutesFeaturePage() {
             </div>
           </div>
 
-          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600">
+          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600 px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
                 <div className="flex items-center gap-2 mb-6">
@@ -194,7 +194,7 @@ export default function RoutesFeaturePage() {
         </div>
 
         <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-700">
-          <div className="max-w-[1140px] mx-auto px-6">
+          <div className="max-w-[1140px] mx-auto px-4 md:px-6">
             <div className="flex items-center gap-2 mb-8">
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>

@@ -34,7 +34,7 @@ export default function SoulboundCaseStudy() {
       </header>
 
       <main className="flex-1 pt-16">
-        <section className="container py-12 md:py-20 animate-on-load animate-fade-in-up animate-delay-200">
+        <section className="container py-12 md:py-20 animate-on-load animate-fade-in-up animate-delay-200 px-4 md:px-0">
           <div className="flex items-center gap-2 mb-8">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
@@ -45,7 +45,7 @@ export default function SoulboundCaseStudy() {
         </section>
 
         {/* Hero Image */}
-        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300">
+        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300 px-4 md:px-0">
           <div
             className="w-full aspect-[16/9] relative cursor-pointer hover:opacity-90 transition-opacity"
             onClick={() =>
@@ -65,7 +65,7 @@ export default function SoulboundCaseStudy() {
           </div>
         </div>
 
-        <div className="container animate-on-load animate-fade-in-up animate-delay-400">
+        <div className="container animate-on-load animate-fade-in-up animate-delay-400 px-4 md:px-0">
           <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-12 mb-20">
             <div>
               <div className="flex items-center gap-2 mb-4">
@@ -103,7 +103,7 @@ export default function SoulboundCaseStudy() {
         </div>
 
         {/* THE IMPACT section */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500">
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500 px-4 md:px-6">
           <div className="flex items-center gap-2 mb-6">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">THE IMPACT</span>
@@ -135,7 +135,7 @@ export default function SoulboundCaseStudy() {
         </div>
 
         {/* GOALS section */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600">
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600 px-4 md:px-6">
           <div className="flex items-center gap-2 mb-6">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">GOALS</span>
@@ -144,7 +144,7 @@ export default function SoulboundCaseStudy() {
             <div>
               <h4 className="font-medium mb-2">Establish a Cohesive Design System</h4>
               <p className="text-muted-foreground text-sm">
-                Create cohesive typography, color palette, <br/>
+                Create cohesive typography, color palette, <br />
                 spacing, and UI components to ensure <br />
                 consistency across the web3 gaming platform.
               </p>
@@ -162,15 +162,14 @@ export default function SoulboundCaseStudy() {
               <p className="text-muted-foreground text-sm">
                 Support sustainable growth and new product <br />
                 features while maintaining a cohesive, recognizable <br />
-                brand
-                identity.
+                brand identity.
               </p>
             </div>
           </div>
         </div>
 
         {/* OUR SOLUTION section */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-700">
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-700 px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
               <div className="flex items-center gap-2 mb-6">
@@ -269,7 +268,7 @@ export default function SoulboundCaseStudy() {
             </div>
           </div>
 
-          <div className="max-w-[1140px] mx-auto mb-4 animate-on-load animate-fade-in-up animate-delay-750">
+          <div className="max-w-[1140px] mx-auto mb-4 animate-on-load animate-fade-in-up animate-delay-750 px-4 md:px-6">
             <div className="relative rounded-lg overflow-hidden w-full border border-gray-200">
               <Image
                 src="/soulbound-logo-updated.jpg"
@@ -314,7 +313,7 @@ export default function SoulboundCaseStudy() {
 
           {/* Explore More Work section with CaseStudyCarousel */}
           <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-800">
-            <div className="max-w-[1140px] mx-auto px-6">
+            <div className="max-w-[1140px] mx-auto px-4 md:px-6">
               <div className="flex items-center gap-2 mb-8">
                 <div className="h-px w-8 bg-foreground/30"></div>
                 <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>

@@ -35,7 +35,7 @@ export default function PhillyTruceCaseStudy() {
       </header>
 
       <main className="flex-1 pt-16">
-        <section className="container py-12 md:py-20 animate-on-load animate-fade-in-up animate-delay-200">
+        <section className="container py-12 md:py-20 animate-on-load animate-fade-in-up animate-delay-200 px-4 md:px-0">
           <div className="flex items-center gap-2 mb-8">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
@@ -46,7 +46,7 @@ export default function PhillyTruceCaseStudy() {
         </section>
 
         {/* Hero Image */}
-        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300">
+        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300 px-4 md:px-0">
           <div
             className="w-full relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity aspect-video"
             onClick={() =>
@@ -67,7 +67,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
 
         {/* Project Overview */}
-        <div className="container animate-on-load animate-fade-in-up animate-delay-400">
+        <div className="container animate-on-load animate-fade-in-up animate-delay-400 px-4 md:px-0">
           <div className="max-w-[1140px] mx-auto grid md:grid-cols-2 gap-12 mb-32">
             <div>
               <div className="flex items-center gap-2 mb-4">
@@ -118,7 +118,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
 
         {/* THE IMPACT */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500">
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500 px-4 md:px-6">
           <div className="flex items-center gap-2 mb-6">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">THE IMPACT</span>
@@ -129,8 +129,10 @@ export default function PhillyTruceCaseStudy() {
                 15%
                 <ArrowUp className="w-8 h-8" />
               </h3>
-              <p className="text-muted-foreground">Increase in report creation with <br />
-                updated new report button</p>
+              <p className="text-muted-foreground">
+                Increase in report creation with <br />
+                updated new report button
+              </p>
             </div>
             <div>
               <h3 className="text-4xl font-medium mb-2 flex items-center gap-2">
@@ -152,7 +154,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
 
         {/* THE PROBLEM */}
-        <div className="max-w-[1140px] mx-auto mb-6 animate-on-load animate-fade-in-up animate-delay-600">
+        <div className="max-w-[1140px] mx-auto mb-6 animate-on-load animate-fade-in-up animate-delay-600 px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-6">
@@ -172,7 +174,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
 
         {/* Paper Report Image */}
-        <div className="max-w-[1140px] mx-auto mb-8 animate-on-load animate-fade-in-up animate-delay-700">
+        <div className="max-w-[1140px] mx-auto mb-8 animate-on-load animate-fade-in-up animate-delay-700 px-4 md:px-6">
           <div
             className="w-full relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity mb-4 h-auto"
             onClick={() =>
@@ -196,7 +198,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
 
         {/* Goals Section */}
-        <div className="max-w-[1140px] mx-auto mb-40 mt-32 animate-on-load animate-fade-in-up animate-delay-800">
+        <div className="max-w-[1140px] mx-auto mb-40 mt-32 animate-on-load animate-fade-in-up animate-delay-800 px-4 md:px-6">
           <div className="flex items-center gap-2 mb-6">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">GOALS</span>
@@ -224,7 +226,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
 
         {/* OUR SOLUTION */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-900">
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-900 px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
               <div className="flex items-center gap-2 mb-6">
@@ -341,7 +343,7 @@ export default function PhillyTruceCaseStudy() {
 
         {/* Explore More Work */}
         <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-1000">
-          <div className="max-w-[1140px] mx-auto px-6">
+          <div className="max-w-[1140px] mx-auto px-4 md:px-6">
             <div className="flex items-center gap-2 mb-8">
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">EXPLORE MORE WORK</span>
