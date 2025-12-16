@@ -144,7 +144,8 @@ export default function SoulboundCaseStudy() {
             <div>
               <h4 className="font-medium mb-2">Establish a Cohesive Design System</h4>
               <p className="text-muted-foreground text-sm">
-                Create cohesive typography, color palette, spacing, and UI components to ensure consistency
+                Create cohesive typography, color palette, <br/>
+                spacing, and UI components to ensure consistency
                 across the web3 gaming platform.
               </p>
             </div>
@@ -159,7 +160,9 @@ export default function SoulboundCaseStudy() {
             <div>
               <h4 className="font-medium mb-2">Elevate the Visual Identify of Platform</h4>
               <p className="text-muted-foreground text-sm">
-                Support sustainable growth and new product features while maintaining a cohesive, recognizable brand
+                Support sustainable growth and new product <br />
+                features while maintaining a cohesive, recognizable <br />
+                brand
                 identity.
               </p>
             </div>
