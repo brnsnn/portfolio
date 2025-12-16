@@ -42,7 +42,7 @@ export default function PhillyTruceCaseStudy() {
               <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight">
-              Reducing violence by improving record-keeping accuracy by 15%
+              Reducing violence by improving<br />record-keeping accuracy by 15%
             </h1>
           </div>
         </section>
