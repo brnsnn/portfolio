@@ -320,13 +320,13 @@ export default function PhillyTruceCaseStudy() {
                 onClick={() =>
                   setLightboxImage({
                     src: "/images/PT-Three-Screen.jpg",
-                    alt: "Philly Truce reports dashboard screens",
+                    alt: "Three screens of the Philly Truce mobile app showing the Reports list, status tabs, and a circular floating action button.",
                   })
                 }
               >
                 <Image
                   src="/images/PT-Three-Screen.jpg"
-                  alt="Philly Truce reports dashboard screens"
+                  alt="Three screens of the Philly Truce mobile app showing the Reports list, status tabs, and a circular floating action button."
                   width={1140}
                   height={600}
                   className="w-full h-auto"
