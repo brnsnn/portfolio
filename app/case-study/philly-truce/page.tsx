@@ -370,9 +370,7 @@ export default function PhillyTruceCaseStudy() {
                     />
                   </div>
                   <h4 className="font-medium mb-2">Action button confused users</h4>
-                  <p className="text-muted-foreground text-base">
-                    Button size and placement caused user confusion.
-                  </p>
+                  <p className="text-muted-foreground text-base">Button size and placement caused user confusion.</p>
                 </div>
                 <div>
                   <div
@@ -397,10 +395,33 @@ export default function PhillyTruceCaseStudy() {
                   </p>
                 </div>
               </div>
+
+              <div className="pt-16">
+                <div
+                  className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 mb-4 w-full h-auto"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/images/Before-search.jpg",
+                      alt: "Search bar took up significant space in the reports list",
+                    })
+                  }
+                >
+                  <Image
+                    src="/images/Before-search.jpg"
+                    alt="Search bar took up significant space in the reports list"
+                    width={1140}
+                    height={600}
+                    className="w-full h-auto"
+                  />
+                </div>
+                <h4 className="font-medium mb-2">Search consumed valuable screen space</h4>
+                <p className="text-muted-foreground text-base">
+                  The search bar occupied a large portion of the mobile screen, limiting visibility of reports.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-
 
         {/* Explore More Work */}
         <div className="bg-background py-24 animate-on-load animate-fade-in-up animate-delay-1000">
