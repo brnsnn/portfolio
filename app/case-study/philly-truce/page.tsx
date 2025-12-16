@@ -154,7 +154,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
 
         {/* THE PROBLEM */}
-        <div className="max-w-[1140px] mx-auto mb-6 animate-on-load animate-fade-in-up animate-delay-600 px-4 md:px-6">
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600 px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-6">
@@ -174,7 +174,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
 
         {/* Paper Report Image */}
-        <div className="max-w-[1140px] mx-auto mb-8 animate-on-load animate-fade-in-up animate-delay-700 px-4 md:px-6">
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-700 px-4 md:px-6">
           <div
             className="w-full relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity mb-4 h-auto"
             onClick={() =>
@@ -198,7 +198,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
 
         {/* Goals Section */}
-        <div className="max-w-[1140px] mx-auto mb-40 mt-32 animate-on-load animate-fade-in-up animate-delay-800 px-4 md:px-6">
+        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-800 px-4 md:px-6">
           <div className="flex items-center gap-2 mb-6">
             <div className="h-px w-8 bg-foreground/30"></div>
             <span className="text-sm font-medium text-foreground/60">GOALS</span>
@@ -332,94 +332,98 @@ export default function PhillyTruceCaseStudy() {
                   className="w-full h-auto"
                 />
               </div>
+              <h4 className="font-medium mb-2">Streamlined Interface</h4>
+              <p className="text-muted-foreground text-base">
+                The redesigned interface provides a clear, intuitive experience for Peace Patrol Officers.
+              </p>
             </div>
+          </div>
+        </div>
 
-            {/* OUR APPROACH */}
-            <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-900 px-4 md:px-6">
+        {/* OUR APPROACH */}
+        <div className="max-w-[1140px] mx-auto mb-40 mt-40 animate-on-load animate-fade-in-up animate-delay-900 px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-                <div>
-                  <div className="flex items-center gap-2 mb-6">
-                    <div className="h-px w-8 bg-foreground/30"></div>
-                    <span className="text-sm font-medium text-foreground/60">OUR APPROACH</span>
-                  </div>
-                </div>
-                <div>
-                  <p className="text-muted-foreground">
-                    We conducted extensive user research with Peace Patrol Officers to understand their workflows, pain
-                    points, and requirements.
-                  </p>
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <div
-                    className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
-                    onClick={() =>
-                      setLightboxImage({
-                        src: "/images/ORB.jpg",
-                        alt: "Rectangular floating action button took too much space",
-                      })
-                    }
-                  >
-                    <Image
-                      src="/images/ORB.jpg"
-                      alt="Rectangular floating action button took too much space"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <h4 className="font-medium mb-2">Action button confused users</h4>
-                  <p className="text-muted-foreground text-base">Button size and placement caused user confusion.</p>
-                </div>
-                <div>
-                  <div
-                    className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
-                    onClick={() =>
-                      setLightboxImage({
-                        src: "/images/Before-Nav.jpg",
-                        alt: "Navigation tabs lacked color contrast",
-                      })
-                    }
-                  >
-                    <Image
-                      src="/images/Before-Nav.jpg"
-                      alt="Navigation tabs lacked color contrast"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <h4 className="font-medium mb-2">Navigation lacked clarity</h4>
-                  <p className="text-muted-foreground text-base">
-                    Active and inactive tabs weren’t visually distinct for users.
-                  </p>
-                </div>
-              </div>
-
-              <div className="pt-16">
-                <div
-                  className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 mb-4 w-full h-auto"
-                  onClick={() =>
-                    setLightboxImage({
-                      src: "/images/Before-search.jpg",
-                      alt: "Search bar took up significant space in the reports list",
-                    })
-                  }
-                >
-                  <Image
-                    src="/images/Before-search.jpg"
-                    alt="Search bar took up significant space in the reports list"
-                    width={1140}
-                    height={600}
-                    className="w-full h-auto"
-                  />
-                </div>
-                <h4 className="font-medium mb-2">Search consumed valuable screen space</h4>
-                <p className="text-muted-foreground text-base">
-                  The search bar occupied a large portion of the mobile screen, limiting visibility of reports.
-                </p>
+            <div>
+              <div className="flex items-center gap-2 mb-6">
+                <div className="h-px w-8 bg-foreground/30"></div>
+                <span className="text-sm font-medium text-foreground/60">OUR APPROACH</span>
               </div>
             </div>
+            <div>
+              <p className="text-muted-foreground">
+                We conducted extensive user research with Peace Patrol Officers to understand their workflows, pain
+                points, and requirements.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <div
+                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/images/ORB.jpg",
+                    alt: "Rectangular floating action button took too much space",
+                  })
+                }
+              >
+                <Image
+                  src="/images/ORB.jpg"
+                  alt="Rectangular floating action button took too much space"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h4 className="font-medium mb-2">Action button confused users</h4>
+              <p className="text-muted-foreground text-base">Button size and placement caused user confusion.</p>
+            </div>
+            <div>
+              <div
+                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 aspect-square mb-4"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/images/Before-Nav.jpg",
+                    alt: "Navigation tabs lacked color contrast",
+                  })
+                }
+              >
+                <Image
+                  src="/images/Before-Nav.jpg"
+                  alt="Navigation tabs lacked color contrast"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h4 className="font-medium mb-2">Navigation lacked clarity</h4>
+              <p className="text-muted-foreground text-base">
+                Active and inactive tabs weren’t visually distinct for users.
+              </p>
+            </div>
+          </div>
+
+          <div className="pt-16">
+            <div
+              className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 mb-4 w-full h-auto"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/images/Before-search.jpg",
+                  alt: "Search bar took up significant space in the reports list",
+                })
+              }
+            >
+              <Image
+                src="/images/Before-search.jpg"
+                alt="Search bar took up significant space in the reports list"
+                width={1140}
+                height={600}
+                className="w-full h-auto"
+              />
+            </div>
+            <h4 className="font-medium mb-2">Search consumed valuable screen space</h4>
+            <p className="text-muted-foreground text-base">
+              The search bar occupied a large portion of the mobile screen, limiting visibility of reports.
+            </p>
           </div>
         </div>
 
