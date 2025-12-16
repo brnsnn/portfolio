@@ -256,12 +256,7 @@ export default function PhillyTruceCaseStudy() {
                     })
                   }
                 >
-                  <Image
-                    src="/images/NRB.jpg"
-                    alt="Updated New Report Button"
-                    fill
-                    className="object-cover"
-                  />
+                  <Image src="/images/NRB.jpg" alt="Updated New Report Button" fill className="object-cover" />
                 </div>
                 <h4 className="font-medium mb-2">Improved Primary Action Button</h4>
                 <p className="text-muted-foreground text-base">
@@ -315,6 +310,27 @@ export default function PhillyTruceCaseStudy() {
                 <p className="text-muted-foreground text-base">
                   Relocated search to a top-nav icon, reducing clutter and freeing mobile screen space.
                 </p>
+              </div>
+            </div>
+
+            {/* Single Column Image Section */}
+            <div className="pt-16">
+              <div
+                className="relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border border-gray-200 mb-4 w-full h-auto"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/images/PT-Three-Screen.jpg",
+                    alt: "Philly Truce reports dashboard screens",
+                  })
+                }
+              >
+                <Image
+                  src="/images/PT-Three-Screen.jpg"
+                  alt="Philly Truce reports dashboard screens"
+                  width={1140}
+                  height={600}
+                  className="w-full h-auto"
+                />
               </div>
             </div>
 
