@@ -265,8 +265,7 @@ export default function PhillyTruceCaseStudy() {
                 </div>
                 <h4 className="font-medium mb-2">Improved Primary Action Button</h4>
                 <p className="text-muted-foreground text-base">
-                  Replaced a rectangular floating button with a circular floating action button to clearly separate
-                  the primary action from the report list.
+                  Circular floating action button clearly separates the primary action from the report list.
                 </p>
               </div>
 
