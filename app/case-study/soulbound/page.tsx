@@ -142,21 +142,21 @@ export default function SoulboundCaseStudy() {
           </div>
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div>
-              <h4 className="font-medium mb-2">Establish Visual Consistency</h4>
+              <h4 className="font-medium mb-2">Establish a Cohesive Design System</h4>
               <p className="text-muted-foreground text-sm">
-                Create a unified design language with standardized typography, colors, spacing, and components across
-                all interfaces.
+                Create cohesive typography, color palette, spacing, and UI components to ensure consistency
+                across the web3 gaming platform.
               </p>
             </div>
             <div>
-              <h4 className="font-medium mb-2">Accelerate Development</h4>
+              <h4 className="font-medium mb-2">Enhance UI Consistency and Scalability</h4>
               <p className="text-muted-foreground text-sm">
-                Enable faster design and development through reusable components and clear guidelines that reduce
-                redundant work.
+                Incorporate branding elements, accessibility considerations, and stylistic touches to
+                strengthen the platform’s aesthetic and user recognition.
               </p>
             </div>
             <div>
-              <h4 className="font-medium mb-2">Scale Brand Experience</h4>
+              <h4 className="font-medium mb-2">Elevate the Visual Identify of Platform</h4>
               <p className="text-muted-foreground text-sm">
                 Support sustainable growth and new product features while maintaining a cohesive, recognizable brand
                 identity.
