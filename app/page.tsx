@@ -158,21 +158,25 @@ const Page = () => {
               <span className="text-sm font-medium text-foreground/60">ABOUT ME</span>
             </div>
             <div className="flex flex-col md:flex-row md:gap-8 md:items-start">
-              <div className="relative w-[150px] h-[165px] overflow-hidden rounded-lg flex-shrink-0 mb-4 md:mb-0">
+              <div className="relative w-[300px] h-[300px] overflow-hidden rounded-lg flex-shrink-0 mb-4 md:mb-0">
                 <Image src="/images/me.png" alt="About me" fill className="object-cover" />
               </div>
               <div className="space-y-6">
                 <h2 className="text-3xl font-normal tracking-tighter">Hi, I'm Bronson Lee</h2>
                 <p className="text-muted-foreground">
-                  I'm a Mid-level UX designer with 5+ years of experience. I specialize<br />in design systems, interaction
-                  design, and accessibility.
+                  I'm a Mid-level UX designer with 5+ years of experience. I specialize
+                  <br />
+                  in design systems, interaction design, and accessibility.
                 </p>
                 <p className="text-muted-foreground">
-                  My background in advertising and public health helps me understand<br />user behaviors and create
-                  experiences that feel intuitive and delightful.
+                  My background in advertising and public health helps me understand
+                  <br />
+                  user behaviors and create experiences that feel intuitive and delightful.
                 </p>
                 <p className="text-muted-foreground">
-                  When I'm not designing, you can find me taking walks or exploring new<br />matcha shops in the city.
+                  When I'm not designing, you can find me taking walks or exploring new
+                  <br />
+                  matcha shops in the city.
                 </p>
                 <div className="flex gap-4">
                   <Button asChild variant="default">
