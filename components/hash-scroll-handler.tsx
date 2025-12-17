@@ -1,11 +1,10 @@
 "use client"
 
 import { useEffect } from "react"
-import { usePathname, useSearchParams } from "next/navigation"
+import { usePathname } from "next/navigation"
 
 export function HashScrollHandler() {
   const pathname = usePathname()
-  const searchParams = useSearchParams()
 
   useEffect(() => {
     // Get the hash from the URL
@@ -20,7 +19,7 @@ export function HashScrollHandler() {
         }
       }, 100)
     }
-  }, [pathname, searchParams])
+  }, [pathname])
 
   return null
 }
