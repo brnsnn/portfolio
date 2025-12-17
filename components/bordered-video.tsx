@@ -3,7 +3,7 @@ interface BorderedVideoProps {
   alt: string
 }
 
-export default function BorderedVideo({ src, alt }: BorderedVideoProps) {
+export function BorderedVideo({ src, alt }: BorderedVideoProps) {
   return (
     <div className="flex justify-center w-full">
       <div className="w-full max-w-[1140px] rounded-lg overflow-hidden" style={{ border: "14px solid #8921BC" }}>
