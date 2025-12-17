@@ -94,7 +94,7 @@ const Page = () => {
         <section className="container pt-20 md:pt-24 pb-4 md:pb-6 animate-on-load animate-fade-in-up animate-delay-200">
           <div className="max-w-4xl px-4 md:px-0">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight mb-6">
-              Mid-level Product Designer who builds accessible digital products and <br className="md:hidden" />
+              Mid-level Product Designer who builds accessible digital products and
               scalable design systems that earn stakeholder buy-in and align with production realities.
             </h1>
           </div>
