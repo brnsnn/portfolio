@@ -247,9 +247,8 @@ export default function SoulboundCaseStudy() {
             <div className="grid md:grid-cols-2 gap-8 mb-16">
               <div>
                 <p className="text-muted-foreground mb-2">
-                  This spacing system is built on the golden ratio and rounded to clean whole numbers, creating a
-                  consistent, scalable rhythm across all components. Each step increases proportionally to maintain
-                  balanced whitespace and a clear visual hierarchy.
+                  Built on the golden ratio and rounded to whole numbers, this spacing system creates
+                  a consistent, scalable rhythm and clear visual hierarchy.
                 </p>
               </div>
             </div>
