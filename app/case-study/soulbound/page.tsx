@@ -126,9 +126,6 @@ export default function SoulboundCaseStudy() {
               <p className="text-muted-foreground">Of text and UI elements now meet WCAG AA color contrast standards</p>
             </div>
           </div>
-          <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-550 px-4 md:px-6">
-        <BorderedVideo src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Soulbound-Video-XEloqIf3TnWFZBMb75HRIcZLnG6uWv.mp4" alt="Soulbound design system video demonstration" />
-      </div>
         </div>
 
         {/* GOALS section */}
