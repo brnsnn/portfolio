@@ -5,7 +5,6 @@ import Link from "next/link"
 import { AnimatedName } from "@/components/animated-name"
 import { ImageLightbox } from "@/components/image-lightbox"
 import { CaseStudyCarousel } from "@/components/case-study-carousel"
-import { BorderedVideo } from "@/components/bordered-video"
 import React from "react"
 
 export default function SoulboundCaseStudy() {
@@ -107,185 +106,191 @@ export default function SoulboundCaseStudy() {
         </div>
 
         {/* THE IMPACT section */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-500 px-4 md:px-6">
-          <div className="flex items-center gap-2 mb-6">
-            <div className="h-px w-8 bg-foreground/30"></div>
-            <span className="text-sm font-medium text-foreground/60">THE IMPACT</span>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h3 className="text-4xl font-medium mb-2">30%</h3>
-              <p className="text-muted-foreground">Less time recreating components for new screens</p>
+        <div className="container animate-on-load animate-fade-in-up animate-delay-500 px-4 md:px-0">
+          <div className="max-w-[1140px] mx-auto mb-40">
+            <div className="flex items-center gap-2 mb-6">
+              <div className="h-px w-8 bg-foreground/30"></div>
+              <span className="text-sm font-medium text-foreground/60">THE IMPACT</span>
             </div>
-            <div>
-              <h3 className="text-4xl font-medium mb-2">25%</h3>
-              <p className="text-muted-foreground">Reduction in design inconsistencies</p>
-            </div>
-            <div>
-              <h3 className="text-4xl font-medium mb-2">100%</h3>
-              <p className="text-muted-foreground">Of text and UI elements now meet WCAG AA color contrast standards</p>
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
+              <div>
+                <h3 className="text-4xl font-medium mb-2">30%</h3>
+                <p className="text-muted-foreground">Less time recreating components for new screens</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-medium mb-2">25%</h3>
+                <p className="text-muted-foreground">Reduction in design inconsistencies</p>
+              </div>
+              <div>
+                <h3 className="text-4xl font-medium mb-2">100%</h3>
+                <p className="text-muted-foreground">
+                  Of text and UI elements now meet WCAG AA color contrast standards
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
         {/* GOALS section */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-600 px-4 md:px-6">
-          <div className="flex items-center gap-2 mb-6">
-            <div className="h-px w-8 bg-foreground/30"></div>
-            <span className="text-sm font-medium text-foreground/60">GOALS</span>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8 items-start">
-            <div>
-              <h4 className="font-medium mb-2">Establish a Cohesive Design System</h4>
-              <p className="text-muted-foreground">
-                consistent typography, colors, spacing, and UI components across the platform.
-              </p>
+        <div className="container animate-on-load animate-fade-in-up animate-delay-600 px-4 md:px-0">
+          <div className="max-w-[1140px] mx-auto mb-40">
+            <div className="flex items-center gap-2 mb-6">
+              <div className="h-px w-8 bg-foreground/30"></div>
+              <span className="text-sm font-medium text-foreground/60">GOALS</span>
             </div>
-            <div>
-              <h4 className="font-medium mb-2">Enhance UI Consistency and Scalability</h4>
-              <p className="text-muted-foreground">
-                Integrate branding, accessibility, and stylistic touches to enhance aesthetics.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-medium mb-2">Elevate the Visual Identify of Platform</h4>
-              <p className="text-muted-foreground">
-                Support growth and features with a consistent, recognizable brand.
-              </p>
+            <div className="grid md:grid-cols-3 gap-8 items-start">
+              <div>
+                <h4 className="font-medium mb-2">Establish a Cohesive Design System</h4>
+                <p className="text-muted-foreground">
+                  consistent typography, colors, spacing, and UI components across the platform.
+                </p>
+              </div>
+              <div>
+                <h4 className="font-medium mb-2">Enhance UI Consistency and Scalability</h4>
+                <p className="text-muted-foreground">
+                  Integrate branding, accessibility, and stylistic touches to enhance aesthetics.
+                </p>
+              </div>
+              <div>
+                <h4 className="font-medium mb-2">Elevate the Visual Identify of Platform</h4>
+                <p className="text-muted-foreground">
+                  Support growth and features with a consistent, recognizable brand.
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
         {/* OUR SOLUTION section */}
-        <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-700 px-4 md:px-6">
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div>
-              <div className="flex items-center gap-2 mb-6">
-                <div className="h-px w-8 bg-foreground/30"></div>
-                <span className="text-sm font-medium text-foreground/60">OUR SOLUTION</span>
+        <div className="container animate-on-load animate-fade-in-up animate-delay-700 px-4 md:px-0">
+          <div className="max-w-[1140px] mx-auto mb-40">
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div>
+                <div className="flex items-center gap-2 mb-6">
+                  <div className="h-px w-8 bg-foreground/30"></div>
+                  <span className="text-sm font-medium text-foreground/60">OUR SOLUTION</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  I established a unified design system from the ground up, defining typography, color palettes,
+                  spacing, and reusable components. This system created consistency across interfaces, streamlined
+                  design and development, and reinforced a cohesive, scalable brand identity.
+                </p>
               </div>
             </div>
-            <div>
-              <p className="text-muted-foreground mb-4">
-                I established a unified design system from the ground up, defining typography, color palettes, spacing,
-                and reusable components. This system created consistency across interfaces, streamlined design and
-                development, and reinforced a cohesive, scalable brand identity.
-              </p>
-            </div>
-          </div>
-          <div className="relative rounded-lg overflow-hidden w-full border border-gray-200 mb-4">
-            <Image
-              src="/soulbound-font1.jpg"
-              alt="Chakra Petch typography scale with size, line-height, and letter-spacing specifications"
-              width={1140}
-              height={800}
-              className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
-              onClick={() =>
-                setLightboxImage({
-                  src: "/soulbound-font1.jpg",
-                  alt: "Chakra Petch typography scale with size, line-height, and letter-spacing specifications",
-                })
-              }
-            />
-          </div>
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div>
-              <p className="text-muted-foreground mb-2">
-                The Chakra Petch scale establishes a bold, tech-forward typographic hierarchy designed for high-impact
-                moments across the platform.
-              </p>
-            </div>
-          </div>
-
-          <div className="relative rounded-lg overflow-hidden w-full border border-gray-200 mb-4">
-            <Image
-              src="/soulbound-font2.jpg"
-              alt="Poppins typography scale with size, line-height, and letter-spacing specifications"
-              width={1140}
-              height={800}
-              className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
-              onClick={() =>
-                setLightboxImage({
-                  src: "/soulbound-font2.jpg",
-                  alt: "Poppins typography scale with size, line-height, and letter-spacing specifications",
-                })
-              }
-            />
-          </div>
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div>
-              <p className="text-muted-foreground mb-2">
-                The Poppins scale provides a clean, modern, and highly legible counterpart to the more expressive
-                display typography.
-              </p>
-            </div>
-          </div>
-
-          <div className="relative rounded-lg overflow-hidden w-full border border-gray-200 mb-4">
-            <Image
-              src="/spacing.jpg"
-              alt="Design system spacing scale based on golden ratio"
-              width={1140}
-              height={400}
-              className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
-              onClick={() =>
-                setLightboxImage({
-                  src: "/spacing.jpg",
-                  alt: "Design system spacing scale based on golden ratio",
-                })
-              }
-            />
-          </div>
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div>
-              <p className="text-muted-foreground mb-2">
-                This spacing system is built on the golden ratio and rounded to clean whole numbers, creating a
-                consistent, scalable rhythm across all components. Each step increases proportionally to maintain
-                balanced whitespace and a clear visual hierarchy.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-4">
-            <div className="aspect-[3/4] relative rounded-lg overflow-hidden border border-gray-200">
+            <div className="relative rounded-lg overflow-hidden w-full border border-gray-200 mb-4">
               <Image
-                src="/soulbound-palette.jpg"
-                alt="Design system color palette"
-                fill
-                className="object-contain bg-white cursor-pointer hover:opacity-90 transition-opacity"
+                src="/soulbound-font1.jpg"
+                alt="Chakra Petch typography scale with size, line-height, and letter-spacing specifications"
+                width={1140}
+                height={800}
+                className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
                 onClick={() =>
                   setLightboxImage({
-                    src: "/soulbound-palette.jpg",
-                    alt: "Design system color palette",
+                    src: "/soulbound-font1.jpg",
+                    alt: "Chakra Petch typography scale with size, line-height, and letter-spacing specifications",
                   })
                 }
               />
             </div>
-            <div className="aspect-[3/4] relative rounded-lg overflow-hidden border border-gray-200">
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
+              <div>
+                <p className="text-muted-foreground mb-2">
+                  The Chakra Petch scale establishes a bold, tech-forward typographic hierarchy designed for high-impact
+                  moments across the platform.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative rounded-lg overflow-hidden w-full border border-gray-200 mb-4">
               <Image
-                src="/soulbound-accessibility.jpg"
-                alt="Design system accessibility and color contrast standards"
-                fill
-                className="object-contain bg-white cursor-pointer hover:opacity-90 transition-opacity"
+                src="/soulbound-font2.jpg"
+                alt="Poppins typography scale with size, line-height, and letter-spacing specifications"
+                width={1140}
+                height={800}
+                className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
                 onClick={() =>
                   setLightboxImage({
-                    src: "/soulbound-accessibility.jpg",
-                    alt: "Design system accessibility and color contrast standards",
+                    src: "/soulbound-font2.jpg",
+                    alt: "Poppins typography scale with size, line-height, and letter-spacing specifications",
                   })
                 }
               />
             </div>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div>
-              <p className="text-muted-foreground mb-2">
-                The color palette and accessibility standards ensure vibrant brand expression while maintaining WCAG AA
-                compliance for all text and UI elements.
-              </p>
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
+              <div>
+                <p className="text-muted-foreground mb-2">
+                  The Poppins scale provides a clean, modern, and highly legible counterpart to the more expressive
+                  display typography.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="max-w-[1140px] mx-auto mb-4 animate-on-load animate-fade-in-up animate-delay-750 px-4 md:px-6">
+            <div className="relative rounded-lg overflow-hidden w-full border border-gray-200 mb-4">
+              <Image
+                src="/spacing.jpg"
+                alt="Design system spacing scale based on golden ratio"
+                width={1140}
+                height={400}
+                className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() =>
+                  setLightboxImage({
+                    src: "/spacing.jpg",
+                    alt: "Design system spacing scale based on golden ratio",
+                  })
+                }
+              />
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
+              <div>
+                <p className="text-muted-foreground mb-2">
+                  This spacing system is built on the golden ratio and rounded to clean whole numbers, creating a
+                  consistent, scalable rhythm across all components. Each step increases proportionally to maintain
+                  balanced whitespace and a clear visual hierarchy.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-4">
+              <div className="aspect-[3/4] relative rounded-lg overflow-hidden border border-gray-200">
+                <Image
+                  src="/soulbound-palette.jpg"
+                  alt="Design system color palette"
+                  fill
+                  className="object-contain bg-white cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/soulbound-palette.jpg",
+                      alt: "Design system color palette",
+                    })
+                  }
+                />
+              </div>
+              <div className="aspect-[3/4] relative rounded-lg overflow-hidden border border-gray-200">
+                <Image
+                  src="/soulbound-accessibility.jpg"
+                  alt="Design system accessibility and color contrast standards"
+                  fill
+                  className="object-contain bg-white cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/soulbound-accessibility.jpg",
+                      alt: "Design system accessibility and color contrast standards",
+                    })
+                  }
+                />
+              </div>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
+              <div>
+                <p className="text-muted-foreground mb-2">
+                  The color palette and accessibility standards ensure vibrant brand expression while maintaining WCAG
+                  AA compliance for all text and UI elements.
+                </p>
+              </div>
+            </div>
+
             <div className="relative rounded-lg overflow-hidden w-full border border-gray-200">
               <Image
                 src="/soulbound-logo-updated.jpg"
@@ -301,47 +306,47 @@ export default function SoulboundCaseStudy() {
                 }
               />
             </div>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div>
-              <p className="text-muted-foreground mb-2">
-                Six logo variations provide flexibility across diverse backgrounds while maintaining brand consistency
-                and recognition.
-              </p>
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
+              <div>
+                <p className="text-muted-foreground mb-2">
+                  Six logo variations provide flexibility across diverse backgrounds while maintaining brand consistency
+                  and recognition.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-4">
-            <div className="aspect-square relative rounded-lg overflow-hidden border border-gray-200">
-              <Image
-                src="/soulbound-button.jpg"
-                alt="Soulbound button states"
-                fill
-                className="object-cover cursor-pointer hover:opacity-90 transition-opacity"
-                onClick={() =>
-                  setLightboxImage({
-                    src: "/soulbound-button.jpg",
-                    alt: "Soulbound button states",
-                  })
-                }
-              />
+            <div className="grid md:grid-cols-2 gap-6 mb-4">
+              <div className="aspect-square relative rounded-lg overflow-hidden border border-gray-200">
+                <Image
+                  src="/soulbound-button.jpg"
+                  alt="Soulbound button states"
+                  fill
+                  className="object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/soulbound-button.jpg",
+                      alt: "Soulbound button states",
+                    })
+                  }
+                />
+              </div>
+              <div className="aspect-square relative rounded-lg overflow-hidden bg-white border border-gray-200">
+                <video
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Soulbound-Button-OscjsYwV91BQwHGvxC9N9vKslp1UXz.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover scale-[1.01]"
+                />
+              </div>
             </div>
-            <div className="aspect-square relative rounded-lg overflow-hidden bg-white border border-gray-200">
-              <video
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Soulbound-Button-OscjsYwV91BQwHGvxC9N9vKslp1UXz.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover scale-[1.01]"
-              />
-            </div>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div>
-              <p className="text-muted-foreground mb-2">
-                Button states demonstrate clear interaction feedback with default and hover for visual clarity.
-              </p>
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
+              <div>
+                <p className="text-muted-foreground mb-2">
+                  Button states demonstrate clear interaction feedback with default and hover for visual clarity.
+                </p>
+              </div>
             </div>
           </div>
         </div>
