@@ -99,6 +99,7 @@ export default function SoulboundCaseStudy() {
                   <h3 className="mb-2">My Role</h3>
                   <p className="text-muted-foreground">UX Designer</p>
                 </div>
+              </div>
               <div>
                 <h3 className="mb-2">Scope</h3>
                 <p className="text-muted-foreground">Design System, Component Library, Visual Design</p>
