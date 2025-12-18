@@ -93,7 +93,7 @@ export default function SoulboundCaseStudy() {
                 </div>
                 <div>
                   <h3 className="mb-2">Timeline</h3>
-                  <p className="text-muted-foreground">4 months</p>
+                  <p className="text-muted-foreground">3 months</p>
                 </div>
                 <div>
                   <h3 className="mb-2">My Role</h3>
