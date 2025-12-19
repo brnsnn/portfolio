@@ -20,15 +20,24 @@ export default function PhillyTruceCaseStudy() {
               <AnimatedName />
             </Link>
             <nav className="flex gap-4 md:gap-6 ml-auto">
-              <Link href="/#work" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce px-2 py-1">
-                Work
-              </Link>
-              <Link href="/#about" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce px-2 py-1">
-                About
-              </Link>
-              <Link href="/#contact" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce pl-2 py-1">
-                Contact
-              </Link>
+              <span className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
+                <span className="nav-text-swap-inner">
+                  <span className="nav-text-swap-item">Work</span>
+                  <span className="nav-text-swap-item">Work</span>
+                </span>
+              </span>
+              <span className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
+                <span className="nav-text-swap-inner">
+                  <span className="nav-text-swap-item">About</span>
+                  <span className="nav-text-swap-item">About</span>
+                </span>
+              </span>
+              <span className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
+                <span className="nav-text-swap-inner">
+                  <span className="nav-text-swap-item">Contact</span>
+                  <span className="nav-text-swap-item">Contact</span>
+                </span>
+              </span>
             </nav>
           </div>
         </div>
@@ -42,7 +51,9 @@ export default function PhillyTruceCaseStudy() {
               <span className="text-sm font-medium text-foreground/60">CASE STUDY</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight">
-              Reducing violence by improving<br />record-keeping accuracy by 15%
+              Reducing violence by improving
+              <br />
+              record-keeping accuracy by 15%
             </h1>
           </div>
         </section>
@@ -441,22 +452,27 @@ export default function PhillyTruceCaseStudy() {
         </div>
       </main>
 
-      <ImageLightbox image={lightboxImage} onClose={() => setLightboxImage(null)} />
+      {lightboxImage && (
+        <ImageLightbox
+          src={lightboxImage.src || "/placeholder.svg"}
+          alt={lightboxImage.alt}
+          open={!!lightboxImage}
+          onOpenChange={(open) => !open && setLightboxImage(null)}
+        />
+      )}
 
       {/* Footer */}
-      <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-1000">
+      <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-800">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © {new Date().getFullYear()} Bronson Lee. All rights reserved.
+            {"© " + new Date().getFullYear() + " Bronson Lee. All rights reserved."}
           </p>
-          <Link
-            href="https://linkedin.com/in/brnsnlee"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
-            LinkedIn
-          </Link>
+          <span className="text-sm text-muted-foreground hover:text-foreground transition-colors nav-text-swap">
+            <span className="nav-text-swap-inner">
+              <span className="nav-text-swap-item">LinkedIn</span>
+              <span className="nav-text-swap-item">LinkedIn</span>
+            </span>
+          </span>
         </div>
       </footer>
     </div>

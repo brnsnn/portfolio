@@ -77,15 +77,24 @@ const Page = () => {
               <AnimatedName />
             </Link>
             <nav className="flex gap-4 md:gap-6 ml-auto">
-              <Link href="#work" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce px-2 py-1">
-                Work
-              </Link>
-              <Link href="#about" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce px-2 py-1">
-                About
-              </Link>
-              <Link href="#contact" className="text-xs md:text-sm font-medium hover:text-primary nav-bounce pl-2 py-1">
-                Contact
-              </Link>
+              <span className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
+                <span className="nav-text-swap-inner">
+                  <span className="nav-text-swap-item">Work</span>
+                  <span className="nav-text-swap-item">Work</span>
+                </span>
+              </span>
+              <span className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
+                <span className="nav-text-swap-inner">
+                  <span className="nav-text-swap-item">About</span>
+                  <span className="nav-text-swap-item">About</span>
+                </span>
+              </span>
+              <span className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
+                <span className="nav-text-swap-inner">
+                  <span className="nav-text-swap-item">Contact</span>
+                  <span className="nav-text-swap-item">Contact</span>
+                </span>
+              </span>
             </nav>
           </div>
         </div>
@@ -181,23 +190,37 @@ const Page = () => {
                   matcha shops in the city.
                 </p>
                 <div className="flex gap-4">
-                  <Button asChild variant="default">
+                  <Button asChild variant="default" className="!rounded-lg font-normal">
                     <Link
                       href="https://drive.google.com/file/d/14TQw3m_5QvpKjledQjwdU87WXWCG-yI6/view"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="!rounded-lg hover:!rounded-full transition-all duration-1500 font-normal"
+                      style={{ transitionTimingFunction: "cubic-bezier(0.34, 1.56, 0.64, 1)" }}
                     >
-                      Download resume
+                      <span className="nav-text-swap">
+                        <span className="nav-text-swap-inner">
+                          <span className="nav-text-swap-item">Download resume</span>
+                          <span className="nav-text-swap-item">Download resume</span>
+                        </span>
+                      </span>
                     </Link>
                   </Button>
-                  <Button asChild variant="outline">
+                  <Button asChild variant="outline" className="!rounded-lg font-normal bg-transparent">
                     <Link
                       href="https://linkedin.com/in/brnsnlee"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Visit LinkedIn profile"
+                      className="!rounded-lg hover:!rounded-full hover:bg-transparent transition-all duration-1500 font-normal"
+                      style={{ transitionTimingFunction: "cubic-bezier(0.34, 1.56, 0.64, 1)" }}
                     >
-                      Connect on LinkedIn
+                      <span className="nav-text-swap">
+                        <span className="nav-text-swap-inner">
+                          <span className="nav-text-swap-item">Connect on LinkedIn</span>
+                          <span className="nav-text-swap-item">Connect on LinkedIn</span>
+                        </span>
+                      </span>
                     </Link>
                   </Button>
                 </div>
@@ -240,8 +263,19 @@ const Page = () => {
                       <Textarea id="message" placeholder="Tell me about your project..." className="min-h-32" />
                     </div>
                   </div>
-                  <Button type="submit" className="w-full">
-                    Send Message
+                  <Button asChild variant="default" className="font-normal">
+                    <button
+                      type="submit"
+                      className="!rounded-lg hover:!rounded-full transition-all duration-1500 font-normal"
+                      style={{ transitionTimingFunction: "cubic-bezier(0.34, 1.56, 0.64, 1)" }}
+                    >
+                      <span className="nav-text-swap">
+                        <span className="nav-text-swap-inner">
+                          <span className="nav-text-swap-item">Send Message</span>
+                          <span className="nav-text-swap-item">Send Message</span>
+                        </span>
+                      </span>
+                    </button>
                   </Button>
                 </form>
               </div>
@@ -254,14 +288,12 @@ const Page = () => {
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.
           </p>
-          <Link
-            href="https://linkedin.com/in/brnsnlee"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
-            LinkedIn
-          </Link>
+          <span className="text-sm text-muted-foreground hover:text-foreground transition-colors nav-text-swap">
+            <span className="nav-text-swap-inner">
+              <span className="nav-text-swap-item">LinkedIn</span>
+              <span className="nav-text-swap-item">LinkedIn</span>
+            </span>
+          </span>
         </div>
       </footer>
     </div>

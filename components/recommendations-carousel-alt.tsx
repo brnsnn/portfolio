@@ -133,7 +133,7 @@ export function RecommendationsCarouselAlt({ recommendations }: RecommendationsC
                       {needsTruncation && (
                         <button
                           onClick={() => toggleExpanded(cardId)}
-                          className="text-foreground font-medium text-xs mt-2 self-start transition-all duration-300 ease-out hover:text-foreground/70"
+                          className="text-foreground font-medium text-xs mt-2 self-start transition-all duration-300 ease-out"
                         >
                           {isExpanded ? "Show less" : "Show more"}
                         </button>

@@ -110,6 +110,61 @@
     animation: navBounce 0.6s ease-out;
   }
 
+  /* Adding slide-up animation for nav links on hover */
+  .nav-slide {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .nav-slide:hover {
+    transform: translateY(-6px);
+  }
+
+  /* Adding link-slide class for carousel read more links - same animation as nav-slide but using 'link-slide' name */
+  .link-slide {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .link-slide:hover {
+    transform: translateY(-6px);
+  }
+
+  /* Remove text decoration on read more button hover */
+  button {
+    text-decoration: none !important;
+  }
+
+  button:hover {
+    text-decoration: none !important;
+  }
+
+  /* Adding vertical text swap animation for nav links */
+  /* Updated nav-text-swap height from 1.2em to 1.5em */
+  .nav-text-swap {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 1.5em;
+    line-height: 1;
+  }
+
+  .nav-text-swap-inner {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* Updated translateY value to match new 1.5em height */
+  .nav-text-swap:hover .nav-text-swap-inner {
+    transform: translateY(-1.5em);
+  }
+
+  /* Updated nav-text-swap-item height from 1.2em to 1.5em */
+  .nav-text-swap-item {
+    display: block;
+    height: 1.5em;
+    line-height: 1.5em;
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;

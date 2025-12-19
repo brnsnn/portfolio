@@ -58,13 +58,16 @@ export function RecommendationsCarouselEmbla({ items }: RecommendationsCarouselP
                         ))}
                       </div>
 
-                      {/* Read more/less toggle */}
                       {item.body.length > 200 && (
                         <button
                           onClick={() => toggleExpanded(index)}
-                          className="text-sm text-primary hover:underline mt-2"
+                          className="text-sm text-primary mt-2 nav-text-swap no-underline hover:no-underline"
+                          style={{ textDecoration: "none" }}
                         >
-                          {isExpanded ? "Read less" : "Read more"}
+                          <span className="nav-text-swap-inner">
+                            <span className="nav-text-swap-item">{isExpanded ? "Read less" : "Read more"}</span>
+                            <span className="nav-text-swap-item">{isExpanded ? "Read less" : "Read more"}</span>
+                          </span>
                         </button>
                       )}
                     </div>
