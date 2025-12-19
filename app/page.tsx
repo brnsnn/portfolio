@@ -235,41 +235,8 @@ const Page = () => {
               <div className="space-y-4">
                 <h2 className="text-3xl font-normal tracking-tighter">Let's work together</h2>
                 <p className="text-muted-foreground">
-                  Have a project in mind or want to discuss a potential collaboration? Fill out the form and I'll get
-                  back to you as soon as possible.
+                  Have a project in mind or want to discuss a potential collaboration? Email me at
                 </p>
-              </div>
-              <div className="space-y-6">
-                <form className="space-y-4">
-                  <div className="grid gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Name</Label>
-                      <Input id="name" placeholder="Your name" />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
-                      <Input id="email" type="email" placeholder="Your email address" />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="subject">Subject</Label>
-                      <Input id="subject" placeholder="What's this about?" />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="message">Message</Label>
-                      <Textarea id="message" placeholder="Tell me about your project..." className="min-h-32" />
-                    </div>
-                  </div>
-                  <Button asChild variant="default" className="font-normal">
-                    <button type="submit" className="button-style">
-                      <span className="nav-text-swap">
-                        <span className="nav-text-swap-inner">
-                          <span className="nav-text-swap-item">Send Message</span>
-                          <span className="nav-text-swap-item">Send Message</span>
-                        </span>
-                      </span>
-                    </button>
-                  </Button>
-                </form>
               </div>
             </div>
           </div>
