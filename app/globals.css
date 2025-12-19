@@ -205,6 +205,7 @@
   }
 
   /* Replace button-shape-transition with new button styling that defaults to rounded rectangle and transitions to pill shape on hover */
+  /* Update transition duration from 100ms to 350ms */
   .button-style {
     position: relative;
     display: inline-flex;
@@ -216,11 +217,11 @@
     color: #fff;
     text-decoration: none;
     transition:
-      border-radius 220ms cubic-bezier(0.4, 0, 0.2, 1),
-      padding 220ms cubic-bezier(0.4, 0, 0.2, 1),
-      transform 220ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 220ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 220ms cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius 350ms cubic-bezier(0.4, 0, 0.2, 1),
+      padding 350ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 350ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 350ms cubic-bezier(0.4, 0, 0.2, 1);
     will-change: border-radius, padding, transform;
   }
 
