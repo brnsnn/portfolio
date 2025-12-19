@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   description:
     "Portfolio website of Bronson Lee, a mid-level product designer specializing in creating intuitive and delightful digital experiences.",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.png",
+  },
 }
 
 export default function RootLayout({
