@@ -257,12 +257,17 @@ const Page = () => {
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.
           </p>
-          <span className="text-sm text-muted-foreground hover:text-foreground transition-colors nav-text-swap">
+          <Link
+            href="https://linkedin.com/in/brnsnlee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors nav-text-swap"
+          >
             <span className="nav-text-swap-inner">
               <span className="nav-text-swap-item">LinkedIn</span>
               <span className="nav-text-swap-item">LinkedIn</span>
             </span>
-          </span>
+          </Link>
         </div>
       </footer>
     </div>
