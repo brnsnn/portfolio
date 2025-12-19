@@ -77,24 +77,24 @@ const Page = () => {
               <AnimatedName />
             </Link>
             <nav className="flex gap-4 md:gap-6 ml-auto">
-              <span className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
+              <Link href="#work" className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
                 <span className="nav-text-swap-inner">
                   <span className="nav-text-swap-item">Work</span>
                   <span className="nav-text-swap-item">Work</span>
                 </span>
-              </span>
-              <span className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
+              </Link>
+              <Link href="#about" className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
                 <span className="nav-text-swap-inner">
                   <span className="nav-text-swap-item">About</span>
                   <span className="nav-text-swap-item">About</span>
                 </span>
-              </span>
-              <span className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
+              </Link>
+              <Link href="#contact" className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
                 <span className="nav-text-swap-inner">
                   <span className="nav-text-swap-item">Contact</span>
                   <span className="nav-text-swap-item">Contact</span>
                 </span>
-              </span>
+              </Link>
             </nav>
           </div>
         </div>
@@ -190,13 +190,12 @@ const Page = () => {
                   matcha shops in the city.
                 </p>
                 <div className="flex gap-4">
-                  <Button asChild variant="default" className="!rounded-lg font-normal">
+                  <Button asChild variant="default" className="font-normal">
                     <Link
                       href="https://drive.google.com/file/d/14TQw3m_5QvpKjledQjwdU87WXWCG-yI6/view"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="!rounded-lg hover:!rounded-full transition-all duration-1500 font-normal"
-                      style={{ transitionTimingFunction: "cubic-bezier(0.34, 1.56, 0.64, 1)" }}
+                      className="button-style"
                     >
                       <span className="nav-text-swap">
                         <span className="nav-text-swap-inner">
@@ -206,14 +205,13 @@ const Page = () => {
                       </span>
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" className="!rounded-lg font-normal bg-transparent">
+                  <Button asChild variant="outline" className="font-normal bg-transparent">
                     <Link
                       href="https://linkedin.com/in/brnsnlee"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Visit LinkedIn profile"
-                      className="!rounded-lg hover:!rounded-full hover:bg-transparent transition-all duration-1500 font-normal"
-                      style={{ transitionTimingFunction: "cubic-bezier(0.34, 1.56, 0.64, 1)" }}
+                      className="button-style button-style-outline"
                     >
                       <span className="nav-text-swap">
                         <span className="nav-text-swap-inner">
@@ -264,11 +262,7 @@ const Page = () => {
                     </div>
                   </div>
                   <Button asChild variant="default" className="font-normal">
-                    <button
-                      type="submit"
-                      className="!rounded-lg hover:!rounded-full transition-all duration-1500 font-normal"
-                      style={{ transitionTimingFunction: "cubic-bezier(0.34, 1.56, 0.64, 1)" }}
-                    >
+                    <button type="submit" className="button-style">
                       <span className="nav-text-swap">
                         <span className="nav-text-swap-inner">
                           <span className="nav-text-swap-item">Send Message</span>

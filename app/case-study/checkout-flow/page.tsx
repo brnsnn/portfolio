@@ -20,24 +20,24 @@ export default function CheckoutCaseStudy() {
               <AnimatedName />
             </Link>
             <nav className="flex gap-4 md:gap-6 ml-auto">
-              <span className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
+              <Link href="/#work" className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
                 <span className="nav-text-swap-inner">
                   <span className="nav-text-swap-item">Work</span>
                   <span className="nav-text-swap-item">Work</span>
                 </span>
-              </span>
-              <span className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
+              </Link>
+              <Link href="/#about" className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
                 <span className="nav-text-swap-inner">
                   <span className="nav-text-swap-item">About</span>
                   <span className="nav-text-swap-item">About</span>
                 </span>
-              </span>
-              <span className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
+              </Link>
+              <Link href="/#contact" className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
                 <span className="nav-text-swap-inner">
                   <span className="nav-text-swap-item">Contact</span>
                   <span className="nav-text-swap-item">Contact</span>
                 </span>
-              </span>
+              </Link>
             </nav>
           </div>
         </div>
