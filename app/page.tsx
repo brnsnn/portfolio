@@ -261,7 +261,7 @@ const Page = () => {
             href="https://linkedin.com/in/brnsnlee"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors nav-text-swap"
+            className="text-sm text-muted-foreground hover:text-foreground nav-text-swap"
           >
             <span className="nav-text-swap-inner">
               <span className="nav-text-swap-item">LinkedIn</span>
