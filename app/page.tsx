@@ -2,9 +2,6 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Label } from "@/components/ui/label"
 import { AnimatedName } from "@/components/animated-name"
 import { RecommendationsCarouselEmbla, type RecommendationItem } from "@/components/recommendations-carousel-embla"
 
@@ -235,8 +232,21 @@ const Page = () => {
               <div className="space-y-4">
                 <h2 className="text-3xl font-normal tracking-tighter">Let's work together</h2>
                 <p className="text-muted-foreground">
-                  Have a project in mind or want to discuss a potential collaboration? Email me at
+                  Have a project in mind or want to discuss a potential collaboration?
                 </p>
+                <div className="flex flex-wrap items-center gap-2">
+                  <p className="text-muted-foreground">Email me at</p>
+                  <Button asChild variant="default" className="font-normal">
+                    <a href="mailto:hellobronson@icloud.com" className="button-style">
+                      <span className="nav-text-swap">
+                        <span className="nav-text-swap-inner">
+                          <span className="nav-text-swap-item">hellobronson@icloud.com</span>
+                          <span className="nav-text-swap-item">hellobronson@icloud.com</span>
+                        </span>
+                      </span>
+                    </a>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
