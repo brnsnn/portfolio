@@ -197,8 +197,8 @@ const Page = () => {
                     >
                       <span className="nav-text-swap">
                         <span className="nav-text-swap-inner">
-                          <span className="nav-text-swap-item">Download resume</span>
-                          <span className="nav-text-swap-item">Download resume</span>
+                          <span className="nav-text-swap-item">Download Resume</span>
+                          <span className="nav-text-swap-item">Download Resume</span>
                         </span>
                       </span>
                     </Link>
