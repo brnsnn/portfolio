@@ -69,11 +69,11 @@ const Page = () => {
     <div className="flex min-h-screen flex-col">
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-on-load animate-fade-in">
         <div className="container py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="font-medium">
+          <div className="flex items-center justify-between h-auto">
+            <Link href="/" className="font-medium py-1">
               <AnimatedName />
             </Link>
-            <nav className="flex gap-4 md:gap-6 ml-auto">
+            <nav className="flex gap-4 md:gap-6">
               <Link href="#work" className="text-xs md:text-sm font-medium nav-text-swap px-2 py-1">
                 <span className="nav-text-swap-inner">
                   <span className="nav-text-swap-item">Work</span>
@@ -97,8 +97,8 @@ const Page = () => {
         </div>
       </header>
       <main className="flex-1 pt-16">
-        <section className="container pt-20 md:pt-24 pb-4 md:pb-6 animate-on-load animate-fade-in-up animate-delay-200">
-          <div className="max-w-4xl px-4 md:px-0">
+        <section className="pt-20 md:pt-24 pb-4 md:pb-6 animate-on-load animate-fade-in-up animate-delay-200">
+          <div className="container">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight mb-6">
               Mid-level Product Designer who builds accessible digital products and scalable design systems that earn
               stakeholder buy-in and align with production realities.
@@ -184,7 +184,7 @@ const Page = () => {
                   <br />
                   matcha shops in the city.
                 </p>
-                <div className="flex gap-4">
+                <div className="flex flex-wrap gap-4">
                   <Button asChild variant="default" className="font-normal">
                     <Link
                       href="https://drive.google.com/file/d/14TQw3m_5QvpKjledQjwdU87WXWCG-yI6/view"
@@ -253,7 +253,7 @@ const Page = () => {
         </section>
       </main>
       <footer className="border-t py-6 md:py-8 bg-background animate-on-load animate-fade-in animate-delay-700">
-        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
+        <div className="container flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Bronson Lee. All rights reserved.
           </p>

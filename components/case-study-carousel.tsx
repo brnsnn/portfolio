@@ -15,26 +15,53 @@ export function CaseStudyCarousel({ currentCaseStudyId }: CaseStudyCarouselProps
   const otherCaseStudies = allCaseStudies.filter((study) => study.id !== currentCaseStudyId)
 
   const showNavigation = otherCaseStudies.length > 3
+  const isDesktop = typeof window !== "undefined" && window.innerWidth >= 768
 
   const handleLinkClick = () => {
     window.scrollTo({ top: 0, behavior: "instant" })
   }
 
+  // On mobile/tablet, render as grid
+  if (!isDesktop) {
+    return (
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {otherCaseStudies.map((project) => (
+          <Link
+            key={project.id}
+            href={project.caseStudyUrl}
+            onClick={handleLinkClick}
+            className="group block overflow-hidden rounded-lg border border-border bg-background transition-all duration-500 ease-in-out hover:bg-muted relative"
+          >
+            <div className="aspect-video relative overflow-hidden">
+              <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
+            </div>
+            <div className="p-4">
+              <h3 className="font-medium text-lg mb-1 transition-colors duration-500 ease-in-out">{project.title}</h3>
+              <p className="text-muted-foreground text-sm mb-2">{project.subtitle}</p>
+              <div className="absolute bottom-[-2rem] right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center text-sm text-muted-foreground">
+                View Case Study
+                <ArrowRight className="ml-1 h-3 w-3" />
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
+    )
+  }
+
+  // On desktop, render as carousel
   return (
     <div className="relative">
       <Carousel
         opts={{
           align: "start",
-          loop: false, // Disabled infinite loop scrolling
+          loop: false,
         }}
         className="w-full"
       >
         <CarouselContent className="-ml-4">
           {otherCaseStudies.map((project) => (
-            <CarouselItem
-              key={project.id}
-              className={`pl-4 ${otherCaseStudies.length === 3 ? "md:basis-[48%] lg:basis-[33.333%]" : "md:basis-[45%] lg:basis-[30%]"}`}
-            >
+            <CarouselItem key={project.id} className={`pl-4 md:basis-[48%] lg:basis-[33.333%]`}>
               <Link
                 href={project.caseStudyUrl}
                 onClick={handleLinkClick}

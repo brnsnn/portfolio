@@ -41,7 +41,7 @@ const AnimatedName = () => {
   }, [displayText, isTyping, currentNameIndex, names])
 
   return (
-    <span className="font-medium">
+    <span className="text-xs md:text-base font-medium">
       {displayText}
       <span className="animate-pulse">|</span>
     </span>
