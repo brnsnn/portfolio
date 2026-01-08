@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { AnimatedName } from "@/components/animated-name"
@@ -70,7 +69,7 @@ const Page = () => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-on-load animate-fade-in">
         <div className="container py-4">
           <div className="flex items-center justify-between h-auto">
-            <Link href="/" className="font-medium py-1">
+            <Link href="/" className="font-medium py-1 mt-[7px] sm:mt-[7px]">
               <AnimatedName />
             </Link>
             <nav className="flex gap-4 md:gap-6">
@@ -112,22 +111,23 @@ const Page = () => {
               <div className="h-px w-8 bg-foreground/30"></div>
               <span className="text-sm font-medium text-foreground/60">CASE STUDIES</span>
             </div>
-            <div className="grid gap-8 md:grid-cols-3">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 -mx-[8px]">
               {caseStudies.map((project, index) => (
                 <Link
                   key={index}
                   href={project.caseStudyUrl}
-                  className="group block overflow-hidden rounded-lg border border-border transition-all duration-500 ease-in-out hover:bg-muted relative"
+                  className="group block overflow-hidden rounded-lg transition-all duration-500 ease-in-out hover:bg-muted relative py-[8px] px-[8px]"
                 >
-                  <div className="aspect-video relative overflow-hidden">
+                  <div className="aspect-video relative overflow-hidden rounded-sm">
                     <Image
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
                       fill
-                      className="object-cover border-gray-200"
+                      className="object-cover"
                     />
                   </div>
-                  <div className="p-4">
+                  {/* Increased padding to 8px and removed border outline */}
+                  <div className="pl-0 pr-4 pt-4 pb-0">
                     <div className="space-y-2">
                       <h3 className="font-normal text-xl transition-colors duration-500 ease-in-out">
                         {project.title}
@@ -135,10 +135,6 @@ const Page = () => {
                       <p className="text-muted-foreground transition-colors duration-500 ease-in-out">
                         {project.description}
                       </p>
-                      <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center text-muted-foreground">
-                        View Case Study
-                        <ArrowRight className="ml-1 h-4 w-4" />
-                      </div>
                     </div>
                   </div>
                 </Link>

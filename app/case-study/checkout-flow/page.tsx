@@ -15,8 +15,8 @@ export default function CheckoutCaseStudy() {
     <div className="flex min-h-screen flex-col">
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-on-load animate-fade-in">
         <div className="container py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="font-medium">
+          <div className="flex items-center justify-between h-auto">
+            <Link href="/" className="font-medium py-1 mt-[7px]">
               <AnimatedName />
             </Link>
             <nav className="flex gap-4 md:gap-6 ml-auto">

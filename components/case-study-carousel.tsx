@@ -24,18 +24,19 @@ export function CaseStudyCarousel({ currentCaseStudyId }: CaseStudyCarouselProps
   // On mobile/tablet, render as grid
   if (!isDesktop) {
     return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 -mx-[8px] px-[8px]">
         {otherCaseStudies.map((project) => (
           <Link
             key={project.id}
             href={project.caseStudyUrl}
             onClick={handleLinkClick}
-            className="group block overflow-hidden rounded-lg border border-border bg-background transition-all duration-500 ease-in-out hover:bg-muted relative"
+            className="group block overflow-hidden rounded-lg bg-background transition-all duration-500 ease-in-out hover:bg-muted relative py-[8px] px-[8px]"
           >
-            <div className="aspect-video relative overflow-hidden">
+            <div className="aspect-video relative overflow-hidden rounded-sm">
               <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
             </div>
-            <div className="p-4">
+            {/* Increased padding around content */}
+            <div className="pl-0 pr-4 pt-4 pb-0">
               <h3 className="font-medium text-lg mb-1 transition-colors duration-500 ease-in-out">{project.title}</h3>
               <p className="text-muted-foreground text-sm mb-2">{project.subtitle}</p>
               <div className="absolute bottom-[-2rem] right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center text-sm text-muted-foreground">
@@ -56,21 +57,23 @@ export function CaseStudyCarousel({ currentCaseStudyId }: CaseStudyCarouselProps
         opts={{
           align: "start",
           loop: false,
+          gap: 32,
         }}
         className="w-full"
       >
-        <CarouselContent className="-ml-4">
+        <CarouselContent className="-ml-[8px]">
           {otherCaseStudies.map((project) => (
-            <CarouselItem key={project.id} className={`pl-4 md:basis-[48%] lg:basis-[33.333%]`}>
+            <CarouselItem key={project.id} className={`pl-0 md:basis-[48%] lg:basis-[33.333%]`}>
               <Link
                 href={project.caseStudyUrl}
                 onClick={handleLinkClick}
-                className="group block overflow-hidden rounded-lg border border-border bg-background transition-all duration-500 ease-in-out hover:bg-muted relative h-full"
+                className="group block overflow-hidden rounded-lg bg-background transition-all duration-500 ease-in-out hover:bg-muted relative h-full py-[8px] px-[8px]"
               >
-                <div className="aspect-video relative overflow-hidden">
+                <div className="aspect-video relative overflow-hidden rounded-sm">
                   <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
                 </div>
-                <div className="p-4">
+                {/* Increased padding around content */}
+                <div className="pl-0 pr-4 pt-4 pb-0">
                   <h3 className="font-medium text-lg mb-1 transition-colors duration-500 ease-in-out">
                     {project.title}
                   </h3>

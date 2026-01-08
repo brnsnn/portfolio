@@ -15,8 +15,8 @@ export default function SoulboundCaseStudy() {
     <div className="flex min-h-screen flex-col">
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-on-load animate-fade-in">
         <div className="container py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="font-medium">
+          <div className="flex items-center justify-between h-auto">
+            <Link href="/" className="font-medium py-1 mt-[7px]">
               <AnimatedName />
             </Link>
             <nav className="flex gap-4 md:gap-6 ml-auto">
@@ -144,7 +144,7 @@ export default function SoulboundCaseStudy() {
               </div>
             </div>
           </div>
-          <BorderedVideo src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Soulbound-Video-XEloqIf3TnWFZBMb75HRIcZLnG6uWv.mp4" alt="Soulbound design system video demonstration" />
+          <BorderedVideo src="/images/soulbound-video.mp4" alt="Soulbound design system video demonstration" />
         </div>
 
         {/* GOALS section */}
