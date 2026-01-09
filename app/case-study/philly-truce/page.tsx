@@ -59,7 +59,7 @@ export default function PhillyTruceCaseStudy() {
         </section>
 
         {/* Hero Image */}
-        <div className="px-4 md:px-0 mb-12 animate-on-load animate-fade-in-up animate-delay-300">
+        <div className="container px-4 md:px-0 mb-12 animate-on-load animate-fade-in-up animate-delay-300">
           <div
             className="w-full relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity aspect-video"
             onClick={() =>
