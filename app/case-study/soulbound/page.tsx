@@ -144,7 +144,7 @@ export default function SoulboundCaseStudy() {
               </div>
             </div>
           </div>
-          <BorderedVideo src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Soulbound-Video-qENrcAfDhMvnYgdaLv19A4dQIasCND.mp4" alt="Soulbound design system video demonstration" />
+          <BorderedVideo src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Soulbound-Video-qENrcAfDhMvnYgdaLv19A4dQIasCND.mp4" alt="Soulbound website redesign" />
         </div>
 
         {/* GOALS section */}
