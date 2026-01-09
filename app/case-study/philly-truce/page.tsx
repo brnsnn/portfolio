@@ -59,9 +59,9 @@ export default function PhillyTruceCaseStudy() {
         </section>
 
         {/* Hero Image */}
-        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300">
+        <div className="px-4 md:px-0 mb-12 animate-on-load animate-fade-in-up animate-delay-300">
           <div
-            className="w-full relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity aspect-video"
+            className="w-full relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity aspect-video"
             onClick={() =>
               setLightboxImage({
                 src: "/images/Philly-Truce-thumbnail.jpg",
@@ -189,7 +189,7 @@ export default function PhillyTruceCaseStudy() {
         {/* Paper Report Image */}
         <div className="max-w-[1140px] mx-auto mb-40 animate-on-load animate-fade-in-up animate-delay-700 px-4 md:px-6">
           <div
-            className="w-full relative rounded-lg overflow-hidden border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity mb-4 h-auto"
+            className="w-full relative rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity mb-4 h-auto"
             onClick={() =>
               setLightboxImage({
                 src: "/images/Paper-Report-1.jpg",

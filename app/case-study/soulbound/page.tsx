@@ -57,9 +57,9 @@ export default function SoulboundCaseStudy() {
         </section>
 
         {/* Hero Image */}
-        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300">
+        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300 px-4 md:px-0">
           <div
-            className="w-full aspect-[16/9] relative cursor-pointer hover:opacity-90 transition-opacity"
+            className="w-full aspect-[16/9] relative cursor-pointer hover:opacity-90 transition-opacity rounded-lg overflow-hidden"
             onClick={() =>
               setLightboxImage({
                 src: "/soulbound-design-system-thumbnail-updated.jpg",
@@ -71,7 +71,7 @@ export default function SoulboundCaseStudy() {
               src="/soulbound-design-system-thumbnail-updated.jpg"
               alt="Soulbound web3 gaming community design system"
               fill
-              className="object-cover rounded-lg"
+              className="object-cover"
               priority
             />
           </div>
@@ -144,7 +144,7 @@ export default function SoulboundCaseStudy() {
               </div>
             </div>
           </div>
-          <BorderedVideo src="/images/soulbound-video.mp4" alt="Soulbound design system video demonstration" />
+          <BorderedVideo src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Soulbound-Video-qENrcAfDhMvnYgdaLv19A4dQIasCND.mp4" alt="Soulbound design system video demonstration" />
         </div>
 
         {/* GOALS section */}
@@ -180,9 +180,9 @@ export default function SoulboundCaseStudy() {
         {/* OUR SOLUTION section */}
         <div className="container animate-on-load animate-fade-in-up animate-delay-700 px-4 md:px-0">
           <div className="max-w-[1140px] mx-auto mb-40">
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-2 md:gap-8 mb-12">
               <div>
-                <div className="flex items-center gap-2 mb-6">
+                <div className="flex items-center gap-2 mb-2 md:mb-6">
                   <div className="h-px w-8 bg-foreground/30"></div>
                   <span className="text-sm font-medium text-foreground/60">OUR SOLUTION</span>
                 </div>
@@ -347,7 +347,7 @@ export default function SoulboundCaseStudy() {
               </div>
               <div className="aspect-square relative rounded-lg overflow-hidden bg-white border border-gray-200">
                 <video
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Soulbound-Button-OscjsYwV91BQwHGvxC9N9vKslp1UXz.mp4"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Soulbound-Button-Gry5xUsMnXWHX8v6d8b3AlAojazFBq.mp4"
                   autoPlay
                   loop
                   muted

@@ -78,7 +78,7 @@ export default function TravelAppCaseStudy() {
         </section>
 
         {/* Hero Image */}
-        <div className="container mb-12 animate-on-load animate-fade-in-up animate-delay-300">
+        <div className="px-4 md:px-0 mb-12 animate-on-load animate-fade-in-up animate-delay-300">
           <div
             className="w-full aspect-[16/9] relative cursor-pointer hover:opacity-90 transition-opacity"
             onClick={() =>
