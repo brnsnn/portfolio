@@ -571,14 +571,7 @@ export default function TravelAppCaseStudy() {
       </footer>
 
       {/* Lightbox component */}
-      {lightboxImage && (
-        <ImageLightbox
-          src={lightboxImage.src || "/placeholder.svg"}
-          alt={lightboxImage.alt}
-          open={!!lightboxImage}
-          onOpenChange={(open) => !open && setLightboxImage(null)}
-        />
-      )}
+      <ImageLightbox image={lightboxImage} onClose={() => setLightboxImage(null)} />
     </div>
   )
 }
