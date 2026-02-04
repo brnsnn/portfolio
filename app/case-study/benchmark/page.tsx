@@ -206,7 +206,7 @@ export default function TravelAppCaseStudy() {
             className="aspect-[16/9] relative rounded-lg overflow-hidden mb-6 cursor-pointer hover:opacity-90 transition-opacity"
             onClick={() =>
               setLightboxImage({
-                src: "/Before-1.jpg?height=450&width=800",
+                src: "/Before-1.jpg",
                 alt: "Before mobile and desktop revisions",
               })
             }
@@ -571,14 +571,7 @@ export default function TravelAppCaseStudy() {
       </footer>
 
       {/* Lightbox component */}
-      {lightboxImage && (
-        <ImageLightbox
-          src={lightboxImage.src || "/placeholder.svg"}
-          alt={lightboxImage.alt}
-          open={!!lightboxImage}
-          onOpenChange={(open) => !open && setLightboxImage(null)}
-        />
-      )}
+      <ImageLightbox image={lightboxImage} onClose={() => setLightboxImage(null)} />
     </div>
   )
 }

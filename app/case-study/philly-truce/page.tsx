@@ -452,14 +452,7 @@ export default function PhillyTruceCaseStudy() {
         </div>
       </main>
 
-      {lightboxImage && (
-        <ImageLightbox
-          src={lightboxImage.src || "/placeholder.svg"}
-          alt={lightboxImage.alt}
-          open={!!lightboxImage}
-          onOpenChange={(open) => !open && setLightboxImage(null)}
-        />
-      )}
+      <ImageLightbox image={lightboxImage} onClose={() => setLightboxImage(null)} />
 
       {/* Footer */}
       <footer className="border-t py-6 md:py-8 animate-on-load animate-fade-in animate-delay-800">
