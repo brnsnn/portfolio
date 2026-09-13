@@ -180,39 +180,6 @@ const Page = () => {
                   <br />
                   matcha shops in the city.
                 </p>
-                <div className="flex flex-wrap gap-4">
-                  <Button asChild variant="default" className="font-normal">
-                    <Link
-                      href="https://drive.google.com/file/d/14TQw3m_5QvpKjledQjwdU87WXWCG-yI6/view"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="button-style"
-                    >
-                      <span className="nav-text-swap">
-                        <span className="nav-text-swap-inner">
-                          <span className="nav-text-swap-item">Download Resume</span>
-                          <span className="nav-text-swap-item">Download Resume</span>
-                        </span>
-                      </span>
-                    </Link>
-                  </Button>
-                  <Button asChild variant="outline" className="font-normal bg-transparent">
-                    <Link
-                      href="https://linkedin.com/in/brnsnlee"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Visit LinkedIn profile"
-                      className="button-style button-style-outline"
-                    >
-                      <span className="nav-text-swap">
-                        <span className="nav-text-swap-inner">
-                          <span className="nav-text-swap-item">Connect on LinkedIn</span>
-                          <span className="nav-text-swap-item">Connect on LinkedIn</span>
-                        </span>
-                      </span>
-                    </Link>
-                  </Button>
-                </div>
               </div>
             </div>
           </div>
